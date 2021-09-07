@@ -1,4 +1,4 @@
-$bgcolor: #282c34;
+ $bgcolor: #282c34;
 $font: "Monaco", monospace;
 $colortext: #abb2bf;
 
@@ -40,10 +40,11 @@ body {
     li {
       list-style: none;
       &:hover {
-        background-color: blue;
+        background-color: blueviolet;
         }
       }
       a {
+        transition: color .4s ease;
         text-decoration: none;
         color: $colortext;
         padding: 1rem;
@@ -97,5 +98,83 @@ body {
 
   .navbar-links.active {
     display: flex;
+  }
+}
+
+.content {
+  @include mpnone();
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+footer {
+  background-color: black;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: $colortext;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px;
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2.3rem 2rem 0;
+    li {
+      margin: 0 10px;
+      a {
+        text-decoration: none;
+        color: $colortext;
+        &:hover {
+          color: blue;
+        }
+        i {
+          font-size: 1.8rem;
+          transition: color .4s ease;
+
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    a {
+      text-decoration: none;
+    }
+    span {
+      text-transform: uppercase;
+      opacity: .7;
+      font-weight: 200;
+    }
   }
 }

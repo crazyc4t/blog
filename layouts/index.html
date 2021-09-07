@@ -1,2 +1,5 @@
-{{ partial "header"}}
-miau
+{{ partial "header" . }}
+
+{{ .Content }}
+
+{{ partial "footer" . }}

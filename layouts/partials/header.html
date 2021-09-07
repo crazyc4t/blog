@@ -7,8 +7,13 @@
 
 	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
-	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
-  <script defer language="javascript" type="text/javascript"  src="{{ "/js/script.js" | urlize | relURL }}"></script>
+	<!-- css -->
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://kit.fontawesome.com/9a900a08af.js" crossorigin="anonymous"></script>
+
+
+	<!--js-->
+	<script defer language="javascript" type="text/javascript"  src="{{ "/js/script.js" | urlize | relURL }}"></script>
 
 	{{ with .OutputFormats.Get "rss" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
