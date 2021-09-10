@@ -12,6 +12,10 @@
 	<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 		{{ .Date.Format "January 2, 2006" }}
 	</time>
+  <br>
+  <div>{{ if .Params.tags }}Tags: {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+  <p style="font-size:18px;">{{.Summary}}</p>
+  <a href="{{ .RelPermalink }}">Read More…</a>
 </article>
 {{ end }}
 

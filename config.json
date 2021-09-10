@@ -1,5 +1,6 @@
 {
    "baseURL": "//localhost:1313",
    "languageCode": "en-us",
-   "title": "crazyc4t"
+   "title": "crazyc4t",
+   "summaryLength": 30
 }

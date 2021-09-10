@@ -1,4 +1,4 @@
- $bgcolor: #282c34;
+$bgcolor: #282c34;
 $font: "Monaco", monospace;
 $colortext: #abb2bf;
 
@@ -11,12 +11,17 @@ $colortext: #abb2bf;
   box-sizing: border-box;
 }
 
+a {
+  color: $colortext;
+}
+
 body {
   background-color: $bgcolor;
   font-family: $font;
   font-size: 120%;
   color: $colortext;
   @include mpnone();
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -41,14 +46,16 @@ body {
       list-style: none;
       &:hover {
         background-color: blueviolet;
+        transition: color .4s ease;
+        color: $colortext;
         }
       }
       a {
-        transition: color .4s ease;
         text-decoration: none;
         color: $colortext;
         padding: 1rem;
         display: block;
+        transition: color .4s ease;
       }
    }
 }
@@ -102,10 +109,11 @@ body {
 }
 
 .content {
-  @include mpnone();
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-
+  margin: 2rem;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 footer {
@@ -117,12 +125,13 @@ footer {
 }
 
 .footer-content {
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 100px
   h3 {
     font-size: 1.8rem;
     font-weight: 400;
@@ -147,7 +156,7 @@ footer {
         text-decoration: none;
         color: $colortext;
         &:hover {
-          color: blue;
+          color: blueviolet;
         }
         i {
           font-size: 1.8rem;
@@ -162,7 +171,8 @@ footer {
 .footer-bottom {
   background: black;
   width: 100vw;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
   text-align: center;
   p {
     font-size: 14px;
