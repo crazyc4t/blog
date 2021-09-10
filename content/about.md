@@ -1,7 +1,7 @@
 {
   "title": "About Me",
   "date": "2021-08-31T10:20:12-05:00",
-  "draft": true,
+  "draft": false,
   "author": "Said Neder"
 }
 
@@ -32,17 +32,9 @@ I will certainly reply you back!
 If you wish to contribute to my work, I will be forever grateful! The funds from my donations will go directly into my goal that is a [Arduino uno board](https://store-usa.arduino.cc/products/arduino-uno-rev3) for experimenting and making more blogposts!
 
 ### Crypto
-**Doge:** DEW2LyCHQdBAE6v3ZoJxYe7Egi7HPQdpkL
+Here you will find all of my crypto addresses! thank you for your kind donation!
 
-**Bitcoin:** 1Fc1CziEiWGySaLdXqEErRPZuVdysCQaRy
-
-**Ethereum:** 0x3ba7aaD7a6a550BA9B2238F4fCF8b25F101F6F4F
-
-**Monero:** 49fNdpXh1mNVSBkTrs9nf3Xvvoc7z8VTw9yG6yExpLwbfhWSr2xVjnpCtJ93xuU5PjfZzGZSykxdpNm9cf3Q6Kf3A7W5s59
-
-**Litecoin:** LNCAApCFuE1uQ9gJJKYSocFMPE7ZZhE9Ci
-
-**Dash:** XumCbr3RueVno1ksno6Y4iQbiAeiPz1KQV
+[Addresses](https://gist.github.com/crazyc4t/0d459308d72c44432a973ff92cedd863)
 
  ### You can invite me a coffee too!
 
