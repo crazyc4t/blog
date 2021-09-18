@@ -11,7 +11,7 @@ Now I have my mind clear of what do I want to do, and that is to specialize in t
 
 Linux for me has a great impact in my life when I knew what it was, because is so unique and customizable that led my creativity to explode and try a lot of distros out and tinker with them and thanks to that it led me to where I am now, linux showed me the FOSS community and how the community always contributed to the world, and that is why am making this blog, to contribute back to the community what they have gave me, information, learning resources, motivation, and care to let me know that am not alone!
 
-Brazilian Jiu Jitsu Is one of the main pillars of my life, it's a really tough sport that showed me how to live my life, how to be disciplined and how handle myself with my thoughts, If I never knew what BJJ was, I would not be where I am at now, I would not be as happy and meaningful as I am right now, is truly a life-changing sport, and I think jiu-jitsu is for everyone, but not everyone for jiu-jitsu, If you can give it a try!
+Brazilian Jiu Jitsu Is one of the main pillars of my life, it's a really tough sport that showed me how to live my life, how to be disciplined and how handle myself with my thoughts, If I never knew what BJJ was, I would not be where I am at now, I would not be as happy and meaningful as I am right now, is truly a life-changing sport, and I think jiu-jitsu is for everyone, but not everyone for jiu-jitsu, If you can, give it a try!
 
 My ultimate goal is to move out from Ecuador to Vancouver, Canada and land a job in the industry, while studying my degree in computer science, and to live a meaningful life by helping others and expressing myself giving what I can, like in this blog, and to have a really cute shiba inu to walk him to awesome landscapes that vancouver has to offer, I will certainly miss Ecuador since is my motherland and for me is the most beutiful place in this world.
 
@@ -20,7 +20,7 @@ My ultimate goal is to move out from Ecuador to Vancouver, Canada and land a job
 ## Contact me
 You can contact me via email!
 
-[My email](saidneder1@gmail.com)
+saidneder1@gmail.com
 
 Or message me via Discord! (Preferred method)
 
