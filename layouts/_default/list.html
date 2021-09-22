@@ -14,6 +14,9 @@
 	</time>
   <br>
   <div>{{ if .Params.tags }}Tags: {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+  <span>
+	Author: {{ .Params.Author }} {{range .Params.Authors}}{{ . }}{{ end }}
+</span>
   <p style="font-size:18px;">{{.Summary}}</p>
   <a href="{{ .RelPermalink }}">Read More…</a>
 </article>
