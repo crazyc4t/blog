@@ -3,7 +3,7 @@
   "date": "2021-08-31T10:19:51-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Networking", "Hacking"]
+  "tags": ["Networking"]
 }
 
 This is in the third layer of the OSI model that is Network, related to routing.

@@ -3,7 +3,7 @@
   "date": "2021-08-31T10:19:39-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Networking", "Hacking"]
+  "tags": ["Networking"]
 }
 
 # TCP, UDP, and the three-way handshake
