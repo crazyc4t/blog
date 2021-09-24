@@ -1,5 +1,5 @@
 {
-  "title": "What is Linux? why should you care?",
+  "title": "What is Linux? Why should you care?",
   "date": "2021-09-22T18:58:53-05:00",
   "draft": false,
   "author": "Said Neder",
