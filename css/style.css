@@ -3,14 +3,14 @@
 }
 
 a {
-  color: #abb2bf;
+  color: #d8d4cf;
 }
 
 body {
   background-color: #282c34;
   font-family: "Monaco", monospace;
   font-size: 120%;
-  color: #abb2bf;
+  color: #d8d4cf;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  color: #abb2bf;
+  color: #d8d4cf;
 }
 
 .brand-title {
@@ -40,11 +40,11 @@ body {
 .navbar-links ul li:hover {
   background-color: blueviolet;
   transition: color 0.4s ease;
-  color: #abb2bf;
+  color: #d8d4cf;
 }
 .navbar-links ul a {
   text-decoration: none;
-  color: #abb2bf;
+  color: #d8d4cf;
   padding: 1rem;
   display: block;
   transition: color 0.4s ease;
@@ -63,7 +63,7 @@ body {
 .toggle-btn .bar {
   height: 3px;
   width: 100%;
-  background-color: #abb2bf;
+  background-color: #d8d4cf;
   border-radius: 10px;
 }
 
@@ -109,7 +109,7 @@ footer {
   height: auto;
   width: 100vw;
   padding-top: 40px;
-  color: #abb2bf;
+  color: #d8d4cf;
 }
 
 .footer-content {
@@ -143,7 +143,7 @@ footer {
 }
 .footer-content ul li a {
   text-decoration: none;
-  color: #abb2bf;
+  color: #d8d4cf;
 }
 .footer-content ul li a:hover {
   color: blueviolet;
