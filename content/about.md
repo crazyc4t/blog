@@ -17,9 +17,10 @@ Brazilian Jiu Jitsu Is one of the main pillars of my life, it's a really tough s
 
 My ultimate goal is to move out from Ecuador to Vancouver, Canada and land a job in the industry, while studying my degree in computer science, and to live a meaningful life by helping others and expressing myself giving what I can, like in this blog, and to have a really cute shiba inu to walk him to awesome landscapes that vancouver has to offer, I will certainly miss Ecuador since is my motherland and for me is the most beutiful place in this world.
 
----
+* * *
 
 ## Contact me
+
 You can contact me via email!
 
 saidneder1@gmail.com
@@ -31,13 +32,15 @@ DarthNeder#2142
 I will certainly reply you back!
 
 ## Donations
+
 If you wish to contribute to my work, I will be forever grateful! The funds from my donations will go directly into my goal that is a [Arduino uno board](https://store-usa.arduino.cc/products/arduino-uno-rev3) for experimenting and making more blogposts!
 
 ### Crypto
+
 Here you will find all of my crypto addresses! thank you for your kind donation!
 
 [Addresses](https://gist.github.com/crazyc4t/0d459308d72c44432a973ff92cedd863)
 
- ### You can invite me a coffee too!
+### You can invite me a coffee too!
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z2643OM)
