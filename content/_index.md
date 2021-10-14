@@ -7,15 +7,15 @@
 
 # Welcome
 
-Welcome to my website! Am Said Neder, or known as **"crazyc4t"**,
+Welcome to my website! Am Said Neder, or known as **"DarthNeder"**,
 this is my own blog made with [hugo](https://gohugo.io/),
 that is a open-source static web generator made in golang,
 with my own design to make it simple but really functional!
 
 Am thankful of your visit and take a look around!
 
-- [My posts](/posts)
-- [About me](/about)
+-   [My posts](/posts)
+-   [About me](/about)
 
 If you want to contact me in any way go to the about me page!
 
@@ -29,18 +29,18 @@ This is where I will showcase my own projects so you can check them out on githu
 Every project was their documentation so you can read what is about, and guide yourself
 to do it along with me!
 
-- Discord Bot made to notify me everytime I have class, made with Discord.JS!
-  - Check out the code and the documentation [here](https://github.com/crazyc4t/PatrickStar)!
+-   Discord Bot made to notify me everytime I have class, made with Discord.JS!
+    -   Check out the code and the documentation [here](https://github.com/crazyc4t/PatrickStar)!
 
 
-- My dotfiles of my desktop! Here you will find every configuration file of my desktop and my window
-managers, made to look my desktop awesome and minimalist!
-  - You can check out the repo over [here](https://github.com/crazyc4t/dotfiles)!
+-   My dotfiles of my desktop! Here you will find every configuration file of my desktop and my window
+    managers, made to look my desktop awesome and minimalist!
+    -   You can check out the repo over [here](https://github.com/crazyc4t/dotfiles)!
 
 
-- My own webpage of course! Made with HTML, Sass, Markdown, and Javascript, powered by the hugo static
-site generator!
-  - if you want to create your own webpage with markdown pages, go check out my [repo](https://github.com/crazyc4t/crazyc4t.github.io)!
+-   My own webpage of course! Made with HTML, Sass, Markdown, and Javascript, powered by the hugo static
+    site generator!
+    -   if you want to create your own webpage with markdown pages, go check out my [repo](https://github.com/crazyc4t/crazyc4t.github.io)!
 
 Currently am working on more blogposts for you! And soon I will have blogposts of different authors!
 
