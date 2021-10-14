@@ -1,6 +1,8 @@
-$bgcolor: #282c34;
-$font: "Monaco", monospace;
-$colortext: #d8d4cf;
+$bgcolor: #1d1f21;
+$font: "Helvetica", Sans-serif;
+$colortext: whitesmoke;
+$adaptatheme: #002e4d;
+$adaptafore: #0099ff;
 
 @mixin mpnone {
   margin: 0;
@@ -28,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: $adaptatheme;
   color: $colortext;
 
 }
@@ -45,7 +47,7 @@ body {
     li {
       list-style: none;
       &:hover {
-        background-color: blueviolet;
+        background-color: $adaptafore;
         transition: color .4s ease;
         color: $colortext;
         }
@@ -117,7 +119,7 @@ body {
 }
 
 footer {
-  background-color: black;
+  background-color: $adaptatheme;
   height: auto;
   width: 100vw;
   padding-top: 40px;
@@ -156,7 +158,7 @@ footer {
         text-decoration: none;
         color: $colortext;
         &:hover {
-          color: blueviolet;
+          color: $adaptafore;
         }
         i {
           font-size: 1.8rem;
@@ -169,7 +171,7 @@ footer {
 }
 
 .footer-bottom {
-  background: black;
+  background: $adaptatheme;
   width: 100vw;
   padding-top: 20px;
   padding-bottom: 10px;
