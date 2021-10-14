@@ -1,12 +1,10 @@
 {
-  "title": "Comeback",
+  "title": "How to comeback and win in life",
   "date": "2021-10-13T23:53:55-05:00",
   "draft": false,
   "author": "Said Neder",
   "tags": ["Advice"]
 }
-
-## How to comeback and win in life
 
 First of all, let's talk about the definition of the word **comeback** shall we?
 
@@ -94,4 +92,4 @@ You complete the comeback by meditating about all you have done, pray to give th
 be ready for tomorrow, and with time you will grab some high momentum and it will seem easy but **beware**, that is the time your enemy is
 with their guns lock and loaded and you have your guard down, **Don't let that happen** and if it happens...
 
-### TRY AGAIN 1
+### TRY AGAIN
