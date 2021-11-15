@@ -1,0 +1,200 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>How to customize your terminal! | DarthNeder</title>
+<link rel=stylesheet href=/css/style.css>
+<script src=https://kit.fontawesome.com/9a900a08af.js crossorigin=anonymous></script>
+<script defer language=javascript type=text/javascript src=/js/script.js></script>
+</head>
+<body>
+<nav class=navbar>
+<div class=brand-title>
+<a href=/>DarthNeder</a>
+</div>
+<a href=# class=toggle-btn>
+<span class=bar></span>
+<span class=bar></span>
+<span class=bar></span>
+</a>
+<div class=navbar-links>
+<ul>
+<li><a href=/about/>About</a></li>
+<li><a href=/posts/>Posts</a></li>
+</ul>
+</div>
+</nav>
+<main class=content>
+<h1>How to customize your terminal!</h1>
+<h3>Author: Said Neder</h3>
+<p>This is a tutorial-type of blogpost, sorry for being away so long, but there&rsquo;s a lot of blogposts coming to your way, so expect some new ones!</p>
+<p>What we want to achieve in this tutorial:</p>
+<ul>
+<li>To have a fast terminal emulator</li>
+<li>To have a better shell with auto-completition</li>
+<li>To have a cool-looking with color scheme terminal</li>
+</ul>
+<p>So let&rsquo;s start with that!</p>
+<h2 id=alacritty-the-fastest-opengl-terminal-emulator>Alacritty, the fastest openGL terminal emulator</h2>
+<p><a href=https://github.com/alacritty/alacritty>Alacritty</a> is the fastest terminal emulator out there, and the best of all is that is cross-platform! so you can install it on windows too! Although this guide is more toward linux users but if you are here from windows you can follow along too!</p>
+<h2 id=fish-the-friendly-interactive-shell-from-the-90s>Fish, the friendly interactive shell from the 90&rsquo;s</h2>
+<p>Fish is a smart and user-friendly shell for every unix-like OS, it offers:</p>
+<ul>
+<li>Autosuggestions</li>
+<li>Sane Scripting</li>
+<li>Tab completitions and syntax highlighting</li>
+</ul>
+<p>And a lot more! Overall, is the way to go, time to go [fishing] (<a href=https://fishshell.com>https://fishshell.com</a>)</p>
+<h2 id=neovim-hyperextensible-vim-based-text-editor>Neovim, Hyperextensible Vim-based text editor</h2>
+<p><a href=https://neovim.io/>Neovim</a> being a <a href=https://www.vim.org/>vim</a>-based editor is not for everyone, since navigating vim is not the easiest task of all, but neovim what it does is to take vim (VI-iMproved, since vim is a fork from VI) and eliminates all the deprecated and legacy packages (30% less code base than vim), then improve it even more with plugins, extensions, and more!</p>
+<p>Is a beutiful text-editor, one of my favourites!</p>
+<h2 id=nerd-fonts-the-best-fonts-to-code-with>Nerd Fonts, the best fonts to code with!</h2>
+<p><a href=https://www.nerdfonts.com/#home>Nerd fonts</a> are fonts designed for coding in mind, and it has icons as text that is the awesome part, since we are going to use those icons for customizing our terminal</p>
+<h2 id=install-alacritty-fish-and-neovim>Install Alacritty, Fish and Neovim</h2>
+<p><strong>Ubuntu/Debian:</strong></p>
+<p><code>sudo add-apt-repository ppa:aslatter/ppa && sudo add-apt-repository ppa:fish-shell/release-3</code></p>
+<p>That is to add the <em>personal package archives</em>, that is a personal repository where you can download software from the owner of the software, being the latest version and overall better, in this case from alacritty and fish devs.</p>
+<p><code>sudo apt update && sudo apt install alacritty fish neovim -y</code></p>
+<p>This will refresh the repo list and install it!</p>
+<p><strong>Fedora/RHEL:</strong>
+<code>sudo dnf install alacritty fish neovim</code> Easy isn&rsquo;t it?</p>
+<p><strong>Arch (btw):</strong>
+<code>sudo pacman -S alacritty fish neovim</code> You already know.</p>
+<p><strong>Uninstalling Alacritty, Fish and Neovim</strong></p>
+<p>This is the case if you don&rsquo;t like it</p>
+<p><strong>Ubuntu/Debian:</strong></p>
+<p>First, remove the software:
+<code>sudo apt remove --auto-remove alacritty fish neovim</code></p>
+<p>Then, the <em>PPA&rsquo;s</em>
+<code>sudo add-apt-repository --remove ppa:aslatter/ppa && sudo add-apt-repository --remove ppa:fish-shell/release-3</code></p>
+<p><strong>Fedora/RHEL:</strong></p>
+<p><code>sudo dnf uninstall fish alacritty neovim</code></p>
+<p><strong>Arch (btw):</strong></p>
+<p><code>sudo pacman -R alacritty fish neovim</code></p>
+<h2 id=installing-nerd-fonts>Installing nerd fonts!</h2>
+<p>You can go to the official nerd fonts <a href=https://github.com/ryanoasis/nerd-fonts>github</a> and follow their installation guides or use a <strong>bash script</strong> I created for installing nerd fonts the easiest way!</p>
+<p><strong>Download the bash script</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>wget https://github.com/DarthNeder/nerdy/releases/download/v1.0.0/nerdy <span style=color:#f92672>&amp;&amp;</span> bash nerdy -h
+</code></pre></div><p>This will download the script and run the help command so you can see the usage of the script</p>
+<p><strong>Install some fonts!</strong>
+Is just as easy to</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>bash nerdy RobotoMono
+</code></pre></div><p>This means you are installing RobotoMono nerd font on your system!
+If you are not sure which one to install you can go to <a href=https://www.programmingfonts.org/>programming fonts</a> and decide which one to install!</p>
+<p>After installing nerd fonts, neovim, fish and alacritty, time to configurate them!</p>
+<h2 id=hacking-alacritty>Hacking alacritty</h2>
+<p>First in your new terminal we are going to create the <code>alacritty.yml</code> file, this is the configuration file,
+and is going to be store in <code>~/.config/alacritty/</code>.</p>
+<p>So now this is what we are going to do:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cd
+$ mkdir .config/alacritty
+$ nvim .config/alacritty/alacritty.yml
+</code></pre></div><p>(The first <code>cd</code> was for changing directories to your home folder)</p>
+<p>Now, before we get into the code, just for reference you can see this alacritty <a href=https://github.com/tmcdonell/config-alacritty>config</a> to take for example, and the <a href=https://wiki.archlinux.org/title/Alacritty>arch wiki</a> since it has a nice page explaining about it.</p>
+<p><strong>Running fish as our default shell</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>shell</span>:
+	<span style=color:#f92672>program</span>: <span style=color:#ae81ff>/bin/fish</span>
+</code></pre></div><p>This means everytime alacritty is going to open is running the fish shell.</p>
+<p>Remember the <a href=https://www.redhat.com/en/topics/automation/what-is-yaml>YAML</a> Is the format used to configure alacritty, in key-value pairs.</p>
+<p><strong>Running nerd fonts as our default font</strong></p>
+<p>First of all check the family name of your font by running this command:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>fc-list | grep Hack
+</code></pre></div><p>Being <strong>Hack</strong> replaced with your font&rsquo;s name, once you know that time to create the font table like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>font</span>:  
+  <span style=color:#f92672>normal</span>:
+		<span style=color:#f92672>family</span>: <span style=color:#ae81ff>RobotoMono Nerd Font</span>
+    <span style=color:#f92672>style</span>: <span style=color:#ae81ff>Regular</span>
+
+  <span style=color:#f92672>bold</span>:
+    <span style=color:#f92672>family</span>: <span style=color:#ae81ff>RobotoMono Nerd Font</span>
+    <span style=color:#f92672>style</span>: <span style=color:#ae81ff>Bold</span>
+
+  <span style=color:#f92672>italic</span>:
+    <span style=color:#f92672>family</span>: <span style=color:#ae81ff>RobotoMono Nerd Font</span>
+    <span style=color:#f92672>style</span>: <span style=color:#ae81ff>Italic</span>
+
+  <span style=color:#f92672>bold_italic</span>:
+    <span style=color:#f92672>family</span>: <span style=color:#ae81ff>RobotoMono Nerd Font</span>
+    <span style=color:#f92672>style</span>: <span style=color:#ae81ff>Bold Italic</span>
+
+  <span style=color:#f92672>size</span>: <span style=color:#ae81ff>9.0</span>
+</code></pre></div><p>Specifying the font family and the size of it, if you want, (I know you do) we can specify the padding of the prompt and the background opacity of it</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>background_opacity</span>: <span style=color:#ae81ff>0.75</span>
+<span style=color:#f92672>window</span>:
+  <span style=color:#f92672>padding</span>:
+    <span style=color:#f92672>x</span>: <span style=color:#ae81ff>4</span>
+    <span style=color:#f92672>y</span>: <span style=color:#ae81ff>4</span>
+</code></pre></div><p>And we are done with alacritty and fish!</p>
+<p>Now we are going to install <a href=https://starship.rs/>starship</a> to beutify our prompt and plus is written on rust!, then there&rsquo;s <a href=https://the.exa.website/>exa</a> that is the new replacement for the <code>ls</code> command, as well <a href=https://github.com/owenthereal/ccat>ccat</a> for the <code>cat</code> command!</p>
+<h3 id=installing-starship-exa-and-ccat>Installing starship, exa and ccat</h3>
+<p><strong>For starship:</strong></p>
+<p>Just run the installer:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>bash sh -c <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>curl -fsSL https://starship.rs/install.sh<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</code></pre></div><p>and add it to the config.fish, that is located in <code>~/.config/fish/config.fish</code></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#75715e># ~/.config/fish/config.fish
+</span><span style=color:#75715e></span>
+<span style=color:#a6e22e>starship</span> init fish <span style=color:#f92672>|</span> source
+</code></pre></div><p><strong>Side note:</strong></p>
+<p>If you don&rsquo;t like the &ldquo;welcome to the fish shell!&rdquo; greeting message, you can delete it by so:</p>
+<p><code>set -g fish_greeting</code></p>
+<p>writing this in <code>config.fish</code>.</p>
+<p>More <a href=https://fishshell.com/docs/current/faq.html>docs</a>&mldr;</p>
+<p><strong>For exa:</strong></p>
+<p><strong>Ubuntu/Debian:</strong> <code>sudo apt install exa</code></p>
+<p><strong>RHEL/Fedora:</strong> <code>sudo dnf install exa</code></p>
+<p><strong>Arch Linux (btw):</strong> <code>sudo pacman -S exa</code></p>
+<p><strong>For ccat:</strong></p>
+<p>This is a bit longer process but don&rsquo;t worry we are going to do it together!</p>
+<p><strong>Arch (btw):</strong></p>
+<p>Just install it from the AUR!</p>
+<p><code>paru -S ccat</code></p>
+<p>(if you have paru)</p>
+<p><strong>Ubuntu/Debian && RHEL/Fedora:</strong></p>
+<p>We are going to download the executable and put it in our path, this way:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo wget https://github.com/jingweno/ccat/releases/download/v1.1.0/linux-amd64-1.1.0.tar.gz 
+</code></pre></div><p>Then after the download completes we are going to extract the tarball and copy the ccat executable binary into a executable path.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ls
+tar xfz linux-amd64-1.1.0.tar.gz
+ls linux-amd64-1.1.0
+sudo cp linux-amd64-1.1.0/ccat /usr/bin
+ls -la /usr/bin | grep ccat
+chmod +x /usr/bin/ccat
+</code></pre></div><p>And that&rsquo;s it! now you have starship, exa and ccat in your terminal!</p>
+<p><strong>Now replace <code>cat</code> and <code>ls</code> with aliases:</strong></p>
+<p>In <code>config.fish</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish>alias ls<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;exa -la --icons&#34;</span>
+alias cat<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;ccat&#34;</span>
+</code></pre></div><p>Now last but not least final step&mldr;</p>
+<h2 id=theming-alacritty>Theming Alacritty</h2>
+<p>First of all let&rsquo;s install <a href=https://nodejs.org/en/>node.js</a> that makes running javascript on the backend possible!</p>
+<p><strong>Ubuntu/Debian:</strong> <code>sudo apt install nodejs</code></p>
+<p><strong>RHEL/Fedora:</strong> <code>sudo dnf install nodejs</code></p>
+<p><strong>Arch (Btw):</strong> <code>sudo pacman -s nodejs</code></p>
+<p>Now let&rsquo;s install <a href=https://github.com/rajasegar/alacritty-themes>alacritty themes</a>!</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>npm -i -g alacritty-themes
+</code></pre></div><p>If you get npm errors, try to update npm:
+<code>npm update</code></p>
+<p><strong>Now the moment of truth!</strong></p>
+<p>Just run the script!
+<code>alacritty-themes</code></p>
+<p>and select the theme you like and enjoy!</p>
+</main>
+<footer>
+<div class=footer-content>
+<h3>Said Neder</h3>
+<p>Thank you for your visit! Remember this webpage is free software so go check it out on github!</p>
+<ul>
+<li><a href=https://github.com/crazyc4t target=_blank><i class="fab fa-github"></i></a></li>
+<li><a href=https://www.instagram.com/said_neder/ target=_blank><i class="fab fa-instagram"></i></a></li>
+<li><a href=https://www.linkedin.com/in/said-neder/ target=_blank><i class="fab fa-linkedin"></i></a></li>
+</ul>
+<script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script>
+<script type=text/javascript>kofiwidget2.init('Buy me a coffee!','#29abe0','Z8Z2643OM'),kofiwidget2.draw()</script>
+</div>
+<div class=footer-bottom>
+<p>Copyleft 🄯 with the GPL- 3.0 license, made by <span>Crazyc4t</span> with love</p>
+<p>Made with <a href=https://gohugo.io/ target=_blank><b>hugo</b></a></p>
+</div>
+</footer>
+</body>
+</html>
