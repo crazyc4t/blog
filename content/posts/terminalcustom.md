@@ -26,7 +26,7 @@ Fish is a smart and user-friendly shell for every unix-like OS, it offers:
 - Sane Scripting
 - Tab completitions and syntax highlighting
 
-And a lot more! Overall, is the way to go, time to go [fishing] (https://fishshell.com)
+And a lot more! Overall, is the way to go, time to go [fishing](https://fishshell.com)
 
 ## Neovim, Hyperextensible Vim-based text editor
 [Neovim](https://neovim.io/) being a [vim](https://www.vim.org/)-based editor is not for everyone, since navigating vim is not the easiest task of all, but neovim what it does is to take vim (VI-iMproved, since vim is a fork from VI) and eliminates all the deprecated and legacy packages (30% less code base than vim), then improve it even more with plugins, extensions, and more!
