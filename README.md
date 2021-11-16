@@ -5,8 +5,6 @@
 
 ### [saidneder.tech](https://saidneder.tech/)
 
-![Website example](/static/img/example.gif)
-
 I made it with [Hugo](https://gohugo.io/) that is a static website generator made
 with [go](https://golang.org/), with my own theming made with HTML, Sass, and Javascript!
 the repo is completly free and open source, so fork it!
@@ -42,6 +40,16 @@ own webpage!
 
 **config.json** = Self explanatory, configuration file.
 
-* * *
-
 For your starter webpage, take a look at the code on layouts and static folders, and clone it!
+
+## To-do's
+- Mail newsletter
+- Notes section
+- Migration to vue.js (no ETA for now)
+
+
+
+### If you like my content you can help me with inviting me a coffee!
+
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/darthneder)
