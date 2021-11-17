@@ -30,18 +30,20 @@ Every project was their documentation so you can read what is about, and guide y
 to do it along with me!
 
 -   Discord Bot made to notify me everytime I have class, made with Discord.JS!
-    -   Check out the code and the documentation [here](https://github.com/crazyc4t/PatrickStar)!
+    -   Check out the code and the documentation [here](https://github.com/DarthNeder/PatrickStar)!
 
 
 -   My dotfiles of my desktop! Here you will find every configuration file of my desktop and my window
     managers, made to look my desktop awesome and minimalist!
-    -   You can check out the repo over [here](https://github.com/crazyc4t/dotfiles)!
+    -   You can check out the repo over [here](https://github.com/DarthNeder/dotfiles)!
 
 
 -   My own webpage of course! Made with HTML, Sass, Markdown, and Javascript, powered by the hugo static
     site generator!
-    -   if you want to create your own webpage with markdown pages, go check out my [repo](https://github.com/crazyc4t/crazyc4t.github.io)!
+    -   if you want to create your own webpage with markdown pages, go check out my [repo](https://github.com/DarthNeder/Website)!
+
+-  A bash script to install nerd fonts the easiest way! Check out the [repo](https://github.com/DarthNeder/nerdy) 
 
 Currently am working on more blogposts for you! And soon I will have blogposts of different authors!
 
-That is for now, thank you for your visit and enjoy baby!
+That is for now, thank you for your visit and enjoy!
