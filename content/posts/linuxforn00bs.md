@@ -1,5 +1,5 @@
 {
-  "title": "What is Linux? Why should you care?",
+  "title": "What is GNU + Linux? Why should you care?",
   "date": "2021-09-22T18:58:53-05:00",
   "draft": false,
   "author": "Said Neder",
@@ -45,7 +45,7 @@ But the summary is that GNU (GNU not Unix) is a Unix-like operating system (Mac 
 tools that are **free software** but that is another story, and this takes a big role, that's why is called GNU/Linux,
 because the kernel is Linux and the operating system is GNU.
 
-## What is GNU/Linux?
+## What is GNU + Linux?
 
 GNU/Linux is a complete operating system that is free and open-source software, meaning that the code is available for everyone
 to see on the internet, so if anything spooky like spyware be in there it just would be forked (cloned) with that feature removed,
@@ -93,7 +93,7 @@ the gaming world we are a little left behind, because Easy Anti cheat support fo
 So we have to wait for easy-anti-cheat games are developed for linux, but these holidays we are going to get the biggest news ever being that the steam [deck](https://store.steampowered.com/steamdeck) is released!
 being the steam deck OS ["SteamOS"](https://store.steampowered.com/steamos/) based on [Arch Linux!](https://archlinux.org/).
 
-## Should I switch to Linux?
+## Should I switch to GNU + Linux?
 
 The answer is totally!
 
