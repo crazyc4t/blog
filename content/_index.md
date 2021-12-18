@@ -7,7 +7,7 @@
 
 # Welcome
 
-Welcome to my website! Am Said Neder, or known as **"DarthNeder"**,
+Welcome to my website! Am Said Neder, or known as **"crazyc4t"**,
 this is my own blog made with [hugo](https://gohugo.io/),
 that is a open-source static web generator made in golang,
 with my own design to make it simple but really functional!
