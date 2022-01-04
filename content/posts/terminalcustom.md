@@ -36,7 +36,11 @@ Is a beutiful text-editor, one of my favourites!
 ## Nerd Fonts, the best fonts to code with!
 [Nerd fonts](https://www.nerdfonts.com/#home) are fonts designed for coding in mind, and it has icons as text that is the awesome part, since we are going to use those icons for customizing our terminal
 
-## Install Alacritty, Fish and Neovim
+## Bat, the cat with wings!
+
+`bat` is `cat` but with super powers, with syntax highlighting and supports git integration, and it displays it's text in a well readable format, once you go bat you never go back!
+
+## Install Alacritty, Fish, Bat and Neovim
 
 **Ubuntu/Debian:**
 
@@ -44,35 +48,35 @@ Is a beutiful text-editor, one of my favourites!
 
 That is to add the *personal package archives*, that is a personal repository where you can download software from the owner of the software, being the latest version and overall better, in this case from alacritty and fish devs.
 
-`sudo apt update && sudo apt install alacritty fish neovim -y`
+`sudo apt update && sudo apt install alacritty bat fish neovim -y`
 
 This will refresh the repo list and install it!
 
 **Fedora/RHEL:**
-`sudo dnf install alacritty fish neovim` Easy isn't it?
+`sudo dnf install alacritty bat fish neovim` Easy isn't it?
 
 **Arch (btw):**
-`sudo pacman -S alacritty fish neovim` You already know.
+`sudo pacman -S alacritty bat fish neovim` You already know.
 
-**Uninstalling Alacritty, Fish and Neovim**
+**Uninstalling Alacritty, Fish, Bat and Neovim**
 
 This is the case if you don't like it
 
 **Ubuntu/Debian:**
 
 First, remove the software:
-`sudo apt remove --auto-remove alacritty fish neovim`
+`sudo apt remove --auto-remove alacritty fish bat neovim`
 
 Then, the *PPA's*
 `sudo add-apt-repository --remove ppa:aslatter/ppa && sudo add-apt-repository --remove ppa:fish-shell/release-3`
 
 **Fedora/RHEL:**
 
-`sudo dnf uninstall fish alacritty neovim`
+`sudo dnf remove fish alacritty bat neovim`
 
 **Arch (btw):**
 
-`sudo pacman -R alacritty fish neovim`
+`sudo pacman -R alacritty fish bat neovim`
 
 ## Installing nerd fonts!
 You can go to the official nerd fonts [github](https://github.com/ryanoasis/nerd-fonts) and follow their installation guides or use a **bash script** I created for installing nerd fonts the easiest way!
@@ -161,18 +165,19 @@ window:
 
 And we are done with alacritty and fish!
 
-Now we are going to install [starship](https://starship.rs/) to beutify our prompt and plus is written on rust!, then there's [exa](https://the.exa.website/) that is the new replacement for the `ls` command, as well [ccat](https://github.com/owenthereal/ccat) for the `cat` command!
+Now we are going to install [starship](https://starship.rs/) to beutify our prompt and plus is written on rust!, then there's [exa](https://the.exa.website/) that is the new replacement for the `ls` command.
 
-### Installing starship, exa and ccat
+### Installing starship and exa
 
 **For starship:**
 
 Just run the installer:
 ```bash
 bash sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+## if you are in fish, if not just run without `bash` at the beginning
 ```
 
-and add it to the config.fish, that is located in `~/.config/fish/config.fish`
+and add this to the config.fish, that is located in `~/.config/fish/config.fish`
 ```fish
 # ~/.config/fish/config.fish
 
@@ -197,38 +202,7 @@ More [docs](https://fishshell.com/docs/current/faq.html)...
 
 **Arch Linux (btw):** `sudo pacman -S exa`
 
-**For ccat:**
-
-This is a bit longer process but don't worry we are going to do it together!
-
-**Arch (btw):** 
-
-Just install it from the AUR!
-
-`paru -S ccat` 
-
-(if you have paru)
-
-**Ubuntu/Debian && RHEL/Fedora:**
-
-We are going to download the executable and put it in our path, this way:
-
-```bash
-sudo wget https://github.com/jingweno/ccat/releases/download/v1.1.0/linux-amd64-1.1.0.tar.gz 
-```
-
-Then after the download completes we are going to extract the tarball and copy the ccat executable binary into a executable path.
-
-```bash
-ls
-tar xfz linux-amd64-1.1.0.tar.gz
-ls linux-amd64-1.1.0
-sudo cp linux-amd64-1.1.0/ccat /usr/bin
-ls -la /usr/bin | grep ccat
-chmod +x /usr/bin/ccat
-```
-
-And that's it! now you have starship, exa and ccat in your terminal!
+And that's it! now you have starship and exa in your terminal!
 
 **Now replace `cat` and `ls` with aliases:**
 
@@ -236,7 +210,7 @@ In `config.fish`:
 
 ```fish
 alias ls="exa -la --icons"
-alias cat="ccat"
+alias cat="bat"
 ```
 
 Now last but not least final step...
@@ -253,7 +227,7 @@ First of all let's install [node.js](https://nodejs.org/en/) that makes running 
 
 Now let's install [alacritty themes](https://github.com/rajasegar/alacritty-themes)!
 ```bash
-npm -i -g alacritty-themes
+npm i -g alacritty-themes
 ```
 
 If you get npm errors, try to update npm:

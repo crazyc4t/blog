@@ -1,8 +1,5 @@
 # Said Neder's website
 
-![Github License](https://img.shields.io/github/license/crazyc4t/crazyc4t.github.io?color=brightgreen)
-![GitHub last commit](https://img.shields.io/github/last-commit/crazyc4t/crazyc4t.github.io)
-
 ### [saidneder.tech](https://saidneder.tech/)
 
 I made it with [Hugo](https://gohugo.io/) that is a static website generator made
@@ -46,9 +43,7 @@ For your starter webpage, take a look at the code on layouts and static folders,
 - Mail newsletter
 - Notes section
 - Migration to vue.js (no ETA for now)
-
-
-
+- 
 ### If you like my content you can help me with inviting me a coffee!
 
 
