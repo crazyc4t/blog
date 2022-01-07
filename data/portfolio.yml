@@ -1,0 +1,29 @@
+portfolioitems:
+  # portfolio category
+  - title: Coding Projects
+    # items within a category
+    portfolioitem:
+      - name: Patrick Star
+        link: https://github.com/crazyc4t/patrickstar
+        description: 'Discord Bot made to notify me everytime I have class, so I can never miss any of my classes! Made with discord.js library, and cron jobs.'
+        tags:
+          - javascript
+        authors:
+          - crazyc4t
+        
+      - name: Nerdy
+        link: https://github.com/crazyc4t/nerdy
+        description: 'Is a bash script that installs the most easiest way nerd fonts to your system!'
+        tags:
+          - linux
+        authors:
+          - crazyc4t
+
+      - name: Dotfiles
+        link: https://github.com/crazyc4t/dotfiles
+        description: 'These are my dotfiles, configurations files of your linux desktops, here you can find my window manager config file as well as my terminal one!'
+        tags:
+          - linux
+        authors:
+          - crazyc4t
+        
