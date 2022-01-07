@@ -1,0 +1,85 @@
+baseURL = "http://saidneder.tech/"
+languageCode = "en-us"
+DefaultContentLangugage = "en"
+title = "Crazyc4t's Home"
+theme = "anatole"
+summarylength = 20
+enableEmoji = true
+enableRobotsTXT = true
+
+# Syntax Highlighting
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+
+
+# Parameters
+[params]
+title = "Crazyc4t's place"
+author = "Said Neder"
+description = "Just a cat surfing the web."
+profilePicture = "images/crazyc4t.jpeg"
+displayMode = "dark"
+readMore = true
+copyright = "Said Neder 2021-{{ YEAR }}"
+postSectionName = "blog"
+disableThemeSwitcher = true
+favicon = "favicons/"
+
+# Math
+[params.math]
+enable = false
+use = "katex"
+
+# Socials
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/said-neder/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:snederc@pm.me"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/crazyc4t"
+
+# Navigation
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Blog"
+  weight = 200
+  identifier = "blog"
+  url = "/blog/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+  [[menu.main]]
+  name = "Portfolio"
+  weight = 400
+  identifier = "portfolio"
+  url = "/portfolio/"

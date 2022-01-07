@@ -7,7 +7,7 @@
 
 Am Said Neder, a 17 year old ecuadorian, a free software enthusiast who loves programming, better said, technology altogether, and I found that of myself when I was 15 years old and the covid pandemic striked in, and I was stuck at home, for a complete year, and for me that time where I was completely **alone** because my older brother that is like my best friend left, I was just with my parents, and then I knew that it was my time to shine, I have always admired people that were very technical with computers and the sexy looking terminals in the hacker movies made me really interested, so I picked up python to learn while being at home, and it was one of the best decisions of my life, I had so much fun to learn to have the power of doing everything that I wanted to create, and the constant learning that made me excited for every new topic, but that was like 2 years ago.
 
-![Myself](/img/memain.jpg)
+![Myself](/images/memain.jpg)
 
 Now I have my mind clear of what do I want to do, and that is to specialize in the industry, and the route I have chosen by now to be my main focus of learning is infosec (ethical hacking/pentester) since it mixes linux and programming that are my favourite topics in IT, and I have just started learning so with my upcoming blogposts I will keep you updated!
 
@@ -19,21 +19,9 @@ My ultimate goal is to move out from Ecuador to Vancouver, Canada and land a job
 
 * * *
 
-## Contact me
-
-You can contact me via email!
-
-saidneder1@gmail.com
-
-Or message me via Discord! (Preferred method)
-
-DarthNeder#2142
-
-I will certainly reply you back!
-
 ## Donations
 
-If you wish to contribute to my work, I will be forever grateful! The funds from my donations will go directly into my goal that is a [Arduino uno board](https://store-usa.arduino.cc/products/arduino-uno-rev3) for experimenting and making more blogposts!
+If you wish to contribute to my work, I will be forever grateful! The funds from my donations will go directly into my university funding, so thank you for helping me achieve my dreams!
 
 ### Crypto
 
