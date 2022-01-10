@@ -1,3 +1,10 @@
+---
+title: "Vim for everyone!"
+date: 2022-01-09T22:00:04-05:00
+draft: false
+author: "Said Neder"
+tags: ["Linux", "Vim"]
+---
 # Vim Tutorial
 
 ## 1.0 Installing vim
