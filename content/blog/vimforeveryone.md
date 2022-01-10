@@ -86,7 +86,7 @@ if you want to delete more than one character you can by doing so = `4x` (Knowin
 - Yank from the cursor till the end of the line with = `Y`
 - Remember that cutting in vim is just deleting and putting it
 
-## Searching in your document
+## 1.8 Searching in your document
 - Press `/` and then the word you want to search!
 - If you have multiple instances of that word, you can use `n` to go next or 
 `N` to go backawards
