@@ -21,4 +21,6 @@ Am thankful of your visit and take a look around!
 Expect a lot of linux and programming blogs, and in the future security related blogs! Am just starting in the cybersecurity field and am going to document everything I do in forms of posts,
 expect thoughts of mine as well since is my own blog, if you like my content follow me on social media or invite me a coffee down below!
 
-Currently am preparing myself for the **eLearning Junior Pentester** or known as [eJPT](https://elearnsecurity.com/product/ejpt-certification/) to start gaining reputation on the offsec field, I expect to take it this July!
+Currently am preparing myself for the **eLearning Junior Pentester** or known as [eJPT](https://elearnsecurity.com/product/ejpt-certification/) to start gaining reputation on the offsec field, I expect to take it this July! 
+
+Remember that this website is completely free and open-source software! Being this project licensed by the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) following the 4 essential freedoms, to run the program as you wish, to study the source code, to distribute copies and to distribute modified copies, say free software!
