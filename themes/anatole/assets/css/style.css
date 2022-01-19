@@ -29,7 +29,7 @@
 }
 
 html[data-theme='dark'] {
-  --bg-color: #010408;
+  --bg-color: #292836;
   --secondary-bg-color: rgb(56, 56, 56);
   --heading-color: #c9d1d9;
   --body-color: rgb(169, 169, 179);
