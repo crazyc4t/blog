@@ -66,6 +66,7 @@ url = "https://github.com/crazyc4t"
   weight = 100
   identifier = "home"
   url = "/"
+
   [[menu.main]]
   name = "Blog"
   weight = 200
@@ -73,13 +74,19 @@ url = "https://github.com/crazyc4t"
   url = "/blog/"
 
   [[menu.main]]
-  name = "About"
+  name = "Tags"
   weight = 300
+  identifier = "tags"
+  url = "/tags/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 400
   identifier = "about"
   url = "/about/"
 
   [[menu.main]]
   name = "Portfolio"
-  weight = 400
+  weight = 500
   identifier = "portfolio"
   url = "/portfolio/"
