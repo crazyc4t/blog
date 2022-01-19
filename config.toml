@@ -40,7 +40,7 @@ favicon = "favicons/"
 
 # Math
 [params.math]
-enable = false
+enable = true
 use = "katex"
 
 # Socials
