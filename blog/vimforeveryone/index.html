@@ -4,7 +4,7 @@ Said Neder
 |
 Vim for everyone!
 </title>
-<meta charset=utf-8><meta name=generator content="Hugo 0.91.2"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset=utf-8><meta name=generator content="Hugo 0.92.0"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name=description content="
       Just a cat surfing the web.
 
@@ -21,16 +21,16 @@ Vim for everyone!
 <script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Vim for everyone!">
-<meta name=twitter:description content="This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!">
+<meta name=twitter:description content="Intro This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!">
 <script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"blog","name":"Vim for everyone!","headline":"Vim for everyone!","alternativeHeadline":"","description":"
       
-        This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!
+        Intro This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!
 
 
       
 
 
-    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/saidneder.tech\/blog\/vimforeveryone\/"},"author":{"@type":"Person","name":"Said Neder"},"creator":{"@type":"Person","name":"Said Neder"},"accountablePerson":{"@type":"Person","name":"Said Neder"},"copyrightHolder":{"@type":"Person","name":"Said Neder"},"copyrightYear":"2022","dateCreated":"2022-01-09T22:00:04.00Z","datePublished":"2022-01-09T22:00:04.00Z","dateModified":"2022-01-09T22:00:04.00Z","publisher":{"@type":"Organization","name":"Said Neder","url":"http://saidneder.tech/","logo":{"@type":"ImageObject","url":"http:\/\/saidneder.tech\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"http:\/\/saidneder.tech\/blog\/vimforeveryone\/","wordCount":"1081","genre":[],"keywords":["Linux","Vim"]}</script>
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/saidneder.tech\/blog\/vimforeveryone\/"},"author":{"@type":"Person","name":"Said Neder"},"creator":{"@type":"Person","name":"Said Neder"},"accountablePerson":{"@type":"Person","name":"Said Neder"},"copyrightHolder":{"@type":"Person","name":"Said Neder"},"copyrightYear":"2022","dateCreated":"2022-01-09T22:00:04.00Z","datePublished":"2022-01-09T22:00:04.00Z","dateModified":"2022-01-09T22:00:04.00Z","publisher":{"@type":"Organization","name":"Said Neder","url":"http://saidneder.tech/","logo":{"@type":"ImageObject","url":"http:\/\/saidneder.tech\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"http:\/\/saidneder.tech\/blog\/vimforeveryone\/","wordCount":"1082","genre":[],"keywords":["Linux","Vim"]}</script>
 </head>
 <body>
 <header><div class="page-top
@@ -128,7 +128,24 @@ Sun, Jan 9, 2022
 <em class="fas fa-stopwatch"></em>
 <span class=reading-time>6-minute read</span>
 </div>
-</div><p>This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!</p>
+</div><h3>Table of Contents</h3>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#intro>Intro</a></li>
+<li><a href=#10-installing-vim>1.0 Installing vim</a></li>
+<li><a href=#11-vim-modes>1.1 Vim modes</a></li>
+<li><a href=#12-quitting-vim>1.2 Quitting vim</a></li>
+<li><a href=#13-useful-shortcuts-to-use>1.3 Useful shortcuts to use</a></li>
+<li><a href=#14-deleting-undoing-and-redoing>1.4 Deleting, undoing and redoing!</a></li>
+<li><a href=#15-navigating-more-in-depth>1.5 Navigating more in-depth</a></li>
+<li><a href=#16-replacing-appending-and-changing>1.6 Replacing, appending and changing</a></li>
+<li><a href=#17-yanking-and-putting>1.7 Yanking and putting!</a></li>
+<li><a href=#18-searching-in-your-document>1.8 Searching in your document</a></li>
+<li><a href=#reminder-remember-to-mix-it-up>Reminder: Remember to mix it up!</a></li>
+<li><a href=#outro>Outro</a></li>
+</ul>
+</nav><h2 id=intro>Intro</h2>
+<p>This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!</p>
 <h2 id=10-installing-vim>1.0 Installing vim</h2>
 <p>The first step into the rabbit hole, here it goes!</p>
 <p><strong>Debian/Ubuntu</strong>

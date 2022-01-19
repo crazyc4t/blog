@@ -4,7 +4,7 @@ Said Neder
 |
 How to customize your terminal!
 </title>
-<meta charset=utf-8><meta name=generator content="Hugo 0.91.2"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset=utf-8><meta name=generator content="Hugo 0.92.0"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name=description content="
       Just a cat surfing the web.
 
@@ -21,16 +21,16 @@ How to customize your terminal!
 <script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="How to customize your terminal!">
-<meta name=twitter:description content="This is a tutorial-type of blogpost, sorry for being away so long, but there&rsquo;s a lot of blogposts coming to your way, so expect some new ones!">
+<meta name=twitter:description content="Intro This is a tutorial-type of blogpost, sorry for being away so long, but there&rsquo;s a lot of blogposts coming to your way, so expect some new ones!">
 <script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"blog","name":"How to customize your terminal!","headline":"How to customize your terminal!","alternativeHeadline":"","description":"
       
-        This is a tutorial-type of blogpost, sorry for being away so long, but there\u0026rsquo;s a lot of blogposts coming to your way, so expect some new ones!
+        Intro This is a tutorial-type of blogpost, sorry for being away so long, but there\u0026rsquo;s a lot of blogposts coming to your way, so expect some new ones!
 
 
       
 
 
-    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/saidneder.tech\/blog\/niceterminal\/"},"author":{"@type":"Person","name":"Said Neder"},"creator":{"@type":"Person","name":"Said Neder"},"accountablePerson":{"@type":"Person","name":"Said Neder"},"copyrightHolder":{"@type":"Person","name":"Said Neder"},"copyrightYear":"2021","dateCreated":"2021-11-14T19:55:31.00Z","datePublished":"2021-11-14T19:55:31.00Z","dateModified":"2021-11-14T19:55:31.00Z","publisher":{"@type":"Organization","name":"Said Neder","url":"http://saidneder.tech/","logo":{"@type":"ImageObject","url":"http:\/\/saidneder.tech\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"http:\/\/saidneder.tech\/blog\/niceterminal\/","wordCount":"1017","genre":[],"keywords":["Linux"]}</script>
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/saidneder.tech\/blog\/niceterminal\/"},"author":{"@type":"Person","name":"Said Neder"},"creator":{"@type":"Person","name":"Said Neder"},"accountablePerson":{"@type":"Person","name":"Said Neder"},"copyrightHolder":{"@type":"Person","name":"Said Neder"},"copyrightYear":"2021","dateCreated":"2021-11-14T19:55:31.00Z","datePublished":"2021-11-14T19:55:31.00Z","dateModified":"2021-11-14T19:55:31.00Z","publisher":{"@type":"Organization","name":"Said Neder","url":"http://saidneder.tech/","logo":{"@type":"ImageObject","url":"http:\/\/saidneder.tech\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"http:\/\/saidneder.tech\/blog\/niceterminal\/","wordCount":"1018","genre":[],"keywords":["Linux"]}</script>
 </head>
 <body>
 <header><div class="page-top
@@ -128,7 +128,23 @@ Sun, Nov 14, 2021
 <em class="fas fa-stopwatch"></em>
 <span class=reading-time>5-minute read</span>
 </div>
-</div><p>This is a tutorial-type of blogpost, sorry for being away so long, but there&rsquo;s a lot of blogposts coming to your way, so expect some new ones!</p>
+</div><h3>Table of Contents</h3>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#intro>Intro</a></li>
+<li><a href=#alacritty-the-fastest-opengl-terminal-emulator>Alacritty, the fastest openGL terminal emulator</a></li>
+<li><a href=#fish-the-friendly-interactive-shell-from-the-90s>Fish, the friendly interactive shell from the 90&rsquo;s</a></li>
+<li><a href=#neovim-hyperextensible-vim-based-text-editor>Neovim, Hyperextensible Vim-based text editor</a></li>
+<li><a href=#nerd-fonts-the-best-fonts-to-code-with>Nerd Fonts, the best fonts to code with!</a></li>
+<li><a href=#bat-the-cat-with-wings>Bat, the cat with wings!</a></li>
+<li><a href=#install-alacritty-fish-bat-and-neovim>Install Alacritty, Fish, Bat and Neovim</a></li>
+<li><a href=#installing-nerd-fonts>Installing nerd fonts!</a></li>
+<li><a href=#hacking-alacritty>Hacking alacritty</a></li>
+<li><a href=#installing-starship-and-exa>Installing starship and exa</a></li>
+<li><a href=#theming-alacritty>Theming Alacritty</a></li>
+</ul>
+</nav><h2 id=intro>Intro</h2>
+<p>This is a tutorial-type of blogpost, sorry for being away so long, but there&rsquo;s a lot of blogposts coming to your way, so expect some new ones!</p>
 <p>What we want to achieve in this tutorial:</p>
 <ul>
 <li>To have a fast terminal emulator</li>
@@ -229,7 +245,7 @@ $ nvim .config/alacritty/alacritty.yml
 </span><span class=w>    </span><span class=nt>y</span><span class=p>:</span><span class=w> </span><span class=m>4</span><span class=w>
 </span></code></pre></div><p>And we are done with alacritty and fish!</p>
 <p>Now we are going to install <a href=https://starship.rs/>starship</a> to beutify our prompt and plus is written on rust!, then there&rsquo;s <a href=https://the.exa.website/>exa</a> that is the new replacement for the <code>ls</code> command.</p>
-<h3 id=installing-starship-and-exa>Installing starship and exa</h3>
+<h2 id=installing-starship-and-exa>Installing starship and exa</h2>
 <p><strong>For starship:</strong></p>
 <p>Just run the installer:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>bash sh -c <span class=s2>&#34;</span><span class=k>$(</span>curl -fsSL https://starship.rs/install.sh<span class=k>)</span><span class=s2>&#34;</span>
