@@ -3,10 +3,12 @@
   "date": "2021-09-22T18:58:53-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Linux"]
+  "tags": ["Linux"],
+  "toc": true
 }
 
-Let's answer the first question first...
+## Intro
+Am going to talk about one of my favourite things in the world, what lead me to where I am today, Linux, the open-source operating system created by the community!
 
 ## What is linux?
 

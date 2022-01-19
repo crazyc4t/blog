@@ -3,15 +3,17 @@
   "date": "2021-11-21T01:40:22-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Linux"]
+  "tags": ["Linux"],
+  "toc": true
 }
 
+## Intro
 
 This is a special blogpost since this is the guide to switch from windows to linux for new users, and the way to free them of propietary software and enjoy their freedom with free software, the software you should run!
 
 We are going to divide this guide in steps:
 
-# Intro
+## Intro
 For the FAQ's I made a [blogpost](https://saidneder.tech/posts/linuxforn00bs/) that covers this questions:
 
 - What is Linux?
@@ -40,7 +42,7 @@ But don't worry! Am here to explain to you every step of the way and to enjoy on
 
 Am going to cover the topics above broadly...
 
-### Privacy and security
+# Privacy and security
 The only privacy setting you need to turn on/off is location for the weather, meaning that no sending "anonymous" data to big companies or similar cases, and linux being based as a unix-like operating system it works with multi-users, being always two users:
 - Root
 
@@ -50,14 +52,14 @@ The only privacy setting you need to turn on/off is location for the weather, me
 	
 	- This is where you come in place, all of your configurations and files are stored on your "home" folder, and if something happens it will only run as your user, which doesn't have any type of permission at the OS level, so no worries, and viruses are not developed for linux since is a OS that the minority uses, now when we need for root perrmissions temporarly, we ask root if we can borrow them for a bit using a command named "sudo" (super user do) so we should never log in as root only if you know what you are doing.
 
-### Installing software
+# Installing software
 This and the security, for me are the selling points for linux, installing software on linux is really easy, no more of going to a website to download a .exe just to figure out it was a virus...
 Installing software on linux is straight-forward, the software you want is on a repository or known as "repos" (server) and what you do is to install directly from that official server, being this simplified, you just go to an app store that is a pre-installed program and just download your software and you are ready to go! you will get updates in the same app store, so not to worry about it.
 
-### Philosophy
+# Philosophy
 I already tackled a bit of this topic on another [blogpost](https://saidneder.tech/posts/linuxforn00bs/) but talking this broadly, is about the philosophy of community, since linux is a community driven by free and open-source software, that users control it and doesn't control them, about being helpful, asking questions when you don't understand something, searching your question on the web, being curious, and to support and say free software, since this is the software we need to fight for our freedom.
 
-### Steps to follow:
+# Steps to follow:
 0.  Compatibilty
 
 1.  Flashing
@@ -67,7 +69,7 @@ I already tackled a bit of this topic on another [blogpost](https://saidneder.te
 3.  Freedom!
 
 
-# Step 0: Compatibility.
+## Step 0: Compatibility.
 
 This is a easy step, this step is to check the software we use if there is a linux version or alternative, since Adobe software or Microsoft Office is not available for linux, but there are alternatives, for example:
 
@@ -93,11 +95,11 @@ And gaming is great too! Steam being on all repos and the majority of games run 
 
 And in this step we need to back up all of our files because once we install linux our files are going to be **DELETED** so please take a lot of caution, back up all of your important files.
 
-# Step 1: Flashing
+## Step 1: Flashing
 Flashing, what is that? let me explain...
 To install Linux the only requirement we need to have besides our computer is a flash drive (or known as a pen drive), 4gb of space is perfect to (as the word says) flash linux, but before getting to that step we need to **choose our distro.**
 
-## Choosing our distro
+### Choosing our distro
 A distro is a operating system based on GNU/Linux, and there are a **ton** of distros, but we are going to choose just one, and a good one of course.
 
 Since this is a beginner guide, we are going to choose beginner friendly distros, and the three options that I recommend are:
@@ -137,14 +139,14 @@ Is straight-foward but a note:
 
 -  For Pop_OS! users: There are two versions,the nVidia one and the intel/amd one, download the one according to your hardware, this is pretty straight-foward too, if you don't know what nVidia is, then just download the intel/amd one.
 
-## Flashing our distro
+### Flashing our distro
 Download etcher on their [website](https://www.balena.io/etcher/) and install it, then time to plug your flash drive but **WARNING** everything in the flash drive **WILL BE DELETED**, so back up your files, now just follow the steps in screen, that is the first step to select the .iso that you downloaded, the second to select your flash drive and the third to flash, and should look like so:
 
 ![etcherdemo.png](/images/etcherdemo.png)
 
 After this, we are **READY!!!!** this should be exciting!
 
-# Step 2: Installing
+## Step 2: Installing
 
 Before booting into linux, we need to make some changes in bios, now this could look scary but it really isn't! (make sure your usb is connected)
 
@@ -184,7 +186,7 @@ After all, we are golden! Welcome to Linux!
 
 ![lmdeskdemo.png](/images/lmdeskdemo.png)
 
-# Step 3: Freedom
+## Step 3: Freedom
 
 Now this is the final step, enjoy your freedom! now you are free to do whatever you want, so go explore! code a bit, learn the command line, install gimp and edit some pics, go crazy!
 But there's some steps I would recommend to do before you go crazy!
@@ -195,7 +197,8 @@ But there's some steps I would recommend to do before you go crazy!
 
 Those steps is to get everything updated and ready to rock! now go crazy!
 
-# Outro
+
+## Outro
 Hoped that you liked this blogpost, there's a lot of heart on this specific post, so if you like my content you can share it with your friends or buy me a coffee down below!
 
 This are resources that can help you!

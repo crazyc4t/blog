@@ -3,8 +3,10 @@
   "date": "2021-10-13T23:53:55-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Advice"]
+  "tags": ["Advice"],
+  "toc": true
 }
+## Intro
 
 First of all, let's talk about the definition of the word **comeback** shall we?
 
@@ -36,7 +38,7 @@ to gain momentum, I know that is hard and that advice is a bit stupid "if you do
 but there is where the plan of attack comes into place, this is a war between you and yourself, so you have to know yourself where
 to attack, your weakest points, your good points, where you can get attacked, and how to defend yourself, **you vs you**.
 
-### Organization
+## Organization
 
 Organize your day wisely, because this is what will change the outcome, the first hour of your day is extremly important,
 you can't screw this up, if you screw the first hour of your day, it will be really difficult to come back on top,
@@ -56,7 +58,7 @@ so that's why organization is extreamly important and the first hour of your day
 for the day, so be smart about it, do this step the night before, so when you wake up you know exactly what you need to do, that will make you
 different from everyone else.
 
-### Attack
+## Attack
 
 After organizing your day it takes action to accomplish what have you promised to do, be **realistic** please, so that way you will not be
 dissapointed about yourself, action is key, just think the momentum and the rhythm you will level up if you accomplish this, don't think much
@@ -71,7 +73,7 @@ the attacks will be:
 And you need to be ready to **comeback** this attacks with something that you know will work, and if it doesn't work, **make it work**, that is
 what life is about isn't? so be ready and mindful when this happens and prepare your **counter attacks**.
 
-### Counter Attack
+## Counter Attack
 
 Your counter attacks need to be ready before the attacks happens, a warrior doesn't go to war without his sword, so your counter attacks need to be
 lock and loaded.
@@ -92,4 +94,4 @@ You complete the comeback by meditating about all you have done, pray to give th
 be ready for tomorrow, and with time you will grab some high momentum and it will seem easy but **beware**, that is the time your enemy is
 with their guns lock and loaded and you have your guard down, **Don't let that happen** and if it happens...
 
-### TRY AGAIN
+## TRY AGAIN

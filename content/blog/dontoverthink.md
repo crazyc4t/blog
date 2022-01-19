@@ -4,7 +4,9 @@ date: 2022-01-10T01:56:57-05:00
 draft: false
 author: "Said Neder"
 tags: ["Advice"]
+toc: true
 ---
+## Intro
 
 Well first let me welcome you to this new year 2022! I wish you the best for this year and time to rock on and create and achieve what you most want! I welcome you to this new year with this new blog post! I haven't write an advice post in a while so let's get started!
 

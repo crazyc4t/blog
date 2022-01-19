@@ -3,8 +3,11 @@
   "date": "2021-09-21T23:13:03-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Advice"]
+  "tags": ["Advice"],
+  "toc": true
 }
+
+## Intro
 
 This is my first (and not last) blogpost talking about life advice and my opinions
 so just buckle up and enjoy the ride!

@@ -3,8 +3,11 @@
   "date": "2021-11-14T19:55:31-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Linux"]
+  "tags": ["Linux"],
+  "toc": true
 }
+
+## Intro
 
 This is a tutorial-type of blogpost, sorry for being away so long, but there's a lot of blogposts coming to your way, so expect some new ones!
 
@@ -167,7 +170,7 @@ And we are done with alacritty and fish!
 
 Now we are going to install [starship](https://starship.rs/) to beutify our prompt and plus is written on rust!, then there's [exa](https://the.exa.website/) that is the new replacement for the `ls` command.
 
-### Installing starship and exa
+## Installing starship and exa
 
 **For starship:**
 
