@@ -40,11 +40,9 @@ own webpage!
 For your starter webpage, take a look at the code on layouts and static folders, and clone it!
 
 ## To-do's
-- Mail newsletter
 - Notes section
 - Migration to vue.js (no ETA for now)
-- 
+ 
 ### If you like my content you can help me with inviting me a coffee!
-
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/darthneder)
