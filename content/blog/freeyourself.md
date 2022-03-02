@@ -14,7 +14,7 @@ This is a special blogpost since this is the guide to switch from windows to lin
 We are going to divide this guide in steps:
 
 ## Intro
-For the FAQ's I made a [blogpost](https://saidneder.tech/posts/linuxforn00bs/) that covers this questions:
+For the FAQ's I made a [blogpost](https://saidneder.tech/blog/penguin) that covers this questions:
 
 - What is Linux?
 
