@@ -57,7 +57,7 @@ This and the security, for me are the selling points for linux, installing softw
 Installing software on linux is straight-forward, the software you want is on a repository or known as "repos" (server) and what you do is to install directly from that official server, being this simplified, you just go to an app store that is a pre-installed program and just download your software and you are ready to go! you will get updates in the same app store, so not to worry about it.
 
 # Philosophy
-I already tackled a bit of this topic on another [blogpost](https://saidneder.tech/posts/linuxforn00bs/) but talking this broadly, is about the philosophy of community, since linux is a community driven by free and open-source software, that users control it and doesn't control them, about being helpful, asking questions when you don't understand something, searching your question on the web, being curious, and to support and say free software, since this is the software we need to fight for our freedom.
+I already tackled a bit of this topic on another [blogpost](https://saidneder.tech/blog/penguin) but talking this broadly, is about the philosophy of community, since linux is a community driven by free and open-source software, that users control it and doesn't control them, about being helpful, asking questions when you don't understand something, searching your question on the web, being curious, and to support and say free software, since this is the software we need to fight for our freedom.
 
 # Steps to follow:
 0.  Compatibilty

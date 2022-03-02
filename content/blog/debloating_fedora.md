@@ -33,8 +33,9 @@ Thanks to [TechHut](https://www.youtube.com/channel/UCjSEJkpGbcZhvo0lr-44X_w) fo
 
 But KDE, it can be bloated depending of your needs so the first thing I needed to do is debloat it, consisting of removing packages that you are never going to use:
 
-`sudo dnf rm plasma-discover kwrite kontact akregator dragon elisa-player kaddressbook kcharselect kmag kpat kmahjongg kfind kmail kmouth kmines kolourpaint kmousetool konversation korganizer krfb krdc kruler kwrite
-`
+```bash
+sudo dnf rm plasma-discover kwrite kontact akregator dragon elisa-player kaddressbook kcharselect kmag kpat kmahjongg kfind kmail kmouth kmines kolourpaint kmousetool konversation korganizer krfb krdc kruler kwrite
+```
 
 **Please note, this is depending what you use, I don't use any of this software, if you do don't remove it, read the packages carefully, although the removal of these package will not result in the breakage of the system.**
 
