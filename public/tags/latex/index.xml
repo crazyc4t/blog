@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on Crazyc4t&#39;s Home</title>
+    <link>http://saidneder.tech/tags/latex/</link>
+    <description>Recent content in LaTeX on Crazyc4t&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Jan 2022 17:22:31 +0000</lastBuildDate><atom:link href="http://saidneder.tech/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX for humans</title>
+      <link>http://saidneder.tech/blog/latexforhumans/</link>
+      <pubDate>Wed, 19 Jan 2022 17:22:31 +0000</pubDate>
+      
+      <guid>http://saidneder.tech/blog/latexforhumans/</guid>
+      
+        <description>Intro This post is going to help you learn \(\LaTeX\) and convert you into a intellectual and scientific professional and by far superior with anyone that shares their report made in word!</description>
+      
+    </item>
+    
+  </channel>
+</rss>
