@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on crazyc4t's blog</title><link>https://saidneder.tech/page/</link><description>Recent content in Pages on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://saidneder.tech/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://saidneder.tech/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://saidneder.tech/archives/</guid><description/></item><item><title>About</title><link>https://saidneder.tech/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://saidneder.tech/about/</guid><description>&lt;p>Am Said Neder, a 17 year old ecuadorian, a free software enthusiast who loves programming, better said, technology altogether, and I found that of myself when I was 15 years old and the covid pandemic striked in, and I was stuck at home, for a complete year, and for me that time where I was completely &lt;strong>alone&lt;/strong> because my older brother that is like my best friend left, I was just with my parents, and then I knew that it was my time to shine, I have always admired people that were very technical with computers and the sexy looking terminals in the hacker movies made me really interested, so I picked up python to learn while being at home, and it was one of the best decisions of my life, I had so much fun to learn to have the power of doing everything that I wanted to create, and the constant learning that made me excited for every new topic, but that was like 2 years ago.&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/memain.jpg"
+loading="lazy"
+alt="Myself"
+>&lt;/p>
+&lt;p>Now I have my mind clear of what do I want to do, and that is to specialize in the industry, and the route I have chosen by now to be my main focus of learning is infosec (ethical hacking/pentester) since it mixes linux and programming that are my favourite topics in IT, and I have just started learning so with my upcoming blogposts I will keep you updated!&lt;/p>
+&lt;p>Linux for me has a great impact in my life when I knew what it was, because is so unique and customizable that led my creativity to explode and try a lot of distros out and tinker with them and thanks to that it led me to where I am now, linux showed me the FOSS community and how the community always contributed to the world, and that is why am making this blog, to contribute back to the community what they have gave me, information, learning resources, motivation, and care to let me know that am not alone!&lt;/p>
+&lt;p>Brazilian Jiu Jitsu Is one of the main pillars of my life, it&amp;rsquo;s a really tough sport that showed me how to live my life, how to be disciplined and how handle myself with my thoughts, If I never knew what BJJ was, I would not be where I am at now, I would not be as happy and meaningful as I am right now, is truly a life-changing sport, and I think jiu-jitsu is for everyone, but not everyone for jiu-jitsu, If you can, give it a try!&lt;/p>
+&lt;p>My ultimate goal is to move out from Ecuador to Vancouver, Canada and land a job in the industry, while studying my degree in computer science, and to live a meaningful life by helping others and expressing myself giving what I can, like in this blog, and to have a really cute shiba inu to walk him to awesome landscapes that vancouver has to offer, I will certainly miss Ecuador since is my motherland and for me is the most beutiful place in this world.&lt;/p>
+&lt;hr>
+&lt;h2 id="donations">Donations&lt;/h2>
+&lt;p>If you wish to contribute to my work, I will be forever grateful! The funds from my donations will go directly into my university funding, so thank you for helping me achieve my dreams!&lt;/p>
+&lt;h3 id="crypto">Crypto&lt;/h3>
+&lt;p>Here you will find all of my crypto addresses! thank you for your kind donation!&lt;/p>
+&lt;p>&lt;a class="link" href="https://gist.github.com/crazyc4t/0d459308d72c44432a973ff92cedd863" target="_blank" rel="noopener"
+>Addresses&lt;/a>&lt;/p>
+&lt;h3 id="you-can-invite-me-a-coffee-too">You can invite me a coffee too!&lt;/h3>
+&lt;p>&lt;a class="link" href="https://ko-fi.com/darthneder" target="_blank" rel="noopener"
+>&lt;img src="https://ko-fi.com/img/githubbutton_sm.svg"
+loading="lazy"
+alt="ko-fi"
+>&lt;/a>&lt;/p></description></item><item><title>Links</title><link>https://saidneder.tech/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://saidneder.tech/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+&lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">links&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub is the world&amp;#39;s largest software development platform.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.com&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://www.typescriptlang.org&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ts-logo-128.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://saidneder.tech/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://saidneder.tech/search/</guid><description/></item></channel></rss>

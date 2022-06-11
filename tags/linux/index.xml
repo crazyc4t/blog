@@ -1,1 +1,263 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Crazyc4t's Home</title><link>http://saidneder.tech/tags/linux/</link><description>Recent content in Linux on Crazyc4t's Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Mar 2022 20:59:45 -0500</lastBuildDate><atom:link href="http://saidneder.tech/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>What to do after installing Fedora KDE</title><link>http://saidneder.tech/blog/debloating_fedora/</link><pubDate>Tue, 01 Mar 2022 20:59:45 -0500</pubDate><guid>http://saidneder.tech/blog/debloating_fedora/</guid><description>Welcome again to my blog, it has been a bit of a long time isn&amp;rsquo;t it? But am back once again!</description></item><item><title>Vim for everyone!</title><link>http://saidneder.tech/blog/vimforeveryone/</link><pubDate>Sun, 09 Jan 2022 22:00:04 -0500</pubDate><guid>http://saidneder.tech/blog/vimforeveryone/</guid><description>Intro This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!</description></item><item><title>How to free yourself by installing linux</title><link>http://saidneder.tech/blog/freeyourself/</link><pubDate>Sun, 21 Nov 2021 01:40:22 -0500</pubDate><guid>http://saidneder.tech/blog/freeyourself/</guid><description>Intro This is a special blogpost since this is the guide to switch from windows to linux for new users, and the way to free them of propietary software and enjoy their freedom with free software, the software you should run!</description></item><item><title>How to customize your terminal!</title><link>http://saidneder.tech/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>http://saidneder.tech/blog/niceterminal/</guid><description>Intro This is a tutorial-type of blogpost, sorry for being away so long, but there&amp;rsquo;s a lot of blogposts coming to your way, so expect some new ones!</description></item><item><title>What is GNU + Linux? Why should you care?</title><link>http://saidneder.tech/blog/penguin/</link><pubDate>Wed, 22 Sep 2021 18:58:53 -0500</pubDate><guid>http://saidneder.tech/blog/penguin/</guid><description>Intro Am going to talk about one of my favourite things in the world, what lead me to where I am today, Linux, the open-source operating system created by the community!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on crazyc4t's blog</title><link>https://saidneder.tech/tags/linux/</link><description>Recent content in Linux on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Nov 2021 19:55:31 -0500</lastBuildDate><atom:link href="https://saidneder.tech/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>How to customize your terminal!</title><link>https://saidneder.tech/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>https://saidneder.tech/blog/niceterminal/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is a tutorial-type of blogpost, sorry for being away so long, but there&amp;rsquo;s a lot of blogposts coming to your way, so expect some new ones!&lt;/p>
+&lt;p>What we want to achieve in this tutorial:&lt;/p>
+&lt;ul>
+&lt;li>To have a fast terminal emulator&lt;/li>
+&lt;li>To have a better shell with auto-completition&lt;/li>
+&lt;li>To have a cool-looking with color scheme terminal&lt;/li>
+&lt;/ul>
+&lt;p>So let&amp;rsquo;s start with that!&lt;/p>
+&lt;h2 id="alacritty-the-fastest-opengl-terminal-emulator">Alacritty, the fastest openGL terminal emulator&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/alacritty/alacritty" target="_blank" rel="noopener"
+>Alacritty&lt;/a> is the fastest terminal emulator out there, and the best of all is that is cross-platform! so you can install it on windows too! Although this guide is more toward linux users but if you are here from windows you can follow along too!&lt;/p>
+&lt;h2 id="fish-the-friendly-interactive-shell-from-the-90s">Fish, the friendly interactive shell from the 90&amp;rsquo;s&lt;/h2>
+&lt;p>Fish is a smart and user-friendly shell for every unix-like OS, it offers:&lt;/p>
+&lt;ul>
+&lt;li>Autosuggestions&lt;/li>
+&lt;li>Sane Scripting&lt;/li>
+&lt;li>Tab completitions and syntax highlighting&lt;/li>
+&lt;/ul>
+&lt;p>And a lot more! Overall, is the way to go, time to go &lt;a class="link" href="https://fishshell.com" target="_blank" rel="noopener"
+>fishing&lt;/a>&lt;/p>
+&lt;h2 id="neovim-hyperextensible-vim-based-text-editor">Neovim, Hyperextensible Vim-based text editor&lt;/h2>
+&lt;p>&lt;a class="link" href="https://neovim.io/" target="_blank" rel="noopener"
+>Neovim&lt;/a> being a &lt;a class="link" href="https://www.vim.org/" target="_blank" rel="noopener"
+>vim&lt;/a>-based editor is not for everyone, since navigating vim is not the easiest task of all, but neovim what it does is to take vim (VI-iMproved, since vim is a fork from VI) and eliminates all the deprecated and legacy packages (30% less code base than vim), then improve it even more with plugins, extensions, and more!&lt;/p>
+&lt;p>Is a beutiful text-editor, one of my favourites!&lt;/p>
+&lt;h2 id="nerd-fonts-the-best-fonts-to-code-with">Nerd Fonts, the best fonts to code with!&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.nerdfonts.com/#home" target="_blank" rel="noopener"
+>Nerd fonts&lt;/a> are fonts designed for coding in mind, and it has icons as text that is the awesome part, since we are going to use those icons for customizing our terminal&lt;/p>
+&lt;h2 id="bat-the-cat-with-wings">Bat, the cat with wings!&lt;/h2>
+&lt;p>&lt;code>bat&lt;/code> is &lt;code>cat&lt;/code> but with super powers, with syntax highlighting and supports git integration, and it displays it&amp;rsquo;s text in a well readable format, once you go bat you never go back!&lt;/p>
+&lt;h2 id="install-alacritty-fish-bat-and-neovim">Install Alacritty, Fish, Bat and Neovim&lt;/h2>
+&lt;p>&lt;strong>Ubuntu/Debian:&lt;/strong>&lt;/p>
+&lt;p>&lt;code>sudo add-apt-repository ppa:aslatter/ppa &amp;amp;&amp;amp; sudo add-apt-repository ppa:fish-shell/release-3&lt;/code>&lt;/p>
+&lt;p>That is to add the &lt;em>personal package archives&lt;/em>, that is a personal repository where you can download software from the owner of the software, being the latest version and overall better, in this case from alacritty and fish devs.&lt;/p>
+&lt;p>&lt;code>sudo apt update &amp;amp;&amp;amp; sudo apt install alacritty bat fish neovim -y&lt;/code>&lt;/p>
+&lt;p>This will refresh the repo list and install it!&lt;/p>
+&lt;p>&lt;strong>Fedora/RHEL:&lt;/strong>
+&lt;code>sudo dnf install alacritty bat fish neovim&lt;/code> Easy isn&amp;rsquo;t it?&lt;/p>
+&lt;p>&lt;strong>Arch (btw):&lt;/strong>
+&lt;code>sudo pacman -S alacritty bat fish neovim&lt;/code> You already know.&lt;/p>
+&lt;p>&lt;strong>Uninstalling Alacritty, Fish, Bat and Neovim&lt;/strong>&lt;/p>
+&lt;p>This is the case if you don&amp;rsquo;t like it&lt;/p>
+&lt;p>&lt;strong>Ubuntu/Debian:&lt;/strong>&lt;/p>
+&lt;p>First, remove the software:
+&lt;code>sudo apt remove --auto-remove alacritty fish bat neovim&lt;/code>&lt;/p>
+&lt;p>Then, the &lt;em>PPA&amp;rsquo;s&lt;/em>
+&lt;code>sudo add-apt-repository --remove ppa:aslatter/ppa &amp;amp;&amp;amp; sudo add-apt-repository --remove ppa:fish-shell/release-3&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Fedora/RHEL:&lt;/strong>&lt;/p>
+&lt;p>&lt;code>sudo dnf remove fish alacritty bat neovim&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Arch (btw):&lt;/strong>&lt;/p>
+&lt;p>&lt;code>sudo pacman -R alacritty fish bat neovim&lt;/code>&lt;/p>
+&lt;h2 id="installing-nerd-fonts">Installing nerd fonts!&lt;/h2>
+&lt;p>You can go to the official nerd fonts &lt;a class="link" href="https://github.com/ryanoasis/nerd-fonts" target="_blank" rel="noopener"
+>github&lt;/a> and follow their installation guides or use a &lt;strong>bash script&lt;/strong> I created for installing nerd fonts the easiest way!&lt;/p>
+&lt;p>&lt;strong>Download the bash script&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget https://github.com/DarthNeder/nerdy/releases/download/v1.0.0/nerdy &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> bash nerdy -h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This will download the script and run the help command so you can see the usage of the script&lt;/p>
+&lt;p>&lt;strong>Install some fonts!&lt;/strong>
+Is just as easy to&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">bash nerdy RobotoMono
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This means you are installing RobotoMono nerd font on your system!
+If you are not sure which one to install you can go to &lt;a class="link" href="https://www.programmingfonts.org/" target="_blank" rel="noopener"
+>programming fonts&lt;/a> and decide which one to install!&lt;/p>
+&lt;p>After installing nerd fonts, neovim, fish and alacritty, time to configurate them!&lt;/p>
+&lt;h2 id="hacking-alacritty">Hacking alacritty&lt;/h2>
+&lt;p>First in your new terminal we are going to create the &lt;code>alacritty.yml&lt;/code> file, this is the configuration file,
+and is going to be store in &lt;code>~/.config/alacritty/&lt;/code>.&lt;/p>
+&lt;p>So now this is what we are going to do:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ &lt;span class="nb">cd&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ mkdir .config/alacritty
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ nvim .config/alacritty/alacritty.yml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>(The first &lt;code>cd&lt;/code> was for changing directories to your home folder)&lt;/p>
+&lt;p>Now, before we get into the code, just for reference you can see this alacritty &lt;a class="link" href="https://github.com/tmcdonell/config-alacritty" target="_blank" rel="noopener"
+>config&lt;/a> to take for example, and the &lt;a class="link" href="https://wiki.archlinux.org/title/Alacritty" target="_blank" rel="noopener"
+>arch wiki&lt;/a> since it has a nice page explaining about it.&lt;/p>
+&lt;p>&lt;strong>Running fish as our default shell&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">shell&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">program&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/bin/fish&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This means everytime alacritty is going to open is running the fish shell.&lt;/p>
+&lt;p>Remember the &lt;a class="link" href="https://www.redhat.com/en/topics/automation/what-is-yaml" target="_blank" rel="noopener"
+>YAML&lt;/a> Is the format used to configure alacritty, in key-value pairs.&lt;/p>
+&lt;p>&lt;strong>Running nerd fonts as our default font&lt;/strong>&lt;/p>
+&lt;p>First of all check the family name of your font by running this command:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">fc-list &lt;span class="p">|&lt;/span> grep Hack
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Being &lt;strong>Hack&lt;/strong> replaced with your font&amp;rsquo;s name, once you know that time to create the font table like this:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">font&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">normal&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">family&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">RobotoMono Nerd Font&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Regular&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">bold&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">family&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">RobotoMono Nerd Font&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Bold&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">italic&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">family&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">RobotoMono Nerd Font&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Italic&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">bold_italic&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">family&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">RobotoMono Nerd Font&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Bold Italic&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">size&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">9.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Specifying the font family and the size of it, if you want, (I know you do) we can specify the padding of the prompt and the background opacity of it&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">background_opacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0.75&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">window&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">padding&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">x&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">y&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And we are done with alacritty and fish!&lt;/p>
+&lt;p>Now we are going to install &lt;a class="link" href="https://starship.rs/" target="_blank" rel="noopener"
+>starship&lt;/a> to beutify our prompt and plus is written on rust!, then there&amp;rsquo;s &lt;a class="link" href="https://the.exa.website/" target="_blank" rel="noopener"
+>exa&lt;/a> that is the new replacement for the &lt;code>ls&lt;/code> command.&lt;/p>
+&lt;h2 id="installing-starship-and-exa">Installing starship and exa&lt;/h2>
+&lt;p>&lt;strong>For starship:&lt;/strong>&lt;/p>
+&lt;p>Just run the installer:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">bash sh -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>curl -fsSL https://starship.rs/install.sh&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">## if you are in fish, if not just run without `bash` at the beginning&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>and add this to the config.fish, that is located in &lt;code>~/.config/fish/config.fish&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fish" data-lang="fish">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># ~/.config/fish/config.fish
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nf">starship&lt;/span> init &lt;span class="nb">fish&lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="nb">source&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Side note:&lt;/strong>&lt;/p>
+&lt;p>If you don&amp;rsquo;t like the &amp;ldquo;welcome to the fish shell!&amp;rdquo; greeting message, you can delete it by so:&lt;/p>
+&lt;p>&lt;code>set -g fish_greeting&lt;/code>&lt;/p>
+&lt;p>writing this in &lt;code>config.fish&lt;/code>.&lt;/p>
+&lt;p>More &lt;a class="link" href="https://fishshell.com/docs/current/faq.html" target="_blank" rel="noopener"
+>docs&lt;/a>&amp;hellip;&lt;/p>
+&lt;p>&lt;strong>For exa:&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Ubuntu/Debian:&lt;/strong> &lt;code>sudo apt install exa&lt;/code>&lt;/p>
+&lt;p>&lt;strong>RHEL/Fedora:&lt;/strong> &lt;code>sudo dnf install exa&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Arch Linux (btw):&lt;/strong> &lt;code>sudo pacman -S exa&lt;/code>&lt;/p>
+&lt;p>And that&amp;rsquo;s it! now you have starship and exa in your terminal!&lt;/p>
+&lt;p>&lt;strong>Now replace &lt;code>cat&lt;/code> and &lt;code>ls&lt;/code> with aliases:&lt;/strong>&lt;/p>
+&lt;p>In &lt;code>config.fish&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fish" data-lang="fish">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias &lt;/span>&lt;span class="nv">ls&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;exa -la --icons&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias &lt;/span>&lt;span class="nv">cat&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;bat&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Now last but not least final step&amp;hellip;&lt;/p>
+&lt;h2 id="theming-alacritty">Theming Alacritty&lt;/h2>
+&lt;p>First of all let&amp;rsquo;s install &lt;a class="link" href="https://nodejs.org/en/" target="_blank" rel="noopener"
+>node.js&lt;/a> that makes running javascript on the backend possible!&lt;/p>
+&lt;p>&lt;strong>Ubuntu/Debian:&lt;/strong> &lt;code>sudo apt install nodejs&lt;/code>&lt;/p>
+&lt;p>&lt;strong>RHEL/Fedora:&lt;/strong> &lt;code>sudo dnf install nodejs&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Arch (Btw):&lt;/strong> &lt;code>sudo pacman -s nodejs&lt;/code>&lt;/p>
+&lt;p>Now let&amp;rsquo;s install &lt;a class="link" href="https://github.com/rajasegar/alacritty-themes" target="_blank" rel="noopener"
+>alacritty themes&lt;/a>!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm i -g alacritty-themes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>If you get npm errors, try to update npm:
+&lt;code>npm update&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Now the moment of truth!&lt;/strong>&lt;/p>
+&lt;p>Just run the script!
+&lt;code>alacritty-themes&lt;/code>&lt;/p>
+&lt;p>and select the theme you like and enjoy!&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/terminal.png"
+loading="lazy"
+alt="Custom terminal"
+>&lt;/p></description></item></channel></rss>

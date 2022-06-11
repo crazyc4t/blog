@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Productivity on crazyc4t's blog</title><link>https://saidneder.tech/categories/productivity/</link><description>Recent content in Productivity on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 19 Jan 2022 17:22:31 +0000</lastBuildDate><atom:link href="https://saidneder.tech/categories/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title>LaTeX for humans</title><link>https://saidneder.tech/blog/latexforhumans/</link><pubDate>Wed, 19 Jan 2022 17:22:31 +0000</pubDate><guid>https://saidneder.tech/blog/latexforhumans/</guid><description>&lt;img src="https://saidneder.tech/images/hellolatex.png" alt="Featured image of post LaTeX for humans" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is going to help you learn \(\LaTeX\) and convert you into a intellectual and scientific professional and by far superior with anyone that shares their report made in word!&lt;/p>
+&lt;p>But before anything&amp;hellip;&lt;/p>
+&lt;h2 id="what-is-all-this-tex-thingy">What is all this \(\TeX\) thingy?&lt;/h2>
+&lt;p>In summary \(\LaTeX\) is the form of creating a document with the highest quality of typesetting possible, being made with commands you will have to compile it each time to see the result so \(\LaTeX\) isn&amp;rsquo;t a WYSIWYG(what you see is what you get) editor, but don&amp;rsquo;t worry! \(\LaTeX\) is so awesome now that a quick &lt;code>CTRL+S&lt;/code> will compile your result and let you see how you are going on time! so no worries there. The story goes back to 1977 when Donald Knuth understood the need for a high quality typesetting program, and \(\LaTeX\) being still used today shows that is the best tool for it&amp;rsquo;s purpose, although many useful additions have been made and \(\LaTeX\) has evolutionated since then.&lt;/p>
+&lt;h3 id="what-is-tex">What is \(\TeX\)?&lt;/h3>
+&lt;p>The original system made by Donald Knuth was called \(\TeX\), what \(\TeX\) do is to take a document in plain text and convert it to a beutifully typeset document with the highest quality possible, with a lot of in-built commands available for writing beutiful math equations, writing with the right fonts specific words and so on, but \(\TeX\) was still quite basic, until \(\LaTeX\) came by&amp;hellip;&lt;/p>
+&lt;h3 id="latex">\(\LaTeX\)&lt;/h3>
+&lt;p>The purpose of Leslie Lamport, the creator of \(\LaTeX\) in the 80&amp;rsquo;s was to provide a higher level language for everyone to work on, since creating a document in \(\TeX\) was in fact a bit complicated for doing simple things, making \(\LaTeX\) a \(\TeX\) but more friendly and easier to use, creating a package system that made the community to grow huge, being available thousands of packages to typeset whatever you want, code, images, you name it since \(\LaTeX\) was document classes that let you typeset books, lab reports, articles, letters, math-focused documents, awesome presentations, PhD thesis, you name it, \(\LaTeX\) got you covered with the highest quality available.&lt;/p>
+&lt;h3 id="pdftex--pdflatex">pdf\(\TeX\) &amp;amp; pdf\(\LaTeX\)&lt;/h3>
+&lt;p>The original \(\TeX\) converted the .\(\TeX\) files into a .dvi (DeVice Independent format) later on pdf\(\TeX\) being created by Hàn Thế Thành for his PhD thesis which converted .\(\TeX\) to .pdf being a great upgrade since pdf allowed things like hyperlinks, metadata, modern image formats, etc&amp;hellip;&lt;/p>
+&lt;h2 id="why-learn-latex">Why learn \(\LaTeX\)?&lt;/h2>
+&lt;p>Because \(\LaTeX\) is used all over the world! apart of creating beutifully typeset documents, it allows users to tacke complicated things like inputting math, code, bibliography, table of contents, and so much more with a breeze, and with the huge amount of open source packages for \(\LaTeX\) the possibilities are endless, and one of the most important reasons is that is easy and highly customizable since it separates the content from the style of the document, so you can style your document without ever needing to touch the content! and you can create your own style for the whole document very easily, that enables that creators share \(\LaTeX\) templates, being pre-made layouts serving a specific purpose, like a CV/resume or a template for a math book, or just your english homework of school, you name it, there is a template that can help you!&lt;/p>
+&lt;h2 id="installing-latex">Installing \(\LaTeX\)&lt;/h2>
+&lt;p>This could be a bit complex since \(\LaTeX\) comes with a lot of built-in packages but don&amp;rsquo;t worry! am going to explain step by step so it will be a breeze!&lt;/p>
+&lt;h3 id="disclamer">Disclamer!&lt;/h3>
+&lt;p>At this day and age is not longer necessary to install \(\LaTeX\), although recommended, you can use a online web editor like &lt;a class="link" href="https://www.overleaf.com/" target="_blank" rel="noopener"
+>overleaf&lt;/a> and you will be ready to rock! no caveats involved.&lt;/p>
+&lt;h3 id="latex-for-linux">\(\LaTeX\) for Linux&lt;/h3>
+&lt;p>This is pretty straight forward, just install the &lt;em>texlive&lt;/em> package for your distro!
+There are a lot of packages for \(\LaTeX\) so they are grouped into size of the package (minimal, basic, small, medium, full)
+Like so:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">======================= Name Matched: texlive-scheme ========================
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-basic.noarch : basic scheme (plain and latex)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-context.noarch : ConTeXt scheme
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-full.noarch : full scheme (everything)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-gust.noarch : GUST TeX Live scheme
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-medium.noarch : medium scheme (small + more packages and
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> : languages)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-minimal.noarch : minimal scheme (plain only)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-small.noarch : small scheme (basic + xetex, metapost, a few
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> : languages)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">texlive-scheme-tetex.noarch : teTeX scheme (more than medium, but nowhere
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> : near full)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The best package for beginners is the medium one, I use it myself! And also you can install a \(\LaTeX\) editor, my personal favourite is &lt;a class="link" href="https://kile.sourceforge.io/" target="_blank" rel="noopener"
+>Kile&lt;/a> is the best editor out there really, but it&amp;rsquo;s from KDE, so you will need QT/KDE libraries so could be a bit heavy but if you are using GTK (gnome, cinnamon, xfce) I would recommend &lt;a class="link" href="https://github.com/alexandervdm/gummi" target="_blank" rel="noopener"
+>gummi&lt;/a> or &lt;a class="link" href="https://wiki.gnome.org/Apps/GNOME-LaTeX" target="_blank" rel="noopener"
+>gnome-\(\LaTeX\)&lt;/a> but is descontinued, so if you are using gnome 40-41 better go with gummi, although if you read my other post about &lt;a class="link" href="https://saidneder.tech/blog/vimforeveryone/" target="_blank" rel="noopener"
+>vim&lt;/a> you can use the &lt;a class="link" href="https://github.com/lervag/vimtex" target="_blank" rel="noopener"
+>vim\(\LaTeX\)&lt;/a> plugin and a document viewer like &lt;a class="link" href="https://okular.kde.org/" target="_blank" rel="noopener"
+>okular&lt;/a> or &lt;a class="link" href="https://wiki.gnome.org/Apps/Evince" target="_blank" rel="noopener"
+>evince&lt;/a>, if you want to explore another alternatives to a \(\LaTeX\) IDE you can read &lt;a class="link" href="https://wiki.archlinux.org/title/List_of_applications/Documents#TeX_editors" target="_blank" rel="noopener"
+>here&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Fedora/RHEL&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo dnf in texlive-scheme-medium
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Debian/Ubuntu&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt in texlive-latex-extra
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Arch BTW&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo pacman -S texlive-most
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="latex-for-windows">\(\LaTeX\) for Windows&lt;/h3>
+&lt;p>Really straight forward with the &lt;a class="link" href="https://miktex.org/download" target="_blank" rel="noopener"
+>MiKTeX&lt;/a> distribution of \(\LaTeX\)!&lt;/p>
+&lt;h3 id="latex-for-mac">\(\LaTeX\) for Mac&lt;/h3>
+&lt;p>The same applies with the &lt;a class="link" href="https://www.tug.org/mactex/" target="_blank" rel="noopener"
+>MacTeX&lt;/a> distribution of \(\LaTeX\)!&lt;/p>
+&lt;h2 id="latexing">\(\LaTeX\)ing&lt;/h2>
+&lt;p>Let&amp;rsquo;s start \(\LaTeX\)ing baby!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-LaTeX" data-lang="LaTeX">&lt;span class="line">&lt;span class="cl">&lt;span class="c">% This is a comment
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% We specify what type of document we are creating in this case, an article
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\documentclass&lt;/span>&lt;span class="na">[a4paper,10pt]&lt;/span>&lt;span class="nb">{&lt;/span>article&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% UTF-8 encoding
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\usepackage&lt;/span>&lt;span class="na">[utf8]&lt;/span>&lt;span class="nb">{&lt;/span>inputenc&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% We start the document
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\begin&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% We use \LaTeX so it can look cool
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% we specify a \ after the \LaTeX function since it eats an space
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>Isn&amp;#39;t that hard to &lt;span class="k">\LaTeX&lt;/span> &lt;span class="k">\ &lt;/span>as I thought!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\end&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% Here the document ends, anything below this command will not be considered.
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The end result would be:&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/hellolatex.png"
+loading="lazy"
+alt="LaTeX example"
+>&lt;/p>
+&lt;p>You see! is not that hard isn&amp;rsquo;t it? spaces in \(\LaTeX\) are specified with a blank line between each line of text, just as in markdown!&lt;/p>
+&lt;p>Now let&amp;rsquo;s create a nice formated document!&lt;/p>
+&lt;h3 id="adding-title-author-and-date">Adding title, author and date&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-LaTeX" data-lang="LaTeX">&lt;span class="line">&lt;span class="cl">&lt;span class="k">\documentclass&lt;/span>&lt;span class="na">[a4paper,10pt]&lt;/span>&lt;span class="nb">{&lt;/span>article&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\usepackage&lt;/span>&lt;span class="na">[utf8]&lt;/span>&lt;span class="nb">{&lt;/span>inputenc&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% Document opening with title, author and date
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\title&lt;/span>&lt;span class="nb">{&lt;/span>My first &lt;span class="k">\LaTeX&lt;/span> &lt;span class="k">\ &lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\author&lt;/span>&lt;span class="nb">{&lt;/span>crazyc4t&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\date&lt;/span>&lt;span class="nb">{&lt;/span>&lt;span class="k">\today&lt;/span>&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\begin&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% Spawning the title
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\maketitle&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Oh yea!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\end&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The end result would be:&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/latexopening.png"
+loading="lazy"
+alt="LaTeX opening"
+>&lt;/p>
+&lt;p>That was great and a breeze right?
+Now let&amp;rsquo;s create some sections and a table of contents with underlined, bold and italic text!&lt;/p>
+&lt;h3 id="table-of-contents-sections-and-special-text">Table of contents, sections and special text&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-LaTeX" data-lang="LaTeX">&lt;span class="line">&lt;span class="cl">&lt;span class="k">\documentclass&lt;/span>&lt;span class="na">[a4paper,10pt]&lt;/span>&lt;span class="nb">{&lt;/span>article&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\usepackage&lt;/span>&lt;span class="na">[utf8]&lt;/span>&lt;span class="nb">{&lt;/span>inputenc&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">%opening
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\title&lt;/span>&lt;span class="nb">{&lt;/span>My first &lt;span class="k">\LaTeX&lt;/span> &lt;span class="k">\ &lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\author&lt;/span>&lt;span class="nb">{&lt;/span>crazyc4t&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\begin&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% Table of contents and title
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\maketitle&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\tableofcontents&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\section&lt;/span>&lt;span class="nb">{&lt;/span>My first section&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">My first section of my &lt;span class="k">\LaTeX&lt;/span> &lt;span class="k">\ &lt;/span>document!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\section&lt;/span>&lt;span class="nb">{&lt;/span>My second section&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">%Bold, then underline, and finally italic
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% \textbf = bold
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">% \textit = italic
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="k">\textbf&lt;/span>&lt;span class="nb">{&lt;/span>My&lt;span class="nb">}&lt;/span> &lt;span class="k">\underline&lt;/span>&lt;span class="nb">{&lt;/span>second&lt;span class="nb">}&lt;/span> &lt;span class="k">\textit&lt;/span>&lt;span class="nb">{&lt;/span>section!&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\end&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The end result would be:&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/latextableofcontents.png"
+loading="lazy"
+alt="latexing"
+>&lt;/p>
+&lt;p>You are getting the hang of it! now you know the basics of \(\LaTeX\), and you will be able to write a simple document without struggling!&lt;/p>
+&lt;h2 id="outro">Outro&lt;/h2>
+&lt;p>\(\LaTeX\) is a endless world to discover and I have just showed you a tiny bit of it! the rest of your journey with \(\LaTeX\) is decided by you, I recommend to learn more about \(\LaTeX\) that what I just showed you, and after that try to write a great document for your homework, or an article just like this one! (although this one was written with markdown) or to update your CV and then learn \(\LaTeX\) beamer, the best way to create presentations! I will leave you lots of documentation to read and start LaTeXing in no time!&lt;/p>
+&lt;h2 id="docs">Docs&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="_blank" rel="noopener"
+>\(\LaTeX\) in 30 minutes by overleaf&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.overleaf.com/learn" target="_blank" rel="noopener"
+>\(\LaTeX\) wiki, just search and you will have a result!&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=NwnYHoNtfJ0&amp;amp;list=PL-p5XmQHB_JSQvW8_mhBdcwEyxdVX0c1T" target="_blank" rel="noopener"
+>Luke Smith&amp;rsquo;s series of tutorials about \(\LaTeX\)&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_%28Part_1%29%E2%80%94Getting_Started" target="_blank" rel="noopener"
+>\(\LaTeX\) beamer tutorial by overleaf&lt;/a>&lt;/p>
+&lt;p>Remember, &lt;strong>THE WORLD IS YOURS!&lt;/strong>&lt;/p></description></item><item><title>Vim for everyone!</title><link>https://saidneder.tech/blog/vimforeveryone/</link><pubDate>Sun, 09 Jan 2022 22:00:04 -0500</pubDate><guid>https://saidneder.tech/blog/vimforeveryone/</guid><description>&lt;img src="https://saidneder.tech/images/neovim.png" alt="Featured image of post Vim for everyone!" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!&lt;/p>
+&lt;h2 id="10-installing-vim">1.0 Installing vim&lt;/h2>
+&lt;p>The first step into the rabbit hole, here it goes!&lt;/p>
+&lt;p>&lt;strong>Debian/Ubuntu&lt;/strong>
+&lt;code>sudo apt in vim&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Fedora/RHEL&lt;/strong>
+&lt;code>sudo dnf in vim&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Arch Linux&lt;/strong>
+&lt;code>sudo pacman -S vim&lt;/code>&lt;/p>
+&lt;h2 id="11-vim-modes">1.1 Vim modes&lt;/h2>
+&lt;p>Vim has three modes and each one of the three you can escape them with ESC:&lt;/p>
+&lt;ul>
+&lt;li>Normal mode: You use it to navegate in the editor, you should be in this mode the most of the time.&lt;/li>
+&lt;li>Insert mode: In this mode you can type text into the file, type &lt;code>I&lt;/code> to enter insert mode.&lt;/li>
+&lt;li>Visual mode: In this mode you can select large chunks of text, to copy, paste, cut, etc&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;h2 id="12-quitting-vim">1.2 Quitting vim&lt;/h2>
+&lt;p>There are different ways of quitting vim, but these are the most important:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>:q!&lt;/code> = Quit and don&amp;rsquo;t save changes&lt;/li>
+&lt;li>&lt;code>:q&lt;/code> = Quit&lt;/li>
+&lt;li>&lt;code>:wq&lt;/code>= Write and quit&lt;/li>
+&lt;li>&lt;code>:x&lt;/code> = Exits the file, if the file has changes it will save them.&lt;/li>
+&lt;/ul>
+&lt;h2 id="13-useful-shortcuts-to-use">1.3 Useful shortcuts to use&lt;/h2>
+&lt;ul>
+&lt;li>To quickly go to the initial character of the line = &lt;code>0&lt;/code>&lt;/li>
+&lt;li>To go to the first line of the document = &lt;code>gg&lt;/code>&lt;/li>
+&lt;li>To go to the last line of the document = &lt;code>G&lt;/code> (shift+g)&lt;/li>
+&lt;li>To go to a particular line of the document = &lt;code>10G&lt;/code> (10 is the number of the line you want to go)&lt;/li>
+&lt;li>To go to the most near parenthesis use = &lt;code>%&lt;/code>&lt;/li>
+&lt;li>To execute a command inside vim = &lt;code>:!neofetch&lt;/code>&lt;/li>
+&lt;li>Vim can help you if you don&amp;rsquo;t remember a command! just use &lt;code>ctrl+d&lt;/code> when writing a command, for example you want to write and quit but don&amp;rsquo;t remember how, just press the inital letter and then &lt;code>ctrl+d&lt;/code> the &lt;code>:w&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="14-deleting-undoing-and-redoing">1.4 Deleting, undoing and redoing!&lt;/h2>
+&lt;ul>
+&lt;li>To delete the character that the cursor is selecting = &lt;code>x&lt;/code>
+if you want to delete more than one character you can by doing so = &lt;code>4x&lt;/code> (Knowing that the 4 is the quantity of characters you want to be deleted)&lt;/li>
+&lt;li>To undo what you did use = &lt;code>u&lt;/code>&lt;/li>
+&lt;li>The same principal tackles undo with multiple times = &lt;code>3u&lt;/code>&lt;/li>
+&lt;li>To redo, just use = &lt;code>ctrl+r&lt;/code>&lt;/li>
+&lt;li>To delete word by word use = &lt;code>dw&lt;/code>&lt;/li>
+&lt;li>To delete line by line use = &lt;code>dd&lt;/code>&lt;/li>
+&lt;li>To delete backawards word use = &lt;code>db&lt;/code>&lt;/li>
+&lt;li>To delete from the cursor until the end of the line use = &lt;code>D&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="15-navigating-more-in-depth">1.5 Navigating more in-depth&lt;/h2>
+&lt;ul>
+&lt;li>To navigate word by word use = &lt;code>w&lt;/code> (ends of the beginning of each word)&lt;/li>
+&lt;li>If we want to navigate word by word ending on the last character of the word use = &lt;code>e&lt;/code>&lt;/li>
+&lt;li>Mix it up! navigate between quantity of words = &lt;code>3w&lt;/code>&lt;/li>
+&lt;li>Go backawards = &lt;code>b&lt;/code>&lt;/li>
+&lt;li>Navigate by visual lines! Vim is made to navigate (h,j,k,l) in logical lines, where it&amp;rsquo;s supposed to help when inserting, but if you want to navigate for reading use = &lt;code>gj&lt;/code> (gj being visual down)&lt;/li>
+&lt;li>Using &lt;code>w&lt;/code>, &lt;code>b&lt;/code> and &lt;code>e&lt;/code> more in-depth: when navigating with this keys, the commas, parenthesis, etc, are counted as a word, but if we don&amp;rsquo;t want that just capitalize it! = &lt;code>W&lt;/code> &lt;code>B&lt;/code> &lt;code>E&lt;/code>&lt;/li>
+&lt;li>Forwarding to navigate to a specific character, for example move the cursor where a letter t is = &lt;code>f&lt;/code> example = &lt;code>ft&lt;/code>&lt;/li>
+&lt;li>Forwarding in reverse! = &lt;code>F&lt;/code>&lt;/li>
+&lt;li>Forwarding until, forward until you find a certain character, landing the cursor before that character = &lt;code>t&lt;/code>&lt;/li>
+&lt;li>Forwarding until in reverse = &lt;code>T&lt;/code>&lt;/li>
+&lt;li>Inserting without caring about blank characters, inserting to the first non-blank character = &lt;code>shift+i&lt;/code>&lt;/li>
+&lt;li>Navigating between blocks of text, being next blank line use = &lt;code>}&lt;/code>&lt;/li>
+&lt;li>Navigating between blocks of text, being the previous blank line use = &lt;code>{&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="16-replacing-appending-and-changing">1.6 Replacing, appending and changing&lt;/h2>
+&lt;ul>
+&lt;li>You mistyped something? Not to worry with the replace function! it replaces the character where the cursor is and then press it replacement = &lt;code>r&lt;/code>&lt;/li>
+&lt;li>If you want to change something, you can with the change function, where it changes the character before the cursor, for example let&amp;rsquo;s change a word, remember to exit out of insert mode, let&amp;rsquo;s use = &lt;code>ce&lt;/code>&lt;/li>
+&lt;li>Let&amp;rsquo;s change a entire line! use = &lt;code>C&lt;/code>&lt;/li>
+&lt;li>Let&amp;rsquo;s append to a line, since inserting is always before the cursor, append to insert after the cursor = &lt;code>a&lt;/code>&lt;/li>
+&lt;li>Append to the last character of the line = &lt;code>shift+a&lt;/code>&lt;/li>
+&lt;li>To delete a character and start in insert mode use = &lt;code>s&lt;/code>&lt;/li>
+&lt;li>To delete a entire line and start in insert mode use = &lt;code>S&lt;/code>&lt;/li>
+&lt;li>To insert on the line below use = &lt;code>o&lt;/code>&lt;/li>
+&lt;li>To insert on the line above being on the line that you are use = &lt;code>O&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="17-yanking-and-putting">1.7 Yanking and putting!&lt;/h2>
+&lt;ul>
+&lt;li>Yanking is copying in vim, so for example let&amp;rsquo;s yank a word! = &lt;code>yw&lt;/code>&lt;/li>
+&lt;li>What if you want to delete something and put in on other line? = &lt;code>p&lt;/code> (For example, you delete a line &lt;code>dd&lt;/code> and put it three lines below &lt;code>p&lt;/code>)&lt;/li>
+&lt;li>Yank from the cursor till the end of the line with = &lt;code>Y&lt;/code>&lt;/li>
+&lt;li>Remember that cutting in vim is just deleting and putting it&lt;/li>
+&lt;/ul>
+&lt;h2 id="18-searching-in-your-document">1.8 Searching in your document&lt;/h2>
+&lt;ul>
+&lt;li>Press &lt;code>/&lt;/code> and then the word you want to search!&lt;/li>
+&lt;li>If you have multiple instances of that word, you can use &lt;code>n&lt;/code> to go next or
+&lt;code>N&lt;/code> to go backawards&lt;/li>
+&lt;li>When searching to go back to where you started, and if pressed again to the beginning of the file, use = &lt;code>ctrl+o&lt;/code>&lt;/li>
+&lt;li>If I want to go forward where I was use = &lt;code>ctrl+i&lt;/code>&lt;/li>
+&lt;li>Replace your finding! press &lt;code>:&lt;/code> and then &lt;code>s/finding/replacement/g&lt;/code> following the formula!&lt;/li>
+&lt;li>Replacing in the entire document, formula = &lt;code>%s/finding/replacement/g&lt;/code>&lt;/li>
+&lt;li>Replacing in the entire document with a yes/no prompt = &lt;code>%s/oldstring/newstring/gc&lt;/code>&lt;/li>
+&lt;li>Replacing each instance between lines = &lt;code>3,9s/oldstring/newstring/g&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="reminder-remember-to-mix-it-up">Reminder: Remember to mix it up!&lt;/h2>
+&lt;p>You can mix numbers with hotkeys, for example if you want to delete 10 lines you aren&amp;rsquo;t going to press &lt;code>dd&lt;/code> 10 times, just multiply it! &lt;code>10dd&lt;/code> and so on and so forth with the others! Mix it up!&lt;/p>
+&lt;h2 id="outro">Outro&lt;/h2>
+&lt;p>This is for now! these are the essential vim hotkeys and commands to survive and to start into the rabbit hole, expect more of vim in my blog thank you for reading!&lt;/p></description></item></channel></rss>

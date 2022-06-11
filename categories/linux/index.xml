@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on crazyc4t's blog</title><link>https://saidneder.tech/categories/linux/</link><description>Recent content in Linux on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 21 Nov 2021 01:40:22 -0500</lastBuildDate><atom:link href="https://saidneder.tech/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>How to free yourself by installing linux</title><link>https://saidneder.tech/blog/freeyourself/</link><pubDate>Sun, 21 Nov 2021 01:40:22 -0500</pubDate><guid>https://saidneder.tech/blog/freeyourself/</guid><description>&lt;img src="https://saidneder.tech/images/lmdeskdemo.png" alt="Featured image of post How to free yourself by installing linux" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is a special blogpost since this is the guide to switch from windows to linux for new users, and the way to free them of propietary software and enjoy their freedom with free software, the software you should run!&lt;/p>
+&lt;p>We are going to divide this guide in steps:&lt;/p>
+&lt;h2 id="intro-1">Intro&lt;/h2>
+&lt;p>For the FAQ&amp;rsquo;s I made a &lt;a class="link" href="https://saidneder.tech/blog/penguin" target="_blank" rel="noopener"
+>blogpost&lt;/a> that covers this questions:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>What is Linux?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>What is GNU?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>What is GNU/Linux?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>What are distros?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Why should I care?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Should I switch?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>It does cover this questions in a bit of technical way tho, but check it out if you want to learn more!&lt;/p>
+&lt;p>The &amp;ldquo;difficult&amp;rdquo; part of linux is unlearning windows, since here in linux we are different in this aspects:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Privacy and security&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Updating and installing software&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Philosophy&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>But don&amp;rsquo;t worry! Am here to explain to you every step of the way and to enjoy once and for all your free computer, free as in freedom.&lt;/p>
+&lt;p>Am going to cover the topics above broadly&amp;hellip;&lt;/p>
+&lt;h1 id="privacy-and-security">Privacy and security&lt;/h1>
+&lt;p>The only privacy setting you need to turn on/off is location for the weather, meaning that no sending &amp;ldquo;anonymous&amp;rdquo; data to big companies or similar cases, and linux being based as a unix-like operating system it works with multi-users, being always two users:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Root&lt;/p>
+&lt;ul>
+&lt;li>being root is being god in other words, you can do anything and everything, so this is the user we are not going to use.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>User (you)&lt;/p>
+&lt;ul>
+&lt;li>This is where you come in place, all of your configurations and files are stored on your &amp;ldquo;home&amp;rdquo; folder, and if something happens it will only run as your user, which doesn&amp;rsquo;t have any type of permission at the OS level, so no worries, and viruses are not developed for linux since is a OS that the minority uses, now when we need for root perrmissions temporarly, we ask root if we can borrow them for a bit using a command named &amp;ldquo;sudo&amp;rdquo; (super user do) so we should never log in as root only if you know what you are doing.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="installing-software">Installing software&lt;/h1>
+&lt;p>This and the security, for me are the selling points for linux, installing software on linux is really easy, no more of going to a website to download a .exe just to figure out it was a virus&amp;hellip;
+Installing software on linux is straight-forward, the software you want is on a repository or known as &amp;ldquo;repos&amp;rdquo; (server) and what you do is to install directly from that official server, being this simplified, you just go to an app store that is a pre-installed program and just download your software and you are ready to go! you will get updates in the same app store, so not to worry about it.&lt;/p>
+&lt;h1 id="philosophy">Philosophy&lt;/h1>
+&lt;p>I already tackled a bit of this topic on another &lt;a class="link" href="https://saidneder.tech/blog/penguin" target="_blank" rel="noopener"
+>blogpost&lt;/a> but talking this broadly, is about the philosophy of community, since linux is a community driven by free and open-source software, that users control it and doesn&amp;rsquo;t control them, about being helpful, asking questions when you don&amp;rsquo;t understand something, searching your question on the web, being curious, and to support and say free software, since this is the software we need to fight for our freedom.&lt;/p>
+&lt;h1 id="steps-to-follow">Steps to follow:&lt;/h1>
+&lt;ol start="0">
+&lt;li>
+&lt;p>Compatibilty&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Flashing&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Installing&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Freedom!&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="step-0-compatibility">Step 0: Compatibility.&lt;/h2>
+&lt;p>This is a easy step, this step is to check the software we use if there is a linux version or alternative, since Adobe software or Microsoft Office is not available for linux, but there are alternatives, for example:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Office Suite = &lt;a class="link" href="https://www.libreoffice.org/" target="_blank" rel="noopener"
+>Libre office&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Photo editor = &lt;a class="link" href="https://www.gimp.org/" target="_blank" rel="noopener"
+>GIMP&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Vector Graphics = &lt;a class="link" href="https://inkscape.org/" target="_blank" rel="noopener"
+>Inkscape&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Video Editor = &lt;a class="link" href="https://kdenlive.org/en/" target="_blank" rel="noopener"
+>Kdenlive&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drawing software = &lt;a class="link" href="https://krita.org/en/" target="_blank" rel="noopener"
+>Krita&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DJ software = &lt;a class="link" href="https://mixxx.org/" target="_blank" rel="noopener"
+>Mixxx&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>3D Modeling = &lt;a class="link" href="https://www.blender.org/" target="_blank" rel="noopener"
+>Blender&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CAD Software = &lt;a class="link" href="https://www.freecadweb.org/" target="_blank" rel="noopener"
+>FreeCAD&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Browsers, spotify, discord, or others are all on linux, so no worries by that side!&lt;/p>
+&lt;p>And gaming is great too! Steam being on all repos and the majority of games run with the &lt;a class="link" href="https://www.protondb.com/" target="_blank" rel="noopener"
+>proton&lt;/a> compatibility layer.&lt;/p>
+&lt;p>And in this step we need to back up all of our files because once we install linux our files are going to be &lt;strong>DELETED&lt;/strong> so please take a lot of caution, back up all of your important files.&lt;/p>
+&lt;h2 id="step-1-flashing">Step 1: Flashing&lt;/h2>
+&lt;p>Flashing, what is that? let me explain&amp;hellip;
+To install Linux the only requirement we need to have besides our computer is a flash drive (or known as a pen drive), 4gb of space is perfect to (as the word says) flash linux, but before getting to that step we need to &lt;strong>choose our distro.&lt;/strong>&lt;/p>
+&lt;h3 id="choosing-our-distro">Choosing our distro&lt;/h3>
+&lt;p>A distro is a operating system based on GNU/Linux, and there are a &lt;strong>ton&lt;/strong> of distros, but we are going to choose just one, and a good one of course.&lt;/p>
+&lt;p>Since this is a beginner guide, we are going to choose beginner friendly distros, and the three options that I recommend are:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://linuxmint.com/" target="_blank" rel="noopener"
+>Linux Mint&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://elementary.io/" target="_blank" rel="noopener"
+>Elementary OS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://pop.system76.com/" target="_blank" rel="noopener"
+>Pop!_OS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>This three distros are &lt;strong>free as in freedom but free as in free beer too!&lt;/strong> , but what are the differences are which one should you choose? well, depends who you are:&lt;/p>
+&lt;ul>
+&lt;li>Pop!_OS&lt;/li>
+&lt;/ul>
+&lt;p>OS created by &lt;a class="link" href="https://system76.com/" target="_blank" rel="noopener"
+>system 76&lt;/a> an American computer company that desings their computers with freedom and linux in mind, being this distro good for tech-savy people, gamers, coders, or &lt;strong>curious&lt;/strong> people, specially if you have a nvidia card, just go with this option.&lt;/p>
+&lt;ul>
+&lt;li>Linux Mint&lt;/li>
+&lt;/ul>
+&lt;p>OS made for users that wants their computer to &lt;strong>just werk&lt;/strong>, equiped with software, desinged with functionality in mind with a user interface easy to use, really good with old and low-end hardware, similar to windows 7, fast, secure and it just works.&lt;/p>
+&lt;ul>
+&lt;li>Elementary OS&lt;/li>
+&lt;/ul>
+&lt;p>OS made for &lt;strong>creative&lt;/strong> users, with a beutiful desktop enviroment similar to Mac OS, being feature-rich like multitasking view, picture in picture, and a lot more, being a clean and polished distro with a beutiful desktop.&lt;/p>
+&lt;p>When you have made your mind, time to download the .iso! that is the OS itself, in a file, so go to the webpage of the distro you have chosen (Up in the blog there are the links, below choosing our distro) and download the file!&lt;/p>
+&lt;p>Is straight-foward but a note:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>For mint users: when you go to the download page there are three options: xfce, mate, and cinnamon, now:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Xfce = For really old or low-end hardware, user interface isn&amp;rsquo;t the prettiest.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Mate = For old hardware, stability and traditional feeling, not a lot of features.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Cinnamon = Active development, modern, good look and feel, recommended for 2 GB of ram and up. (go with this one)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>For elementary OS users: At the front of the screen it says &amp;ldquo;purchase elementary OS&amp;rdquo;, and above it says &amp;ldquo;pay what you can&amp;rdquo; I highly recommend paying for the OS, at least $5 bucks, but if that&amp;rsquo;s not the case for you, you can insert a digit in the &amp;ldquo;custom&amp;rdquo; box, and insert 0 and download it for free!&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For Pop_OS! users: There are two versions,the nVidia one and the intel/amd one, download the one according to your hardware, this is pretty straight-foward too, if you don&amp;rsquo;t know what nVidia is, then just download the intel/amd one.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="flashing-our-distro">Flashing our distro&lt;/h3>
+&lt;p>Download etcher on their &lt;a class="link" href="https://www.balena.io/etcher/" target="_blank" rel="noopener"
+>website&lt;/a> and install it, then time to plug your flash drive but &lt;strong>WARNING&lt;/strong> everything in the flash drive &lt;strong>WILL BE DELETED&lt;/strong>, so back up your files, now just follow the steps in screen, that is the first step to select the .iso that you downloaded, the second to select your flash drive and the third to flash, and should look like so:&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/etcherdemo.png"
+loading="lazy"
+alt="etcherdemo.png"
+>&lt;/p>
+&lt;p>After this, we are &lt;strong>READY!!!!&lt;/strong> this should be exciting!&lt;/p>
+&lt;h2 id="step-2-installing">Step 2: Installing&lt;/h2>
+&lt;p>Before booting into linux, we need to make some changes in bios, now this could look scary but it really isn&amp;rsquo;t! (make sure your usb is connected)&lt;/p>
+&lt;p>Now follow this steps and you will be fine:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Reboot your computer&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Before your laptop starts up, press the ESC or DELETE key (top right and top left) to enter bios&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now on BIOS, depending what computer you have you can use your mouse or just your keyboard, now navigate too BOOT section with the arrow keys, and deactive SECURE BOOT (blame microsoft) and then you will have a boot order, change the order being the flash drive the first priority.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now go the SAVE section and save settings and reboot.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now you should boot into linux!&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>If you made this successfully, congrats! you have made the hardest thing in this whole step!&lt;/p>
+&lt;p>Now you are on the desktop of your chosen linux distro! (except elementary OS, follow the installer and choose &amp;ldquo;demo mode&amp;rdquo;)&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/linuxmintdeskdemo.png"
+loading="lazy"
+alt="linuxmintdeskdemo.png"
+>&lt;/p>
+&lt;p>Being for me the linux mint desktop!&lt;/p>
+&lt;p>This is the perfect moment to check everything out, remember it won&amp;rsquo;t be as fast since is running from a simple USB, but you can get an idea of what you are going to get, so check the desktop, your wifi, bluetooth, mouse, keyboard, everything, once you are happy about that everything works (and if it does not, search your error on the web, since this type of errors have easy fix) now is time to continue with the installer, just follow the on screen instructions and you will be fine!&lt;/p>
+&lt;p>Note: If you have the option to install multimedia codecs, do it! is for managing audio and video files.&lt;/p>
+&lt;p>Now here is a side-note, there&amp;rsquo;s something called &amp;ldquo;dual booting&amp;rdquo; that is having linux alongside windows, and when you boot your computer you will decide what operating system you want to use, and this could be great as it could be a little bit of a headache, I have dual booted before and my experience has been okay-ish, but other users have reported that when Windows updates have deleted their linux partition, or have deleted their boot entry (that has happen to me before and I couldn&amp;rsquo;t recover linux, but it was my fault in certain way) so you can have a dual boot, or just wipe out windows and have only linux (recommended way) but finally is your computer and you have the last word, if you decide to dual boot, your installer will give you the option and you will need to decide how much space you want to give each OS, so take that in mind since windows is bloated and heavy, so for me a clean install is the best option but is your computer after all.&lt;/p>
+&lt;p>Now, along the installer you will have the option to encrypt your drive, &lt;strong>please do it&lt;/strong> it will increase your security being the case that someone has access to your computer fisically they can&amp;rsquo;t do anything about it since the information is encrypted and your data protected, is a huge plus!&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/linuxmintinstalldemo.png"
+loading="lazy"
+alt="linuxmintinstalldemo.png"
+>&lt;/p>
+&lt;p>(this is the case for linux mint, to encrypt your home folder)&lt;/p>
+&lt;p>After all, we are golden! Welcome to Linux!&lt;/p>
+&lt;p>&lt;img src="https://saidneder.tech/images/lmdeskdemo.png"
+loading="lazy"
+alt="lmdeskdemo.png"
+>&lt;/p>
+&lt;h2 id="step-3-freedom">Step 3: Freedom&lt;/h2>
+&lt;p>Now this is the final step, enjoy your freedom! now you are free to do whatever you want, so go explore! code a bit, learn the command line, install gimp and edit some pics, go crazy!
+But there&amp;rsquo;s some steps I would recommend to do before you go crazy!&lt;/p>
+&lt;ul>
+&lt;li>Update the system
+&lt;ul>
+&lt;li>(you can do so by inserting this command into the terminal &lt;code>sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Install media codecs
+&lt;ul>
+&lt;li>(you can do that by executing this command in the terminal: &lt;code>sudo apt install ubuntu-restricted-extras&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Those steps is to get everything updated and ready to rock! now go crazy!&lt;/p>
+&lt;h2 id="outro">Outro&lt;/h2>
+&lt;p>Hoped that you liked this blogpost, there&amp;rsquo;s a lot of heart on this specific post, so if you like my content you can share it with your friends or buy me a coffee down below!&lt;/p>
+&lt;p>This are resources that can help you!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>For the whole process you can take this &lt;a class="link" href="https://youtu.be/_Ua-d9OeUOg" target="_blank" rel="noopener"
+>video&lt;/a> to guide you made by Anthony Young from Linus tech tips!&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pop_OS!&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://youtu.be/FgJ1k476ds0" target="_blank" rel="noopener"
+>5 Things to do after installing Pop!_OS by TechHut&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/4mySqL4bCSw" target="_blank" rel="noopener"
+>Pop!_OS FULL beginners guide by Learn Linux TV&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Linux Mint&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://youtu.be/TKX29fJ8U2Y" target="_blank" rel="noopener"
+>From noob to power user with Linux Mint Cinnamon! By Derek Taylor&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Elementary OS&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://youtu.be/zHvQZqN1Kjw" target="_blank" rel="noopener"
+>Elementary OS Review By Mental Outlaw (Ma boi kenny)&lt;/a> (This video is not that updated but is good!)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>And that&amp;rsquo;s it for me! Am glad that I can help you start your path into linux, so enjoy it, make it yours and go crazy! You can contact me in any way if you have a question, my discord code is on the About me &lt;a class="link" href="https://saidneder.tech/about/" target="_blank" rel="noopener"
+>page&lt;/a>!&lt;/p></description></item><item><title>What is GNU + Linux? Why should you care?</title><link>https://saidneder.tech/blog/penguin/</link><pubDate>Wed, 22 Sep 2021 18:58:53 -0500</pubDate><guid>https://saidneder.tech/blog/penguin/</guid><description>&lt;img src="https://saidneder.tech/images/linus.jpeg" alt="Featured image of post What is GNU + Linux? Why should you care?" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Am going to talk about one of my favourite things in the world, what lead me to where I am today, Linux, the open-source operating system created by the community!&lt;/p>
+&lt;h2 id="what-is-linux">What is linux?&lt;/h2>
+&lt;p>You use Linux everyday, without even noticing, &lt;strong>you are using linux right now!!&lt;/strong> since this
+webpage is hosted on &lt;a class="link" href="https://github.com/" target="_blank" rel="noopener"
+>github&lt;/a>, and github is hosted on &lt;a class="link" href="https://azure.microsoft.com/en-us/" target="_blank" rel="noopener"
+>azure&lt;/a>
+that is the cloud computing service that microsoft offers, that their servers are based on linux, you see the connection?
+&lt;strong>Linux is everywhere!&lt;/strong> and you can&amp;rsquo;t escape it, linux is on your cars, roku devices, servers, super computers,
+android phones, smart devices, and we can go like this for hours, but answering the real question&lt;/p>
+&lt;p>&lt;strong>Linux is a operating system just like Windows and Mac OS&lt;/strong>&lt;/p>
+&lt;p>But is a bit different&amp;hellip;&lt;/p>
+&lt;p>Linux itself ins&amp;rsquo;t a operating system, is a &lt;strong>kernel&lt;/strong>, and what is a kernel you may ask,
+a kernel is the core of the operating system, the kernel function is to manage the hardware
+(CPU, RAM, physical devices, etc&amp;hellip;) to make it interact with your software, so for example:
+google chrome needs 2 GB of ram for all your tabs, so it interacts with the kernel so the kernel gives
+google your ram.&lt;/p>
+&lt;p>The kernel is the lowest level of the OS, meaning that is the most attached to hardware.&lt;/p>
+&lt;p>&lt;strong>So, if linux is a kernel, how is an operating system?&lt;/strong>
+And that&amp;rsquo;s a great question, Linux was made by &lt;a class="link" href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener"
+>Linus Torvalds&lt;/a>, who
+started linux as a &amp;ldquo;personal project&amp;rdquo; and made the source code open to the public so they can opine about it,
+but what it really made was that people wanted to work with him! and he said &amp;ldquo;it&amp;rsquo;s a personal project, nothing big like &lt;strong>GNU&lt;/strong>&amp;rdquo;
+(we will cover the GNU part later) and people wanted to contribute to his project with code! and a big group of people around the world
+that liked the project contributed with code, currently 5,000+ persons are contributing code to linux and the linux kernel has already 1,000.000 commits! and finally the linux kernel was created, here is where GNU comes into place.&lt;/p>
+&lt;h2 id="what-is-gnu">What is GNU?&lt;/h2>
+&lt;blockquote>
+&lt;p>GNU is a Unix-like operating system. That means it is a collection of many programs: applications, libraries, developer tools, even games. The development of GNU, started in January 1984, is known as the GNU Project. Many of the programs in GNU are released under the auspices of the GNU Project; those we call GNU packages.&lt;/p>
+&lt;/blockquote>
+&lt;p>From the official GNU&amp;rsquo;s &lt;a class="link" href="https://www.gnu.org/home.en.html" target="_blank" rel="noopener"
+>webpage&lt;/a>&lt;/p>
+&lt;p>But the summary is that GNU (GNU not Unix) is a Unix-like operating system (Mac OS like, since Mac OS is based on Unix) created by &lt;a class="link" href="https://en.wikipedia.org/wiki/Richard_Stallman" target="_blank" rel="noopener"
+>Richard M. Stallman&lt;/a> (a brilliant person) and it offers a big collection of
+tools that are &lt;strong>free software&lt;/strong> but that is another story, and this takes a big role, that&amp;rsquo;s why is called GNU/Linux,
+because the kernel is Linux and the operating system is GNU.&lt;/p>
+&lt;h2 id="what-is-gnu--linux">What is GNU + Linux?&lt;/h2>
+&lt;p>GNU/Linux is a complete operating system that is free and open-source software, meaning that the code is available for everyone
+to see on the internet, so if anything spooky like spyware be in there it just would be forked (cloned) with that feature removed,
+so that means that is a secure, fast, and privacy-respecting operating system, is lighting fast since it doesn&amp;rsquo;t have background process that you don&amp;rsquo;t need,
+and because everyone can code for the GNU/Linux
+operating systems, known as distros, that is the short word of distributions, and distros are different OSes based on GNU/Linux,
+there is a wide amount of configuration available thanks to the project being open-source, so if you have a low-end machine there is a desktop lightweight enough
+for your computer to run smooth as butter! or you can just go crazy and create your own desktop if you want to!&lt;/p>
+&lt;h3 id="distros">Distros&lt;/h3>
+&lt;p>They are a lot of distros out there, but the one you choose should depend on these factors:&lt;/p>
+&lt;ul>
+&lt;li>How skilled you are with computers?&lt;/li>
+&lt;li>Server or desktop?&lt;/li>
+&lt;li>Low-end or high-end computer?&lt;/li>
+&lt;/ul>
+&lt;p>With that type of factors in mind you can choose your perfect linux distro!&lt;/p>
+&lt;p>You can take this image from &lt;a class="link" href="https://twitter.com/anjyoun?lang=en" target="_blank" rel="noopener"
+>Anthony Young&lt;/a> from &lt;a class="link" href="https://www.youtube.com/c/LinusTechTips" target="_blank" rel="noopener"
+>Linus Tech Tips&lt;/a>!&lt;/p>
+&lt;p>&lt;img src="https://i.redd.it/ps4v1vipfyc71.png"
+loading="lazy"
+alt="Linux distros chart"
+>&lt;/p>
+&lt;p>Now with that technical introduction, we can go to the important question&amp;hellip;&lt;/p>
+&lt;h2 id="why-should-i-care">Why should I care?&lt;/h2>
+&lt;p>Because linux could be the answer to you! If you have old or low-end hardware, or just windows giving you a lot of blue screens, or you are concerned about your security and privacy, Windows is not going to be the best option,
+why?&lt;/p>
+&lt;p>Because windows is &lt;strong>bloated and difficult to mantain&lt;/strong>, bloated meaning with full of software you don&amp;rsquo;t want to (like candy crush)
+and difficult to mantain because the way of installing applications is tedious and that leads to malicious software being downloaded
+without you even noticing, and that could be answer why of your blue screens of dead, or crashes, or lots of anti-virus that are really spyware, or slowness being of software that steals
+your computing resources to mine cryptocurrencies for example&amp;hellip;&lt;/p>
+&lt;p>While linux being really different to windows, is much easier, secure, faster, and reliable, you can&amp;rsquo;t get viruses on linux unless you know
+what you are doing, so for anyone who does office work (documents, presentations, spreadsheets), web browsing, mails here and there, and that&amp;rsquo;s it,
+you will be better of with Linux! Just have a little patience for the first days and then you will be good to go!&lt;/p>
+&lt;p>But that doesn&amp;rsquo;t mean that linux is only for that type of users, high-end computers and tech-savy users are more than welcomed since here you have the freedom to
+use your computer completly and the best way possible, &lt;strong>your way&lt;/strong>, is perfect for heavy tasks, like gaming, video editing, virtualization, coding, etc&amp;hellip;&lt;/p>
+&lt;p>Really linux is for everyone, for programmers, to grandmas, or office work, really for everyone, and for the gamers too!
+the gaming world we are a little left behind, because Easy Anti cheat support for &lt;a class="link" href="https://dev.epicgames.com/en-US/news/epic-online-services-launches-anti-cheat-support-for-linux-mac-and-steam-deck" target="_blank" rel="noopener"
+>linux&lt;/a> was just announced today!
+So we have to wait for easy-anti-cheat games are developed for linux, but these holidays we are going to get the biggest news ever being that the steam &lt;a class="link" href="https://store.steampowered.com/steamdeck" target="_blank" rel="noopener"
+>deck&lt;/a> is released!
+being the steam deck OS &lt;a class="link" href="https://store.steampowered.com/steamos/" target="_blank" rel="noopener"
+>&amp;ldquo;SteamOS&amp;rdquo;&lt;/a> based on &lt;a class="link" href="https://archlinux.org/" target="_blank" rel="noopener"
+>Arch Linux!&lt;/a>.&lt;/p>
+&lt;h2 id="should-i-switch-to-gnu--linux">Should I switch to GNU + Linux?&lt;/h2>
+&lt;p>The answer is totally!&lt;/p>
+&lt;p>Your will have a privacy-respecting, a secure and fast computer that manages to get your work done! and you can customize it however you want, and tedious tasks will be easier than ever and the best thing is that is free and open-source software, so no spyware or piracy for that office license that you don&amp;rsquo;t want to pay, &lt;strong>here is free, free as in freedom, and free as in gratis, free as in free beer!&lt;/strong>&lt;/p>
+&lt;p>Soon in a new blogpost I will talk about more deeply in distros and how to install Linux on your machine!&lt;/p></description></item></channel></rss>
