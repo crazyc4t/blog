@@ -3,8 +3,10 @@
   "date": "2021-11-21T01:40:22-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Linux"],
-  "toc": true
+  "tags": ["FOSS"],
+  "toc": true,
+  "categories": "Linux",
+  "image": "/images/lmdeskdemo.png"
 }
 
 ## Intro

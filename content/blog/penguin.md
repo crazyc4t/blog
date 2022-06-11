@@ -3,8 +3,10 @@
   "date": "2021-09-22T18:58:53-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Linux"],
-  "toc": true
+  "tags": ["FOSS"],
+  "toc": true,
+  "image": "images/linus.jpeg",
+  "categories": "Linux"
 }
 
 ## Intro

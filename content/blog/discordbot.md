@@ -5,6 +5,8 @@ draft: false
 author: "Said Neder"
 tags: ["Javascript"]
 toc: true
+image: "images/botdemo.gif"
+categories: "Coding"
 ---
 
 # Patrick Star Bot 📕

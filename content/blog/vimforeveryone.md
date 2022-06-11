@@ -3,13 +3,16 @@ title: "Vim for everyone!"
 date: 2022-01-09T22:00:04-05:00
 draft: false
 author: "Said Neder"
-tags: ["Linux", "Vim"]
+tags: ["Vim"]
 toc: true
+categories: "Productivity"
+image: "images/neovim.png"
 ---
 
 ## Intro
 
 This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!
+
 ## 1.0 Installing vim
 The first step into the rabbit hole, here it goes!
 

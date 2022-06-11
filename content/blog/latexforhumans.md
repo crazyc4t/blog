@@ -5,6 +5,8 @@ draft: false
 author: "Said Neder"
 tags: ["LaTeX"]
 toc: true
+categories: "Productivity"
+image: "images/hellolatex.png"
 ---
 
 ## Intro

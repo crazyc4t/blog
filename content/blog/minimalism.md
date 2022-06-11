@@ -4,7 +4,9 @@
   "draft": false,
   "author": "Said Neder",
   "tags": ["Advice"],
-  "toc": true
+  "toc": true,
+  "categories": "Life",
+  "image": "images/chill-images/curaray.jpeg"
 }
 
 ## Intro

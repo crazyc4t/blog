@@ -4,7 +4,9 @@
   "draft": false,
   "author": "Said Neder",
   "tags": ["Advice"],
-  "toc": true
+  "toc": true,
+  "image": "/images/chill-images/cuicocha.jpeg",
+  "categories": "Life"
 }
 ## Intro
 

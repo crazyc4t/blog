@@ -5,6 +5,8 @@ draft: false
 author: "Said Neder"
 tags: ["Advice"]
 toc: true
+categories: "Life"
+image: "images/chill-images/baños.jpeg" 
 ---
 ## Intro
 
