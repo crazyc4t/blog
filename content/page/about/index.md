@@ -1,12 +1,10 @@
 ---
 title: About
-description: Hugo, the world's fastest framework for building websites
+description: My journey that got me where I am today.
 date: '2019-02-28'
 aliases:
-  - about-us
-  - about-hugo
-  - contact
-license: CC BY-NC-ND
+  - about
+license: GNU GPLv3
 lastmod: '[10 09](2020-10-09)'
 menu:
     main: 
