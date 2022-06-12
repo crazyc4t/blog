@@ -9,10 +9,6 @@ languages:
         languageName: English
         title: crazyc4t's blog
         weight: 1
-    es:
-        languageName: Español
-        title: blog de crazyc4t
-        weight: 2
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -205,6 +201,12 @@ menu:
           url: https://www.ko-fi.com/crazyc4t/
           params:
               icon: coffee
+
+        - identifier: rss
+          name: RSS Feeder 
+          url: https://saidneder.tech/blog/
+          params:
+              icon: rss
 
 related:
     includeNewer: true
