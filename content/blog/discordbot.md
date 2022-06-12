@@ -1,5 +1,5 @@
 ---
-title: "How to write your own discord bot!"
+title: "How to code your own discord bot!"
 date: 2022-02-11T11:19:06-05:00
 draft: false
 author: "Said Neder"
@@ -23,6 +23,7 @@ You can edit it and make it your own!
 ![Demo](/images/botdemo.gif)
 
 ## Commands
+
 **Prefix: 9**
 
 The prefix means that is the initial character that is used to communicate
