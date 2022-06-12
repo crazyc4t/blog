@@ -27,38 +27,18 @@ My ultimate goal is to move out from Ecuador to Vancouver, Canada and land a job
 
 * * *
 
-# Donations
+## Donations
 
 If you wish to contribute to my work, I will be forever grateful! The funds from my donations will go directly into my university funding, so thank you for helping me achieve my dreams!
 
-## Crypto
+### Crypto
 
 Here you will find all of my crypto addresses! thank you for your kind donation!
 
-### Monero
-42KduFv5zfN7YDse8iT88Z7RGPmGt3CXT2weUkkCDgroJ1CuoVxgFyvd4ptfBN4evk2FjfAhH5acmDpFSQHswcRyRX68w8U
+<script src="https://gist.github.com/crazyc4t/e4b7963766b19da497781af9f4fc1c02.js"></script>
 
-### Ethereum
-0xF13f8e5088E45a095e172161D4D70F9576965874
-
-### Solana
-EQxviMKxPBaxB1P5HXSD7Kk83kPtwGSpaogkHxRpwdah
-
-### Litecoin
-LKm5SFPeqc5Vby7ABpWkfPNXb1BAHBVWpu
-
-### Dash
-XjHRQLSpJfDu63s7GsXkKQ2ij39CB9WAFM
-
-### Doge
-DRUJGCWe3Dx68cmHq6WShXKJ4CQyRNo8tk
-
-### Bitcoin
-1HvTUzbLy64eu1bz7WU8Y9sQcxviGrqNSQ
-
-
-## You can invite me a coffee too!
+### You can invite me a coffee too!
 
 Right on the coffee mug icon next to my name! Or just by pressing this button:
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z2643OM)
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#1C1F20', 'Z8Z2643OM');kofiwidget2.draw();</script> 
