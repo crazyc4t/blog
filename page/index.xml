@@ -15,20 +15,4 @@ alt="Myself"
 &lt;script src="https://gist.github.com/crazyc4t/e4b7963766b19da497781af9f4fc1c02.js">&lt;/script>
 &lt;h3 id="you-can-invite-me-a-coffee-too">You can invite me a coffee too!&lt;/h3>
 &lt;p>Right on the coffee mug icon next to my name! Or just by pressing this button:&lt;/p>
-&lt;script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'>&lt;/script>&lt;script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#1C1F20', 'Z8Z2643OM');kofiwidget2.draw();&lt;/script></description></item><item><title>Links</title><link>https://saidneder.tech/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://saidneder.tech/links/</guid><description>&lt;!-- To use this feature, add `links` section to frontmatter. -->
-&lt;!---->
-&lt;!-- This page's frontmatter: -->
-&lt;!---->
-&lt;!-- ```yaml -->
-&lt;!-- links: -->
-&lt;!-- - title: GitHub -->
-&lt;!-- description: GitHub is the world's largest software development platform. -->
-&lt;!-- website: https://github.com -->
-&lt;!-- image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png -->
-&lt;!-- - title: TypeScript -->
-&lt;!-- description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. -->
-&lt;!-- website: https://www.typescriptlang.org -->
-&lt;!-- image: ts-logo-128.jpg -->
-&lt;!-- ``` -->
-&lt;!---->
-&lt;!-- `image` field accepts both local and external images. --></description></item><item><title>Search</title><link>https://saidneder.tech/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://saidneder.tech/search/</guid><description/></item></channel></rss>
+&lt;script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'>&lt;/script>&lt;script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#1C1F20', 'Z8Z2643OM');kofiwidget2.draw();&lt;/script></description></item><item><title>Search</title><link>https://saidneder.tech/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://saidneder.tech/search/</guid><description/></item></channel></rss>
