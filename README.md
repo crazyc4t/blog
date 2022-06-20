@@ -1,1 +1,3 @@
-Example site modified from https://github.com/gohugoio/hugoBasicExample
+# https://saidneder.tech
+
+My own website made with hugo, a static site generator written in golang!
