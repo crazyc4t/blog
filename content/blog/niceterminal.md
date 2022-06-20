@@ -3,8 +3,10 @@
   "date": "2021-11-14T19:55:31-05:00",
   "draft": false,
   "author": "Said Neder",
-  "tags": ["Linux"],
-  "toc": true
+  "tags": ["Terminal"],
+  "categories": "Linux",
+  "toc": true,
+  "image": "images/terminal.png"
 }
 
 ## Intro
