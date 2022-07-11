@@ -6,7 +6,7 @@ author: "Said Neder"
 tags: ["FOSS"]
 toc: True
 categories: "Linux"
-image: "images/fedora.jpg"
+image: "images/fedora.png"
 license: GPLv3
 ---
 
