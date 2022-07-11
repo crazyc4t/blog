@@ -2063,7 +2063,128 @@ And if it was 3 following octets with zeroes on it, that would be:
 &lt;/ul>
 &lt;p>If you want to destroy your data your put 5 holes on it and you are good to go! or run drive-wiping software if you want to reuse the drive.&lt;/p>
 &lt;h1 id="good-luck">Good luck!&lt;/h1>
-&lt;p>Sorry for any typo since this are quick notes of what I studied, you will pass! You got this!&lt;/p></description></item><item><title>How to code your own discord bot!</title><link>https://saidneder.tech/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://saidneder.tech/blog/discordbot/</guid><description>&lt;img src="https://saidneder.tech/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
+&lt;p>Sorry for any typo since this are quick notes of what I studied, you will pass! You got this!&lt;/p></description></item><item><title>What to do after installing Fedora KDE</title><link>https://saidneder.tech/blog/debloating_fedora/</link><pubDate>Tue, 01 Mar 2022 20:59:45 -0500</pubDate><guid>https://saidneder.tech/blog/debloating_fedora/</guid><description>&lt;img src="https://saidneder.tech/images/fedora.jpg" alt="Featured image of post What to do after installing Fedora KDE" />&lt;p>Welcome again to my blog, it has been a bit of a long time isn&amp;rsquo;t it? But am back once again! And more active than ever so expect so more blogposts coming your way!&lt;/p>
+&lt;h2 id="why-am-running-fedora">Why am running fedora&lt;/h2>
+&lt;p>As some of you know, I was using &lt;a class="link" href="https://archlinux.org/" target="_blank" rel="noopener"
+>Arch Linux&lt;/a> with a window manager or &amp;ldquo;WM&amp;rdquo; for simplicity, (If you want to see my dotfiles, &lt;a class="link" href="https://github.com/crazyc4t/dotfiles" target="_blank" rel="noopener"
+>here&amp;rsquo;s the repo&lt;/a>) and It was great! But am on a Laptop, and I needed something more easier to setup since I didn&amp;rsquo;t had the time and in some situations where I needed to take my laptop with me I needed to install some packages and read the wiki, etc for order to make a specific printer work, for example, so it wasn&amp;rsquo;t practical and I just needed something that just worked, bleeding-edge, and a distro that had good documentation and promotes new solutions, and there is where &lt;a class="link" href="https://getfedora.org/" target="_blank" rel="noopener"
+>Fedora&lt;/a> takes place, since I want to learn how to administrate Linux Servers based on &lt;a class="link" href="https://redhat.com" target="_blank" rel="noopener"
+>Red Hat&lt;/a> being the company that sponsors the fedora project, it was a perfect fit for me! So in that way I can learn more about DNF (The package manager), Selinux, BTRFS, ZRAM and all of this greatest and latest tech work!&lt;/p>
+&lt;p>I chose &lt;a class="link" href="https://spins.fedoraproject.org/" target="_blank" rel="noopener"
+>Fedora KDE Spin&lt;/a> and let me tell you it has been really great! I have always been a fan of the KDE desktop and the mix of the two of them is perfect!&lt;/p>
+&lt;h2 id="step-1-optimizing-dnf">Step 1: Optimizing DNF&lt;/h2>
+&lt;p>This step is to make DNF, the package manager, be as fast as it can and effective as it can too, by editing it&amp;rsquo;s config file, and we are going to append this strings of text in &lt;code>/etc/dnf/dnf.conf&lt;/code>&lt;/p>
+&lt;p>The fastest mirror option is to make sure that DNF checks that it&amp;rsquo;s updating from the fastest repositories, and not the most near ones to you, since am from Ecuador, some of the Ecuadorian repos aren&amp;rsquo;t as fast as the USA ones.&lt;/p>
+&lt;p>Max parallel downloads is the amount of files is downloading at the same time, so this setting can depend on your internet connection, if have a great internet connection you can sum up the number a bit more.&lt;/p>
+&lt;p>defaultyes is when DNF asks you about your decision (Y/N) if you press enter the default will be yes.&lt;/p>
+&lt;p>Keep cache is for the ones that have bad internet connection and if the update or download crashes it has the saved cache of the downloaded packages so you can continue in another time.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">fastestmirror&lt;/span>&lt;span class="o">=&lt;/span>True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">max_parallel_downloads&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">defaultyes&lt;/span>&lt;span class="o">=&lt;/span>True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">keepcache&lt;/span>&lt;span class="o">=&lt;/span>True
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Then we will run &lt;code>sudo dnf up&lt;/code> to update the whole system!&lt;/p>
+&lt;p>Thanks to &lt;a class="link" href="https://www.youtube.com/channel/UCjSEJkpGbcZhvo0lr-44X_w" target="_blank" rel="noopener"
+>TechHut&lt;/a> for this step since I read it from him.&lt;/p>
+&lt;h2 id="step-2-debloating">Step 2: Debloating&lt;/h2>
+&lt;p>But KDE, it can be bloated depending of your needs so the first thing I needed to do is debloat it, consisting of removing packages that you are never going to use:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo dnf rm plasma-discover kwrite kontact akregator dragon elisa-player kaddressbook kcharselect kmag kpat kmahjongg kfind kmail kmouth kmines kolourpaint kmousetool konversation korganizer krfb krdc kruler kwrite
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Please note, this is depending what you use, I don&amp;rsquo;t use any of this software, if you do don&amp;rsquo;t remove it, read the packages carefully, although the removal of these package will not result in the breakage of the system.&lt;/strong>&lt;/p>
+&lt;h2 id="step-3-setting-up-rpm-fusion">Step 3: Setting up rpm-fusion&lt;/h2>
+&lt;p>The repository &amp;ldquo;rpm-fusion&amp;rdquo; is what enables us to install Non-free software, like discord, and spotify:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo dnf install &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-&lt;span class="k">$(&lt;/span>rpm -E %fedora&lt;span class="k">)&lt;/span>.noarch.rpm
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sudo dnf install &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-&lt;span class="k">$(&lt;/span>rpm -E %fedora&lt;span class="k">)&lt;/span>.noarch.rpm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>After that just &lt;code>sudo dnf up&lt;/code> and that is it!&lt;/p>
+&lt;h2 id="step-4-loading-up-some-software">Step 4: Loading up some software!&lt;/h2>
+&lt;p>Install some software! This is the software I install most of the time, you can take a look if you want:&lt;/p>
+&lt;p>&lt;strong>This is just my selection of software, the tools I use the most of the time, you should install the software that you use, if not sure just skip this step.&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo dnf in kate alacritty neovim git fish vlc gimp kdenlive texlive-scheme-medium lpf-spotify-client discord keepassxc qbittorrent stacer doas
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And if you use Brave browser like me, you can use this code to easily install it:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo dnf install dnf-plugins-core
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf install brave-browser
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>If you use zoom and wish to install it, you will need to download the .rpm package from the website linked &lt;a class="link" href="https://www.youtube.com/channel/UCjSEJkpGbcZhvo0lr-44X_w" target="_blank" rel="noopener"
+>here&lt;/a>&lt;/p>
+&lt;h3 id="setting-up-some-media-codecs">Setting up some media codecs&lt;/h3>
+&lt;p>To make everything work properly when talking about videos and music, we are going to install these media codecs:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo dnf install gstreamer1-plugins-&lt;span class="o">{&lt;/span>bad-&lt;span class="se">\*&lt;/span>,good-&lt;span class="se">\*&lt;/span>,base&lt;span class="o">}&lt;/span> gstreamer1-plugin-openh264 gstreamer1-libav --exclude&lt;span class="o">=&lt;/span>gstreamer1-plugins-bad-free-devel
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf install lame&lt;span class="se">\*&lt;/span> --exclude&lt;span class="o">=&lt;/span>lame-devel
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf group upgrade --with-optional Multimedia
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>More info &lt;a class="link" href="https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/" target="_blank" rel="noopener"
+>here&lt;/a>&lt;/p>
+&lt;h3 id="cleaning-up">Cleaning up&lt;/h3>
+&lt;p>This is as easy as &lt;code>sudo dnf autoremove&lt;/code> and/or you can use stacer to clean your system as well.&lt;/p>
+&lt;h2 id="outro">Outro&lt;/h2>
+&lt;p>This is my quick setup guide of fedora KDE! Probably am going to write a script that automates this process, stay tuned for that, just wanted to say thank you for reading my posts, wishing you all a great start of the month, time to get after it! Love from Ecuador.&lt;/p>
+&lt;p>Thanks so much for the fedora&amp;rsquo;s subreddit &lt;a class="link" href="https://www.reddit.com/r/Fedora/" target="_blank" rel="noopener"
+>r/Fedora&lt;/a> helping me to improve my post!&lt;/p></description></item><item><title>How to code your own discord bot!</title><link>https://saidneder.tech/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://saidneder.tech/blog/discordbot/</guid><description>&lt;img src="https://saidneder.tech/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
 &lt;p>&lt;img src="https://img.shields.io/github/license/crazyc4t/PatrickStar?color=brightgreen"
 loading="lazy"
 alt="GitHub License"
