@@ -2,7 +2,7 @@
 title: "How I passed the compTIA A+"
 date: 2022-04-20T12:10:12-05:00
 author: "Said Neder"
-tags: ["certs"]
+tags: ["Certs"]
 image: "/images/diploma.png"
 categories: "Life"
 ---
