@@ -1,4 +1,190 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Coding on crazyc4t's blog</title><link>https://saidneder.tech/categories/coding/</link><description>Recent content in Coding on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Feb 2022 11:19:06 -0500</lastBuildDate><atom:link href="https://saidneder.tech/categories/coding/index.xml" rel="self" type="application/rss+xml"/><item><title>How to code your own discord bot!</title><link>https://saidneder.tech/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://saidneder.tech/blog/discordbot/</guid><description>&lt;img src="https://saidneder.tech/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Coding on crazyc4t's blog</title><link>https://saidneder.tech/categories/coding/</link><description>Recent content in Coding on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Aug 2022 13:25:00 -0500</lastBuildDate><atom:link href="https://saidneder.tech/categories/coding/index.xml" rel="self" type="application/rss+xml"/><item><title>Programming with go!</title><link>https://saidneder.tech/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://saidneder.tech/blog/gostart/</guid><description>&lt;img src="https://saidneder.tech/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
+&lt;p>Hello guys it&amp;rsquo;s crazyc4t once again, sorry for being a bit distant on my blog but prepare yourselves because there&amp;rsquo;s more content in the oven!&lt;/p>
+&lt;p>I disappeared but with a purpose, I was laser-locked focused learning go! And it is really fun, but first&amp;hellip;&lt;/p>
+&lt;h2 id="what-is-go">What is go?&lt;/h2>
+&lt;p>&lt;img src="https://saidneder.tech/images/gopher-dance-long-3x.gif"
+loading="lazy"
+alt="Gopher"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://go.dev/" target="_blank" rel="noopener"
+>Go&lt;/a> is an open-source programming language supported by Google, created by Ken Thompson and Rob Pike, the creators of the UNIX operating system, made for Google-sized problems, being Go a static fast-compiled language, that includes native concurrency, garbage collection and efficiency at scale.&lt;/p>
+&lt;h2 id="why-go">Why go?&lt;/h2>
+&lt;p>Go is a programming language easy to pick up and get started with (as we are going to do in this post!) and easier if you come from other programming languages, it&amp;rsquo;s syntax is similar to C, it has built-in concurrency and a robust standard library, the go community is growing as time passes and it features tons of modules, libraries, tools to play with and documentation to learn from like this one!&lt;/p>
+&lt;p>Go is used for Google-sized problems, making FAANG interested in go, these are companies that use go to power their software:&lt;/p>
+&lt;ul>
+&lt;li>Google&lt;/li>
+&lt;li>PayPal&lt;/li>
+&lt;li>American Express&lt;/li>
+&lt;li>Microsoft&lt;/li>
+&lt;li>Meta&lt;/li>
+&lt;li>Twitch&lt;/li>
+&lt;li>Tweeter&lt;/li>
+&lt;li>Netflix&lt;/li>
+&lt;/ul>
+&lt;p>And so much more companies as well are joining the list since is really easy to pick up and the safety+speed concept that helps them right quality code, and make debugging really easy, since the compiler lints the errors you have in your code before you even compile it!&lt;/p>
+&lt;p>Go is used on different code purposes like:&lt;/p>
+&lt;ul>
+&lt;li>Cloud &amp;amp; network services&lt;/li>
+&lt;li>Command-line interfaces&lt;/li>
+&lt;li>Web development&lt;/li>
+&lt;li>DevOps&lt;/li>
+&lt;/ul>
+&lt;p>Projects that were built with go are:&lt;/p>
+&lt;ul>
+&lt;li>Docker&lt;/li>
+&lt;li>Kubernetes&lt;/li>
+&lt;li>Hugo&lt;/li>
+&lt;li>Cockroach DB&lt;/li>
+&lt;li>Gophish&lt;/li>
+&lt;li>Arduino-CLI&lt;/li>
+&lt;li>Github-CLI&lt;/li>
+&lt;/ul>
+&lt;h2 id="getting-started-with-go">Getting started with go!&lt;/h2>
+&lt;p>&lt;img src="https://saidneder.tech/images/witch-learning.png"
+loading="lazy"
+alt="Gopher"
+>&lt;/p>
+&lt;p>We need to setup our coding environment to code with go, first we need to install it.&lt;/p>
+&lt;h3 id="installation-of-go">Installation of go&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Linux:&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Debian/Ubuntu:&lt;/strong> &lt;code>sudo apt install golang&lt;/code>&lt;/li>
+&lt;li>&lt;strong>RHEL/Fedora:&lt;/strong> &lt;code>sudo dnf install go&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Arch BTW:&lt;/strong> &lt;code>sudo pacman -S go&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Windows &amp;amp; macOS:&lt;/strong>
+&lt;ul>
+&lt;li>Go to this website and install the binary: &lt;a class="link" href="https://go.dev/dl" target="_blank" rel="noopener"
+>https://go.dev/dl&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>That&amp;rsquo;s it! Check if you have it installed by checking it&amp;rsquo;s version: &lt;code>go version&lt;/code>&lt;/p>
+&lt;h3 id="setting-up-your-text-editor">Setting up your text editor&lt;/h3>
+&lt;p>You can use any type of text editor you want but my personal recommendation is:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://vscodium.com/" target="_blank" rel="noopener"
+>VSCodium&lt;/a> (VSCode FOSS binary)
+&lt;ul>
+&lt;li>Install the &lt;a class="link" href="https://code.visualstudio.com/docs/languages/go" target="_blank" rel="noopener"
+>go extension&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a class="link" href="https://neovim.io/" target="_blank" rel="noopener"
+>Neovim&lt;/a>
+&lt;ul>
+&lt;li>Install the &amp;ldquo;gopls&amp;rdquo; LSP and the &amp;ldquo;gofmt&amp;rdquo; formatter using your favorite LSP installer (&lt;a class="link" href="https://github.com/williamboman/nvim-lsp-installer" target="_blank" rel="noopener"
+>lsp-installer&lt;/a>, &lt;a class="link" href="https://github.com/williamboman/mason.nvim" target="_blank" rel="noopener"
+>mason.nvim&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.jetbrains.com/go/" target="_blank" rel="noopener"
+>Jetbrains&amp;rsquo;s Goland&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="write-some-code">Write some code!&lt;/h2>
+&lt;h3 id="hello-world">Hello world!&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Print hello world!
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// meaning that it should be compiled as a executable program, not as a shared libary
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span> &lt;span class="c1">// The format package from the standard libary for printing the string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello Gopher!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>After coding you can run it by just doing so:
+&lt;code>go run main.go&lt;/code>&lt;/p>
+&lt;p>Or you can compile it for your system!
+&lt;code>go build main.go&lt;/code>&lt;/p>
+&lt;h3 id="lets-make-a-greeter">Let&amp;rsquo;s make a greeter!&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello! What&amp;#39;s your name? &amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">name&lt;/span> &lt;span class="kt">string&lt;/span> &lt;span class="c1">// creating a variable without a value of type string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Scanf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;%s&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="nx">name&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// Scan the input text and format it determined by the type
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;How are you doing?&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>After scratching the surface of go, this is the next step&amp;hellip;&lt;/p>
+&lt;h2 id="keep-learning">Keep learning!&lt;/h2>
+&lt;p>&lt;img src="https://saidneder.tech/images/hiking.png"
+loading="lazy"
+alt="Gopher"
+>&lt;/p>
+&lt;p>These are some resources that are awesome!&lt;/p>
+&lt;h3 id="webpages">Webpages&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://gobyexample.com/" target="_blank" rel="noopener"
+>https://gobyexample.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://go.dev/tour/welcome/1" target="_blank" rel="noopener"
+>https://go.dev/tour/welcome/1&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="tutorials">Tutorials&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://youtu.be/yyUHQIec83I" target="_blank" rel="noopener"
+>TechWorld with Nana Go for beginners&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/YS4e4q9oBaU" target="_blank" rel="noopener"
+>FreeCodeCamp 7-hour Go tutorial&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.udemy.com/course/go-programming-golang-the-complete-developers-guide/" target="_blank" rel="noopener"
+>Go programming: The complete developer&amp;rsquo;s guide&lt;/a> (It&amp;rsquo;s a udemy course)&lt;/li>
+&lt;/ul>
+&lt;h3 id="exercises">Exercises&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.codewars.com/" target="_blank" rel="noopener"
+>CodeWars&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://exercism.org/tracks/go" target="_blank" rel="noopener"
+>Exercism&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://gophercises.com/" target="_blank" rel="noopener"
+>Gophercises&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="books">Books&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="http://shop.oreilly.com/product/0636920046516.do" target="_blank" rel="noopener"
+>Introducing Go&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/" target="_blank" rel="noopener"
+>Concurrency Go&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.gopl.io/" target="_blank" rel="noopener"
+>The Go programming language&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="thank-you-for-reading">Thank you for reading!&lt;/h2>
+&lt;p>I&amp;rsquo;m learning go at the moment so expect more go content coming your way!&lt;/p></description></item><item><title>How to code your own discord bot!</title><link>https://saidneder.tech/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://saidneder.tech/blog/discordbot/</guid><description>&lt;img src="https://saidneder.tech/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
 &lt;p>&lt;img src="https://img.shields.io/github/license/crazyc4t/PatrickStar?color=brightgreen"
 loading="lazy"
 alt="GitHub License"
