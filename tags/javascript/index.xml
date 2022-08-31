@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on crazyc4t's blog</title><link>https://saidneder.tech/tags/javascript/</link><description>Recent content in Javascript on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Feb 2022 11:19:06 -0500</lastBuildDate><atom:link href="https://saidneder.tech/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>How to code your own discord bot!</title><link>https://saidneder.tech/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://saidneder.tech/blog/discordbot/</guid><description>&lt;img src="https://saidneder.tech/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on crazyc4t's blog</title><link>https://crazyc4t.xyz/tags/javascript/</link><description>Recent content in Javascript on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Feb 2022 11:19:06 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>How to code your own discord bot!</title><link>https://crazyc4t.xyz/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://crazyc4t.xyz/blog/discordbot/</guid><description>&lt;img src="https://crazyc4t.xyz/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
 &lt;p>&lt;img src="https://img.shields.io/github/license/crazyc4t/PatrickStar?color=brightgreen"
 loading="lazy"
 alt="GitHub License"
@@ -12,7 +12,7 @@ This bot is about having my classes at my fingertips, so it
 gives links with special commands that facilitate the process.
 You are free to clone the code and use it the way you want!
 You can edit it and make it your own!&lt;/p>
-&lt;p>&lt;img src="https://saidneder.tech/images/botdemo.gif"
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/botdemo.gif"
 loading="lazy"
 alt="Demo"
 >&lt;/p>
@@ -415,7 +415,7 @@ And after that we just push it to heroku!&lt;/p>
 &lt;p>&lt;code>git push heroku main&lt;/code>&lt;/p>
 &lt;p>When that is done we go into the dashboard &amp;gt; resources and deactivate the web dyno by just clicking edit and switching off the slide,
 and now we turn on the worker that should appear, now it should be left like this&lt;/p>
-&lt;p>&lt;img src="https://saidneder.tech/images/botheroku.png"
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/botheroku.png"
 loading="lazy"
 alt="image example"
 >&lt;/p>
