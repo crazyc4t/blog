@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Aug 2022 13:25:00 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Programming with go!</title><link>https://crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 02 Sep 2022 18:45:39 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Using namecheap domain with github pages!</title><link>https://crazyc4t.xyz/blog/namecheap/</link><pubDate>Fri, 02 Sep 2022 18:45:39 -0500</pubDate><guid>https://crazyc4t.xyz/blog/namecheap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/ghpages.png" alt="Featured image of post Using namecheap domain with github pages!" />&lt;p>Hello everyone! It&amp;rsquo;s crazyc4t once again, I have some news, I changed my domain! There is no more saidneder.tech, now it&amp;rsquo;s &lt;a class="link" href="https://crazyc4t.xyz" target="_blank" rel="noopener"
+>crazyc4t.xyz&lt;/a> since my saidneder.tech domain was really expensive for renewal and I felt that it was my mistake because of the company that I chose to buy my domain from, that is HostGator, which I totally don&amp;rsquo;t recommend, difficult to use and configure, expensive, and not friendly at all, so instead of renewing my old domain I bought a new one in &lt;a class="link" href="https://namecheap.com" target="_blank" rel="noopener"
+>namecheap.com&lt;/a>! and It was awesome, I deployed my blog to my new domain with https encryption in less than 30 minutes! And that was because of the wait time to generate the security certificate, so in this post am going to show you how to use your domain bought from namecheap with github pages!&lt;/p>
+&lt;h2 id="making-your-github-repository-public">Making your github repository public&lt;/h2>
+&lt;p>This is really easy, if you already have your github repository public, you can skip this step, but if you don&amp;rsquo;t you can head over to settings in your repo and in the general tab of it, scroll all the way down over to the &lt;strong>danger zone&lt;/strong>, and change the visibility of the repo.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/danger.png"
+loading="lazy"
+alt="Danger zone"
+>&lt;/p>
+&lt;h2 id="publish-your-source-branch">Publish your source branch&lt;/h2>
+&lt;p>This is really easy as well, you need to deploy the source branch of your website, by doing so going into settings of your website repo, head over to the pages branch and click the save button.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/branch.png"
+loading="lazy"
+alt="Branch"
+>&lt;/p>
+&lt;h2 id="time-to-add-the-domain">Time to add the domain!&lt;/h2>
+&lt;p>Head over to &lt;a class="link" href="https://namecheap.com" target="_blank" rel="noopener"
+>namecheap.com&lt;/a> and login with your credentials, go over domain list, click the &amp;ldquo;manage&amp;rdquo; button over your domain.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/manage.png"
+loading="lazy"
+alt="manage"
+>&lt;/p>
+&lt;p>Go to advanced DNS, once there we will add github&amp;rsquo;s pages IPs addresses, for linking our domain with them, so we will add 4 A records, with the same host of &amp;ldquo;@&amp;rdquo;, with the following IPs:&lt;/p>
+&lt;ul>
+&lt;li>185.199.108.153&lt;/li>
+&lt;li>185.199.109.153&lt;/li>
+&lt;li>185.199.110.153&lt;/li>
+&lt;li>185.199.111.153&lt;/li>
+&lt;/ul>
+&lt;p>Also we will add one CNAME record, with the address that github gives you for your website, for example: &amp;ldquo;username.github.io&amp;rdquo;&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/records.png"
+loading="lazy"
+alt="records"
+>&lt;/p>
+&lt;h2 id="adding-the-domain-to-github">Adding the domain to github!&lt;/h2>
+&lt;p>This is the step that will take a bit of time, since github will need to make a DNS checking of your domain and it will create the SSL certificate for your https address, first of all, add to the root of your repo, a file name &amp;ldquo;CNAME&amp;rdquo; and put your domain in there, for example:&lt;/p>
+&lt;p>&lt;code>crazyc4t.xyz&lt;/code>&lt;/p>
+&lt;p>With no &lt;code>https://&lt;/code> at the beginning, just the domain, after that head over to your repo settings, go to pages, and add your domain and save it, remember clicking &amp;ldquo;enforce https&amp;rdquo;, like so:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/pages.png"
+loading="lazy"
+alt="pages"
+>&lt;/p>
+&lt;p>After that, check that your website is deployed and go to it!&lt;/p>
+&lt;h2 id="outro">Outro&lt;/h2>
+&lt;p>This was a quick blogpost on how to add your namecheap domain to github&amp;rsquo;s pages, which it was really easy as you saw, hope you enjoyed the read, have a good one!&lt;/p></description></item><item><title>Programming with go!</title><link>https://crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
 &lt;p>Hello guys it&amp;rsquo;s crazyc4t once again, sorry for being a bit distant on my blog but prepare yourselves because there&amp;rsquo;s more content in the oven!&lt;/p>
 &lt;p>I disappeared but with a purpose, I was laser-locked focused learning go! And it is really fun, but first&amp;hellip;&lt;/p>
 &lt;h2 id="what-is-go">What is go?&lt;/h2>
