@@ -53,10 +53,13 @@ params:
       enabled: true
       default: Licensed under GNU GPLv3.
   comments:
+    enabled: true
+    provider: utterances
+
     utterances:
       repo: crazyc4t/blog
       issueTerm: pathname
-      label: comments
+      label: Comment
 
   widgets:
     homepage:
