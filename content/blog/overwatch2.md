@@ -57,6 +57,8 @@ After selecting that runner, run battle.net and install overwatch and happy gami
 
 If you feel that overwatch is slow and noticed the sentence "compiling shaders..." in the under left corner, it's because wine is compiling shaders as it says, meaning that is loading graphics for the game to be smooth, so if you just wait around 2-3 minutes it will be gone and the game will be smooth.
 
+**Remember** the game compatibility in linux is on early stage, so is normal for the game to be sometimes a bit buggy or does it no look that good, but the situation will improve rapidly over time, but right now enjoy!
+
 ## Troubleshooting
 
 - Battle.net is not starting?!
