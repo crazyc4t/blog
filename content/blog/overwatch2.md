@@ -2,13 +2,14 @@
 title: "How to play Overwatch 2 in linux"
 description: This guide will help you install all the requirements for playing Overwatch 2 on linux.
 date: 2022-10-08T13:07:44-05:00
-image: /images/overwatch2.jpeg
+image: "images/overwatch2.jpeg"
 license: GPLv3
 comments: true
 draft: false
 toc: true
 categories: "Linux"
 tags: ["FOSS"]
+author: "Said Neder"
 ---
 
 Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it's time for us to try it!
