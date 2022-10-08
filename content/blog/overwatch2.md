@@ -2,7 +2,7 @@
 title: "How to play Overwatch 2 in linux"
 description: This guide will help you install all the requirements for playing Overwatch 2 on linux.
 date: 2022-10-08T13:07:44-05:00
-image: https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FdZl1yGUetjI%2Fmaxresdefault.jpg&sp=1665252555Ta8c72ce80bbf6928e866abcd40c950caf4f02a1f6aeb852e42d71141084a8da7
+image: /images/overwatch2.jpeg
 license: GPLv3
 comments: true
 draft: false
@@ -14,6 +14,8 @@ tags: ["FOSS"]
 Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it's time for us to try it!
 
 Playing it on linux is really simple, so feel free to follow along!
+
+I'm using arch linux when following this guide, if you are not running arch linux as your linux distribution, don't worry! Just make sure everything is up-to-date with your system.
 
 ## Installing the requirements
 
