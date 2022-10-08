@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 02 Sep 2022 18:45:39 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Using namecheap domain with github pages!</title><link>https://crazyc4t.xyz/blog/namecheap/</link><pubDate>Fri, 02 Sep 2022 18:45:39 -0500</pubDate><guid>https://crazyc4t.xyz/blog/namecheap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/ghpages.png" alt="Featured image of post Using namecheap domain with github pages!" />&lt;p>Hello everyone! It&amp;rsquo;s crazyc4t once again, I have some news, I changed my domain! There is no more saidneder.tech, now it&amp;rsquo;s &lt;a class="link" href="https://crazyc4t.xyz" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 Oct 2022 13:07:44 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>How to play Overwatch 2 in linux</title><link>https://crazyc4t.xyz/blog/overwatch2/</link><pubDate>Sat, 08 Oct 2022 13:07:44 -0500</pubDate><guid>https://crazyc4t.xyz/blog/overwatch2/</guid><description>&lt;img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FdZl1yGUetjI%2Fmaxresdefault.jpg&sp=1665252555Ta8c72ce80bbf6928e866abcd40c950caf4f02a1f6aeb852e42d71141084a8da7" alt="Featured image of post How to play Overwatch 2 in linux" />&lt;p>Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it&amp;rsquo;s time for us to try it!&lt;/p>
+&lt;p>Playing it on linux is really simple, so feel free to follow along!&lt;/p>
+&lt;h2 id="installing-the-requirements">Installing the requirements&lt;/h2>
+&lt;p>First of all we need to install:&lt;/p>
+&lt;ul>
+&lt;li>Lutris&lt;/li>
+&lt;li>Wine&lt;/li>
+&lt;li>Drivers&lt;/li>
+&lt;/ul>
+&lt;p>Lutris is a free and open source software that let us play windows games in linux by using &amp;ldquo;wine&amp;rdquo;.&lt;/p>
+&lt;p>We can install lutris pretty easily, I will leave a guide for all linux distributions &lt;a class="link" href="https://lutris.net/downloads" target="_blank" rel="noopener"
+>here.&lt;/a>&lt;/p>
+&lt;p>For drivers and wine &lt;a class="link" href="https://lutris.net" target="_blank" rel="noopener"
+>lutris&lt;/a> has documentation on the topic, you can read &lt;a class="link" href="https://github.com/lutris/docs/blob/master/WineDependencies.md" target="_blank" rel="noopener"
+>here&lt;/a> for wine dependencies and &lt;a class="link" href="https://github.com/lutris/docs/blob/master/InstallingDrivers.md" target="_blank" rel="noopener"
+>here&lt;/a> for drivers.&lt;/p>
+&lt;h2 id="installing-battle-net">Installing Battle Net&lt;/h2>
+&lt;p>This step is very easy, we need to open lutris, click in the &amp;ldquo;runner&amp;rdquo; section the little drop-down box besides wine:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/winesection.png"
+loading="lazy"
+alt="winesection"
+>&lt;/p>
+&lt;p>Install &amp;ldquo;overwatch2-caffe&amp;rdquo; wine runner, since it&amp;rsquo;s the runner we are going to use for installing battle.net:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/wineinstall.png"
+loading="lazy"
+alt="wineinstall"
+>&lt;/p>
+&lt;p>Then we can go to &lt;a class="link" href="https://lutris.net/games/battlenet/" target="_blank" rel="noopener"
+>lutris website&lt;/a> and install battle.net by clicking the &amp;ldquo;install&amp;rdquo; button on the webpage, if that doesn&amp;rsquo;t work, you can go to the search bar inside lutris and search for battle.net, after that you can let it install.&lt;/p>
+&lt;p>Follow the installation wizard of battle.net, &lt;strong>disable the check-box of auto-starting battle.net when the computer starts&lt;/strong> and when it prompts you to login, do not login yet, just close the program and let the lutris installation wizard finish.&lt;/p>
+&lt;h3 id="using-caffe-runner">Using caffe runner&lt;/h3>
+&lt;p>When finishing the installation, you need to select battle.net, then press on the up-arrow button besides the &amp;ldquo;play&amp;rdquo; button:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/runner.png"
+loading="lazy"
+alt="configure"
+>&lt;/p>
+&lt;p>After that press configure, under the &amp;ldquo;runner&amp;rdquo; tab, there is the &amp;ldquo;wine version&amp;rdquo; that will be &amp;ldquo;overwatch2-caffe&amp;rdquo;, if it does not show in the selection, please read carefully again on how to install runners under the &lt;a class="link" href="#installing-battle-net" >Installing Battle net&lt;/a>
+&lt;img src="https://crazyc4t.xyz/images/runnertab.png"
+loading="lazy"
+alt="runnertab"
+>&lt;/p>
+&lt;p>After selecting that runner, run battle.net and install overwatch and happy gaming!&lt;/p>
+&lt;h2 id="compiling-shaders">Compiling shaders&amp;hellip;&lt;/h2>
+&lt;p>If you feel that overwatch is slow and noticed the sentence &amp;ldquo;compiling shaders&amp;hellip;&amp;rdquo; in the under left corner, it&amp;rsquo;s because wine is compiling shaders as it says, meaning that is loading graphics for the game to be smooth, so if you just wait around 2-3 minutes it will be gone and the game will be smooth.&lt;/p>
+&lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
+&lt;ul>
+&lt;li>Battle.net is not starting?!
+&lt;ul>
+&lt;li>Check you are using the caffe runner, if it keeps happening, disable the fsync setting under the runner tab.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Using namecheap domain with github pages!</title><link>https://crazyc4t.xyz/blog/namecheap/</link><pubDate>Fri, 02 Sep 2022 18:45:39 -0500</pubDate><guid>https://crazyc4t.xyz/blog/namecheap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/ghpages.png" alt="Featured image of post Using namecheap domain with github pages!" />&lt;p>Hello everyone! It&amp;rsquo;s crazyc4t once again, I have some news, I changed my domain! There is no more saidneder.tech, now it&amp;rsquo;s &lt;a class="link" href="https://crazyc4t.xyz" target="_blank" rel="noopener"
 >crazyc4t.xyz&lt;/a> since my saidneder.tech domain was really expensive for renewal and I felt that it was my mistake because of the company that I chose to buy my domain from, that is HostGator, which I totally don&amp;rsquo;t recommend, difficult to use and configure, expensive, and not friendly at all, so instead of renewing my old domain I bought a new one in &lt;a class="link" href="https://namecheap.com" target="_blank" rel="noopener"
 >namecheap.com&lt;/a>! and It was awesome, I deployed my blog to my new domain with https encryption in less than 30 minutes! And that was because of the wait time to generate the security certificate, so in this post am going to show you how to use your domain bought from namecheap with github pages!&lt;/p>
 &lt;h2 id="making-your-github-repository-public">Making your github repository public&lt;/h2>
