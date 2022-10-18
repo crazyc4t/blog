@@ -1,4 +1,353 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>crazyc4t's blog</title><link>https://crazyc4t.xyz/</link><description>Recent content on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 Oct 2022 13:07:44 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>How to play Overwatch 2 in linux</title><link>https://crazyc4t.xyz/blog/overwatch2/</link><pubDate>Sat, 08 Oct 2022 13:07:44 -0500</pubDate><guid>https://crazyc4t.xyz/blog/overwatch2/</guid><description>&lt;img src="https://crazyc4t.xyz/images/overwatch2.jpeg" alt="Featured image of post How to play Overwatch 2 in linux" />&lt;p>Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it&amp;rsquo;s time for us to try it!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>crazyc4t's blog</title><link>https://crazyc4t.xyz/</link><description>Recent content on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 18 Oct 2022 13:03:09 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Boss of the SOC walkthrough</title><link>https://crazyc4t.xyz/blog/botsv3/</link><pubDate>Tue, 18 Oct 2022 13:03:09 -0500</pubDate><guid>https://crazyc4t.xyz/blog/botsv3/</guid><description>&lt;img src="https://crazyc4t.xyz/images/bots.png" alt="Featured image of post Boss of the SOC walkthrough" />&lt;h1 id="starting-point">Starting point&lt;/h1>
+&lt;ol>
+&lt;li>Download Boss of the SOC VM from the &lt;a class="link" href="https://tryhackme.com/room/kimctf2022" target="_blank" rel="noopener"
+>THM room&lt;/a>&lt;/li>
+&lt;li>Import the VM with VirtualBox&lt;/li>
+&lt;li>In the host machine, navigate to &lt;a class="link" href="localhost:8000" >localhost:8000&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h2 id="mission-of-the-ctf">Mission of the CTF&lt;/h2>
+&lt;p>The mission is to look for certain data using the SPL (Splunk Processing Language) being the flags, data.&lt;/p>
+&lt;p>Boss of the SOC is a blue-team CTF that helps you enhance your hunting and analysis skills.&lt;br>
+You will use Splunk and other tools to answer a variety of questions about security incidents that&lt;br>
+have occurred in a realistic but fictitious enterprise environment. It&amp;rsquo;s designed to emulate how&lt;br>
+real security incidents look in Splunk and the type of questions analysts have to answer. The&lt;br>
+objective is to recreate the life of a security analyst facing down an adversary at all stages of an&lt;br>
+attack.&lt;/p>
+&lt;p>&lt;strong>Note: All the information you need to answer each question is present within the question&lt;br>
+itself. You just need to figure out how to create the proper Splunk search query that will&lt;br>
+get you the information you want.&lt;/strong>&lt;/p>
+&lt;p>Using splunk&amp;rsquo;s manual on searching &amp;amp; reporting we can achieve this task.&lt;/p>
+&lt;p>The Boss of the SOC guide is really helpful as well.&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;p>This are the resources I used to learn more about splunk itself:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://lantern.splunk.com/Security/Use_Cases/Automated_Incident_Response/Identifying_inactive_user_accounts_in_AWS" target="_blank" rel="noopener"
+>https://lantern.splunk.com/Security/Use_Cases/Automated_Incident_Response/Identifying_inactive_user_accounts_in_AWS&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://lantern.splunk.com/Security/Use_Cases/Behavior_Analysis_and_Machine_Learning/Detecting_AWS_cross-account_activity" target="_blank" rel="noopener"
+>https://lantern.splunk.com/Security/Use_Cases/Behavior_Analysis_and_Machine_Learning/Detecting_AWS_cross-account_activity&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.splunk.com/en_us/blog/security/hunting-with-splunk-the-basics.html?301=/blog/2017/07/06/hunting-with-splunk-the-basics.html&amp;amp;elqTrackId=9f3f8b4fc75f4506ac877748720ccc0f&amp;amp;elqaid=5067&amp;amp;elqat=2" target="_blank" rel="noopener"
+>https://www.splunk.com/en_us/blog/security/hunting-with-splunk-the-basics.html?301=/blog/2017/07/06/hunting-with-splunk-the-basics.html&amp;elqTrackId=9f3f8b4fc75f4506ac877748720ccc0f&amp;elqaid=5067&amp;elqat=2&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://sroberts.medium.com/incident-response-is-dead-long-live-incident-response-5ba1de664b95" target="_blank" rel="noopener"
+>https://sroberts.medium.com/incident-response-is-dead-long-live-incident-response-5ba1de664b95&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=GWl-TuAAF-k&amp;amp;t=6s" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=GWl-TuAAF-k&amp;t=6s&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="keep-in-mind">Keep in mind&amp;hellip;&lt;/h2>
+&lt;ul>
+&lt;li>Time is the most efficient filter&lt;/li>
+&lt;li>Specify 1+ index values at start of search string&lt;/li>
+&lt;li>Includes as many search terms as possible and make specific&lt;/li>
+&lt;li>Filter as early as possible&lt;/li>
+&lt;li>Inclusion is better than exclusion&lt;/li>
+&lt;li>Use OR instead of wildcards, and if used don&amp;rsquo;t use * in the middle or beginning of string&lt;/li>
+&lt;li>MATCHING TERM IS YOUR BEST FRIEND!!&lt;/li>
+&lt;li>DISABLE SAMPLING!!!!&lt;/li>
+&lt;/ul>
+&lt;h2 id="indexes">Indexes&lt;/h2>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/image1.png"
+loading="lazy"
+alt="Pasted image 20221016173021.png"
+>&lt;/p>
+&lt;p>This is where data is stored, being this data &lt;strong>events&lt;/strong> that are stored in indexes, and these events are stored based on different factors like metrics, history, etc&amp;hellip;&lt;/p>
+&lt;h1 id="questions-answered">Questions (Answered)&lt;/h1>
+&lt;h2 id="question-1">Question 1:&lt;/h2>
+&lt;p>&lt;strong>This is a simple question to get you familiar with submitting answers. What is the name of the company that makes the software that you are using for this competition? Answer guidance: A six-letter word with no punctuation.&lt;/strong>&lt;/p>
+&lt;p>This is a simple question to know how answering questions work, being the answer &amp;ldquo;splunk&amp;rdquo;&lt;/p>
+&lt;h2 id="question-2">Question 2:&lt;/h2>
+&lt;p>&lt;strong>List out the IAM users that accessed an AWS service (successfully or unsuccessfully) in Frothly&amp;rsquo;s AWS environment? Answer guidance: Comma separated without spaces, in alphabetical order. (Example: ajackson,mjones,tmiller)&lt;/strong>&lt;/p>
+&lt;p>&lt;code> earliest=0 iam src_user=&amp;quot;*&amp;quot;&lt;/code>&lt;/p>
+&lt;p>being earliest&lt;/p>
+&lt;ul>
+&lt;li>splunk_access&lt;/li>
+&lt;li>bstoll&lt;/li>
+&lt;li>web_admin&lt;/li>
+&lt;li>btun&lt;/li>
+&lt;/ul>
+&lt;h2 id="question-3">Question 3:&lt;/h2>
+&lt;p>&lt;strong>What field would you use to alert that AWS API activity have occurred without MFA (multi-factor authentication)? Answer guidance: Provide the full JSON path. (Example: iceCream.flavors.traditional)&lt;/strong>&lt;/p>
+&lt;p>&lt;code>awsapicall&lt;/code>&lt;/p>
+&lt;p>After searching the suggestion &amp;ldquo;awsapicall&amp;rdquo; search the &amp;ldquo;interesting fields&amp;rdquo; for the &amp;ldquo;mfa&amp;rdquo; keyword, being the result:&lt;/p>
+&lt;p>&lt;code>userIdentity.sessionContext.attributes.mfaAuthenticated&lt;/code>&lt;/p>
+&lt;h2 id="question-4">Question 4:&lt;/h2>
+&lt;p>&lt;strong>What is the processor number used on the web servers? Answer guidance: Include any special characters/punctuation. (Example: The processor number for Intel Core i7-8650U is i7-8650U.)&lt;/strong>&lt;/p>
+&lt;p>&lt;code>index=&amp;quot;botsv3&amp;quot; xeon&lt;/code>&lt;/p>
+&lt;p>Here I used brute force by searching keywords of differents types of proccessors (this took a lot of time)&lt;/p>
+&lt;p>Result:
+&lt;code>E5-2676&lt;/code>&lt;/p>
+&lt;h2 id="question-5">Question 5:&lt;/h2>
+&lt;p>&lt;strong>Bud accidentally makes an S3 bucket publicly accessible. What is the event ID of the API call that enabled public access? Answer guidance: Include any special characters/punctuation.&lt;/strong>&lt;/p>
+&lt;p>&lt;code>index=* sourcetype=&amp;quot;aws:cloudtrail&amp;quot; eventSource=&amp;quot;s3.amazonaws.com&amp;quot; eventName=&amp;quot;PutBucketAcl&amp;quot;&lt;/code>&lt;/p>
+&lt;p>After learning a bit more how SPL works, we can now look in every index, the sourcetype &amp;ldquo;aws:cloudtrail&amp;rdquo; and look for events that happened in &amp;ldquo;s3.amazonaws.com&amp;rdquo;, looking for the event &amp;ldquo;PutBucketPolicy&amp;rdquo;&lt;/p>
+&lt;p>Answer:
+&lt;code>ab45689d-69cd-41e7-8705-5350402cf7ac&lt;/code>&lt;/p>
+&lt;h2 id="question-6">Question 6:&lt;/h2>
+&lt;p>&lt;strong>What is the name of the S3 bucket that was made publicly accessible?&lt;/strong>&lt;/p>
+&lt;p>This is found in the same log as question 5, specifically in the JSON section &amp;ldquo;requestParameters.bucketName&amp;rdquo; being the answer &lt;code>frothlywebcode&lt;/code>&lt;/p>
+&lt;h2 id="question-7">Question 7:&lt;/h2>
+&lt;p>What is the name of the text file that was successfully uploaded into the S3 bucket while it was publicly accessible? Answer guidance: Provide just the file name and extension, not the full path. (Example: filename.docx instead of /mylogs/web/filename.docx)&lt;/p>
+&lt;p>We search in the bucket name files that end with .txt:
+&lt;code>index=* frothlywebcode .txt&lt;/code>&lt;/p>
+&lt;p>Answer: &lt;code>OPEN_BUCKET_PLEASE_FIX.txt&lt;/code>&lt;/p>
+&lt;h2 id="question-8">Question 8:&lt;/h2>
+&lt;p>What is the size (in megabytes) of the .tar.gz file that was successfully uploaded into the S3 bucket while it was publicly accessible? Answer guidance: Round to two decimal places without the unit of measure. Use 1024 for the byte conversion. Use a period (not a comma) as the radix character.&lt;/p>
+&lt;p>We use the same search as question 7:
+&lt;code>index=* frothlywebcode tar.gz&lt;/code>&lt;/p>
+&lt;p>And by reading the logs we can find a GET request, with a sucess code of 200, and the bytes downloaded: &lt;code>3057116&lt;/code>&lt;/p>
+&lt;p>We transform those bytes to MiB to get the answer: &lt;code>2.93&lt;/code>&lt;/p>
+&lt;h2 id="question-9">Question 9:&lt;/h2>
+&lt;p>A Frothly endpoint exhibits signs of coin mining activity. What is the name of the first process to reach 100 percent CPU processor utilization time from this activity on this endpoint? Answer guidance: Include any special characters/punctuation.&lt;/p>
+&lt;p>First we start broadly: &lt;code>index=* cpu&lt;/code>&lt;/p>
+&lt;p>Then we start playing with the selected fields, specially sourcetype, since that will bring tons of options, remember the assigment, to look for CPU processor utilization time, so you will be looking for the source type to be &amp;ldquo;PerfmonMk:Process&amp;rdquo; and look out for interesting fields, and always keep searching instances and keywords.&lt;/p>
+&lt;p>Answer: &lt;code>chrome#5&lt;/code>&lt;/p>
+&lt;h2 id="question-10">Question 10:&lt;/h2>
+&lt;p>When a Frothly web server EC2 instance is launched via auto scaling, it performs automated configuration tasks after the instance starts. How many packages and dependent packages are installed by the cloud initialization script? Answer guidance: Provide the number of installed packages then number of dependent packages, comma separated without spaces.&lt;/p>
+&lt;p>Google is your best friend, you can google &amp;ldquo;EC2 instance start configuration task&amp;rdquo; and you can get helpful documentation like this one: &lt;a class="link" href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html" target="_blank" rel="noopener"
+>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html&lt;/a>&lt;/p>
+&lt;p>Where it says:&lt;/p>
+&lt;blockquote>
+&lt;p>The cloud-init output log file captures console output so it is easy to debug your scripts following a launch if the instance does not behave the way you intended.&lt;/p>
+&lt;/blockquote>
+&lt;p>Reading documentation is the best way to understand something, remember that keywords are your best friend, in this case we will put our search query this way: &lt;code>index=botsv3 sourcetype=&amp;quot;cloud-init-output&amp;quot; dependencies&lt;/code>&lt;/p>
+&lt;p>Being the answer: &lt;code>Install 7 Packages (+13 Dependent packages)&lt;/code> (7,13)&lt;/p>
+&lt;h2 id="question-11">Question 11&lt;/h2>
+&lt;p>&lt;strong>What is the short hostname of the only Frothly endpoint to actually mine Monero cryptocurrency? (Example: ahamilton instead of ahamilton.mycompany.com)&lt;/strong>&lt;/p>
+&lt;p>When finding hostnames it should pop into your mind DNS, the domain name system, so we put as our sourcetype &amp;ldquo;stream:dns&amp;rdquo;, after that we can start playing with keywords, for example:
+&lt;code>index=botsv3 sourcetype=&amp;quot;stream:dns&amp;quot; *coin*&lt;/code>&lt;/p>
+&lt;p>Being &lt;code>*coin*&lt;/code> in between asterisk, for everything after or before the word, so we can take a deeper look.&lt;/p>
+&lt;p>Having a host that repeats itself very often making it the answer: &lt;code>bstoll-l&lt;/code>&lt;/p>
+&lt;h2 id="question-12">Question 12&lt;/h2>
+&lt;p>&lt;strong>How many cryptocurrency mining destinations are visited by Frothly endpoints?&lt;/strong>&lt;/p>
+&lt;p>With the same search query as question 11, we can consult in interesting fields the &amp;ldquo;query&amp;rdquo; field, having this queries:&lt;/p>
+&lt;ul>
+&lt;li>coinhive.com&lt;/li>
+&lt;li>ws001.coinhive.com&lt;/li>
+&lt;li>ws005.coinhive.com&lt;/li>
+&lt;li>ws011.coinhive.com&lt;/li>
+&lt;li>ws014.coinhive.com&lt;/li>
+&lt;li>ws019.coinhive.com&lt;/li>
+&lt;/ul>
+&lt;p>Meaning this 6 domains are visited by frothly endpoints, being the answer 6.&lt;/p>
+&lt;h2 id="question-13">Question 13&lt;/h2>
+&lt;p>&lt;strong>Using Splunk&amp;rsquo;s event order functions, what is the first seen signature ID of the coin miner threat according to Frothly&amp;rsquo;s Symantec Endpoint Protection (SEP) data?&lt;/strong>&lt;/p>
+&lt;p>We don&amp;rsquo;t know what Symantec is, so time to google it and learn how to use it in our searches, so we search it, and remember to read all the selected fields.&lt;/p>
+&lt;p>By reading all the selected fields we know that there&amp;rsquo;s tons of sourcetype that starts with symantec, so we are going to read all of them and as we are treating security we are going to use the &amp;ldquo;symantec:ep:security:file&amp;rdquo; sourcetype, and do a quick search looking for keywords.
+&lt;code>index=botsv3 sourcetype=&amp;quot;symantec:ep:security:file&amp;quot;&lt;/code>&lt;/p>
+&lt;p>After that, we find chrome, the same application that ramped up our CPU by 100%, with crypto miners, so we need the ID, and there are only two, being one ID the answer: &lt;code>30358&lt;/code>&lt;/p>
+&lt;h2 id="question-14">Question 14&lt;/h2>
+&lt;p>&lt;strong>According to Symantec&amp;rsquo;s website, what is the severity of this specific coin miner threat?&lt;/strong>
+With the same chrome#5 log as before we can now know by looking the CIDS_Signature_String that the attack is a &amp;ldquo;Web Attack: JSCoinMiner Download 8&amp;rdquo; and by googling it, you can now the answer that is: &lt;code>medium&lt;/code>&lt;/p>
+&lt;h2 id="question-15">Question 15&lt;/h2>
+&lt;p>&lt;strong>What is the short hostname of the only Frothly endpoint to show evidence of defeating the cryptocurrency threat? (Example: ahamilton instead of ahamilton.mycompany.com)&lt;/strong>
+We can now find through the vulnerability that is &amp;ldquo;Web Attack: JSCoinMiner Download 8&amp;rdquo; and we can find this log from the event log of windows.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">LogName=Application SourceName=Symantec Network Protection EventCode=400 EventType=3 Type=Warning ComputerName=BTUN-L.froth.ly TaskCategory=The operation completed successfully. OpCode=Info RecordNumber=6049 Keywords=Classic Message=[SID: 30356] Web Attack: JSCoinminer Download 6 attack blocked. Traffic has been blocked for this application: C:\PROGRAM FILES (X86)\GOOGLE\CHROME\APPLICATION\CHROME.EXE
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Being the answer: &lt;code>BTUN-L&lt;/code>&lt;/p>
+&lt;h2 id="question-16">Question 16&lt;/h2>
+&lt;p>&lt;strong>What is the FQDN of the endpoint that is running a different Windows operating system edition than the others?&lt;/strong>&lt;/p>
+&lt;p>We search keywords as always, FQDN means Fully Qualified Domain Name, so we search
+&lt;code>index=botsv3 &amp;quot;windows 10&amp;quot; OR &amp;quot;windows 7&amp;quot;&lt;/code> since we already know we are dealing with windows devices, then we notice that BSTOLL-L has the windows 10 enterprise edition instead of the pro version as the others, but remember we need the FQDN, so it could be &lt;code>bstoll.com&lt;/code> or similar, we search again: &lt;code>index=botsv3 bstoll-l.*&lt;/code> and remember that MATCHING TERMS ARE YOUR FRIENDS!!&lt;/p>
+&lt;p>Answer: &lt;code>bstoll-l.froth.ly&lt;/code>&lt;/p>
+&lt;h2 id="question-17">Question 17&lt;/h2>
+&lt;p>&lt;strong>According to the Cisco NVM flow logs, for how many seconds does the endpoint generate Monero cryptocurrency? Answer guidance: Round to the nearest second without the unit of measure.&lt;/strong>&lt;/p>
+&lt;p>We know we are treating with cisco related stuff, so we search &lt;code>cisco*&lt;/code> and remember always to use source and sourcetype, and to google as well, so we search &lt;code>index=botsv3 source=cisco*&lt;/code> and encounter three different sources: &lt;code>cisconvmflowdata&lt;/code>, &lt;code>cisconvmsysdata&lt;/code> and &lt;code>cisconvmifdata&lt;/code>, pretty explanatory which source to use.&lt;/p>
+&lt;p>We search &lt;code>index=botsv3 source=cisconvmflowdata *coin*&lt;/code> and we get some results, but we need to answer for how many seconds does the endpoint generate xmr, remember interesting fields section to know more about the search we need to use updating our search like this &lt;code>index=botsv3 source=cisconvmflowdata *coin* sourcetype=syslog&lt;/code>&lt;/p>
+&lt;p>We encounter fst and fet meaning flow starting time and flow ending time, and by tons of googling this answer is a bit off since we need to substract the maximum time and the minimum time for encountering the average time, and with this search: &lt;code>index=botsv3 source=cisconvmflowdata *coinhive* | stats max(_time) as maxtime min(_time) as mintime | eval difference=maxtime-mintime&lt;/code>&lt;/p>
+&lt;p>But is not the answer, which led me really confused and started seeing blogposts about it, and might be that in every instance the answer could be a bit off, so brute force it and we get the result of: &lt;code>1666&lt;/code>&lt;/p>
+&lt;h2 id="question-18">Question 18&lt;/h2>
+&lt;p>&lt;strong>What kind of Splunk visualization was in the first file attachment that Bud emails to Frothly employees to illustrate the coin miner issue? Answer guidance: Two words. (Example: choropleth map)&lt;/strong>&lt;/p>
+&lt;p>When thinking of mail POP3, IMAP/SMTP comes to mind so we start searching by those keywords: &lt;code>index=botsv3 sourcetype=*mail*&lt;/code>, but we see that nothing interesting comes as result so we change &lt;code>*mail*&lt;/code> to &lt;code>*smtp*&lt;/code>, and we get fun results, like this one:
+&lt;code>Bud, Uh... WTF ?!?!? Billy, Is this real? Jeremiah, Are these our customers? GH ________________________________ From: HyunKi Kim &amp;lt;hyunki1984@naver.com&amp;gt; Sent: Thursday, July 26, 2018 12:08 PM To: Grace Hoppy Subject: All your datas belong to us Gracie, We brought your data and imported it: https://pastebin.com/sdBUkwsE = Also, you should not be too hard Bruce. He good man [https://pastebin.com/i/facebook.png]&amp;lt;https://pastebin.com/sdBUkwsE&amp;gt; ( ) ) ) - Pastebin.com&amp;lt;https://pastebin.com/sdBUkwsE&amp;gt; pastebin.com&lt;/code>&lt;/p>
+&lt;p>Just from reading it gave me goosebumps but we know from reading is not the first email, so it&amp;rsquo;s time to search with the username since we know the sourcetype, source and host, remembering that the &amp;ldquo;malware&amp;rdquo; that is the crypto miner was in the &amp;ldquo;brew&amp;rdquo; domain, but we can&amp;rsquo;t forget mircrosoft exchange for emails so we search:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">index=botsv3 earliest=0 (sourcetype=stream:smtp OR sourcetype=ms:o365:reporting:messagetrace)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bstoll@froth.ly
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| stats count by Subject
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Making statistics counting by subject, we find this: &lt;code>Postmortem on our issue with brewertalk&lt;/code>, reading that does not sound fun so there&amp;rsquo;s need to take a look upon the issue.&lt;/p>
+&lt;p>Now we look for this specific topic, so we need searching by subject: `index=botsv3 earliest=0 (sourcetype=stream:smtp OR sourcetype=ms:o365:reporting:messagetrace) &lt;a class="link" href="mailto:bstoll@froth.ly" >bstoll@froth.ly&lt;/a> subject=&amp;ldquo;Postmortem on our issue with brewertalk&amp;rdquo;```&lt;/p>
+&lt;p>And we find a image002.jpg, and the attach_transfer_config is base64, so we need to copy the base64 that starts &lt;code>/9j/4&lt;/code> and ends &lt;code>//2Q==&lt;/code>, and paste it on the base64 image decoder&lt;img src="https://crazyc4t.xyz/images/image3.png"
+loading="lazy"
+alt="Screenshot from 2022-10-17 12-40-37.png"
+>&lt;/p>
+&lt;p>Being this chart a &lt;code>Column Chart&lt;/code> the answer.&lt;/p>
+&lt;h2 id="question-19">Question 19&lt;/h2>
+&lt;p>&lt;strong>What IAM user access key generates the most distinct errors when attempting to access IAM resources?&lt;/strong>&lt;/p>
+&lt;p>We know IAM is from AWS Cloud, being Identity and Acess Managment, but we need to focus on the &lt;em>distinct&lt;/em> errors, so let&amp;rsquo;s search broadly: &lt;code>index=botsv3 sourcetype=&amp;quot;aws:cloudtrail&amp;quot; *error*&lt;/code> and then narrow it down with interesting fields getting our search similar to this:
+&lt;code>index=botsv3 sourcetype=&amp;quot;aws:cloudtrail&amp;quot; *error* *key* *resources* *access*&lt;/code>&lt;/p>
+&lt;p>Being this search for keywords like error, key, resources in AWS, we need to look out for errors when accessing IAM resources.&lt;/p>
+&lt;p>After that search I got information that is too broad, so let&amp;rsquo;s look only &lt;code>*errors*&lt;/code> in the destination &amp;ldquo;iam.amazonaws.com&amp;rdquo; to find out there are error codes, specially one with the name of &amp;ldquo;Access Denied&amp;rdquo;, so we search by it:
+&lt;code>index=botsv3 sourcetype=&amp;quot;aws:cloudtrail&amp;quot; *error* dest=&amp;quot;iam.amazonaws.com&amp;quot; errorCode=AccessDenied&lt;/code>&lt;/p>
+&lt;p>In the JSON where the error message is &lt;code>User: arn:aws:iam::622676721278:user/web_admin is not authorized to perform: iam:GetUser on resource: user web_admin&lt;/code> is our goal, so we search the access key ID and it is the: &lt;code>AKIAJOGCDXJ5NW5PXUPA&lt;/code> the answer.&lt;/p>
+&lt;h2 id="question-20">Question 20&lt;/h2>
+&lt;p>&lt;strong>Bud accidentally commits AWS access keys to an external code repository. Shortly after, he receives a notification from AWS that the account had been compromised. What is the support case ID that Amazon opens on his behalf?&lt;/strong>&lt;/p>
+&lt;p>Receiving notifications, surely that is mail, so with the searches we made in other exercises, we do the same thing but with the &amp;ldquo;key&amp;rdquo; keyword and as the sender the &amp;ldquo;no-reply-aws*&amp;rdquo; since it&amp;rsquo;s an automated email:
+&lt;code>index=botsv3 earliest=0 (sourcetype=stream:smtp OR sourcetype=ms:o365:reporting:messagetrace) *key\* sender_email=&amp;quot;no-reply-aws@amazon.com&amp;quot;&lt;/code>&lt;/p>
+&lt;h2 id="question-21">Question 21&lt;/h2>
+&lt;p>&lt;strong>AWS access keys consist of two parts: an access key ID (e.g., AKIAIOSFODNN7EXAMPLE) and a secret access key (e.g., wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY). What is the secret access key of the key that was leaked to the external code repository?&lt;/strong>&lt;/p>
+&lt;p>This is very easy since it&amp;rsquo;s in the same e-mail as the previous question, reading the email you will find this section:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">     Case ID: 5244329601 Subject: Your AWS account 622676721278
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">     is compromised Severity: Urgent Correspondence: Dear AWS Customer, Your AWS Account is compromised! Please review the following notice and take immediate action to secure your account. Your security is important to us. We have become aware that the AWS Access Key AKIAJOGCDXJ5NW5PXUPA (belonging to IAM user &amp;#34;web_admin&amp;#34;) along with the corresponding Secret Key is publicly available online at https://github.com/FrothlyBeers/BrewingIOT/blob/e4a98cc997de12bb7a59f18aea207a28bcec566c/MyDocuments/aws_credentials.bak
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The answer being in this github repo: &lt;a class="link" href="https://github.com/FrothlyBeers/BrewingIOT/blob/e4a98cc997de12bb7a59f18aea207a28bcec566c/MyDocuments/aws_credentials.bak" target="_blank" rel="noopener"
+>https://github.com/FrothlyBeers/BrewingIOT/blob/e4a98cc997de12bb7a59f18aea207a28bcec566c/MyDocuments/aws_credentials.bak&lt;/a>&lt;/p>
+&lt;p>Answer: Bx8/gTsYC98T0oWiFhpmdROqhELPtXJSR9vFPNGk&lt;/p>
+&lt;h2 id="question-22">Question 22&lt;/h2>
+&lt;p>&lt;strong>Using the leaked key, the adversary makes an unauthorized attempt to create a key for a specific resource. What is the name of that resource? Answer guidance: One word.&lt;/strong>&lt;/p>
+&lt;p>This is pretty easy since we know all the fields:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">index=botsv3 earliest=0 sourcetype=&amp;#34;aws:cloudtrail&amp;#34; eventName=CreateAccessKey | spath &amp;#34;userIdentity.accessKeyId&amp;#34; | search &amp;#34;userIdentity.accessKeyId&amp;#34;=AKIAJOGCDXJ5NW5PXUPA| spath &amp;#34;userIdentity.userName&amp;#34; | search &amp;#34;userIdentity.userName&amp;#34;=web_admin
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Giving us the answer:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">User: arn:aws:iam::622676721278:user/web_admin is not authorized to perform: iam:CreateAccessKey on resource: user nullweb_admin
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="question-23">Question 23:&lt;/h2>
+&lt;p>&lt;strong>Using the leaked key, the adversary makes an unauthorized attempt to describe an account. What is the full user agent string of the application that originated the request?&lt;/strong>&lt;/p>
+&lt;p>The same as the previous question, we know all the fields for searching:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">index=botsv3 earliest=0 sourcetype=&amp;#34;aws:cloudtrail&amp;#34; eventName=Describe* userName=web_admin| spath &amp;#34;userIdentity.accessKeyId&amp;#34; | search &amp;#34;userIdentity.accessKeyId&amp;#34;=AKIAJOGCDXJ5NW5PXUPA
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>We know the accessKeyId, and the event name is something with describe so that&amp;rsquo;s why we use the wildcard &lt;code>describe*&lt;/code>, getting the result&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">awsRegion: us-east-1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   errorCode: Client.UnauthorizedOperation
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   errorMessage: You are not authorized to perform this operation.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   eventID: c077df0d-2435-4152-9127-09e579dd1fb2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   eventName: DescribeAccountAttributes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   eventSource: ec2.amazonaws.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   eventTime: 2018-08-20T09:27:06Z
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   eventType: AwsApiCall
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   eventVersion: 1.05
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   recipientAccountId: 622676721278
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   requestID: f94dfb04-2d7b-40a8-b3cc-3664b9463db8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   requestParameters: { [[+]](http://localhost:8000/en-US/app/search/search?q=search%20index%3Dbotsv3%20earliest%3D0%20sourcetype%3D%22aws%3Acloudtrail%22%20eventName%3DDescribe*%20userName%3Dweb_admin%7C%20spath%20%22userIdentity.accessKeyId%22%20%7C%20search%20%22userIdentity.accessKeyId%22%3DAKIAJOGCDXJ5NW5PXUPA&amp;amp;display.page.search.mode=verbose&amp;amp;dispatch.sample_ratio=1&amp;amp;workload_pool=&amp;amp;earliest=0&amp;amp;latest=now&amp;amp;sid=1666063233.2202#)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   responseElements: null
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   sourceIPAddress: 82.102.18.111
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">   userAgent: ElasticWolf/5.1.6
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Answer: &lt;code>ElasticWolf/5.1.6&lt;/code>&lt;/p>
+&lt;h2 id="question-24">Question 24&lt;/h2>
+&lt;p>&lt;strong>The adversary attempts to launch an Ubuntu cloud image as the compromised IAM user. What is the codename for that operating system version in the first attempt? Answer guidance: Two words.&lt;/strong>&lt;/p>
+&lt;p>We know the fields but let&amp;rsquo;s start searching broadly to know where is the keyword &amp;ldquo;ubuntu&amp;rdquo; involved:
+&lt;code>index=botsv3 earliest=0 *ubuntu*&lt;/code>&lt;/p>
+&lt;p>And we see tons of logs of apache but nothing important, now let&amp;rsquo;s get the real search:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">`index=botsv3 earliest=0 sourcetype=&amp;#34;aws:cloudtrail&amp;#34; eventSource=*amazonaws.com (AKIAJOGCDXJ5NW5PXUPA OR web_admin`
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Since we know that web_admin is the compromised user, we search for logs about it, but the keyword ubuntu just doesn&amp;rsquo;t appear at all, but AMI does, that is a Amazon Linux instance for cloud, so let&amp;rsquo;s search for that:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">index=botsv3 earliest=0 sourcetype=&amp;#34;aws:cloudtrail&amp;#34; eventSource=ec2.amazonaws.com (AKIAJOGCDXJ5NW5PXUPA OR web_admin) *ami*
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And we get under &lt;code>requestParameters.instancesSet.items[].imageId&lt;/code> the id of &lt;code>ami-af79ebc0&lt;/code>, and we can search it on the Ubuntu Cloud Image Finder: &lt;a class="link" href="https://cloud-images.ubuntu.com/locator/" target="_blank" rel="noopener"
+>https://cloud-images.ubuntu.com/locator/&lt;/a> to know the name of the image that is Xenial, but is not the full name so a quick google fu will get you the full name of Ubuntu Xenial Cloud that is Xenial Xerus being the answer.&lt;/p>
+&lt;h2 id="question-25">Question 25&lt;/h2>
+&lt;p>&lt;strong>Frothly uses Amazon Route 53 for their DNS web service. What is the average length of the distinct third-level subdomains in the queries to brewertalk.com? Answer guidance: Round to two decimal places. (Example: The third-level subdomain for my.example.company.com is example.)&lt;/strong>&lt;/p>
+&lt;p>Just reading the question I know it will make me create a good search query like the flow one, so let&amp;rsquo;s start broadly:
+&lt;code>index=botsv3 earliest=9 *aws* AND *dns*&lt;/code>&lt;/p>
+&lt;p>To know different sourcetypes, like this one that looks promising: &lt;code>aws:cloudwatchlogs&lt;/code>and with that sourcetype we know the source that is &lt;code>lambda:DNS&lt;/code> so now we are talking, now we need to search the third level domain as the question ask, and we search like so:
+&lt;code>index=botsv3 earliest=0 sourcetype=&amp;quot;aws:cloudwatchlogs&amp;quot; source=&amp;quot;lambda:DNS&amp;quot; *.brewertalk.com&lt;/code>&lt;/p>
+&lt;p>After this searches we know this string enters into repetion: &lt;code>Z149R7NEBZTKPN&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">1.0 2018-08-20T15:08:14Z Z149R7NEBZTKPN users1.brewertalk.com AAAA NXDOMAIN UDP ICN51 52.78.247.225 -
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Now I don&amp;rsquo;t know regex at all, but we are going to need it since our simple searches aren&amp;rsquo;t enough, so with tons of google fu, we are gonna search eveything that has Z149R7NEBZTKPN before the domain, meaning it should be in all of the logs.&lt;/p>
+&lt;p>Now my regex skills are really off the table so with tons of google-fu we can find already made regex for taking the average length of distinct third levels subdomains and take it for our own use, getting the final search like this:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">index=botsv3 earliest=0 source=lambda:dns *.brewertalk.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| rex field=_raw &amp;#34;Z149R7NEBZTKPN\s(?&amp;lt;query&amp;gt;[^\s]+)&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| rex field=query &amp;#34;\.?(?&amp;lt;third_level_subdomain&amp;gt;[^\.]+).brewertalk.com&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| dedup third_level_subdomain
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| eval subdomain_length=len(third_level_subdomain)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| stats avg(subdomain_length)`
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Being our result: 8.09, but we need to round it being it 8.10, the answer.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/image2.png"
+loading="lazy"
+alt="Pasted image 20221017230721.png"
+>&lt;/p>
+&lt;p>Finally the BOSS OF THE SOC IS ME!&lt;/p>
+&lt;p>Thank you for reading.&lt;/p></description></item><item><title>How to play Overwatch 2 in linux</title><link>https://crazyc4t.xyz/blog/overwatch2/</link><pubDate>Sat, 08 Oct 2022 13:07:44 -0500</pubDate><guid>https://crazyc4t.xyz/blog/overwatch2/</guid><description>&lt;img src="https://crazyc4t.xyz/images/overwatch2.jpeg" alt="Featured image of post How to play Overwatch 2 in linux" />&lt;p>Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it&amp;rsquo;s time for us to try it!&lt;/p>
 &lt;p>Playing it on linux is really simple, so feel free to follow along!&lt;/p>
 &lt;p>I&amp;rsquo;m using arch linux when following this guide, if you are not running arch linux as your linux distribution, don&amp;rsquo;t worry! Just make sure everything is up-to-date with your system.&lt;/p>
 &lt;h2 id="installing-the-requirements">Installing the requirements&lt;/h2>
