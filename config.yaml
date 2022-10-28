@@ -27,7 +27,7 @@ params:
     - blog
   featuredImageField: image
   rssFullContent: true
-  favicon: favicon/favicon.ico
+  favicon: /favicon.ico
 
   footer:
     since: 2021
@@ -110,17 +110,23 @@ menu:
   main: []
 
   social:
+    - identifier: mail
+      name: Mail
+      url: mailto:snederc@protonmail.com
+      params:
+        icon: mail
+
     - identifier: github
       name: Github
       url: https://github.com/crazyc4t
       params:
         icon: brand-github
 
-    - identifier: twitter
-      name: Twitter
-      url: https://twitter.com/crazyc4t9
+    - identifier: discord
+      name: Discord User
+      url: https://discord.com/users/744022544624910446
       params:
-        icon: brand-twitter
+        icon: brand-discord
 
     - identifier: linkedin
       name: LinkedIn
