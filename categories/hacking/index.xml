@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacking on crazyc4t's blog</title><link>https://crazyc4t.xyz/categories/hacking/</link><description>Recent content in Hacking on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 27 Oct 2022 19:18:39 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/categories/hacking/index.xml" rel="self" type="application/rss+xml"/><item><title>Pickle Rick CTF</title><link>https://crazyc4t.xyz/blog/picklerick/</link><pubDate>Thu, 27 Oct 2022 19:18:39 -0500</pubDate><guid>https://crazyc4t.xyz/blog/picklerick/</guid><description>&lt;img src="https://crazyc4t.xyz/images/picklerick.gif" alt="Featured image of post Pickle Rick CTF" />&lt;p>Hello world! I&amp;rsquo;m back again with a new blogpost, related to hacking! am preparing myself for the eJPT so I&amp;rsquo;m taking tons of machines while taking the learning paths from Try Hack Me, specifically the &amp;ldquo;Pre-Security&amp;rdquo;&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacking on crazyc4t's blog</title><link>https://crazyc4t.xyz/categories/hacking/</link><description>Recent content in Hacking on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 05 Nov 2022 13:17:13 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/categories/hacking/index.xml" rel="self" type="application/rss+xml"/><item><title>Deep dive into nmap</title><link>https://crazyc4t.xyz/blog/nmap/</link><pubDate>Sat, 05 Nov 2022 13:17:13 -0500</pubDate><guid>https://crazyc4t.xyz/blog/nmap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/nmaplogo.jpg" alt="Featured image of post Deep dive into nmap" />&lt;p>When it comes to hacking, knowledge is power, the more you know, the more options you have to attack, making critical a proper enumeration before any type of exploitation.&lt;/p>
+&lt;p>Before attacking our target we need to know what is what we are about to attack, we need to know what type of services or OS is running, and we can accomplish that by making a network map, hence the name of Nmap, specifically doing &amp;ldquo;port scanning&amp;rdquo;, because these services are listening on a specific &amp;ldquo;ports&amp;rdquo; of the network, being ports a network structure your service runs on to establish a connection, the service are always &amp;ldquo;listening&amp;rdquo; (waiting for another device that wants to establish a connection) and the user when connecting to the specific port they open a port for receiving information from the other port (for example: HTTPS 443)&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap.png"
+loading="lazy"
+alt="image"
+>&lt;/p>
+&lt;p>All of this reconnaissance we can achieve using nmap, so keep reading!&lt;/p>
+&lt;h2 id="nmap-arguments">Nmap Arguments&lt;/h2>
+&lt;p>Let&amp;rsquo;s get our hands dirty, open the terminal and install nmap (comes installed by default in kali linux and parrot os) and run:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nmap -h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>To know which arguments can be used in nmap, listing some basic and really useful arguments:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>-sS&lt;/code>: Syn Scan&lt;/li>
+&lt;li>&lt;code>-sU&lt;/code>: UPD Scan&lt;/li>
+&lt;li>&lt;code>-O&lt;/code>: OS detection&lt;/li>
+&lt;li>&lt;code>-sV&lt;/code>: Version of the service running on ports&lt;/li>
+&lt;li>&lt;code>-vvv&lt;/code>: Verbosity 3x&lt;/li>
+&lt;li>&lt;code>-oA, -oN, -oS, -oG&lt;/code>: Gives the output on different formats (all, normal, script kiddie, grepable)&lt;/li>
+&lt;li>&lt;code>-A&lt;/code>: Aggresive (I don&amp;rsquo;t care if they know someone is scanning them, give me all the info!)&lt;/li>
+&lt;li>&lt;code>-T5&lt;/code>: Go fast g&lt;/li>
+&lt;li>&lt;code>-p xx&lt;/code>: Only scan xx port&lt;/li>
+&lt;li>&lt;code>-p-&lt;/code>: Scan all ports&lt;/li>
+&lt;/ul>
+&lt;h2 id="types-of-scans">Types of Scans&lt;/h2>
+&lt;p>We are going to look more in-depth of the types of scanning that are available like:&lt;/p>
+&lt;ul>
+&lt;li>TCP connect scans (&lt;code>-sT&lt;/code>)&lt;/li>
+&lt;li>SYN &amp;ldquo;half-open&amp;rdquo; scans (&lt;code>-sS&lt;/code>)&lt;/li>
+&lt;li>UDP Scans (&lt;code>-sU&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="tcp-connect-scans">TCP Connect Scans&lt;/h2>
+&lt;p>This type of scans are made when completing the three-way handshake:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap1.png"
+loading="lazy"
+alt="image1"
+>&lt;/p>
+&lt;p>Where it sends a SYN packet to the specified port, if it receives the SYN/ACK, it will reply with ACK, and terminating the handshake, having closed the connection, it will know that the port is open.&lt;/p>
+&lt;p>&lt;strong>What happens if it&amp;rsquo;s closed?&lt;/strong>
+When sending a SYN packet, the target replies with RST (reset), that means the port is closed (does not exist)&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap2.png"
+loading="lazy"
+alt="image2"
+>&lt;/p>
+&lt;p>&lt;strong>If it&amp;rsquo;s behind a firewall?&lt;/strong>
+It will just drop the connection, it won&amp;rsquo;t reply back at all, and when this happens, nmap declares these types of ports being &lt;strong>filtered&lt;/strong>&lt;/p>
+&lt;p>Example:
+&lt;code>nmap -sT &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
+&lt;h2 id="syn-scans">SYN Scans&lt;/h2>
+&lt;p>These are similar to the TCP scans, but are referred as &amp;ldquo;half-open&amp;rdquo; or &amp;ldquo;stealth&amp;rdquo;, because when receiving the SYN/ACK packet, it will send instead of ACK, RST, closing the connection early and therefore no letting the target re-send packets again, being faster and stealthier because the majority of the times only full TCP connections are logged, and this is not one of those.&lt;/p>
+&lt;p>Example:
+&lt;code>nmap -sS &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap3.png"
+loading="lazy"
+alt="nmap3"
+>&lt;/p>
+&lt;h2 id="udp-scans">UDP Scans&lt;/h2>
+&lt;p>UDP is stateless, being that it does not require a established connection to transmit packets, so nmap just send packets to the target, and if the target does not reply back it the port is flagged as &lt;strong>open|filtered&lt;/strong> because does not reply it could be filtered because of a firewall between it, and nmap knows that is closed when it sends a ICMP packet back with a message that the port is unreachable, knowing exactly that the port is closed.&lt;/p>
+&lt;p>Because of the lack of acknowledgement of UDP, UDP scans are terrible slow, so you should only scan the top 20 UDP ports, for example: &lt;code>nmap -sU --top-ports 20 &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
+&lt;h2 id="null-fin-and-xmas">NULL, FIN and Xmas&lt;/h2>
+&lt;p>This are stealthier types of scan, so let&amp;rsquo;s briefly go through them:&lt;/p>
+&lt;h3 id="null">NULL&lt;/h3>
+&lt;p>This is when instead of sending a SYN packet, it sends a NULL packet, being essentially none, nothing, and the reply back is a RST/ACK.&lt;/p>
+&lt;p>Example: &lt;code>nmap -sN &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap4.png"
+loading="lazy"
+alt="nmap4"
+>&lt;/p>
+&lt;h3 id="fin">FIN&lt;/h3>
+&lt;p>It is the same as NULL, but instead is a FIN packet (final), that is used to end the connection, so the reply is the same as NULL.&lt;/p>
+&lt;p>Example: &lt;code>nmap -sF &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap5.png"
+loading="lazy"
+alt="nmap5"
+>&lt;/p>
+&lt;h2 id="xmas">Xmas&lt;/h2>
+&lt;p>Xmas scans send a malformed TCP packet and expects a RST reply for closed ports.
+&lt;img src="https://crazyc4t.xyz/images/nmap6.png"
+loading="lazy"
+alt="nmap6"
+>&lt;/p>
+&lt;p>But all of these scans does not expect a reply for knowning open ports, like UDP scans, so they will acknowledge ports closed or open|filtered, but only filtered as well when receiving an ICMP unreachable packet.&lt;/p>
+&lt;p>The goal here is to bypass firewalls, this is not 100% effective since most modern IDS (Intrusion Detection System) are smart about this.&lt;/p>
+&lt;p>It is common that MS Windows reply to every NULL, FIN, XMAS scan with a RST.&lt;/p>
+&lt;p>Example: &lt;code>nmap -sX &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
+&lt;h2 id="icmp-network-scanning">ICMP Network Scanning&lt;/h2>
+&lt;p>This comes in place in a &amp;ldquo;black box&amp;rdquo; scenario, where we don&amp;rsquo;t know nothing, so our first step is to create a map of active hosts, we can accomplish doing this with a &amp;ldquo;ping sweep&amp;rdquo; where we send a ICMP packet to every host in the subnet of the IP given, and expect they will receive it to know they are active.&lt;/p>
+&lt;p>Example: &lt;code>nmap -sn 192.168.0.0/24&lt;/code>&lt;/p>
+&lt;p>This does not scan ports, however it will send a TCP SYN packet to ports 443 and 80.&lt;/p>
+&lt;h2 id="nse-overview">NSE Overview&lt;/h2>
+&lt;p>The Nmap Scritpting Engine is a powerful addition to nmap, being written in lua is really easy to do tons of things, like scanning for vulnerabilities, even to exploiting, these are the most popular and useful categories:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>safe&lt;/code>: Won&amp;rsquo;t affect the target&lt;/li>
+&lt;li>&lt;code>intrusive&lt;/code>: Not safe: likely to affect the target&lt;/li>
+&lt;li>&lt;code>vuln&lt;/code>: Scan for vulnerabilities&lt;/li>
+&lt;li>&lt;code>exploit&lt;/code>: Attempt to exploit a vulnerability&lt;/li>
+&lt;li>&lt;code>auth&lt;/code>: Attempt to bypass authentication for running services (e.g. Log into an FTP server anonymously)&lt;/li>
+&lt;li>&lt;code>brute&lt;/code>: Attempt to bruteforce credentials for running services&lt;/li>
+&lt;li>&lt;code>discovery&lt;/code>: Attempt to query running services for further information about the network (e.g. query an SNMP server).&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://nmap.org/nsedoc/" target="_blank" rel="noopener"
+>Learn more about NSE here&lt;/a>&lt;/p>
+&lt;p>All the NSE scripts are located on &lt;code>/usr/share/nmap/scripts/&lt;/code>&lt;/p>
+&lt;h2 id="outro">Outro&lt;/h2>
+&lt;p>Special thanks to the &lt;a class="link" href="https://tryhackme.com/room/furthernmap" target="_blank" rel="noopener"
+>Try Hack Me nmap room&lt;/a> since thanks to that room I learned more in-depth about nmap.&lt;/p>
+&lt;p>Thanks for reading! I will upload more blogposts specified on certain pentesting tools like this one!&lt;/p></description></item><item><title>Pickle Rick CTF</title><link>https://crazyc4t.xyz/blog/picklerick/</link><pubDate>Thu, 27 Oct 2022 19:18:39 -0500</pubDate><guid>https://crazyc4t.xyz/blog/picklerick/</guid><description>&lt;img src="https://crazyc4t.xyz/images/picklerick.gif" alt="Featured image of post Pickle Rick CTF" />&lt;p>Hello world! I&amp;rsquo;m back again with a new blogpost, related to hacking! am preparing myself for the eJPT so I&amp;rsquo;m taking tons of machines while taking the learning paths from Try Hack Me, specifically the &amp;ldquo;Pre-Security&amp;rdquo;&lt;/p>
 &lt;p>This Rick and Morty themed challenge requires you to exploit a webserver to find 3 ingredients that will help rick make his potion to transform himself back into human from a pickle!&lt;/p>
 &lt;p>&lt;a class="link" href="https://tryhackme.com/room/picklerick" target="_blank" rel="noopener"
 >Room link&lt;/a>&lt;/p>
