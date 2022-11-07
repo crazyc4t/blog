@@ -564,7 +564,7 @@ loading="lazy"
 alt="mrrobot5"
 >&lt;/p>
 &lt;p>We are in their system! But there&amp;rsquo;s still work left to do, since we are the &amp;ldquo;daemon&amp;rdquo; user, (daemon means process running in linux) we need to escalate our privilages, first, let&amp;rsquo;s head home!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot6.png"
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot7.png"
 loading="lazy"
 alt="mrrobot6"
 >&lt;/p>
@@ -580,24 +580,24 @@ alt="mrrobot6"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Before running this command I have created a file called &lt;code>passmd5.hash&lt;/code> where is the hash stored, and I have the &lt;code>fsocity.dic&lt;/code> from the &lt;code>robots.txt&lt;/code> giving us the password:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot7.png"
+&lt;img src="https://crazyc4t.xyz/images/mrrobot8.png"
 loading="lazy"
 alt="mrrobot7"
 >&lt;/p>
 &lt;p>Being the full alphabet! Now we can switch users! Let&amp;rsquo;s use &lt;code>su&lt;/code>
-&lt;img src="https://crazyc4t.xyz/images/mrrobot8.png"
+&lt;img src="https://crazyc4t.xyz/images/mrrobot9.png"
 loading="lazy"
 alt="mrrobot8"
 >&lt;/p>
 &lt;p>But we get a problem, that is we are not running a fully interactive shell, so we need to upgrade our shell first, so we are going to do so by running a python one liner that spawns bash for us, then let&amp;rsquo;s switch users!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot9.png"
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot10.png"
 loading="lazy"
 alt="mrrobot9"
 >&lt;/p>
 &lt;p>We are now robot! With that said, we can now cat out the key, giving us the second flag.&lt;/p>
 &lt;h3 id="nmap-exploit">Nmap exploit&lt;/h3>
 &lt;p>let&amp;rsquo;s get to know the system and know which programs does have root permissions:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot10.png"
+&lt;img src="https://crazyc4t.xyz/images/mrrobot6.png"
 loading="lazy"
 alt="mrrobot10"
 >&lt;/p>
