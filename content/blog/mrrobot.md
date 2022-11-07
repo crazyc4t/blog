@@ -343,7 +343,7 @@ In my case I'm using the port 443, commonly known as the HTTPS port for listenin
 
 We are in their system! But there's still work left to do, since we are the "daemon" user, (daemon means process running in linux) we need to escalate our privilages, first, let's head home!
 
-![mrrobot6](/images/mrrobot6.png)
+![mrrobot6](/images/mrrobot7.png)
 
 Being home we now know that we have another user in the system that is robot, and they have the second key that we need! But if we cat it out we will not have the permissions due to the fact we are not robot, but robot has a backup of his password hehehe, giving us access to change users, but is hashed! so we need to de-hash it first to get access to the password.
 
@@ -356,21 +356,21 @@ john passmd5.hash --wordlist=fsocity.dic --format=Raw-MD5
 ```
 
 Before running this command I have created a file called `passmd5.hash` where is the hash stored, and I have the `fsocity.dic` from the `robots.txt` giving us the password:
-![mrrobot7](/images/mrrobot7.png)
+![mrrobot7](/images/mrrobot8.png)
 
 Being the full alphabet! Now we can switch users! Let's use `su`
-![mrrobot8](/images/mrrobot8.png)
+![mrrobot8](/images/mrrobot9.png)
 
 But we get a problem, that is we are not running a fully interactive shell, so we need to upgrade our shell first, so we are going to do so by running a python one liner that spawns bash for us, then let's switch users!
 
-![mrrobot9](/images/mrrobot9.png)
+![mrrobot9](/images/mrrobot10.png)
 
 We are now robot! With that said, we can now cat out the key, giving us the second flag.
 
 ### Nmap exploit
 
 let's get to know the system and know which programs does have root permissions:
-![mrrobot10](/images/mrrobot10.png)
+![mrrobot10](/images/mrrobot6.png)
 
 Being the command:
 
