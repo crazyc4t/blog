@@ -142,7 +142,7 @@ menu:
 
     - identifier: rss
       name: RSS Feeder
-      url: https://saidneder.tech/blog/
+      url: https://crazyc4t.xyz/blog/
       params:
         icon: rss
 
