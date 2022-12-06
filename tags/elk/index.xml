@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ELK on crazyc4t's blog</title><link>https://crazyc4t.xyz/tags/elk/</link><description>Recent content in ELK on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 06 Dec 2022 14:34:23 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/tags/elk/index.xml" rel="self" type="application/rss+xml"/><item><title>Elk stack once and for all!</title><link>https://crazyc4t.xyz/blog/elk-stack/</link><pubDate>Tue, 06 Dec 2022 14:34:23 -0500</pubDate><guid>https://crazyc4t.xyz/blog/elk-stack/</guid><description>&lt;img src="https://crazyc4t.xyz/images/elkbanner.png" alt="Featured image of post Elk stack once and for all!" />&lt;p>Welcome to this quick guide on using the ELK stack, specially Elastic&amp;rsquo;s Kibana interface to search, filter and create visualizations and dashboards, taking as an example the investigation of vpn logs for anomalies.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk1.png"
+loading="lazy"
+alt="elk1"
+>&lt;/p>
+&lt;p>Is a collection of different open-source software developed by Elastic, linked together to take data from endpoints (computers, networks, any source in particular) in any format and being able to perform a search, analyze and visualize the data in real-time.&lt;/p>
+&lt;p>One works with the other, it&amp;rsquo;s like you have a VR headset without a VR video to watch, or you have a VR video without any VR headset to visualize with, let&amp;rsquo;s look it more in-depth:&lt;/p>
+&lt;h2 id="elasticsearch">ElasticSearch&lt;/h2>
+&lt;p>Is a full-text search and analytics engine used to store JSON documents, being a critical part since is the component used to store, analyze, perform correlation on the data and so much more, having a RESTfull API to interact with it.&lt;/p>
+&lt;h2 id="logstash">Logstash&lt;/h2>
+&lt;p>Data processing engine used to take the data the data from different sources, apply a filter or normalize it, and then send it to the destination, being the majority of the cases a elasticsearch database, kibana or a listening port, being separated like this:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk2.png"
+loading="lazy"
+alt="elk2"
+>&lt;/p>
+&lt;h3 id="input">Input&lt;/h3>
+&lt;p>User defines the source where the data is ingested, while it has a lot of input plugins like azure events, is better to use beats to follow the stack.&lt;/p>
+&lt;h3 id="filter">Filter&lt;/h3>
+&lt;p>Where the user defines the filter options to normalize the data, for example: age, bytes, clones and more.&lt;/p>
+&lt;h3 id="output">Output&lt;/h3>
+&lt;p>This is the part where the filtered data is sended to a listening port, elasticsearch database, or kibana.&lt;/p>
+&lt;h2 id="beats">Beats&lt;/h2>
+&lt;p>Host-based agent (Meaning that is a program that you install or set up for each of your devices) known as data-shippers since it&amp;rsquo;s used to send data from the endpoints to logstash, or elasticsearch, for example all the &amp;ldquo;beats&amp;rdquo; available:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk3.png"
+loading="lazy"
+alt="elk3"
+>&lt;/p>
+&lt;h2 id="kibana">Kibana&lt;/h2>
+&lt;p>Is a web-based data visualization that works with elasticsearch to analyze, investigate and visualize the data stream in real-time, you can create multiple visualizations, dashboards and specific lookups with KQL (Kibana query language) more on that later.&lt;/p>
+&lt;h2 id="how-they-work-together">How they work together&lt;/h2>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk4.png"
+loading="lazy"
+alt="elk4"
+>&lt;/p>
+&lt;h1 id="getting-our-feets-wet-with-kibana">Getting our feets wet with Kibana&lt;/h1>
+&lt;p>This is the discover tab in our Kibana instance, if you have used Splunk before, they are fundamentally the same, and that&amp;rsquo;s why it&amp;rsquo;s going to be easy to get started with, since they are both SIEMs.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk5.png"
+loading="lazy"
+alt="elk5"
+>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Logs (document):&lt;/strong> Each log here is also known as a single document containing information about the event. It shows the fields and values found in that document.&lt;/li>
+&lt;li>&lt;strong>Fields pane&lt;/strong>: Left panel of the interface shows the list of the fields parsed from the logs. We can click on any field to add the field to the filter or remove it from the search.&lt;/li>
+&lt;li>&lt;strong>Index Pattern:&lt;/strong> Let the user select the index pattern from the available list.&lt;/li>
+&lt;li>&lt;strong>Search bar:&lt;/strong> A place where the user adds search queries / applies filters to narrow down the results.&lt;/li>
+&lt;li>&lt;strong>Time Filter:&lt;/strong> We can narrow down results based on the time duration. This tab has many options to select from to filter/limit the logs.&lt;/li>
+&lt;li>&lt;strong>Time Interval:&lt;/strong> This chart shows the event counts over time.&lt;/li>
+&lt;li>&lt;strong>Inspector:&lt;/strong> This tab helps us understand the request Kibana is doing to elasticsearch, by seeing the json structure.&lt;/li>
+&lt;li>&lt;strong>Application:&lt;/strong> Is the name of the application we are using, in this case Discover, we can save our session to return to it later or manage the saved sessions.&lt;/li>
+&lt;li>&lt;strong>Add filter:&lt;/strong> Self-explanatory, it helps us add specific filters with logical operators.&lt;/li>
+&lt;/ol>
+&lt;p>Our best friend here is the fields pane since it gives us a brief overlook about all the information and helps us to filter them fast.&lt;/p>
+&lt;h2 id="kql">KQL&lt;/h2>
+&lt;p>The Kibana Query Language is a search query language used to search the ingested logs in the elasticsearch, it does not have tons of features but it is really easy to pick up, another option is the Lucene Query Language (LQL) so is opt to the user.&lt;/p>
+&lt;h3 id="free-text-search">Free text search&lt;/h3>
+&lt;p>Here you can put any text into the box and it will search it irrespective of the field, for example:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk6.png"
+loading="lazy"
+alt="elk6"
+>&lt;/p>
+&lt;p>But what happens if we only search for &amp;ldquo;United&amp;rdquo;?
+&lt;img src="https://crazyc4t.xyz/images/elk7.png"
+loading="lazy"
+alt="elk7"
+>
+It will not return any result because KQL looks only for the whole term, here is where wildcards come into play.&lt;/p>
+&lt;h3 id="wildcards">Wildcards&lt;/h3>
+&lt;p>Let&amp;rsquo;s use them! But before that let&amp;rsquo;s do a quick rundown on wildcards:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>*&lt;/code>: To match any characters and there is &lt;strong>no limit to their number&lt;/strong>&lt;/li>
+&lt;li>&lt;code>?&lt;/code>: To match any &lt;strong>single&lt;/strong> character&lt;/li>
+&lt;li>&lt;code>[characters]&lt;/code>: To match any character &lt;strong>inside&lt;/strong> the &lt;code>[]&lt;/code>&lt;/li>
+&lt;li>&lt;code>[!characters]&lt;/code>: To match any character that is &lt;strong>not inside&lt;/strong> the &lt;code>[]&lt;/code>&lt;/li>
+&lt;li>&lt;code>{}&lt;/code>: To match a group of names/wildcards patterns&lt;/li>
+&lt;/ul>
+&lt;p>Now knowing wildcards, let&amp;rsquo;s search United* and see the results:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk8.png"
+loading="lazy"
+alt="elk8"
+>&lt;/p>
+&lt;h3 id="logical-operators">Logical Operators&lt;/h3>
+&lt;p>KQL supports logical operators (AND | OR | NOT), quick examples:&lt;/p>
+&lt;h4 id="or">OR&lt;/h4>
+&lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; OR &amp;quot;England&amp;quot;&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk9.png"
+loading="lazy"
+alt="elk9"
+>&lt;/p>
+&lt;h4 id="and">AND&lt;/h4>
+&lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND &amp;quot;Virgina&amp;quot;&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk10.png"
+loading="lazy"
+alt="elk10"
+>&lt;/p>
+&lt;h4 id="not">NOT&lt;/h4>
+&lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND NOT (&amp;quot;Florida&amp;quot;)&lt;/code>, Saying all the results that match United States without florida.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk11.png"
+loading="lazy"
+alt="elk11"
+>&lt;/p>
+&lt;h3 id="field-based-search">Field-based search&lt;/h3>
+&lt;p>Here you can search for a specific value in a field, using the semicolon &amp;ldquo;:&amp;rdquo; being &lt;code>field:value&lt;/code>.&lt;/p>
+&lt;p>Look at this example:&lt;/p>
+&lt;p>&lt;img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/ffbf735277d98273d6229f4d9ee586bf.gif"
+loading="lazy"
+alt="Kibana gif"
+>&lt;/p>
+&lt;p>Kibana automatically will show you available fields and values, making your search easier.&lt;/p>
+&lt;h3 id="visualize">Visualize&lt;/h3>
+&lt;p>Visualizing is using an built-into kibna elastic application called lens that helps us read with statistics, for example in this image we can view all the connections made to a VPN.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk12.png"
+loading="lazy"
+alt="elk12"
+>&lt;/p>
+&lt;p>We can visualize by clicking the wanted field in the fields pane and clicking on visualize:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk13.png"
+loading="lazy"
+alt="elk13"
+>&lt;/p>
+&lt;p>We can edit the rules as we want, by clicking the field, in this example the rows top values of usernames:&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk14.png"
+loading="lazy"
+alt="elk14"
+>&lt;/p>
+&lt;p>There are endless possibilites, you can save them as well and add it to your dashboard.&lt;/p>
+&lt;p>&lt;img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/334ed7c0a1e727de35844174434fd4fc.gif"
+loading="lazy"
+alt="Visualization Gif"
+>&lt;/p>
+&lt;p>Like so:&lt;/p>
+&lt;p>&lt;img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/05016a6cc1c12d40b90ce9d290525378.gif"
+loading="lazy"
+alt="add dashboard"
+>&lt;/p>
+&lt;h1 id="where-to-go-from-here">Where to go from here?&lt;/h1>
+&lt;ol>
+&lt;li>Put your knowledge to the test with the ItsyBitsy machine, where you will need to investigate an alert by IDS regarding a potential C2 communication, here is the &lt;a class="link" href="https://tryhackme.com/room/itsybitsy" target="_blank" rel="noopener"
+>link&lt;/a>&lt;/li>
+&lt;li>Set up your own kibana instance with sample data! You can do so with a virtual machine (Ubuntu 22.10 or Debian 11 is perfect) and start playing around!&lt;/li>
+&lt;li>Read the &lt;a class="link" href="https://www.elastic.co/guide/en/kibana/current/get-started.html" target="_blank" rel="noopener"
+>docs&lt;/a>&lt;/li>
+&lt;/ol></description></item></channel></rss>
