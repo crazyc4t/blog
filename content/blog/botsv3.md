@@ -8,7 +8,7 @@ comments: true
 draft: false
 toc: true
 categories: ["Hacking"]
-tags: ["Splunk"]
+tags: ["Splunk", "SIEM"]
 author: "Said Neder"
 ---
 

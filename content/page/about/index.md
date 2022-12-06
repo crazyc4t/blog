@@ -1,19 +1,19 @@
 ---
 title: About
 description: My journey that got me where I am today.
-date: '2019-02-28'
+date: "2019-02-28"
 aliases:
   - about
 license: GNU GPLv3
-lastmod: '[10 09](2020-10-09)'
+lastmod: "[10 09](2020-10-09)"
 menu:
-    main: 
-        weight: -90
-        params:
-            icon: user
+  main:
+    weight: -90
+    params:
+      icon: user
 ---
 
-I'm Said Neder, a 17 year old ecuadorian, a free software enthusiast who loves programming, better said, technology altogether, and I found that of myself when I was 15 years old and the covid pandemic striked in, and I was stuck at home, for a complete year, and for me that time where I was completely **alone** because my older brother that is like my best friend left, I was just with my parents, and then I knew that it was my time to shine, I have always admired people that were very technical with computers and the sexy looking terminals in the hacker movies made me really interested, so I picked up python to learn while being at home, and it was one of the best decisions of my life, I had so much fun to learn to have the power of doing everything that I wanted to create, and the constant learning that made me excited for every new topic, but that was like 2 years ago.
+I'm Said Neder, a 18 year old ecuadorian, a free software enthusiast who loves programming, better said, technology altogether, and I found that of myself when I was 15 years old and the covid pandemic striked in, and I was stuck at home, for a complete year, and for me that time where I was completely **alone** because my older brother that is like my best friend left, I was just with my parents, and then I knew that it was my time to shine, I have always admired people that were very technical with computers and the sexy looking terminals in the hacker movies made me really interested, so I picked up python to learn while being at home, and it was one of the best decisions of my life, I had so much fun to learn to have the power of doing everything that I wanted to create, and the constant learning that made me excited for every new topic, but that was like 2 years ago.
 
 ![Myself](/images/memain.jpg)
 
@@ -25,7 +25,7 @@ Brazilian Jiu Jitsu Is one of the main pillars of my life, it's a really tough s
 
 My ultimate goal is to move out from Ecuador to Vancouver, Canada and land a job in the industry, while studying my degree in computer science, and to live a meaningful life by helping others and expressing myself giving what I can, like in this blog, and to have a really cute shiba inu to walk him to awesome landscapes that vancouver has to offer, I will certainly miss Ecuador since is my motherland and for me is the most beutiful place in this world.
 
-* * *
+---
 
 ## Donations
 
@@ -41,4 +41,4 @@ Here you will find all of my crypto addresses! thank you for your kind donation!
 
 Right on the coffee mug icon next to my name! Or just by pressing this button:
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#1C1F20', 'Z8Z2643OM');kofiwidget2.draw();</script> 
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#1C1F20', 'Z8Z2643OM');kofiwidget2.draw();</script>
