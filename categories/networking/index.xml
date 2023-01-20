@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Networking on crazyc4t's blog</title><link>https://crazyc4t.xyz/categories/networking/</link><description>Recent content in Networking on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://crazyc4t.xyz/categories/networking/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Networking on crazyc4t's blog</title><link>https://crazyc4t.xyz/categories/networking/</link><description>Recent content in Networking on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 20 Jan 2023 11:14:01 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/categories/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>I am studying for my JNCIA-JunOS and why you should do too!</title><link>https://crazyc4t.xyz/blog/jncia/</link><pubDate>Fri, 20 Jan 2023 11:14:01 -0500</pubDate><guid>https://crazyc4t.xyz/blog/jncia/</guid><description>&lt;img src="https://crazyc4t.xyz/images/juniperlogo.png" alt="Featured image of post I am studying for my JNCIA-JunOS and why you should do too!" />&lt;h1 id="my-journey-into-getting-jncia-junos-certified">My journey into getting JNCIA-JunOS certified!&lt;/h1>
+&lt;p>Hello guys it&amp;rsquo;s crazyc4t once again, first of all happy new years!&lt;/p>
+&lt;p>I know I haven&amp;rsquo;t been active lately but this will change, starting with my lack of networking skills, I must need to admit, I&amp;rsquo;m not a fan of networking&amp;hellip;&lt;/p>
+&lt;p>&lt;strong>Why are you writing this blogpost then?&lt;/strong>&lt;/p>
+&lt;p>First, let me get you in the context&amp;hellip;&lt;/p>
+&lt;h2 id="my-story-with-networking">My story with networking&lt;/h2>
+&lt;p>As I said, I&amp;rsquo;m not a huge fan of networking, doesn&amp;rsquo;t mean that I don&amp;rsquo;t like it, it&amp;rsquo;s just that I prefer doing other things like ethical hacking and learn more about linux tho, but at one stage of ethical hacking I noticed the lack of my networking skills, since I understood everything that I was doing but very broadly, and I wanted to understand more deeply, so that&amp;rsquo;s why I went my way to get the CCNA, started with &lt;a class="link" href="https://www.youtube.com/watch?v=H8W9oMNSuwo&amp;amp;list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ" target="_blank" rel="noopener"
+>Jeremy&amp;rsquo;s IT labs course&lt;/a> that is truly awesome really is a great resource but, for me it didn&amp;rsquo;t clicked and just felt boring and not aligned with what I wanted, so I left CCNA and started studying a lot of stuff that lead me to not certify myself in months, in a blank space where I didn&amp;rsquo;t knew where to go or to do, but I got a job in cybersecurity and it was awesome! And that made me acknowledge that I&amp;rsquo;m good and I like cybersecurity and blue team operations, that is my thing!&lt;/p>
+&lt;p>But&amp;hellip; the lack of networking when it&amp;rsquo;s going to be fulfilled?&lt;/p>
+&lt;h2 id="why-not-the-ccna">Why not the CCNA?&lt;/h2>
+&lt;p>As I said, the CCNA is awesome and it holds really good value, but it is really expensive, because the exam itself is $300 dollars and there&amp;rsquo;s good free training, as well as labs but if you want to get really great training and awesome practice tests and labs, for example from &lt;a class="link" href="https://www.boson.com/certification/CCNA" target="_blank" rel="noopener"
+>boson&lt;/a>, the price justs adds up, including the official guide books and more.&lt;/p>
+&lt;p>And the CCNA is &lt;strong>NOT&lt;/strong> a beginner level certification, since it really covers deeply routing and switching and handling of cisco devices, so it is a lot of content to cover, and I wanted a good fundamental level of networking, and also that is not going to break the bank.&lt;/p>
+&lt;h2 id="comptia-network-then-right">CompTIA Network+ then right!&lt;/h2>
+&lt;p>Not exactly, well the Network + covers a good level of networking, it is non-vendor specific, so you will know networking, but not specifically how to manage it on a CLI, also I don&amp;rsquo;t like compTIA very much since their prices are elevated and also their certifications don&amp;rsquo;t hold much value, only a few ones like the Sec + and the A +.&lt;/p>
+&lt;h2 id="juniper-comes-to-the-rescue">Juniper comes to the rescue!&lt;/h2>
+&lt;p>Juniper networks is a company that sells networking and cybersecurity solutions to businesses, and they have their own devices like switches, routers, firewalls and more, and they even have AI driven networks called &amp;ldquo;Mist&amp;rdquo;, isn&amp;rsquo;t that awesome? Just to show you that they aren&amp;rsquo;t a average joe in networking, they are a leader in wired and wireless infrastructure, competing with Cisco, Arista, Fortinet, Aruba just to name a few.&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/quadrantjuniper.png"
+loading="lazy"
+alt="miau"
+>&lt;/p>
+&lt;h2 id="juniper-certifications">Juniper certifications&lt;/h2>
+&lt;p>Now that I showed you that Juniper isn&amp;rsquo;t a nobody in the networking space, their certification program is just AWESOME! there&amp;rsquo;s no more ways to put it, why?&lt;/p>
+&lt;ul>
+&lt;li>They offer free training for every certification available for 6 months.&lt;/li>
+&lt;li>After finishing the training, they give you practice test and a evaluated test.&lt;/li>
+&lt;li>If you pass the evaluated test they give you a 75% DISCOUNT ON THE CERTIFICATION VOUCHER!&lt;/li>
+&lt;/ul>
+&lt;p>So you can have a real networking certification, with free training and if you complete everythinig you have the voucher for $50 bucks? I&amp;rsquo;m in.&lt;/p>
+&lt;p>That&amp;rsquo;s why you should certify yourself as well as me!&lt;/p>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/certsjuniper.png"
+loading="lazy"
+alt="certs"
+>&lt;/p>
+&lt;p>This is the different levels and certifications they offer, and all follow the same program, that is &amp;ldquo;JunOS Genius&amp;rdquo;, the platform that offers the free training, so you have a variety of different areas you can select to study, in my case I&amp;rsquo;m learning routing and switching, so that&amp;rsquo;s why I&amp;rsquo;m preparring myself for the JNCIA-JunOS&lt;/p>
+&lt;h2 id="jncia-junos">JNCIA-JunOS&lt;/h2>
+&lt;p>&lt;img src="https://crazyc4t.xyz/images/jnciabadge.png"
+loading="lazy"
+alt="jncia"
+>&lt;/p>
+&lt;p>This certification is awesome since it teaches you the fundamentals of networking, subnetting and it teaches you more deeply while learning to configure juniper&amp;rsquo;s switches and routers, with protocols like RIP or OSPF, and much more.&lt;/p>
+&lt;p>This will establish my desired networking knowledge learning-by-doing, and I can feel more confident now and experiment more deeply with networks.&lt;/p>
+&lt;p>On top of the free training, you have free labs! So what are you waiting for? I will upload my notes on my blog regurlarly and I&amp;rsquo;m taking the test on february so I will keep you updated on how it went!&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.juniper.net/documentation/product/us/en/junos-os/" target="_blank" rel="noopener"
+>Juniper&amp;rsquo;s Tech Library&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.juniper.net/us/en/training/certification/tracks/junos/jncia-junos.html" target="_blank" rel="noopener"
+>Exam Objectives&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=JUNIPER-CERTIFICATION-PROGRAM-HOME" target="_blank" rel="noopener"
+>Learning Portal&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://jlabs.juniper.net/vlabs/" target="_blank" rel="noopener"
+>Virtual Labs&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
