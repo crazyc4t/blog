@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on crazyc4t's blog</title><link>https://crazyc4t.xyz/categories/tools/</link><description>Recent content in Tools on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 06 Dec 2022 14:34:23 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/categories/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Elk stack once and for all!</title><link>https://crazyc4t.xyz/blog/elk-stack/</link><pubDate>Tue, 06 Dec 2022 14:34:23 -0500</pubDate><guid>https://crazyc4t.xyz/blog/elk-stack/</guid><description>&lt;img src="https://crazyc4t.xyz/images/elkbanner.png" alt="Featured image of post Elk stack once and for all!" />&lt;p>Welcome to this quick guide on using the ELK stack, specially Elastic&amp;rsquo;s Kibana interface to search, filter and create visualizations and dashboards, taking as an example the investigation of vpn logs for anomalies.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk1.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/categories/tools/</link><description>Recent content in Tools on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 06 Dec 2022 14:34:23 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/categories/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Elk stack once and for all!</title><link>https://blog.crazyc4t.xyz/blog/elk-stack/</link><pubDate>Tue, 06 Dec 2022 14:34:23 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/elk-stack/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/elkbanner.png" alt="Featured image of post Elk stack once and for all!" />&lt;p>Welcome to this quick guide on using the ELK stack, specially Elastic&amp;rsquo;s Kibana interface to search, filter and create visualizations and dashboards, taking as an example the investigation of vpn logs for anomalies.&lt;/p>
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk1.png"
 loading="lazy"
 alt="elk1"
 >&lt;/p>
@@ -9,7 +9,7 @@ alt="elk1"
 &lt;p>Is a full-text search and analytics engine used to store JSON documents, being a critical part since is the component used to store, analyze, perform correlation on the data and so much more, having a RESTfull API to interact with it.&lt;/p>
 &lt;h2 id="logstash">Logstash&lt;/h2>
 &lt;p>Data processing engine used to take the data the data from different sources, apply a filter or normalize it, and then send it to the destination, being the majority of the cases a elasticsearch database, kibana or a listening port, being separated like this:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk2.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk2.png"
 loading="lazy"
 alt="elk2"
 >&lt;/p>
@@ -21,20 +21,20 @@ alt="elk2"
 &lt;p>This is the part where the filtered data is sended to a listening port, elasticsearch database, or kibana.&lt;/p>
 &lt;h2 id="beats">Beats&lt;/h2>
 &lt;p>Host-based agent (Meaning that is a program that you install or set up for each of your devices) known as data-shippers since it&amp;rsquo;s used to send data from the endpoints to logstash, or elasticsearch, for example all the &amp;ldquo;beats&amp;rdquo; available:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk3.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk3.png"
 loading="lazy"
 alt="elk3"
 >&lt;/p>
 &lt;h2 id="kibana">Kibana&lt;/h2>
 &lt;p>Is a web-based data visualization that works with elasticsearch to analyze, investigate and visualize the data stream in real-time, you can create multiple visualizations, dashboards and specific lookups with KQL (Kibana query language) more on that later.&lt;/p>
 &lt;h2 id="how-they-work-together">How they work together&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk4.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk4.png"
 loading="lazy"
 alt="elk4"
 >&lt;/p>
 &lt;h1 id="getting-our-feets-wet-with-kibana">Getting our feets wet with Kibana&lt;/h1>
 &lt;p>This is the discover tab in our Kibana instance, if you have used Splunk before, they are fundamentally the same, and that&amp;rsquo;s why it&amp;rsquo;s going to be easy to get started with, since they are both SIEMs.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk5.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk5.png"
 loading="lazy"
 alt="elk5"
 >&lt;/p>
@@ -54,12 +54,12 @@ alt="elk5"
 &lt;p>The Kibana Query Language is a search query language used to search the ingested logs in the elasticsearch, it does not have tons of features but it is really easy to pick up, another option is the Lucene Query Language (LQL) so is opt to the user.&lt;/p>
 &lt;h3 id="free-text-search">Free text search&lt;/h3>
 &lt;p>Here you can put any text into the box and it will search it irrespective of the field, for example:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk6.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk6.png"
 loading="lazy"
 alt="elk6"
 >&lt;/p>
 &lt;p>But what happens if we only search for &amp;ldquo;United&amp;rdquo;?
-&lt;img src="https://crazyc4t.xyz/images/elk7.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/elk7.png"
 loading="lazy"
 alt="elk7"
 >
@@ -74,7 +74,7 @@ It will not return any result because KQL looks only for the whole term, here is
 &lt;li>&lt;code>{}&lt;/code>: To match a group of names/wildcards patterns&lt;/li>
 &lt;/ul>
 &lt;p>Now knowing wildcards, let&amp;rsquo;s search United* and see the results:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk8.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk8.png"
 loading="lazy"
 alt="elk8"
 >&lt;/p>
@@ -82,19 +82,19 @@ alt="elk8"
 &lt;p>KQL supports logical operators (AND | OR | NOT), quick examples:&lt;/p>
 &lt;h4 id="or">OR&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; OR &amp;quot;England&amp;quot;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk9.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk9.png"
 loading="lazy"
 alt="elk9"
 >&lt;/p>
 &lt;h4 id="and">AND&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND &amp;quot;Virgina&amp;quot;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk10.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk10.png"
 loading="lazy"
 alt="elk10"
 >&lt;/p>
 &lt;h4 id="not">NOT&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND NOT (&amp;quot;Florida&amp;quot;)&lt;/code>, Saying all the results that match United States without florida.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk11.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk11.png"
 loading="lazy"
 alt="elk11"
 >&lt;/p>
@@ -108,17 +108,17 @@ alt="Kibana gif"
 &lt;p>Kibana automatically will show you available fields and values, making your search easier.&lt;/p>
 &lt;h3 id="visualize">Visualize&lt;/h3>
 &lt;p>Visualizing is using an built-into kibna elastic application called lens that helps us read with statistics, for example in this image we can view all the connections made to a VPN.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk12.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk12.png"
 loading="lazy"
 alt="elk12"
 >&lt;/p>
 &lt;p>We can visualize by clicking the wanted field in the fields pane and clicking on visualize:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk13.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk13.png"
 loading="lazy"
 alt="elk13"
 >&lt;/p>
 &lt;p>We can edit the rules as we want, by clicking the field, in this example the rows top values of usernames:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk14.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk14.png"
 loading="lazy"
 alt="elk14"
 >&lt;/p>
@@ -139,9 +139,9 @@ alt="add dashboard"
 &lt;li>Set up your own kibana instance with sample data! You can do so with a virtual machine (Ubuntu 22.10 or Debian 11 is perfect) and start playing around!&lt;/li>
 &lt;li>Read the &lt;a class="link" href="https://www.elastic.co/guide/en/kibana/current/get-started.html" target="_blank" rel="noopener"
 >docs&lt;/a>&lt;/li>
-&lt;/ol></description></item><item><title>Deep dive into nmap</title><link>https://crazyc4t.xyz/blog/nmap/</link><pubDate>Sat, 05 Nov 2022 13:17:13 -0500</pubDate><guid>https://crazyc4t.xyz/blog/nmap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/nmaplogo.jpg" alt="Featured image of post Deep dive into nmap" />&lt;p>When it comes to hacking, knowledge is power, the more you know, the more options you have to attack, making critical a proper enumeration before any type of exploitation.&lt;/p>
+&lt;/ol></description></item><item><title>Deep dive into nmap</title><link>https://blog.crazyc4t.xyz/blog/nmap/</link><pubDate>Sat, 05 Nov 2022 13:17:13 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/nmap/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/nmaplogo.jpg" alt="Featured image of post Deep dive into nmap" />&lt;p>When it comes to hacking, knowledge is power, the more you know, the more options you have to attack, making critical a proper enumeration before any type of exploitation.&lt;/p>
 &lt;p>Before attacking our target we need to know what is what we are about to attack, we need to know what type of services or OS is running, and we can accomplish that by making a network map, hence the name of Nmap, specifically doing &amp;ldquo;port scanning&amp;rdquo;, because these services are listening on a specific &amp;ldquo;ports&amp;rdquo; of the network, being ports a network structure your service runs on to establish a connection, the service are always &amp;ldquo;listening&amp;rdquo; (waiting for another device that wants to establish a connection) and the user when connecting to the specific port they open a port for receiving information from the other port (for example: HTTPS 443)&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap.png"
 loading="lazy"
 alt="image"
 >&lt;/p>
@@ -178,14 +178,14 @@ alt="image"
 &lt;/ul>
 &lt;h2 id="tcp-connect-scans">TCP Connect Scans&lt;/h2>
 &lt;p>This type of scans are made when completing the three-way handshake:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap1.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap1.png"
 loading="lazy"
 alt="image1"
 >&lt;/p>
 &lt;p>Where it sends a SYN packet to the specified port, if it receives the SYN/ACK, it will reply with ACK, and terminating the handshake, having closed the connection, it will know that the port is open.&lt;/p>
 &lt;p>&lt;strong>What happens if it&amp;rsquo;s closed?&lt;/strong>
 When sending a SYN packet, the target replies with RST (reset), that means the port is closed (does not exist)&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap2.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap2.png"
 loading="lazy"
 alt="image2"
 >&lt;/p>
@@ -197,7 +197,7 @@ It will just drop the connection, it won&amp;rsquo;t reply back at all, and when
 &lt;p>These are similar to the TCP scans, but are referred as &amp;ldquo;half-open&amp;rdquo; or &amp;ldquo;stealth&amp;rdquo;, because when receiving the SYN/ACK packet, it will send instead of ACK, RST, closing the connection early and therefore no letting the target re-send packets again, being faster and stealthier because the majority of the times only full TCP connections are logged, and this is not one of those.&lt;/p>
 &lt;p>Example:
 &lt;code>nmap -sS &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap3.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap3.png"
 loading="lazy"
 alt="nmap3"
 >&lt;/p>
@@ -209,20 +209,20 @@ alt="nmap3"
 &lt;h3 id="null">NULL&lt;/h3>
 &lt;p>This is when instead of sending a SYN packet, it sends a NULL packet, being essentially none, nothing, and the reply back is a RST/ACK.&lt;/p>
 &lt;p>Example: &lt;code>nmap -sN &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap4.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap4.png"
 loading="lazy"
 alt="nmap4"
 >&lt;/p>
 &lt;h3 id="fin">FIN&lt;/h3>
 &lt;p>It is the same as NULL, but instead is a FIN packet (final), that is used to end the connection, so the reply is the same as NULL.&lt;/p>
 &lt;p>Example: &lt;code>nmap -sF &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap5.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap5.png"
 loading="lazy"
 alt="nmap5"
 >&lt;/p>
 &lt;h2 id="xmas">Xmas&lt;/h2>
 &lt;p>Xmas scans send a malformed TCP packet and expects a RST reply for closed ports.
-&lt;img src="https://crazyc4t.xyz/images/nmap6.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/nmap6.png"
 loading="lazy"
 alt="nmap6"
 >&lt;/p>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LaTeX on crazyc4t's blog</title><link>https://crazyc4t.xyz/tags/latex/</link><description>Recent content in LaTeX on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 19 Jan 2022 17:22:31 +0000</lastBuildDate><atom:link href="https://crazyc4t.xyz/tags/latex/index.xml" rel="self" type="application/rss+xml"/><item><title>LaTeX for humans</title><link>https://crazyc4t.xyz/blog/latexforhumans/</link><pubDate>Wed, 19 Jan 2022 17:22:31 +0000</pubDate><guid>https://crazyc4t.xyz/blog/latexforhumans/</guid><description>&lt;img src="https://crazyc4t.xyz/images/hellolatex.png" alt="Featured image of post LaTeX for humans" />&lt;h2 id="intro">Intro&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LaTeX on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/tags/latex/</link><description>Recent content in LaTeX on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 19 Jan 2022 17:22:31 +0000</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/tags/latex/index.xml" rel="self" type="application/rss+xml"/><item><title>LaTeX for humans</title><link>https://blog.crazyc4t.xyz/blog/latexforhumans/</link><pubDate>Wed, 19 Jan 2022 17:22:31 +0000</pubDate><guid>https://blog.crazyc4t.xyz/blog/latexforhumans/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/hellolatex.png" alt="Featured image of post LaTeX for humans" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This post is going to help you learn \(\LaTeX\) and convert you into a intellectual and scientific professional and by far superior with anyone that shares their report made in word!&lt;/p>
 &lt;p>But before anything&amp;hellip;&lt;/p>
 &lt;h2 id="what-is-all-this-tex-thingy">What is all this \(\TeX\) thingy?&lt;/h2>
@@ -125,7 +125,7 @@ Like so:&lt;/p>
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>The end result would be:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/hellolatex.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/hellolatex.png"
 loading="lazy"
 alt="LaTeX example"
 >&lt;/p>
@@ -169,7 +169,7 @@ alt="LaTeX example"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>The end result would be:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/latexopening.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/latexopening.png"
 loading="lazy"
 alt="LaTeX opening"
 >&lt;/p>
@@ -227,7 +227,7 @@ Now let&amp;rsquo;s create some sections and a table of contents with underlined
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>The end result would be:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/latextableofcontents.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/latextableofcontents.png"
 loading="lazy"
 alt="latexing"
 >&lt;/p>

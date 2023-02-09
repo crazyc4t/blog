@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on crazyc4t's blog</title><link>https://crazyc4t.xyz/categories/linux/</link><description>Recent content in Linux on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 Oct 2022 13:07:44 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>How to play Overwatch 2 in linux</title><link>https://crazyc4t.xyz/blog/overwatch2/</link><pubDate>Sat, 08 Oct 2022 13:07:44 -0500</pubDate><guid>https://crazyc4t.xyz/blog/overwatch2/</guid><description>&lt;img src="https://crazyc4t.xyz/images/overwatch2.jpeg" alt="Featured image of post How to play Overwatch 2 in linux" />&lt;p>Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it&amp;rsquo;s time for us to try it!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/categories/linux/</link><description>Recent content in Linux on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 Oct 2022 13:07:44 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>How to play Overwatch 2 in linux</title><link>https://blog.crazyc4t.xyz/blog/overwatch2/</link><pubDate>Sat, 08 Oct 2022 13:07:44 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/overwatch2/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/overwatch2.jpeg" alt="Featured image of post How to play Overwatch 2 in linux" />&lt;p>Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it&amp;rsquo;s time for us to try it!&lt;/p>
 &lt;p>Playing it on linux is really simple, so feel free to follow along!&lt;/p>
 &lt;p>I&amp;rsquo;m using arch linux when following this guide, if you are not running arch linux as your linux distribution, don&amp;rsquo;t worry! Just make sure everything is up-to-date with your system.&lt;/p>
 &lt;h2 id="installing-the-requirements">Installing the requirements&lt;/h2>
@@ -17,12 +17,12 @@
 >here&lt;/a> for drivers.&lt;/p>
 &lt;h2 id="installing-battle-net">Installing Battle Net&lt;/h2>
 &lt;p>This step is very easy, we need to open lutris, click in the &amp;ldquo;runner&amp;rdquo; section the little drop-down box besides wine:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/winesection.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/winesection.png"
 loading="lazy"
 alt="winesection"
 >&lt;/p>
 &lt;p>Install &amp;ldquo;overwatch2-caffe&amp;rdquo; wine runner, since it&amp;rsquo;s the runner we are going to use for installing battle.net:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/wineinstall.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/wineinstall.png"
 loading="lazy"
 alt="wineinstall"
 >&lt;/p>
@@ -31,12 +31,12 @@ alt="wineinstall"
 &lt;p>Follow the installation wizard of battle.net, &lt;strong>disable the check-box of auto-starting battle.net when the computer starts&lt;/strong> and when it prompts you to login, do not login yet, just close the program and let the lutris installation wizard finish.&lt;/p>
 &lt;h3 id="using-caffe-runner">Using caffe runner&lt;/h3>
 &lt;p>When finishing the installation, you need to select battle.net, then press on the up-arrow button besides the &amp;ldquo;play&amp;rdquo; button:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/runner.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/runner.png"
 loading="lazy"
 alt="configure"
 >&lt;/p>
 &lt;p>After that press configure, under the &amp;ldquo;runner&amp;rdquo; tab, there is the &amp;ldquo;wine version&amp;rdquo; that will be &amp;ldquo;overwatch2-caffe&amp;rdquo;, if it does not show in the selection, please read carefully again on how to install runners under the &lt;a class="link" href="#installing-battle-net" >Installing Battle net&lt;/a>
-&lt;img src="https://crazyc4t.xyz/images/runnertab.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/runnertab.png"
 loading="lazy"
 alt="runnertab"
 >&lt;/p>
@@ -51,7 +51,7 @@ alt="runnertab"
 &lt;li>Check you are using the caffe runner, if it keeps happening, disable the fsync setting under the runner tab.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>What to do after installing Fedora KDE</title><link>https://crazyc4t.xyz/blog/debloating_fedora/</link><pubDate>Tue, 01 Mar 2022 20:59:45 -0500</pubDate><guid>https://crazyc4t.xyz/blog/debloating_fedora/</guid><description>&lt;img src="https://crazyc4t.xyz/images/fedora.png" alt="Featured image of post What to do after installing Fedora KDE" />&lt;p>Welcome again to my blog, it has been a bit of a long time isn&amp;rsquo;t it? But am back once again! And more active than ever so expect so more blogposts coming your way!&lt;/p>
+&lt;/ul></description></item><item><title>What to do after installing Fedora KDE</title><link>https://blog.crazyc4t.xyz/blog/debloating_fedora/</link><pubDate>Tue, 01 Mar 2022 20:59:45 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/debloating_fedora/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/fedora.png" alt="Featured image of post What to do after installing Fedora KDE" />&lt;p>Welcome again to my blog, it has been a bit of a long time isn&amp;rsquo;t it? But am back once again! And more active than ever so expect so more blogposts coming your way!&lt;/p>
 &lt;h2 id="why-am-running-fedora">Why am running fedora&lt;/h2>
 &lt;p>As some of you know, I was using &lt;a class="link" href="https://archlinux.org/" target="_blank" rel="noopener"
 >Arch Linux&lt;/a> with a window manager or &amp;ldquo;WM&amp;rdquo; for simplicity, (If you want to see my dotfiles, &lt;a class="link" href="https://github.com/crazyc4t/dotfiles" target="_blank" rel="noopener"
@@ -172,7 +172,7 @@ alt="runnertab"
 &lt;h2 id="outro">Outro&lt;/h2>
 &lt;p>This is my quick setup guide of fedora KDE! Probably am going to write a script that automates this process, stay tuned for that, just wanted to say thank you for reading my posts, wishing you all a great start of the month, time to get after it! Love from Ecuador.&lt;/p>
 &lt;p>Thanks so much for the fedora&amp;rsquo;s subreddit &lt;a class="link" href="https://www.reddit.com/r/Fedora/" target="_blank" rel="noopener"
->r/Fedora&lt;/a> helping me to improve my post!&lt;/p></description></item><item><title>How to free yourself by installing linux</title><link>https://crazyc4t.xyz/blog/freeyourself/</link><pubDate>Sun, 21 Nov 2021 01:40:22 -0500</pubDate><guid>https://crazyc4t.xyz/blog/freeyourself/</guid><description>&lt;img src="https://crazyc4t.xyz/images/lmdeskdemo.png" alt="Featured image of post How to free yourself by installing linux" />&lt;h2 id="intro">Intro&lt;/h2>
+>r/Fedora&lt;/a> helping me to improve my post!&lt;/p></description></item><item><title>How to free yourself by installing linux</title><link>https://blog.crazyc4t.xyz/blog/freeyourself/</link><pubDate>Sun, 21 Nov 2021 01:40:22 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/freeyourself/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/lmdeskdemo.png" alt="Featured image of post How to free yourself by installing linux" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This is a special blogpost since this is the guide to switch from windows to linux for new users, and the way to free them of propietary software and enjoy their freedom with free software, the software you should run!&lt;/p>
 &lt;p>We are going to divide this guide in steps:&lt;/p>
 &lt;h2 id="intro-1">Intro&lt;/h2>
@@ -351,7 +351,7 @@ To install Linux the only requirement we need to have besides our computer is a 
 &lt;h3 id="flashing-our-distro">Flashing our distro&lt;/h3>
 &lt;p>Download etcher on their &lt;a class="link" href="https://www.balena.io/etcher/" target="_blank" rel="noopener"
 >website&lt;/a> and install it, then time to plug your flash drive but &lt;strong>WARNING&lt;/strong> everything in the flash drive &lt;strong>WILL BE DELETED&lt;/strong>, so back up your files, now just follow the steps in screen, that is the first step to select the .iso that you downloaded, the second to select your flash drive and the third to flash, and should look like so:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/etcherdemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/etcherdemo.png"
 loading="lazy"
 alt="etcherdemo.png"
 >&lt;/p>
@@ -378,7 +378,7 @@ alt="etcherdemo.png"
 &lt;/ul>
 &lt;p>If you made this successfully, congrats! you have made the hardest thing in this whole step!&lt;/p>
 &lt;p>Now you are on the desktop of your chosen linux distro! (except elementary OS, follow the installer and choose &amp;ldquo;demo mode&amp;rdquo;)&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/linuxmintdeskdemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/linuxmintdeskdemo.png"
 loading="lazy"
 alt="linuxmintdeskdemo.png"
 >&lt;/p>
@@ -387,13 +387,13 @@ alt="linuxmintdeskdemo.png"
 &lt;p>Note: If you have the option to install multimedia codecs, do it! is for managing audio and video files.&lt;/p>
 &lt;p>Now here is a side-note, there&amp;rsquo;s something called &amp;ldquo;dual booting&amp;rdquo; that is having linux alongside windows, and when you boot your computer you will decide what operating system you want to use, and this could be great as it could be a little bit of a headache, I have dual booted before and my experience has been okay-ish, but other users have reported that when Windows updates have deleted their linux partition, or have deleted their boot entry (that has happen to me before and I couldn&amp;rsquo;t recover linux, but it was my fault in certain way) so you can have a dual boot, or just wipe out windows and have only linux (recommended way) but finally is your computer and you have the last word, if you decide to dual boot, your installer will give you the option and you will need to decide how much space you want to give each OS, so take that in mind since windows is bloated and heavy, so for me a clean install is the best option but is your computer after all.&lt;/p>
 &lt;p>Now, along the installer you will have the option to encrypt your drive, &lt;strong>please do it&lt;/strong> it will increase your security being the case that someone has access to your computer fisically they can&amp;rsquo;t do anything about it since the information is encrypted and your data protected, is a huge plus!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/linuxmintinstalldemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/linuxmintinstalldemo.png"
 loading="lazy"
 alt="linuxmintinstalldemo.png"
 >&lt;/p>
 &lt;p>(this is the case for linux mint, to encrypt your home folder)&lt;/p>
 &lt;p>After all, we are golden! Welcome to Linux!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/lmdeskdemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/lmdeskdemo.png"
 loading="lazy"
 alt="lmdeskdemo.png"
 >&lt;/p>
@@ -446,7 +446,7 @@ But there&amp;rsquo;s some steps I would recommend to do before you go crazy!&lt
 &lt;/li>
 &lt;/ul>
 &lt;p>And that&amp;rsquo;s it for me! Am glad that I can help you start your path into linux, so enjoy it, make it yours and go crazy! You can contact me in any way if you have a question, my discord code is on the About me &lt;a class="link" href="https://saidneder.tech/about/" target="_blank" rel="noopener"
->page&lt;/a>!&lt;/p></description></item><item><title>How to customize your terminal!</title><link>https://crazyc4t.xyz/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>https://crazyc4t.xyz/blog/niceterminal/</guid><description>&lt;img src="https://crazyc4t.xyz/images/terminal.png" alt="Featured image of post How to customize your terminal!" />&lt;h2 id="intro">Intro&lt;/h2>
+>page&lt;/a>!&lt;/p></description></item><item><title>How to customize your terminal!</title><link>https://blog.crazyc4t.xyz/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/niceterminal/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/terminal.png" alt="Featured image of post How to customize your terminal!" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This is a tutorial-type of blogpost, sorry for being away so long, but there&amp;rsquo;s a lot of blogposts coming to your way, so expect some new ones!&lt;/p>
 &lt;p>What we want to achieve in this tutorial:&lt;/p>
 &lt;ul>
@@ -705,10 +705,10 @@ and is going to be store in &lt;code>~/.config/alacritty/&lt;/code>.&lt;/p>
 &lt;p>Just run the script!
 &lt;code>alacritty-themes&lt;/code>&lt;/p>
 &lt;p>and select the theme you like and enjoy!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/terminal.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/terminal.png"
 loading="lazy"
 alt="Custom terminal"
->&lt;/p></description></item><item><title>What is GNU + Linux? Why should you care?</title><link>https://crazyc4t.xyz/blog/penguin/</link><pubDate>Wed, 22 Sep 2021 18:58:53 -0500</pubDate><guid>https://crazyc4t.xyz/blog/penguin/</guid><description>&lt;img src="https://crazyc4t.xyz/images/linus.jpeg" alt="Featured image of post What is GNU + Linux? Why should you care?" />&lt;h2 id="intro">Intro&lt;/h2>
+>&lt;/p></description></item><item><title>What is GNU + Linux? Why should you care?</title><link>https://blog.crazyc4t.xyz/blog/penguin/</link><pubDate>Wed, 22 Sep 2021 18:58:53 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/penguin/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/linus.jpeg" alt="Featured image of post What is GNU + Linux? Why should you care?" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>Am going to talk about one of my favourite things in the world, what lead me to where I am today, Linux, the open-source operating system created by the community!&lt;/p>
 &lt;h2 id="what-is-linux">What is linux?&lt;/h2>
 &lt;p>You use Linux everyday, without even noticing, &lt;strong>you are using linux right now!!&lt;/strong> since this

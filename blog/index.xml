@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 20 Jan 2023 11:14:01 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>I am studying for my JNCIA-JunOS and why you should do too!</title><link>https://crazyc4t.xyz/blog/jncia/</link><pubDate>Fri, 20 Jan 2023 11:14:01 -0500</pubDate><guid>https://crazyc4t.xyz/blog/jncia/</guid><description>&lt;img src="https://crazyc4t.xyz/images/juniperlogo.png" alt="Featured image of post I am studying for my JNCIA-JunOS and why you should do too!" />&lt;h1 id="my-journey-into-getting-jncia-junos-certified">My journey into getting JNCIA-JunOS certified!&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/blog/</link><description>Recent content in Blogs on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 20 Jan 2023 11:14:01 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>I am studying for my JNCIA-JunOS and why you should do too!</title><link>https://blog.crazyc4t.xyz/blog/jncia/</link><pubDate>Fri, 20 Jan 2023 11:14:01 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/jncia/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/juniperlogo.png" alt="Featured image of post I am studying for my JNCIA-JunOS and why you should do too!" />&lt;h1 id="my-journey-into-getting-jncia-junos-certified">My journey into getting JNCIA-JunOS certified!&lt;/h1>
 &lt;p>Hello guys it&amp;rsquo;s crazyc4t once again, first of all happy new years!&lt;/p>
 &lt;p>I know I haven&amp;rsquo;t been active lately but this will change, starting with my lack of networking skills, I must need to admit, I&amp;rsquo;m not a fan of networking&amp;hellip;&lt;/p>
 &lt;p>&lt;strong>Why are you writing this blogpost then?&lt;/strong>&lt;/p>
@@ -15,7 +15,7 @@
 &lt;p>Not exactly, well the Network + covers a good level of networking, it is non-vendor specific, so you will know networking, but not specifically how to manage it on a CLI, also I don&amp;rsquo;t like compTIA very much since their prices are elevated and also their certifications don&amp;rsquo;t hold much value, only a few ones like the Sec + and the A +.&lt;/p>
 &lt;h2 id="juniper-comes-to-the-rescue">Juniper comes to the rescue!&lt;/h2>
 &lt;p>Juniper networks is a company that sells networking and cybersecurity solutions to businesses, and they have their own devices like switches, routers, firewalls and more, and they even have AI driven networks called &amp;ldquo;Mist&amp;rdquo;, isn&amp;rsquo;t that awesome? Just to show you that they aren&amp;rsquo;t a average joe in networking, they are a leader in wired and wireless infrastructure, competing with Cisco, Arista, Fortinet, Aruba just to name a few.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/quadrantjuniper.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/quadrantjuniper.png"
 loading="lazy"
 alt="miau"
 >&lt;/p>
@@ -28,13 +28,13 @@ alt="miau"
 &lt;/ul>
 &lt;p>So you can have a real networking certification, with free training and if you complete everythinig you have the voucher for $50 bucks? I&amp;rsquo;m in.&lt;/p>
 &lt;p>That&amp;rsquo;s why you should certify yourself as well as me!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/certsjuniper.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/certsjuniper.png"
 loading="lazy"
 alt="certs"
 >&lt;/p>
 &lt;p>This is the different levels and certifications they offer, and all follow the same program, that is &amp;ldquo;JunOS Genius&amp;rdquo;, the platform that offers the free training, so you have a variety of different areas you can select to study, in my case I&amp;rsquo;m learning routing and switching, so that&amp;rsquo;s why I&amp;rsquo;m preparring myself for the JNCIA-JunOS&lt;/p>
 &lt;h2 id="jncia-junos">JNCIA-JunOS&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/jnciabadge.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/jnciabadge.png"
 loading="lazy"
 alt="jncia"
 >&lt;/p>
@@ -51,8 +51,8 @@ alt="jncia"
 >Learning Portal&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://jlabs.juniper.net/vlabs/" target="_blank" rel="noopener"
 >Virtual Labs&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Elk stack once and for all!</title><link>https://crazyc4t.xyz/blog/elk-stack/</link><pubDate>Tue, 06 Dec 2022 14:34:23 -0500</pubDate><guid>https://crazyc4t.xyz/blog/elk-stack/</guid><description>&lt;img src="https://crazyc4t.xyz/images/elkbanner.png" alt="Featured image of post Elk stack once and for all!" />&lt;p>Welcome to this quick guide on using the ELK stack, specially Elastic&amp;rsquo;s Kibana interface to search, filter and create visualizations and dashboards, taking as an example the investigation of vpn logs for anomalies.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk1.png"
+&lt;/ul></description></item><item><title>Elk stack once and for all!</title><link>https://blog.crazyc4t.xyz/blog/elk-stack/</link><pubDate>Tue, 06 Dec 2022 14:34:23 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/elk-stack/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/elkbanner.png" alt="Featured image of post Elk stack once and for all!" />&lt;p>Welcome to this quick guide on using the ELK stack, specially Elastic&amp;rsquo;s Kibana interface to search, filter and create visualizations and dashboards, taking as an example the investigation of vpn logs for anomalies.&lt;/p>
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk1.png"
 loading="lazy"
 alt="elk1"
 >&lt;/p>
@@ -62,7 +62,7 @@ alt="elk1"
 &lt;p>Is a full-text search and analytics engine used to store JSON documents, being a critical part since is the component used to store, analyze, perform correlation on the data and so much more, having a RESTfull API to interact with it.&lt;/p>
 &lt;h2 id="logstash">Logstash&lt;/h2>
 &lt;p>Data processing engine used to take the data the data from different sources, apply a filter or normalize it, and then send it to the destination, being the majority of the cases a elasticsearch database, kibana or a listening port, being separated like this:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk2.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk2.png"
 loading="lazy"
 alt="elk2"
 >&lt;/p>
@@ -74,20 +74,20 @@ alt="elk2"
 &lt;p>This is the part where the filtered data is sended to a listening port, elasticsearch database, or kibana.&lt;/p>
 &lt;h2 id="beats">Beats&lt;/h2>
 &lt;p>Host-based agent (Meaning that is a program that you install or set up for each of your devices) known as data-shippers since it&amp;rsquo;s used to send data from the endpoints to logstash, or elasticsearch, for example all the &amp;ldquo;beats&amp;rdquo; available:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk3.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk3.png"
 loading="lazy"
 alt="elk3"
 >&lt;/p>
 &lt;h2 id="kibana">Kibana&lt;/h2>
 &lt;p>Is a web-based data visualization that works with elasticsearch to analyze, investigate and visualize the data stream in real-time, you can create multiple visualizations, dashboards and specific lookups with KQL (Kibana query language) more on that later.&lt;/p>
 &lt;h2 id="how-they-work-together">How they work together&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk4.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk4.png"
 loading="lazy"
 alt="elk4"
 >&lt;/p>
 &lt;h1 id="getting-our-feets-wet-with-kibana">Getting our feets wet with Kibana&lt;/h1>
 &lt;p>This is the discover tab in our Kibana instance, if you have used Splunk before, they are fundamentally the same, and that&amp;rsquo;s why it&amp;rsquo;s going to be easy to get started with, since they are both SIEMs.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk5.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk5.png"
 loading="lazy"
 alt="elk5"
 >&lt;/p>
@@ -107,12 +107,12 @@ alt="elk5"
 &lt;p>The Kibana Query Language is a search query language used to search the ingested logs in the elasticsearch, it does not have tons of features but it is really easy to pick up, another option is the Lucene Query Language (LQL) so is opt to the user.&lt;/p>
 &lt;h3 id="free-text-search">Free text search&lt;/h3>
 &lt;p>Here you can put any text into the box and it will search it irrespective of the field, for example:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk6.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk6.png"
 loading="lazy"
 alt="elk6"
 >&lt;/p>
 &lt;p>But what happens if we only search for &amp;ldquo;United&amp;rdquo;?
-&lt;img src="https://crazyc4t.xyz/images/elk7.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/elk7.png"
 loading="lazy"
 alt="elk7"
 >
@@ -127,7 +127,7 @@ It will not return any result because KQL looks only for the whole term, here is
 &lt;li>&lt;code>{}&lt;/code>: To match a group of names/wildcards patterns&lt;/li>
 &lt;/ul>
 &lt;p>Now knowing wildcards, let&amp;rsquo;s search United* and see the results:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk8.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk8.png"
 loading="lazy"
 alt="elk8"
 >&lt;/p>
@@ -135,19 +135,19 @@ alt="elk8"
 &lt;p>KQL supports logical operators (AND | OR | NOT), quick examples:&lt;/p>
 &lt;h4 id="or">OR&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; OR &amp;quot;England&amp;quot;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk9.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk9.png"
 loading="lazy"
 alt="elk9"
 >&lt;/p>
 &lt;h4 id="and">AND&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND &amp;quot;Virgina&amp;quot;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk10.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk10.png"
 loading="lazy"
 alt="elk10"
 >&lt;/p>
 &lt;h4 id="not">NOT&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND NOT (&amp;quot;Florida&amp;quot;)&lt;/code>, Saying all the results that match United States without florida.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk11.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk11.png"
 loading="lazy"
 alt="elk11"
 >&lt;/p>
@@ -161,17 +161,17 @@ alt="Kibana gif"
 &lt;p>Kibana automatically will show you available fields and values, making your search easier.&lt;/p>
 &lt;h3 id="visualize">Visualize&lt;/h3>
 &lt;p>Visualizing is using an built-into kibna elastic application called lens that helps us read with statistics, for example in this image we can view all the connections made to a VPN.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk12.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk12.png"
 loading="lazy"
 alt="elk12"
 >&lt;/p>
 &lt;p>We can visualize by clicking the wanted field in the fields pane and clicking on visualize:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk13.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk13.png"
 loading="lazy"
 alt="elk13"
 >&lt;/p>
 &lt;p>We can edit the rules as we want, by clicking the field, in this example the rows top values of usernames:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk14.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk14.png"
 loading="lazy"
 alt="elk14"
 >&lt;/p>
@@ -192,7 +192,7 @@ alt="add dashboard"
 &lt;li>Set up your own kibana instance with sample data! You can do so with a virtual machine (Ubuntu 22.10 or Debian 11 is perfect) and start playing around!&lt;/li>
 &lt;li>Read the &lt;a class="link" href="https://www.elastic.co/guide/en/kibana/current/get-started.html" target="_blank" rel="noopener"
 >docs&lt;/a>&lt;/li>
-&lt;/ol></description></item><item><title>Mr Robot CTF</title><link>https://crazyc4t.xyz/blog/mrrobot/</link><pubDate>Sun, 06 Nov 2022 08:42:00 -0500</pubDate><guid>https://crazyc4t.xyz/blog/mrrobot/</guid><description>&lt;img src="https://crazyc4t.xyz/images/fsociety.jpg" alt="Featured image of post Mr Robot CTF" />&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot.png"
+&lt;/ol></description></item><item><title>Mr Robot CTF</title><link>https://blog.crazyc4t.xyz/blog/mrrobot/</link><pubDate>Sun, 06 Nov 2022 08:42:00 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/mrrobot/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/fsociety.jpg" alt="Featured image of post Mr Robot CTF" />&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot.png"
 loading="lazy"
 alt="head"
 >&lt;/p>
@@ -203,7 +203,7 @@ alt="head"
 &lt;p>First my own methodology that I&amp;rsquo;m working with is to make Nmap scans, while doing some gobuster&amp;rsquo;s directories discoveries, so let&amp;rsquo;s go step by step.&lt;/p>
 &lt;h3 id="nmap">Nmap&lt;/h3>
 &lt;p>&lt;code>sudo nmap -sS -Pn -T5 -p- -vvv --open 10.10.112.68 -oG allPorts&lt;/code>
-&lt;img src="https://crazyc4t.xyz/images/mrrobot1.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot1.png"
 loading="lazy"
 alt="mrrobot1"
 >
@@ -324,7 +324,7 @@ With the &lt;code>-vvv&lt;/code> triple verbosity flag we know already open port
 &lt;/div>&lt;p>And we get tons of directories! we see repeating a lot the&lt;code>wp&lt;/code> keyword, and that&amp;rsquo;s because it&amp;rsquo;s a wordpress site! So now we know what is our target, but let&amp;rsquo;s get more knowledge about the directories of the page, since we got a dictionary from the &lt;code>robots.txt&lt;/code> file, we can do another gobuster scan:
 &lt;code>gobuster dir --url http://10.10.32.149 -t 40 -w fsocity.dic -no-error --output fsocietyScan.txt&lt;/code>&lt;/p>
 &lt;p>While that&amp;rsquo;s finishing, let&amp;rsquo;s go into some of this directories, let&amp;rsquo;s go to license:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot2.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot2.png"
 loading="lazy"
 alt="mrrobot2"
 >&lt;/p>
@@ -338,7 +338,7 @@ alt="mrrobot2"
 &lt;p>On the bottom of the page we have the wordpress version, so let&amp;rsquo;s make a quick google about if there&amp;rsquo;s some exploits on that specific version of wordpress (4.3.1)&lt;/p>
 &lt;p>Giving us as a search result a exploit database link: &lt;a class="link" href="https://www.exploit-db.com/exploits/50255" target="_blank" rel="noopener"
 >https://www.exploit-db.com/exploits/50255&lt;/a> where it says it has a RCE vulnerability (Remote Code Execution) from the wordpress admin panel (which we have access to), but before everything let&amp;rsquo;s poke around the admin panel.
-&lt;img src="https://crazyc4t.xyz/images/mrrobot3.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot3.png"
 loading="lazy"
 alt="mrrobot3"
 >&lt;/p>
@@ -732,7 +732,7 @@ alt="mrrobot3"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>As an administrator we can do anything we want so let&amp;rsquo;s edit the theme files, to our advantage, giving for example the &lt;code>author-bio.php&lt;/code> file for our reverse shell, meaning that instead of displaying the biography of the author it will now run a reverse shell for us!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot4.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot4.png"
 loading="lazy"
 alt="mrrobot4"
 >&lt;/p>
@@ -753,12 +753,12 @@ alt="mrrobot4"
 &lt;li>&lt;code>p&lt;/code>: Port specified&lt;/li>
 &lt;/ul>
 &lt;p>In my case I&amp;rsquo;m using the port 443, commonly known as the HTTPS port for listening, when we go to the specific page that would be in the themes directory since we modified the &amp;ldquo;TwentyFifteen&amp;rdquo; theme &lt;code>/wp-content/themes/twentyfifteen/author-bio.php&lt;/code> we will get a blank screen, that&amp;rsquo;s because no error happened, and we should get the shell back!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot5.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot5.png"
 loading="lazy"
 alt="mrrobot5"
 >&lt;/p>
 &lt;p>We are in their system! But there&amp;rsquo;s still work left to do, since we are the &amp;ldquo;daemon&amp;rdquo; user, (daemon means process running in linux) we need to escalate our privilages, first, let&amp;rsquo;s head home!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot7.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot7.png"
 loading="lazy"
 alt="mrrobot6"
 >&lt;/p>
@@ -774,24 +774,24 @@ alt="mrrobot6"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Before running this command I have created a file called &lt;code>passmd5.hash&lt;/code> where is the hash stored, and I have the &lt;code>fsocity.dic&lt;/code> from the &lt;code>robots.txt&lt;/code> giving us the password:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot8.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot8.png"
 loading="lazy"
 alt="mrrobot7"
 >&lt;/p>
 &lt;p>Being the full alphabet! Now we can switch users! Let&amp;rsquo;s use &lt;code>su&lt;/code>
-&lt;img src="https://crazyc4t.xyz/images/mrrobot9.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot9.png"
 loading="lazy"
 alt="mrrobot8"
 >&lt;/p>
 &lt;p>But we get a problem, that is we are not running a fully interactive shell, so we need to upgrade our shell first, so we are going to do so by running a python one liner that spawns bash for us, then let&amp;rsquo;s switch users!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot10.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot10.png"
 loading="lazy"
 alt="mrrobot9"
 >&lt;/p>
 &lt;p>We are now robot! With that said, we can now cat out the key, giving us the second flag.&lt;/p>
 &lt;h3 id="nmap-exploit">Nmap exploit&lt;/h3>
 &lt;p>let&amp;rsquo;s get to know the system and know which programs does have root permissions:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot6.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot6.png"
 loading="lazy"
 alt="mrrobot10"
 >&lt;/p>
@@ -821,22 +821,22 @@ alt="mrrobot10"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Getting root privilages on the machine, now let&amp;rsquo;s find the root flag that is not so hard to do:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot11.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot11.png"
 loading="lazy"
 alt="mrrobot11"
 >&lt;/p>
 &lt;p>Finally getting the third and last flag, and completing the machine.&lt;/p>
 &lt;h2 id="outro">Outro&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot12.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot12.png"
 loading="lazy"
 alt="mrrobot12"
 >&lt;/p>
 &lt;p>Wow, I just loved this machine, for real wow this was really fun and challenging, this feels rewarding since I have just started to learn pentesting and to do all this by myself it&amp;rsquo;s awesome, this machine was really fun and I learned a ton from this machine.&lt;/p>
 &lt;p>When completing this machine you earn this &lt;a class="link" href="https://tryhackme.com/crazyc4t/badges/mr-robot" target="_blank" rel="noopener"
 >badge&lt;/a>.&lt;/p>
-&lt;p>Thanks all of you for reading my blog, I&amp;rsquo;m really thankful and blessed for this, for you and for the great work we are putting into, I&amp;rsquo;m preparing my first youtube &amp;amp; odysee video soon! So tune up for that!&lt;/p></description></item><item><title>Deep dive into nmap</title><link>https://crazyc4t.xyz/blog/nmap/</link><pubDate>Sat, 05 Nov 2022 13:17:13 -0500</pubDate><guid>https://crazyc4t.xyz/blog/nmap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/nmaplogo.jpg" alt="Featured image of post Deep dive into nmap" />&lt;p>When it comes to hacking, knowledge is power, the more you know, the more options you have to attack, making critical a proper enumeration before any type of exploitation.&lt;/p>
+&lt;p>Thanks all of you for reading my blog, I&amp;rsquo;m really thankful and blessed for this, for you and for the great work we are putting into, I&amp;rsquo;m preparing my first youtube &amp;amp; odysee video soon! So tune up for that!&lt;/p></description></item><item><title>Deep dive into nmap</title><link>https://blog.crazyc4t.xyz/blog/nmap/</link><pubDate>Sat, 05 Nov 2022 13:17:13 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/nmap/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/nmaplogo.jpg" alt="Featured image of post Deep dive into nmap" />&lt;p>When it comes to hacking, knowledge is power, the more you know, the more options you have to attack, making critical a proper enumeration before any type of exploitation.&lt;/p>
 &lt;p>Before attacking our target we need to know what is what we are about to attack, we need to know what type of services or OS is running, and we can accomplish that by making a network map, hence the name of Nmap, specifically doing &amp;ldquo;port scanning&amp;rdquo;, because these services are listening on a specific &amp;ldquo;ports&amp;rdquo; of the network, being ports a network structure your service runs on to establish a connection, the service are always &amp;ldquo;listening&amp;rdquo; (waiting for another device that wants to establish a connection) and the user when connecting to the specific port they open a port for receiving information from the other port (for example: HTTPS 443)&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap.png"
 loading="lazy"
 alt="image"
 >&lt;/p>
@@ -873,14 +873,14 @@ alt="image"
 &lt;/ul>
 &lt;h2 id="tcp-connect-scans">TCP Connect Scans&lt;/h2>
 &lt;p>This type of scans are made when completing the three-way handshake:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap1.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap1.png"
 loading="lazy"
 alt="image1"
 >&lt;/p>
 &lt;p>Where it sends a SYN packet to the specified port, if it receives the SYN/ACK, it will reply with ACK, and terminating the handshake, having closed the connection, it will know that the port is open.&lt;/p>
 &lt;p>&lt;strong>What happens if it&amp;rsquo;s closed?&lt;/strong>
 When sending a SYN packet, the target replies with RST (reset), that means the port is closed (does not exist)&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap2.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap2.png"
 loading="lazy"
 alt="image2"
 >&lt;/p>
@@ -892,7 +892,7 @@ It will just drop the connection, it won&amp;rsquo;t reply back at all, and when
 &lt;p>These are similar to the TCP scans, but are referred as &amp;ldquo;half-open&amp;rdquo; or &amp;ldquo;stealth&amp;rdquo;, because when receiving the SYN/ACK packet, it will send instead of ACK, RST, closing the connection early and therefore no letting the target re-send packets again, being faster and stealthier because the majority of the times only full TCP connections are logged, and this is not one of those.&lt;/p>
 &lt;p>Example:
 &lt;code>nmap -sS &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap3.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap3.png"
 loading="lazy"
 alt="nmap3"
 >&lt;/p>
@@ -904,20 +904,20 @@ alt="nmap3"
 &lt;h3 id="null">NULL&lt;/h3>
 &lt;p>This is when instead of sending a SYN packet, it sends a NULL packet, being essentially none, nothing, and the reply back is a RST/ACK.&lt;/p>
 &lt;p>Example: &lt;code>nmap -sN &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap4.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap4.png"
 loading="lazy"
 alt="nmap4"
 >&lt;/p>
 &lt;h3 id="fin">FIN&lt;/h3>
 &lt;p>It is the same as NULL, but instead is a FIN packet (final), that is used to end the connection, so the reply is the same as NULL.&lt;/p>
 &lt;p>Example: &lt;code>nmap -sF &amp;lt;ip&amp;gt;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/nmap5.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/nmap5.png"
 loading="lazy"
 alt="nmap5"
 >&lt;/p>
 &lt;h2 id="xmas">Xmas&lt;/h2>
 &lt;p>Xmas scans send a malformed TCP packet and expects a RST reply for closed ports.
-&lt;img src="https://crazyc4t.xyz/images/nmap6.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/nmap6.png"
 loading="lazy"
 alt="nmap6"
 >&lt;/p>
@@ -946,7 +946,7 @@ alt="nmap6"
 &lt;h2 id="outro">Outro&lt;/h2>
 &lt;p>Special thanks to the &lt;a class="link" href="https://tryhackme.com/room/furthernmap" target="_blank" rel="noopener"
 >Try Hack Me nmap room&lt;/a> since thanks to that room I learned more in-depth about nmap.&lt;/p>
-&lt;p>Thanks for reading! I will upload more blogposts specified on certain pentesting tools like this one!&lt;/p></description></item><item><title>Pickle Rick CTF</title><link>https://crazyc4t.xyz/blog/picklerick/</link><pubDate>Thu, 27 Oct 2022 19:18:39 -0500</pubDate><guid>https://crazyc4t.xyz/blog/picklerick/</guid><description>&lt;img src="https://crazyc4t.xyz/images/picklerick.gif" alt="Featured image of post Pickle Rick CTF" />&lt;p>Hello world! I&amp;rsquo;m back again with a new blogpost, related to hacking! am preparing myself for the eJPT so I&amp;rsquo;m taking tons of machines while taking the learning paths from Try Hack Me, specifically the &amp;ldquo;Pre-Security&amp;rdquo;&lt;/p>
+&lt;p>Thanks for reading! I will upload more blogposts specified on certain pentesting tools like this one!&lt;/p></description></item><item><title>Pickle Rick CTF</title><link>https://blog.crazyc4t.xyz/blog/picklerick/</link><pubDate>Thu, 27 Oct 2022 19:18:39 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/picklerick/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/picklerick.gif" alt="Featured image of post Pickle Rick CTF" />&lt;p>Hello world! I&amp;rsquo;m back again with a new blogpost, related to hacking! am preparing myself for the eJPT so I&amp;rsquo;m taking tons of machines while taking the learning paths from Try Hack Me, specifically the &amp;ldquo;Pre-Security&amp;rdquo;&lt;/p>
 &lt;p>This Rick and Morty themed challenge requires you to exploit a webserver to find 3 ingredients that will help rick make his potion to transform himself back into human from a pickle!&lt;/p>
 &lt;p>&lt;a class="link" href="https://tryhackme.com/room/picklerick" target="_blank" rel="noopener"
 >Room link&lt;/a>&lt;/p>
@@ -962,7 +962,7 @@ alt="nmap6"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo nmap -p- -Ss -Pn -T5 --open 10.10.67.45 -oG allPorts
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://crazyc4t.xyz/images/pknmap.png"
+&lt;/div>&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pknmap.png"
 loading="lazy"
 alt="nmap"
 >&lt;/p>
@@ -981,7 +981,7 @@ alt="nmap"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">gobuster -t 30 -u 10.10.67.45 -w common.txt
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://crazyc4t.xyz/images/pkbuster.png"
+&lt;/div>&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pkbuster.png"
 loading="lazy"
 alt="gobuster"
 >&lt;/p>
@@ -999,7 +999,7 @@ alt="gobuster"
 &lt;/div>
 &lt;/div>&lt;p>Nikto is a tool that scans the web for us and let&amp;rsquo;s us know vulnerabilities associated with it and important directories we should know about, the important output of the command is a &lt;code>login.php&lt;/code> route that will come handy later.&lt;/p>
 &lt;h2 id="inspecting-the-source-code">Inspecting the source code&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/pksource.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pksource.png"
 loading="lazy"
 alt="source"
 >&lt;/p>
@@ -1011,11 +1011,11 @@ alt="source"
 &lt;li>Password: &lt;strong>Wubbalubbadubdub&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>And we have access!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/pkacc0.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pkacc0.png"
 loading="lazy"
 alt="companel"
 >
-&lt;img src="https://crazyc4t.xyz/images/pkreal.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/pkreal.png"
 loading="lazy"
 alt="picklerick"
 >&lt;/p>
@@ -1026,39 +1026,39 @@ alt="picklerick"
 &lt;li>&lt;code>ls -la&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;p>After knowing a bit about were we are, we can now different directories:
-&lt;img src="https://crazyc4t.xyz/images/pkls.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/pkls.png"
 loading="lazy"
 alt="ls"
 >&lt;/p>
 &lt;p>Being &lt;code>Sup3rS3cretPickl3Ingred.txt&lt;/code> path, the first ingredient that is a mr. meeseek hair (Look at me!) and the clue is to look around the filesystem and we can do so by executing differents commands at the same time, for example: &lt;code>cd /; ls -la; whoami&lt;/code>&lt;/p>
 &lt;p>If we go to &lt;code>/home/rick&lt;/code> we can see there is a &lt;code>second ingredients&lt;/code> but is not a directory, instead is a file, so we can just cat it out:
-&lt;img src="https://crazyc4t.xyz/images/pkcat.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/pkcat.png"
 loading="lazy"
 alt="cat"
 >&lt;/p>
 &lt;p>But the command is blocked, for us the future PICKLEEE RICCCCCKKKKK so we need to find another way around, that is using less: &lt;code>cd /home/rick; less &amp;quot;second ingredients&amp;quot;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/pkless.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pkless.png"
 loading="lazy"
 alt="less"
 >
 Being this the answer of the second ingredient.&lt;/p>
 &lt;p>Time for looking to the third ingredient, by instict we should look first for the &lt;code>/root&lt;/code> folder, but we don&amp;rsquo;t have permissions so if we run &lt;code>sudo -l&lt;/code> we can know the privilages we have as the &lt;code>www-data&lt;/code> user.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/pkperm.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pkperm.png"
 loading="lazy"
 alt="permission"
 >&lt;/p>
 &lt;p>This means we can run the &lt;code>sudo&lt;/code> command without any password! We can&amp;rsquo;t use the command &lt;code>cd&lt;/code> with sudo beforehand, so let&amp;rsquo;s use &lt;code>ls&lt;/code> instead.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/pklssudo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pklssudo.png"
 loading="lazy"
 alt="lssudo"
 >&lt;/p>
 &lt;p>So we can exploit this vulnerability by using less with sudo: &lt;code>sudo less /root/3rd.txt&lt;/code>, giving the answer:
-&lt;img src="https://crazyc4t.xyz/images/pkflag.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/pkflag.png"
 loading="lazy"
 alt="flag"
 >&lt;/p>
 &lt;p>And with that we helped rick become human again!&lt;/p>
-&lt;p>This was a really fun machine easy to get going and learn enumeration for a website, Try Hack Me machines are really fun to get started, as I am doing right now, so expect tons of write ups!&lt;/p></description></item><item><title>Boss of the SOC walkthrough</title><link>https://crazyc4t.xyz/blog/botsv3/</link><pubDate>Tue, 18 Oct 2022 13:03:09 -0500</pubDate><guid>https://crazyc4t.xyz/blog/botsv3/</guid><description>&lt;img src="https://crazyc4t.xyz/images/bots.png" alt="Featured image of post Boss of the SOC walkthrough" />&lt;h1 id="starting-point">Starting point&lt;/h1>
+&lt;p>This was a really fun machine easy to get going and learn enumeration for a website, Try Hack Me machines are really fun to get started, as I am doing right now, so expect tons of write ups!&lt;/p></description></item><item><title>Boss of the SOC walkthrough</title><link>https://blog.crazyc4t.xyz/blog/botsv3/</link><pubDate>Tue, 18 Oct 2022 13:03:09 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/botsv3/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/bots.png" alt="Featured image of post Boss of the SOC walkthrough" />&lt;h1 id="starting-point">Starting point&lt;/h1>
 &lt;ol>
 &lt;li>Download Boss of the SOC VM from the &lt;a class="link" href="https://tryhackme.com/room/kimctf2022" target="_blank" rel="noopener"
 >THM room&lt;/a>&lt;/li>
@@ -1104,7 +1104,7 @@ get you the information you want.&lt;/strong>&lt;/p>
 &lt;li>DISABLE SAMPLING!!!!&lt;/li>
 &lt;/ul>
 &lt;h2 id="indexes">Indexes&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/image1.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/image1.png"
 loading="lazy"
 alt="Pasted image 20221016173021.png"
 >&lt;/p>
@@ -1238,7 +1238,7 @@ We can now find through the vulnerability that is &amp;ldquo;Web Attack: JSCoinM
 &lt;/div>
 &lt;/div>&lt;p>Making statistics counting by subject, we find this: &lt;code>Postmortem on our issue with brewertalk&lt;/code>, reading that does not sound fun so there&amp;rsquo;s need to take a look upon the issue.&lt;/p>
 &lt;p>Now we look for this specific topic, so we need searching by subject: `index=botsv3 earliest=0 (sourcetype=stream:smtp OR sourcetype=ms:o365:reporting:messagetrace) &lt;a class="link" href="mailto:bstoll@froth.ly" >bstoll@froth.ly&lt;/a> subject=&amp;ldquo;Postmortem on our issue with brewertalk&amp;rdquo;```&lt;/p>
-&lt;p>And we find a image002.jpg, and the attach_transfer_config is base64, so we need to copy the base64 that starts &lt;code>/9j/4&lt;/code> and ends &lt;code>//2Q==&lt;/code>, and paste it on the base64 image decoder&lt;img src="https://crazyc4t.xyz/images/image3.png"
+&lt;p>And we find a image002.jpg, and the attach_transfer_config is base64, so we need to copy the base64 that starts &lt;code>/9j/4&lt;/code> and ends &lt;code>//2Q==&lt;/code>, and paste it on the base64 image decoder&lt;img src="https://blog.crazyc4t.xyz/images/image3.png"
 loading="lazy"
 alt="Screenshot from 2022-10-17 12-40-37.png"
 >&lt;/p>
@@ -1402,12 +1402,12 @@ alt="Screenshot from 2022-10-17 12-40-37.png"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Being our result: 8.09, but we need to round it being it 8.10, the answer.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/image2.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/image2.png"
 loading="lazy"
 alt="Pasted image 20221017230721.png"
 >&lt;/p>
 &lt;p>Finally the BOSS OF THE SOC IS ME!&lt;/p>
-&lt;p>Thank you for reading.&lt;/p></description></item><item><title>How to play Overwatch 2 in linux</title><link>https://crazyc4t.xyz/blog/overwatch2/</link><pubDate>Sat, 08 Oct 2022 13:07:44 -0500</pubDate><guid>https://crazyc4t.xyz/blog/overwatch2/</guid><description>&lt;img src="https://crazyc4t.xyz/images/overwatch2.jpeg" alt="Featured image of post How to play Overwatch 2 in linux" />&lt;p>Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it&amp;rsquo;s time for us to try it!&lt;/p>
+&lt;p>Thank you for reading.&lt;/p></description></item><item><title>How to play Overwatch 2 in linux</title><link>https://blog.crazyc4t.xyz/blog/overwatch2/</link><pubDate>Sat, 08 Oct 2022 13:07:44 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/overwatch2/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/overwatch2.jpeg" alt="Featured image of post How to play Overwatch 2 in linux" />&lt;p>Hello guys! First of all, thanks for reading my blog, overwatch 2 has been released and it&amp;rsquo;s time for us to try it!&lt;/p>
 &lt;p>Playing it on linux is really simple, so feel free to follow along!&lt;/p>
 &lt;p>I&amp;rsquo;m using arch linux when following this guide, if you are not running arch linux as your linux distribution, don&amp;rsquo;t worry! Just make sure everything is up-to-date with your system.&lt;/p>
 &lt;h2 id="installing-the-requirements">Installing the requirements&lt;/h2>
@@ -1426,12 +1426,12 @@ alt="Pasted image 20221017230721.png"
 >here&lt;/a> for drivers.&lt;/p>
 &lt;h2 id="installing-battle-net">Installing Battle Net&lt;/h2>
 &lt;p>This step is very easy, we need to open lutris, click in the &amp;ldquo;runner&amp;rdquo; section the little drop-down box besides wine:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/winesection.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/winesection.png"
 loading="lazy"
 alt="winesection"
 >&lt;/p>
 &lt;p>Install &amp;ldquo;overwatch2-caffe&amp;rdquo; wine runner, since it&amp;rsquo;s the runner we are going to use for installing battle.net:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/wineinstall.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/wineinstall.png"
 loading="lazy"
 alt="wineinstall"
 >&lt;/p>
@@ -1440,12 +1440,12 @@ alt="wineinstall"
 &lt;p>Follow the installation wizard of battle.net, &lt;strong>disable the check-box of auto-starting battle.net when the computer starts&lt;/strong> and when it prompts you to login, do not login yet, just close the program and let the lutris installation wizard finish.&lt;/p>
 &lt;h3 id="using-caffe-runner">Using caffe runner&lt;/h3>
 &lt;p>When finishing the installation, you need to select battle.net, then press on the up-arrow button besides the &amp;ldquo;play&amp;rdquo; button:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/runner.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/runner.png"
 loading="lazy"
 alt="configure"
 >&lt;/p>
 &lt;p>After that press configure, under the &amp;ldquo;runner&amp;rdquo; tab, there is the &amp;ldquo;wine version&amp;rdquo; that will be &amp;ldquo;overwatch2-caffe&amp;rdquo;, if it does not show in the selection, please read carefully again on how to install runners under the &lt;a class="link" href="#installing-battle-net" >Installing Battle net&lt;/a>
-&lt;img src="https://crazyc4t.xyz/images/runnertab.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/runnertab.png"
 loading="lazy"
 alt="runnertab"
 >&lt;/p>
@@ -1460,25 +1460,25 @@ alt="runnertab"
 &lt;li>Check you are using the caffe runner, if it keeps happening, disable the fsync setting under the runner tab.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>Using namecheap domain with github pages!</title><link>https://crazyc4t.xyz/blog/namecheap/</link><pubDate>Fri, 02 Sep 2022 18:45:39 -0500</pubDate><guid>https://crazyc4t.xyz/blog/namecheap/</guid><description>&lt;img src="https://crazyc4t.xyz/images/ghpages.png" alt="Featured image of post Using namecheap domain with github pages!" />&lt;p>Hello everyone! It&amp;rsquo;s crazyc4t once again, I have some news, I changed my domain! There is no more saidneder.tech, now it&amp;rsquo;s &lt;a class="link" href="https://crazyc4t.xyz" target="_blank" rel="noopener"
+&lt;/ul></description></item><item><title>Using namecheap domain with github pages!</title><link>https://blog.crazyc4t.xyz/blog/namecheap/</link><pubDate>Fri, 02 Sep 2022 18:45:39 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/namecheap/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/namecheap.png" alt="Featured image of post Using namecheap domain with github pages!" />&lt;p>Hello everyone! It&amp;rsquo;s crazyc4t once again, I have some news, I changed my domain! There is no more saidneder.tech, now it&amp;rsquo;s &lt;a class="link" href="https://crazyc4t.xyz" target="_blank" rel="noopener"
 >crazyc4t.xyz&lt;/a> since my saidneder.tech domain was really expensive for renewal and I felt that it was my mistake because of the company that I chose to buy my domain from, that is HostGator, which I totally don&amp;rsquo;t recommend, difficult to use and configure, expensive, and not friendly at all, so instead of renewing my old domain I bought a new one in &lt;a class="link" href="https://namecheap.com" target="_blank" rel="noopener"
 >namecheap.com&lt;/a>! and It was awesome, I deployed my blog to my new domain with https encryption in less than 30 minutes! And that was because of the wait time to generate the security certificate, so in this post am going to show you how to use your domain bought from namecheap with github pages!&lt;/p>
 &lt;h2 id="making-your-github-repository-public">Making your github repository public&lt;/h2>
 &lt;p>This is really easy, if you already have your github repository public, you can skip this step, but if you don&amp;rsquo;t you can head over to settings in your repo and in the general tab of it, scroll all the way down over to the &lt;strong>danger zone&lt;/strong>, and change the visibility of the repo.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/danger.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/danger.png"
 loading="lazy"
 alt="Danger zone"
 >&lt;/p>
 &lt;h2 id="publish-your-source-branch">Publish your source branch&lt;/h2>
 &lt;p>This is really easy as well, you need to deploy the source branch of your website, by doing so going into settings of your website repo, head over to the pages branch and click the save button.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/branch.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/branch.png"
 loading="lazy"
 alt="Branch"
 >&lt;/p>
 &lt;h2 id="time-to-add-the-domain">Time to add the domain!&lt;/h2>
 &lt;p>Head over to &lt;a class="link" href="https://namecheap.com" target="_blank" rel="noopener"
 >namecheap.com&lt;/a> and login with your credentials, go over domain list, click the &amp;ldquo;manage&amp;rdquo; button over your domain.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/manage.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/manage.png"
 loading="lazy"
 alt="manage"
 >&lt;/p>
@@ -1490,7 +1490,7 @@ alt="manage"
 &lt;li>185.199.111.153&lt;/li>
 &lt;/ul>
 &lt;p>Also we will add one CNAME record, with the address that github gives you for your website, for example: &amp;ldquo;username.github.io&amp;rdquo;&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/records.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/records.png"
 loading="lazy"
 alt="records"
 >&lt;/p>
@@ -1498,17 +1498,17 @@ alt="records"
 &lt;p>This is the step that will take a bit of time, since github will need to make a DNS checking of your domain and it will create the SSL certificate for your https address, first of all, add to the root of your repo, a file name &amp;ldquo;CNAME&amp;rdquo; and put your domain in there, for example:&lt;/p>
 &lt;p>&lt;code>crazyc4t.xyz&lt;/code>&lt;/p>
 &lt;p>With no &lt;code>https://&lt;/code> at the beginning, just the domain, after that head over to your repo settings, go to pages, and add your domain and save it, remember clicking &amp;ldquo;enforce https&amp;rdquo;, like so:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/pages.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/pages.png"
 loading="lazy"
 alt="pages"
 >&lt;/p>
 &lt;p>After that, check that your website is deployed and go to it!&lt;/p>
 &lt;h2 id="outro">Outro&lt;/h2>
-&lt;p>This was a quick blogpost on how to add your namecheap domain to github&amp;rsquo;s pages, which it was really easy as you saw, hope you enjoyed the read, have a good one!&lt;/p></description></item><item><title>Programming with go!</title><link>https://crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
+&lt;p>This was a quick blogpost on how to add your namecheap domain to github&amp;rsquo;s pages, which it was really easy as you saw, hope you enjoyed the read, have a good one!&lt;/p></description></item><item><title>Programming with go!</title><link>https://blog.crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
 &lt;p>Hello guys it&amp;rsquo;s crazyc4t once again, sorry for being a bit distant on my blog but prepare yourselves because there&amp;rsquo;s more content in the oven!&lt;/p>
 &lt;p>I disappeared but with a purpose, I was laser-locked focused learning go! And it is really fun, but first&amp;hellip;&lt;/p>
 &lt;h2 id="what-is-go">What is go?&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/gopher-dance-long-3x.gif"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/gopher-dance-long-3x.gif"
 loading="lazy"
 alt="Gopher"
 >&lt;/p>
@@ -1546,7 +1546,7 @@ alt="Gopher"
 &lt;li>Github-CLI&lt;/li>
 &lt;/ul>
 &lt;h2 id="getting-started-with-go">Getting started with go!&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/witch-learning.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/witch-learning.png"
 loading="lazy"
 alt="Gopher"
 >&lt;/p>
@@ -1650,7 +1650,7 @@ alt="Gopher"
 &lt;/div>
 &lt;/div>&lt;p>After scratching the surface of go, this is the next step&amp;hellip;&lt;/p>
 &lt;h2 id="keep-learning">Keep learning!&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/hiking.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/hiking.png"
 loading="lazy"
 alt="Gopher"
 >&lt;/p>
@@ -1690,7 +1690,7 @@ alt="Gopher"
 >The Go programming language&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="thank-you-for-reading">Thank you for reading!&lt;/h2>
-&lt;p>I&amp;rsquo;m learning go at the moment so expect more go content coming your way!&lt;/p></description></item><item><title>How to bounce back from a relapse</title><link>https://crazyc4t.xyz/blog/bounceback/</link><pubDate>Wed, 29 Jun 2022 23:32:56 -0500</pubDate><guid>https://crazyc4t.xyz/blog/bounceback/</guid><description>&lt;img src="https://crazyc4t.xyz/images/chill-images/olon.jpeg" alt="Featured image of post How to bounce back from a relapse" />&lt;p>Hello my fellow readers! Am back with a new blogpost, and am going to talk about how to bounce back, when you screw up, and have a bad streak that seems to never end, and you get frustrated about it, how is affecting your life, and that you feel that is really difficult to come back as you were before, and you wish everything was like before, but let me tell you, there&amp;rsquo;s a solution, with much hope and faith in yourself you can make it.&lt;/p>
+&lt;p>I&amp;rsquo;m learning go at the moment so expect more go content coming your way!&lt;/p></description></item><item><title>How to bounce back from a relapse</title><link>https://blog.crazyc4t.xyz/blog/bounceback/</link><pubDate>Wed, 29 Jun 2022 23:32:56 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/bounceback/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/chill-images/olon.jpeg" alt="Featured image of post How to bounce back from a relapse" />&lt;p>Hello my fellow readers! Am back with a new blogpost, and am going to talk about how to bounce back, when you screw up, and have a bad streak that seems to never end, and you get frustrated about it, how is affecting your life, and that you feel that is really difficult to come back as you were before, and you wish everything was like before, but let me tell you, there&amp;rsquo;s a solution, with much hope and faith in yourself you can make it.&lt;/p>
 &lt;h2 id="identifying-your-problem">Identifying your problem&lt;/h2>
 &lt;p>Maybe that you want to quit gaming for so much hours, or watching too much tv instead of studying, or maybe alcohol, porn or smoking problems, but a way to identify your problem is to ask you the following question:&lt;/p>
 &lt;blockquote>
@@ -1707,7 +1707,7 @@ alt="Gopher"
 &lt;p>After you have created your plan of attack, we go to the main point of the blogpost, &lt;strong>how to maintain it?&lt;/strong>&lt;/p>
 &lt;h2 id="how-to-keep-precision-on-the-objective">How to keep precision on the objective?&lt;/h2>
 &lt;p>The way to keep precision on your objective is to &lt;strong>not overload with information!&lt;/strong> keep it simple, really this is very key, don&amp;rsquo;t overload yourself with tons of things to do or to watch/read, please go step by step, remember that this is a marathon not a sprint, solve problems one by one, make dopamine detoxes once a week, and keep your activities short and simple, remember that time is gold and you can&amp;rsquo;t waste it, but most importantly:&lt;/p>
-&lt;p>&lt;strong>If you don&amp;rsquo;t have a purpose on why you are doing what you do, you will keep falling off without understanding why, remember why do it, so you have a reason to bounce back if you fall off, go get it!&lt;/strong>&lt;/p></description></item><item><title>How I passed the compTIA A+</title><link>https://crazyc4t.xyz/blog/a+/</link><pubDate>Wed, 20 Apr 2022 12:10:12 -0500</pubDate><guid>https://crazyc4t.xyz/blog/a+/</guid><description>&lt;img src="https://crazyc4t.xyz/images/diploma.png" alt="Featured image of post How I passed the compTIA A+" />&lt;h1 id="guide-to-conquer-comptia-a">Guide to conquer compTIA A+&lt;/h1>
+&lt;p>&lt;strong>If you don&amp;rsquo;t have a purpose on why you are doing what you do, you will keep falling off without understanding why, remember why do it, so you have a reason to bounce back if you fall off, go get it!&lt;/strong>&lt;/p></description></item><item><title>How I passed the compTIA A+</title><link>https://blog.crazyc4t.xyz/blog/a+/</link><pubDate>Wed, 20 Apr 2022 12:10:12 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/a+/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/diploma.png" alt="Featured image of post How I passed the compTIA A+" />&lt;h1 id="guide-to-conquer-comptia-a">Guide to conquer compTIA A+&lt;/h1>
 &lt;p>This is the guide to conquer compTIA A+ made by Said Neder, this is what am doing to study and get certified!&lt;/p>
 &lt;p>Here I documented everything that I learned when preparing for the exam, this are my notes to study and remember what I did, and I passed!&lt;/p>
 &lt;p>Am taking this exam on 11th and 13th of april, 2022!&lt;/p>
@@ -3755,7 +3755,7 @@ And if it was 3 following octets with zeroes on it, that would be:
 &lt;/ul>
 &lt;p>If you want to destroy your data your put 5 holes on it and you are good to go! or run drive-wiping software if you want to reuse the drive.&lt;/p>
 &lt;h1 id="good-luck">Good luck!&lt;/h1>
-&lt;p>Sorry for any typo since this are quick notes of what I studied, you will pass! You got this!&lt;/p></description></item><item><title>What to do after installing Fedora KDE</title><link>https://crazyc4t.xyz/blog/debloating_fedora/</link><pubDate>Tue, 01 Mar 2022 20:59:45 -0500</pubDate><guid>https://crazyc4t.xyz/blog/debloating_fedora/</guid><description>&lt;img src="https://crazyc4t.xyz/images/fedora.png" alt="Featured image of post What to do after installing Fedora KDE" />&lt;p>Welcome again to my blog, it has been a bit of a long time isn&amp;rsquo;t it? But am back once again! And more active than ever so expect so more blogposts coming your way!&lt;/p>
+&lt;p>Sorry for any typo since this are quick notes of what I studied, you will pass! You got this!&lt;/p></description></item><item><title>What to do after installing Fedora KDE</title><link>https://blog.crazyc4t.xyz/blog/debloating_fedora/</link><pubDate>Tue, 01 Mar 2022 20:59:45 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/debloating_fedora/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/fedora.png" alt="Featured image of post What to do after installing Fedora KDE" />&lt;p>Welcome again to my blog, it has been a bit of a long time isn&amp;rsquo;t it? But am back once again! And more active than ever so expect so more blogposts coming your way!&lt;/p>
 &lt;h2 id="why-am-running-fedora">Why am running fedora&lt;/h2>
 &lt;p>As some of you know, I was using &lt;a class="link" href="https://archlinux.org/" target="_blank" rel="noopener"
 >Arch Linux&lt;/a> with a window manager or &amp;ldquo;WM&amp;rdquo; for simplicity, (If you want to see my dotfiles, &lt;a class="link" href="https://github.com/crazyc4t/dotfiles" target="_blank" rel="noopener"
@@ -3876,7 +3876,7 @@ And if it was 3 following octets with zeroes on it, that would be:
 &lt;h2 id="outro">Outro&lt;/h2>
 &lt;p>This is my quick setup guide of fedora KDE! Probably am going to write a script that automates this process, stay tuned for that, just wanted to say thank you for reading my posts, wishing you all a great start of the month, time to get after it! Love from Ecuador.&lt;/p>
 &lt;p>Thanks so much for the fedora&amp;rsquo;s subreddit &lt;a class="link" href="https://www.reddit.com/r/Fedora/" target="_blank" rel="noopener"
->r/Fedora&lt;/a> helping me to improve my post!&lt;/p></description></item><item><title>How to code your own discord bot!</title><link>https://crazyc4t.xyz/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://crazyc4t.xyz/blog/discordbot/</guid><description>&lt;img src="https://crazyc4t.xyz/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
+>r/Fedora&lt;/a> helping me to improve my post!&lt;/p></description></item><item><title>How to code your own discord bot!</title><link>https://blog.crazyc4t.xyz/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/discordbot/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
 &lt;p>&lt;img src="https://img.shields.io/github/license/crazyc4t/PatrickStar?color=brightgreen"
 loading="lazy"
 alt="GitHub License"
@@ -3890,7 +3890,7 @@ This bot is about having my classes at my fingertips, so it
 gives links with special commands that facilitate the process.
 You are free to clone the code and use it the way you want!
 You can edit it and make it your own!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/botdemo.gif"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/botdemo.gif"
 loading="lazy"
 alt="Demo"
 >&lt;/p>
@@ -4293,12 +4293,12 @@ And after that we just push it to heroku!&lt;/p>
 &lt;p>&lt;code>git push heroku main&lt;/code>&lt;/p>
 &lt;p>When that is done we go into the dashboard &amp;gt; resources and deactivate the web dyno by just clicking edit and switching off the slide,
 and now we turn on the worker that should appear, now it should be left like this&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/botheroku.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/botheroku.png"
 loading="lazy"
 alt="image example"
 >&lt;/p>
 &lt;p>And after that you are done!
-Hope that you enjoyed the guide!&lt;/p></description></item><item><title>LaTeX for humans</title><link>https://crazyc4t.xyz/blog/latexforhumans/</link><pubDate>Wed, 19 Jan 2022 17:22:31 +0000</pubDate><guid>https://crazyc4t.xyz/blog/latexforhumans/</guid><description>&lt;img src="https://crazyc4t.xyz/images/hellolatex.png" alt="Featured image of post LaTeX for humans" />&lt;h2 id="intro">Intro&lt;/h2>
+Hope that you enjoyed the guide!&lt;/p></description></item><item><title>LaTeX for humans</title><link>https://blog.crazyc4t.xyz/blog/latexforhumans/</link><pubDate>Wed, 19 Jan 2022 17:22:31 +0000</pubDate><guid>https://blog.crazyc4t.xyz/blog/latexforhumans/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/hellolatex.png" alt="Featured image of post LaTeX for humans" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This post is going to help you learn \(\LaTeX\) and convert you into a intellectual and scientific professional and by far superior with anyone that shares their report made in word!&lt;/p>
 &lt;p>But before anything&amp;hellip;&lt;/p>
 &lt;h2 id="what-is-all-this-tex-thingy">What is all this \(\TeX\) thingy?&lt;/h2>
@@ -4425,7 +4425,7 @@ Like so:&lt;/p>
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>The end result would be:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/hellolatex.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/hellolatex.png"
 loading="lazy"
 alt="LaTeX example"
 >&lt;/p>
@@ -4469,7 +4469,7 @@ alt="LaTeX example"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>The end result would be:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/latexopening.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/latexopening.png"
 loading="lazy"
 alt="LaTeX opening"
 >&lt;/p>
@@ -4527,7 +4527,7 @@ Now let&amp;rsquo;s create some sections and a table of contents with underlined
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>The end result would be:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/latextableofcontents.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/latextableofcontents.png"
 loading="lazy"
 alt="latexing"
 >&lt;/p>
@@ -4543,7 +4543,7 @@ alt="latexing"
 >Luke Smith&amp;rsquo;s series of tutorials about \(\LaTeX\)&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_%28Part_1%29%E2%80%94Getting_Started" target="_blank" rel="noopener"
 >\(\LaTeX\) beamer tutorial by overleaf&lt;/a>&lt;/p>
-&lt;p>Remember, &lt;strong>THE WORLD IS YOURS!&lt;/strong>&lt;/p></description></item><item><title>How can overthinking ruin your mindset</title><link>https://crazyc4t.xyz/blog/dontoverthink/</link><pubDate>Mon, 10 Jan 2022 01:56:57 -0500</pubDate><guid>https://crazyc4t.xyz/blog/dontoverthink/</guid><description>&lt;img src="https://crazyc4t.xyz/images/chill-images/ba%C3%B1os.jpeg" alt="Featured image of post How can overthinking ruin your mindset" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Remember, &lt;strong>THE WORLD IS YOURS!&lt;/strong>&lt;/p></description></item><item><title>How can overthinking ruin your mindset</title><link>https://blog.crazyc4t.xyz/blog/dontoverthink/</link><pubDate>Mon, 10 Jan 2022 01:56:57 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/dontoverthink/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/chill-images/ba%C3%B1os.jpeg" alt="Featured image of post How can overthinking ruin your mindset" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>Well first let me welcome you to this new year 2022! I wish you the best for this year and time to rock on and create and achieve what you most want! I welcome you to this new year with this new blog post! I haven&amp;rsquo;t write an advice post in a while so let&amp;rsquo;s get started!&lt;/p>
 &lt;h2 id="what-is-overthinking">What is overthinking?&lt;/h2>
 &lt;p>Overthinking is just the action to before doing something you think a lot of that action so you can excuse yourself to not do it, If you need to training, but before showering and getting ready you are already thinking &amp;ldquo;My pinky toe hurts a bit I should stay&amp;hellip;&amp;rdquo; just getting excuses on top of your head to not do something that you don&amp;rsquo;t feel like doing.&lt;/p>
@@ -4575,7 +4575,7 @@ Everyday clean your room, your desk, mop the floor, tidy everything up, organize
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="outro">Outro&lt;/h2>
-&lt;p>This are my 2 cents, I write this advices to myself but I know someone could need this and that&amp;rsquo;s why I share them with you, if you know something and you don&amp;rsquo;t share it, that&amp;rsquo;s just being selfish right? hope you liked this post and I&amp;rsquo;ll keep you updated!&lt;/p></description></item><item><title>Vim for everyone!</title><link>https://crazyc4t.xyz/blog/vimforeveryone/</link><pubDate>Sun, 09 Jan 2022 22:00:04 -0500</pubDate><guid>https://crazyc4t.xyz/blog/vimforeveryone/</guid><description>&lt;img src="https://crazyc4t.xyz/images/neovim.png" alt="Featured image of post Vim for everyone!" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This are my 2 cents, I write this advices to myself but I know someone could need this and that&amp;rsquo;s why I share them with you, if you know something and you don&amp;rsquo;t share it, that&amp;rsquo;s just being selfish right? hope you liked this post and I&amp;rsquo;ll keep you updated!&lt;/p></description></item><item><title>Vim for everyone!</title><link>https://blog.crazyc4t.xyz/blog/vimforeveryone/</link><pubDate>Sun, 09 Jan 2022 22:00:04 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/vimforeveryone/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/neovim.png" alt="Featured image of post Vim for everyone!" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This is a vim-neovim tutorial, is a highly-configurable text editor that you can make it as you wish, and the way to use it is only with the keyboard and keybindings and learning it will improve your productivity at a whole other level, and it is included in every UNIX system and Mac OS, so if you configure servers remotely or work a lot in the terminal is really important to use vim, and you can add plugins and make a lot of cool stuff with it!&lt;/p>
 &lt;h2 id="10-installing-vim">1.0 Installing vim&lt;/h2>
 &lt;p>The first step into the rabbit hole, here it goes!&lt;/p>
@@ -4672,7 +4672,7 @@ if you want to delete more than one character you can by doing so = &lt;code>4x&
 &lt;h2 id="reminder-remember-to-mix-it-up">Reminder: Remember to mix it up!&lt;/h2>
 &lt;p>You can mix numbers with hotkeys, for example if you want to delete 10 lines you aren&amp;rsquo;t going to press &lt;code>dd&lt;/code> 10 times, just multiply it! &lt;code>10dd&lt;/code> and so on and so forth with the others! Mix it up!&lt;/p>
 &lt;h2 id="outro">Outro&lt;/h2>
-&lt;p>This is for now! these are the essential vim hotkeys and commands to survive and to start into the rabbit hole, expect more of vim in my blog thank you for reading!&lt;/p></description></item><item><title>How to free yourself by installing linux</title><link>https://crazyc4t.xyz/blog/freeyourself/</link><pubDate>Sun, 21 Nov 2021 01:40:22 -0500</pubDate><guid>https://crazyc4t.xyz/blog/freeyourself/</guid><description>&lt;img src="https://crazyc4t.xyz/images/lmdeskdemo.png" alt="Featured image of post How to free yourself by installing linux" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is for now! these are the essential vim hotkeys and commands to survive and to start into the rabbit hole, expect more of vim in my blog thank you for reading!&lt;/p></description></item><item><title>How to free yourself by installing linux</title><link>https://blog.crazyc4t.xyz/blog/freeyourself/</link><pubDate>Sun, 21 Nov 2021 01:40:22 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/freeyourself/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/lmdeskdemo.png" alt="Featured image of post How to free yourself by installing linux" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This is a special blogpost since this is the guide to switch from windows to linux for new users, and the way to free them of propietary software and enjoy their freedom with free software, the software you should run!&lt;/p>
 &lt;p>We are going to divide this guide in steps:&lt;/p>
 &lt;h2 id="intro-1">Intro&lt;/h2>
@@ -4851,7 +4851,7 @@ To install Linux the only requirement we need to have besides our computer is a 
 &lt;h3 id="flashing-our-distro">Flashing our distro&lt;/h3>
 &lt;p>Download etcher on their &lt;a class="link" href="https://www.balena.io/etcher/" target="_blank" rel="noopener"
 >website&lt;/a> and install it, then time to plug your flash drive but &lt;strong>WARNING&lt;/strong> everything in the flash drive &lt;strong>WILL BE DELETED&lt;/strong>, so back up your files, now just follow the steps in screen, that is the first step to select the .iso that you downloaded, the second to select your flash drive and the third to flash, and should look like so:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/etcherdemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/etcherdemo.png"
 loading="lazy"
 alt="etcherdemo.png"
 >&lt;/p>
@@ -4878,7 +4878,7 @@ alt="etcherdemo.png"
 &lt;/ul>
 &lt;p>If you made this successfully, congrats! you have made the hardest thing in this whole step!&lt;/p>
 &lt;p>Now you are on the desktop of your chosen linux distro! (except elementary OS, follow the installer and choose &amp;ldquo;demo mode&amp;rdquo;)&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/linuxmintdeskdemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/linuxmintdeskdemo.png"
 loading="lazy"
 alt="linuxmintdeskdemo.png"
 >&lt;/p>
@@ -4887,13 +4887,13 @@ alt="linuxmintdeskdemo.png"
 &lt;p>Note: If you have the option to install multimedia codecs, do it! is for managing audio and video files.&lt;/p>
 &lt;p>Now here is a side-note, there&amp;rsquo;s something called &amp;ldquo;dual booting&amp;rdquo; that is having linux alongside windows, and when you boot your computer you will decide what operating system you want to use, and this could be great as it could be a little bit of a headache, I have dual booted before and my experience has been okay-ish, but other users have reported that when Windows updates have deleted their linux partition, or have deleted their boot entry (that has happen to me before and I couldn&amp;rsquo;t recover linux, but it was my fault in certain way) so you can have a dual boot, or just wipe out windows and have only linux (recommended way) but finally is your computer and you have the last word, if you decide to dual boot, your installer will give you the option and you will need to decide how much space you want to give each OS, so take that in mind since windows is bloated and heavy, so for me a clean install is the best option but is your computer after all.&lt;/p>
 &lt;p>Now, along the installer you will have the option to encrypt your drive, &lt;strong>please do it&lt;/strong> it will increase your security being the case that someone has access to your computer fisically they can&amp;rsquo;t do anything about it since the information is encrypted and your data protected, is a huge plus!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/linuxmintinstalldemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/linuxmintinstalldemo.png"
 loading="lazy"
 alt="linuxmintinstalldemo.png"
 >&lt;/p>
 &lt;p>(this is the case for linux mint, to encrypt your home folder)&lt;/p>
 &lt;p>After all, we are golden! Welcome to Linux!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/lmdeskdemo.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/lmdeskdemo.png"
 loading="lazy"
 alt="lmdeskdemo.png"
 >&lt;/p>
@@ -4946,7 +4946,7 @@ But there&amp;rsquo;s some steps I would recommend to do before you go crazy!&lt
 &lt;/li>
 &lt;/ul>
 &lt;p>And that&amp;rsquo;s it for me! Am glad that I can help you start your path into linux, so enjoy it, make it yours and go crazy! You can contact me in any way if you have a question, my discord code is on the About me &lt;a class="link" href="https://saidneder.tech/about/" target="_blank" rel="noopener"
->page&lt;/a>!&lt;/p></description></item><item><title>How to customize your terminal!</title><link>https://crazyc4t.xyz/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>https://crazyc4t.xyz/blog/niceterminal/</guid><description>&lt;img src="https://crazyc4t.xyz/images/terminal.png" alt="Featured image of post How to customize your terminal!" />&lt;h2 id="intro">Intro&lt;/h2>
+>page&lt;/a>!&lt;/p></description></item><item><title>How to customize your terminal!</title><link>https://blog.crazyc4t.xyz/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/niceterminal/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/terminal.png" alt="Featured image of post How to customize your terminal!" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This is a tutorial-type of blogpost, sorry for being away so long, but there&amp;rsquo;s a lot of blogposts coming to your way, so expect some new ones!&lt;/p>
 &lt;p>What we want to achieve in this tutorial:&lt;/p>
 &lt;ul>
@@ -5205,10 +5205,10 @@ and is going to be store in &lt;code>~/.config/alacritty/&lt;/code>.&lt;/p>
 &lt;p>Just run the script!
 &lt;code>alacritty-themes&lt;/code>&lt;/p>
 &lt;p>and select the theme you like and enjoy!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/terminal.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/terminal.png"
 loading="lazy"
 alt="Custom terminal"
->&lt;/p></description></item><item><title>How to comeback and win in life</title><link>https://crazyc4t.xyz/blog/comeback/</link><pubDate>Wed, 13 Oct 2021 23:53:55 -0500</pubDate><guid>https://crazyc4t.xyz/blog/comeback/</guid><description>&lt;img src="https://crazyc4t.xyz/images/chill-images/cuicocha.jpeg" alt="Featured image of post How to comeback and win in life" />&lt;h2 id="intro">Intro&lt;/h2>
+>&lt;/p></description></item><item><title>How to comeback and win in life</title><link>https://blog.crazyc4t.xyz/blog/comeback/</link><pubDate>Wed, 13 Oct 2021 23:53:55 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/comeback/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/chill-images/cuicocha.jpeg" alt="Featured image of post How to comeback and win in life" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>First of all, let&amp;rsquo;s talk about the definition of the word &lt;strong>comeback&lt;/strong> shall we?&lt;/p>
 &lt;blockquote>
 &lt;p>Comeback: a return to a former higher rank, popularity, position, prosperity, etc.&lt;/p>
@@ -5281,7 +5281,7 @@ lock and loaded.&lt;/p>
 &lt;p>You complete the comeback by meditating about all you have done, pray to give thanks that you have made it, document everything you made and
 be ready for tomorrow, and with time you will grab some high momentum and it will seem easy but &lt;strong>beware&lt;/strong>, that is the time your enemy is
 with their guns lock and loaded and you have your guard down, &lt;strong>Don&amp;rsquo;t let that happen&lt;/strong> and if it happens&amp;hellip;&lt;/p>
-&lt;h2 id="try-again">TRY AGAIN&lt;/h2></description></item><item><title>What is GNU + Linux? Why should you care?</title><link>https://crazyc4t.xyz/blog/penguin/</link><pubDate>Wed, 22 Sep 2021 18:58:53 -0500</pubDate><guid>https://crazyc4t.xyz/blog/penguin/</guid><description>&lt;img src="https://crazyc4t.xyz/images/linus.jpeg" alt="Featured image of post What is GNU + Linux? Why should you care?" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;h2 id="try-again">TRY AGAIN&lt;/h2></description></item><item><title>What is GNU + Linux? Why should you care?</title><link>https://blog.crazyc4t.xyz/blog/penguin/</link><pubDate>Wed, 22 Sep 2021 18:58:53 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/penguin/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/linus.jpeg" alt="Featured image of post What is GNU + Linux? Why should you care?" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>Am going to talk about one of my favourite things in the world, what lead me to where I am today, Linux, the open-source operating system created by the community!&lt;/p>
 &lt;h2 id="what-is-linux">What is linux?&lt;/h2>
 &lt;p>You use Linux everyday, without even noticing, &lt;strong>you are using linux right now!!&lt;/strong> since this
@@ -5363,7 +5363,7 @@ being the steam deck OS &lt;a class="link" href="https://store.steampowered.com/
 &lt;h2 id="should-i-switch-to-gnu--linux">Should I switch to GNU + Linux?&lt;/h2>
 &lt;p>The answer is totally!&lt;/p>
 &lt;p>Your will have a privacy-respecting, a secure and fast computer that manages to get your work done! and you can customize it however you want, and tedious tasks will be easier than ever and the best thing is that is free and open-source software, so no spyware or piracy for that office license that you don&amp;rsquo;t want to pay, &lt;strong>here is free, free as in freedom, and free as in gratis, free as in free beer!&lt;/strong>&lt;/p>
-&lt;p>Soon in a new blogpost I will talk about more deeply in distros and how to install Linux on your machine!&lt;/p></description></item><item><title>Why minimalism is important in your life</title><link>https://crazyc4t.xyz/blog/minimalism/</link><pubDate>Tue, 21 Sep 2021 23:13:03 -0500</pubDate><guid>https://crazyc4t.xyz/blog/minimalism/</guid><description>&lt;img src="https://crazyc4t.xyz/images/chill-images/curaray.jpeg" alt="Featured image of post Why minimalism is important in your life" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Soon in a new blogpost I will talk about more deeply in distros and how to install Linux on your machine!&lt;/p></description></item><item><title>Why minimalism is important in your life</title><link>https://blog.crazyc4t.xyz/blog/minimalism/</link><pubDate>Tue, 21 Sep 2021 23:13:03 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/minimalism/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/chill-images/curaray.jpeg" alt="Featured image of post Why minimalism is important in your life" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This is my first (and not last) blogpost talking about life advice and my opinions
 so just buckle up and enjoy the ride!&lt;/p>
 &lt;h2 id="what-is-minimalism-in-the-first-place">What is minimalism in the first place?&lt;/h2>

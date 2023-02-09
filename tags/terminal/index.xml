@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Terminal on crazyc4t's blog</title><link>https://crazyc4t.xyz/tags/terminal/</link><description>Recent content in Terminal on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Nov 2021 19:55:31 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>How to customize your terminal!</title><link>https://crazyc4t.xyz/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>https://crazyc4t.xyz/blog/niceterminal/</guid><description>&lt;img src="https://crazyc4t.xyz/images/terminal.png" alt="Featured image of post How to customize your terminal!" />&lt;h2 id="intro">Intro&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Terminal on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/tags/terminal/</link><description>Recent content in Terminal on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Nov 2021 19:55:31 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>How to customize your terminal!</title><link>https://blog.crazyc4t.xyz/blog/niceterminal/</link><pubDate>Sun, 14 Nov 2021 19:55:31 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/niceterminal/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/terminal.png" alt="Featured image of post How to customize your terminal!" />&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This is a tutorial-type of blogpost, sorry for being away so long, but there&amp;rsquo;s a lot of blogposts coming to your way, so expect some new ones!&lt;/p>
 &lt;p>What we want to achieve in this tutorial:&lt;/p>
 &lt;ul>
@@ -257,7 +257,7 @@ and is going to be store in &lt;code>~/.config/alacritty/&lt;/code>.&lt;/p>
 &lt;p>Just run the script!
 &lt;code>alacritty-themes&lt;/code>&lt;/p>
 &lt;p>and select the theme you like and enjoy!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/terminal.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/terminal.png"
 loading="lazy"
 alt="Custom terminal"
 >&lt;/p></description></item></channel></rss>

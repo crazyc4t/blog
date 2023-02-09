@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Splunk on crazyc4t's blog</title><link>https://crazyc4t.xyz/tags/splunk/</link><description>Recent content in Splunk on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 18 Oct 2022 13:03:09 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/tags/splunk/index.xml" rel="self" type="application/rss+xml"/><item><title>Boss of the SOC walkthrough</title><link>https://crazyc4t.xyz/blog/botsv3/</link><pubDate>Tue, 18 Oct 2022 13:03:09 -0500</pubDate><guid>https://crazyc4t.xyz/blog/botsv3/</guid><description>&lt;img src="https://crazyc4t.xyz/images/bots.png" alt="Featured image of post Boss of the SOC walkthrough" />&lt;h1 id="starting-point">Starting point&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Splunk on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/tags/splunk/</link><description>Recent content in Splunk on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 18 Oct 2022 13:03:09 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/tags/splunk/index.xml" rel="self" type="application/rss+xml"/><item><title>Boss of the SOC walkthrough</title><link>https://blog.crazyc4t.xyz/blog/botsv3/</link><pubDate>Tue, 18 Oct 2022 13:03:09 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/botsv3/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/bots.png" alt="Featured image of post Boss of the SOC walkthrough" />&lt;h1 id="starting-point">Starting point&lt;/h1>
 &lt;ol>
 &lt;li>Download Boss of the SOC VM from the &lt;a class="link" href="https://tryhackme.com/room/kimctf2022" target="_blank" rel="noopener"
 >THM room&lt;/a>&lt;/li>
@@ -44,7 +44,7 @@ get you the information you want.&lt;/strong>&lt;/p>
 &lt;li>DISABLE SAMPLING!!!!&lt;/li>
 &lt;/ul>
 &lt;h2 id="indexes">Indexes&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/image1.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/image1.png"
 loading="lazy"
 alt="Pasted image 20221016173021.png"
 >&lt;/p>
@@ -178,7 +178,7 @@ We can now find through the vulnerability that is &amp;ldquo;Web Attack: JSCoinM
 &lt;/div>
 &lt;/div>&lt;p>Making statistics counting by subject, we find this: &lt;code>Postmortem on our issue with brewertalk&lt;/code>, reading that does not sound fun so there&amp;rsquo;s need to take a look upon the issue.&lt;/p>
 &lt;p>Now we look for this specific topic, so we need searching by subject: `index=botsv3 earliest=0 (sourcetype=stream:smtp OR sourcetype=ms:o365:reporting:messagetrace) &lt;a class="link" href="mailto:bstoll@froth.ly" >bstoll@froth.ly&lt;/a> subject=&amp;ldquo;Postmortem on our issue with brewertalk&amp;rdquo;```&lt;/p>
-&lt;p>And we find a image002.jpg, and the attach_transfer_config is base64, so we need to copy the base64 that starts &lt;code>/9j/4&lt;/code> and ends &lt;code>//2Q==&lt;/code>, and paste it on the base64 image decoder&lt;img src="https://crazyc4t.xyz/images/image3.png"
+&lt;p>And we find a image002.jpg, and the attach_transfer_config is base64, so we need to copy the base64 that starts &lt;code>/9j/4&lt;/code> and ends &lt;code>//2Q==&lt;/code>, and paste it on the base64 image decoder&lt;img src="https://blog.crazyc4t.xyz/images/image3.png"
 loading="lazy"
 alt="Screenshot from 2022-10-17 12-40-37.png"
 >&lt;/p>
@@ -342,7 +342,7 @@ alt="Screenshot from 2022-10-17 12-40-37.png"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Being our result: 8.09, but we need to round it being it 8.10, the answer.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/image2.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/image2.png"
 loading="lazy"
 alt="Pasted image 20221017230721.png"
 >&lt;/p>

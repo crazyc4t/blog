@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux Priv Escalation on crazyc4t's blog</title><link>https://crazyc4t.xyz/tags/linux-priv-escalation/</link><description>Recent content in Linux Priv Escalation on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Nov 2022 08:42:00 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/tags/linux-priv-escalation/index.xml" rel="self" type="application/rss+xml"/><item><title>Mr Robot CTF</title><link>https://crazyc4t.xyz/blog/mrrobot/</link><pubDate>Sun, 06 Nov 2022 08:42:00 -0500</pubDate><guid>https://crazyc4t.xyz/blog/mrrobot/</guid><description>&lt;img src="https://crazyc4t.xyz/images/fsociety.jpg" alt="Featured image of post Mr Robot CTF" />&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux Priv Escalation on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/tags/linux-priv-escalation/</link><description>Recent content in Linux Priv Escalation on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Nov 2022 08:42:00 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/tags/linux-priv-escalation/index.xml" rel="self" type="application/rss+xml"/><item><title>Mr Robot CTF</title><link>https://blog.crazyc4t.xyz/blog/mrrobot/</link><pubDate>Sun, 06 Nov 2022 08:42:00 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/mrrobot/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/fsociety.jpg" alt="Featured image of post Mr Robot CTF" />&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot.png"
 loading="lazy"
 alt="head"
 >&lt;/p>
@@ -9,7 +9,7 @@ alt="head"
 &lt;p>First my own methodology that I&amp;rsquo;m working with is to make Nmap scans, while doing some gobuster&amp;rsquo;s directories discoveries, so let&amp;rsquo;s go step by step.&lt;/p>
 &lt;h3 id="nmap">Nmap&lt;/h3>
 &lt;p>&lt;code>sudo nmap -sS -Pn -T5 -p- -vvv --open 10.10.112.68 -oG allPorts&lt;/code>
-&lt;img src="https://crazyc4t.xyz/images/mrrobot1.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot1.png"
 loading="lazy"
 alt="mrrobot1"
 >
@@ -130,7 +130,7 @@ With the &lt;code>-vvv&lt;/code> triple verbosity flag we know already open port
 &lt;/div>&lt;p>And we get tons of directories! we see repeating a lot the&lt;code>wp&lt;/code> keyword, and that&amp;rsquo;s because it&amp;rsquo;s a wordpress site! So now we know what is our target, but let&amp;rsquo;s get more knowledge about the directories of the page, since we got a dictionary from the &lt;code>robots.txt&lt;/code> file, we can do another gobuster scan:
 &lt;code>gobuster dir --url http://10.10.32.149 -t 40 -w fsocity.dic -no-error --output fsocietyScan.txt&lt;/code>&lt;/p>
 &lt;p>While that&amp;rsquo;s finishing, let&amp;rsquo;s go into some of this directories, let&amp;rsquo;s go to license:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot2.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot2.png"
 loading="lazy"
 alt="mrrobot2"
 >&lt;/p>
@@ -144,7 +144,7 @@ alt="mrrobot2"
 &lt;p>On the bottom of the page we have the wordpress version, so let&amp;rsquo;s make a quick google about if there&amp;rsquo;s some exploits on that specific version of wordpress (4.3.1)&lt;/p>
 &lt;p>Giving us as a search result a exploit database link: &lt;a class="link" href="https://www.exploit-db.com/exploits/50255" target="_blank" rel="noopener"
 >https://www.exploit-db.com/exploits/50255&lt;/a> where it says it has a RCE vulnerability (Remote Code Execution) from the wordpress admin panel (which we have access to), but before everything let&amp;rsquo;s poke around the admin panel.
-&lt;img src="https://crazyc4t.xyz/images/mrrobot3.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot3.png"
 loading="lazy"
 alt="mrrobot3"
 >&lt;/p>
@@ -538,7 +538,7 @@ alt="mrrobot3"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>As an administrator we can do anything we want so let&amp;rsquo;s edit the theme files, to our advantage, giving for example the &lt;code>author-bio.php&lt;/code> file for our reverse shell, meaning that instead of displaying the biography of the author it will now run a reverse shell for us!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot4.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot4.png"
 loading="lazy"
 alt="mrrobot4"
 >&lt;/p>
@@ -559,12 +559,12 @@ alt="mrrobot4"
 &lt;li>&lt;code>p&lt;/code>: Port specified&lt;/li>
 &lt;/ul>
 &lt;p>In my case I&amp;rsquo;m using the port 443, commonly known as the HTTPS port for listening, when we go to the specific page that would be in the themes directory since we modified the &amp;ldquo;TwentyFifteen&amp;rdquo; theme &lt;code>/wp-content/themes/twentyfifteen/author-bio.php&lt;/code> we will get a blank screen, that&amp;rsquo;s because no error happened, and we should get the shell back!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot5.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot5.png"
 loading="lazy"
 alt="mrrobot5"
 >&lt;/p>
 &lt;p>We are in their system! But there&amp;rsquo;s still work left to do, since we are the &amp;ldquo;daemon&amp;rdquo; user, (daemon means process running in linux) we need to escalate our privilages, first, let&amp;rsquo;s head home!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot7.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot7.png"
 loading="lazy"
 alt="mrrobot6"
 >&lt;/p>
@@ -580,24 +580,24 @@ alt="mrrobot6"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Before running this command I have created a file called &lt;code>passmd5.hash&lt;/code> where is the hash stored, and I have the &lt;code>fsocity.dic&lt;/code> from the &lt;code>robots.txt&lt;/code> giving us the password:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot8.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot8.png"
 loading="lazy"
 alt="mrrobot7"
 >&lt;/p>
 &lt;p>Being the full alphabet! Now we can switch users! Let&amp;rsquo;s use &lt;code>su&lt;/code>
-&lt;img src="https://crazyc4t.xyz/images/mrrobot9.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot9.png"
 loading="lazy"
 alt="mrrobot8"
 >&lt;/p>
 &lt;p>But we get a problem, that is we are not running a fully interactive shell, so we need to upgrade our shell first, so we are going to do so by running a python one liner that spawns bash for us, then let&amp;rsquo;s switch users!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot10.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot10.png"
 loading="lazy"
 alt="mrrobot9"
 >&lt;/p>
 &lt;p>We are now robot! With that said, we can now cat out the key, giving us the second flag.&lt;/p>
 &lt;h3 id="nmap-exploit">Nmap exploit&lt;/h3>
 &lt;p>let&amp;rsquo;s get to know the system and know which programs does have root permissions:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot6.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot6.png"
 loading="lazy"
 alt="mrrobot10"
 >&lt;/p>
@@ -627,13 +627,13 @@ alt="mrrobot10"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Getting root privilages on the machine, now let&amp;rsquo;s find the root flag that is not so hard to do:
-&lt;img src="https://crazyc4t.xyz/images/mrrobot11.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot11.png"
 loading="lazy"
 alt="mrrobot11"
 >&lt;/p>
 &lt;p>Finally getting the third and last flag, and completing the machine.&lt;/p>
 &lt;h2 id="outro">Outro&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/mrrobot12.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/mrrobot12.png"
 loading="lazy"
 alt="mrrobot12"
 >&lt;/p>

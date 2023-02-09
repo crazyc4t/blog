@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ELK on crazyc4t's blog</title><link>https://crazyc4t.xyz/tags/elk/</link><description>Recent content in ELK on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 06 Dec 2022 14:34:23 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/tags/elk/index.xml" rel="self" type="application/rss+xml"/><item><title>Elk stack once and for all!</title><link>https://crazyc4t.xyz/blog/elk-stack/</link><pubDate>Tue, 06 Dec 2022 14:34:23 -0500</pubDate><guid>https://crazyc4t.xyz/blog/elk-stack/</guid><description>&lt;img src="https://crazyc4t.xyz/images/elkbanner.png" alt="Featured image of post Elk stack once and for all!" />&lt;p>Welcome to this quick guide on using the ELK stack, specially Elastic&amp;rsquo;s Kibana interface to search, filter and create visualizations and dashboards, taking as an example the investigation of vpn logs for anomalies.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk1.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ELK on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/tags/elk/</link><description>Recent content in ELK on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 06 Dec 2022 14:34:23 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/tags/elk/index.xml" rel="self" type="application/rss+xml"/><item><title>Elk stack once and for all!</title><link>https://blog.crazyc4t.xyz/blog/elk-stack/</link><pubDate>Tue, 06 Dec 2022 14:34:23 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/elk-stack/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/elkbanner.png" alt="Featured image of post Elk stack once and for all!" />&lt;p>Welcome to this quick guide on using the ELK stack, specially Elastic&amp;rsquo;s Kibana interface to search, filter and create visualizations and dashboards, taking as an example the investigation of vpn logs for anomalies.&lt;/p>
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk1.png"
 loading="lazy"
 alt="elk1"
 >&lt;/p>
@@ -9,7 +9,7 @@ alt="elk1"
 &lt;p>Is a full-text search and analytics engine used to store JSON documents, being a critical part since is the component used to store, analyze, perform correlation on the data and so much more, having a RESTfull API to interact with it.&lt;/p>
 &lt;h2 id="logstash">Logstash&lt;/h2>
 &lt;p>Data processing engine used to take the data the data from different sources, apply a filter or normalize it, and then send it to the destination, being the majority of the cases a elasticsearch database, kibana or a listening port, being separated like this:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk2.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk2.png"
 loading="lazy"
 alt="elk2"
 >&lt;/p>
@@ -21,20 +21,20 @@ alt="elk2"
 &lt;p>This is the part where the filtered data is sended to a listening port, elasticsearch database, or kibana.&lt;/p>
 &lt;h2 id="beats">Beats&lt;/h2>
 &lt;p>Host-based agent (Meaning that is a program that you install or set up for each of your devices) known as data-shippers since it&amp;rsquo;s used to send data from the endpoints to logstash, or elasticsearch, for example all the &amp;ldquo;beats&amp;rdquo; available:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk3.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk3.png"
 loading="lazy"
 alt="elk3"
 >&lt;/p>
 &lt;h2 id="kibana">Kibana&lt;/h2>
 &lt;p>Is a web-based data visualization that works with elasticsearch to analyze, investigate and visualize the data stream in real-time, you can create multiple visualizations, dashboards and specific lookups with KQL (Kibana query language) more on that later.&lt;/p>
 &lt;h2 id="how-they-work-together">How they work together&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk4.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk4.png"
 loading="lazy"
 alt="elk4"
 >&lt;/p>
 &lt;h1 id="getting-our-feets-wet-with-kibana">Getting our feets wet with Kibana&lt;/h1>
 &lt;p>This is the discover tab in our Kibana instance, if you have used Splunk before, they are fundamentally the same, and that&amp;rsquo;s why it&amp;rsquo;s going to be easy to get started with, since they are both SIEMs.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk5.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk5.png"
 loading="lazy"
 alt="elk5"
 >&lt;/p>
@@ -54,12 +54,12 @@ alt="elk5"
 &lt;p>The Kibana Query Language is a search query language used to search the ingested logs in the elasticsearch, it does not have tons of features but it is really easy to pick up, another option is the Lucene Query Language (LQL) so is opt to the user.&lt;/p>
 &lt;h3 id="free-text-search">Free text search&lt;/h3>
 &lt;p>Here you can put any text into the box and it will search it irrespective of the field, for example:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk6.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk6.png"
 loading="lazy"
 alt="elk6"
 >&lt;/p>
 &lt;p>But what happens if we only search for &amp;ldquo;United&amp;rdquo;?
-&lt;img src="https://crazyc4t.xyz/images/elk7.png"
+&lt;img src="https://blog.crazyc4t.xyz/images/elk7.png"
 loading="lazy"
 alt="elk7"
 >
@@ -74,7 +74,7 @@ It will not return any result because KQL looks only for the whole term, here is
 &lt;li>&lt;code>{}&lt;/code>: To match a group of names/wildcards patterns&lt;/li>
 &lt;/ul>
 &lt;p>Now knowing wildcards, let&amp;rsquo;s search United* and see the results:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk8.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk8.png"
 loading="lazy"
 alt="elk8"
 >&lt;/p>
@@ -82,19 +82,19 @@ alt="elk8"
 &lt;p>KQL supports logical operators (AND | OR | NOT), quick examples:&lt;/p>
 &lt;h4 id="or">OR&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; OR &amp;quot;England&amp;quot;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk9.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk9.png"
 loading="lazy"
 alt="elk9"
 >&lt;/p>
 &lt;h4 id="and">AND&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND &amp;quot;Virgina&amp;quot;&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk10.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk10.png"
 loading="lazy"
 alt="elk10"
 >&lt;/p>
 &lt;h4 id="not">NOT&lt;/h4>
 &lt;p>Search: &lt;code>&amp;quot;United States&amp;quot; AND NOT (&amp;quot;Florida&amp;quot;)&lt;/code>, Saying all the results that match United States without florida.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk11.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk11.png"
 loading="lazy"
 alt="elk11"
 >&lt;/p>
@@ -108,17 +108,17 @@ alt="Kibana gif"
 &lt;p>Kibana automatically will show you available fields and values, making your search easier.&lt;/p>
 &lt;h3 id="visualize">Visualize&lt;/h3>
 &lt;p>Visualizing is using an built-into kibna elastic application called lens that helps us read with statistics, for example in this image we can view all the connections made to a VPN.&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk12.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk12.png"
 loading="lazy"
 alt="elk12"
 >&lt;/p>
 &lt;p>We can visualize by clicking the wanted field in the fields pane and clicking on visualize:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk13.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk13.png"
 loading="lazy"
 alt="elk13"
 >&lt;/p>
 &lt;p>We can edit the rules as we want, by clicking the field, in this example the rows top values of usernames:&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/elk14.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/elk14.png"
 loading="lazy"
 alt="elk14"
 >&lt;/p>

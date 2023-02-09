@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Coding on crazyc4t's blog</title><link>https://crazyc4t.xyz/categories/coding/</link><description>Recent content in Coding on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Aug 2022 13:25:00 -0500</lastBuildDate><atom:link href="https://crazyc4t.xyz/categories/coding/index.xml" rel="self" type="application/rss+xml"/><item><title>Programming with go!</title><link>https://crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Coding on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/categories/coding/</link><description>Recent content in Coding on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Aug 2022 13:25:00 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/categories/coding/index.xml" rel="self" type="application/rss+xml"/><item><title>Programming with go!</title><link>https://blog.crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
 &lt;p>Hello guys it&amp;rsquo;s crazyc4t once again, sorry for being a bit distant on my blog but prepare yourselves because there&amp;rsquo;s more content in the oven!&lt;/p>
 &lt;p>I disappeared but with a purpose, I was laser-locked focused learning go! And it is really fun, but first&amp;hellip;&lt;/p>
 &lt;h2 id="what-is-go">What is go?&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/gopher-dance-long-3x.gif"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/gopher-dance-long-3x.gif"
 loading="lazy"
 alt="Gopher"
 >&lt;/p>
@@ -40,7 +40,7 @@ alt="Gopher"
 &lt;li>Github-CLI&lt;/li>
 &lt;/ul>
 &lt;h2 id="getting-started-with-go">Getting started with go!&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/witch-learning.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/witch-learning.png"
 loading="lazy"
 alt="Gopher"
 >&lt;/p>
@@ -144,7 +144,7 @@ alt="Gopher"
 &lt;/div>
 &lt;/div>&lt;p>After scratching the surface of go, this is the next step&amp;hellip;&lt;/p>
 &lt;h2 id="keep-learning">Keep learning!&lt;/h2>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/hiking.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/hiking.png"
 loading="lazy"
 alt="Gopher"
 >&lt;/p>
@@ -184,7 +184,7 @@ alt="Gopher"
 >The Go programming language&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="thank-you-for-reading">Thank you for reading!&lt;/h2>
-&lt;p>I&amp;rsquo;m learning go at the moment so expect more go content coming your way!&lt;/p></description></item><item><title>How to code your own discord bot!</title><link>https://crazyc4t.xyz/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://crazyc4t.xyz/blog/discordbot/</guid><description>&lt;img src="https://crazyc4t.xyz/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
+&lt;p>I&amp;rsquo;m learning go at the moment so expect more go content coming your way!&lt;/p></description></item><item><title>How to code your own discord bot!</title><link>https://blog.crazyc4t.xyz/blog/discordbot/</link><pubDate>Fri, 11 Feb 2022 11:19:06 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/discordbot/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/botdemo.gif" alt="Featured image of post How to code your own discord bot!" />&lt;h1 id="patrick-star-bot-">Patrick Star Bot 📕&lt;/h1>
 &lt;p>&lt;img src="https://img.shields.io/github/license/crazyc4t/PatrickStar?color=brightgreen"
 loading="lazy"
 alt="GitHub License"
@@ -198,7 +198,7 @@ This bot is about having my classes at my fingertips, so it
 gives links with special commands that facilitate the process.
 You are free to clone the code and use it the way you want!
 You can edit it and make it your own!&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/botdemo.gif"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/botdemo.gif"
 loading="lazy"
 alt="Demo"
 >&lt;/p>
@@ -601,7 +601,7 @@ And after that we just push it to heroku!&lt;/p>
 &lt;p>&lt;code>git push heroku main&lt;/code>&lt;/p>
 &lt;p>When that is done we go into the dashboard &amp;gt; resources and deactivate the web dyno by just clicking edit and switching off the slide,
 and now we turn on the worker that should appear, now it should be left like this&lt;/p>
-&lt;p>&lt;img src="https://crazyc4t.xyz/images/botheroku.png"
+&lt;p>&lt;img src="https://blog.crazyc4t.xyz/images/botheroku.png"
 loading="lazy"
 alt="image example"
 >&lt;/p>
