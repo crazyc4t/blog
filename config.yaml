@@ -1,4 +1,4 @@
-baseurl: https://crazyc4t.xyz
+baseurl: https://blog.crazyc4t.xyz
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
@@ -38,12 +38,12 @@ params:
     lastUpdated: Jan 02, 2006 15:04 MST
 
   sidebar:
-    emoji: 🇪🇨
-    subtitle: On my way to success.
+    emoji: 📓
+    subtitle: On my way.
     avatar:
       enabled: true
       local: true
-      src: crazyc4t.jpeg
+      src: me-anime.png
 
   article:
     math: true
@@ -76,19 +76,19 @@ params:
     page:
       - type: toc
 
-  opengraph:
-    twitter:
-      # Your Twitter username
-      site:
+  # opengraph:
+  #   twitter:
+  #     # Your Twitter username
+  #     site:
 
-      # Available values: summary, summary_large_image
-      card: summary_large_image
+  #     # Available values: summary, summary_large_image
+  #     card: summary_large_image
 
-  defaultImage:
-    opengraph:
-      enabled: false
-      local: false
-      src:
+  # defaultImage:
+  #   opengraph:
+  #     enabled: false
+  #     local: false
+  #     src:
 
   colorScheme:
     # Display toggle
