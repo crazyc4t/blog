@@ -1,4 +1,374 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/tags/go/</link><description>Recent content in Go on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Aug 2022 13:25:00 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>Programming with go!</title><link>https://blog.crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on crazyc4t's blog</title><link>https://blog.crazyc4t.xyz/tags/go/</link><description>Recent content in Go on crazyc4t's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 22 Mar 2023 11:59:47 -0500</lastBuildDate><atom:link href="https://blog.crazyc4t.xyz/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>Gophercise #1 "Quiz" Walkthrough!</title><link>https://blog.crazyc4t.xyz/blog/gophercise/</link><pubDate>Wed, 22 Mar 2023 11:59:47 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/gophercise/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/gophercises_punching.gif" alt="Featured image of post Gophercise #1 "Quiz" Walkthrough!" />&lt;p>What&amp;rsquo;s up guys! It&amp;rsquo;s crazyc4t here, once again, I&amp;rsquo;m sorry for not being fully active these past couple of weeks, but I&amp;rsquo;m here for you guys and I&amp;rsquo;m bringing you the best way to learn golang, and that is coding with it!&lt;/p>
+&lt;h2 id="what-is-gophercises">What is Gophercises?&lt;/h2>
+&lt;p>&lt;a class="link" href="https://gophercises.com/" target="_blank" rel="noopener"
+>Gophercises&lt;/a> is a webpage made by &lt;a class="link" href="https://www.calhoun.io/" target="_blank" rel="noopener"
+>Jon Calhoun&lt;/a>, an experienced web developer with go, and we takes us through a series of exercises to code with golang making us improve our way to code in go by exploring topics like channels, concurrency, methods, using the standard library and more! The best thing of all is that is free! So you won&amp;rsquo;t lose anything trying it out, instead you will have tons of fun like I did!&lt;/p>
+&lt;p>In gophercises there are a lot of exercises ranging from an order from 1 through 20, and of course they increase in difficulty, the exercises are solved by the author in case you get lost so you can get a lead, but also the author adds some additional exercises to the exercise, making you go for the extra mile.&lt;/p>
+&lt;h2 id="the-quiz-exercise">The &amp;ldquo;Quiz&amp;rdquo; Exercise&lt;/h2>
+&lt;p>This exercise is based on the idea of a quiz, hence the name for it, it is a program that reads questions and answers from a csv file and count how many questions did the user got right or wrong, and ask the following questions no matter if the answer was right or wrong, all of these fields are customizable through flags, the format of the csv is as follows:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">5+5,10
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">7+3,10
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1+1,2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">8+3,11
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1+2,3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">8+6,14
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3+1,4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1+4,5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">5+1,6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2+3,5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3+3,6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2+4,6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">5+2,7
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Printing at the end of the program the results of the user, after completing that, the second part is to add a timer to the exercise, being the default flag 30 seconds, but it needs to be customizable to the end user, and without any delay, cut the quiz if the time runs out and don&amp;rsquo;t wait if the user is going to answer or not the question, so ungiven answers are counted as wrong answers.&lt;/p>
+&lt;h3 id="bonus-exercises">Bonus Exercises&lt;/h3>
+&lt;ul>
+&lt;li>Clean up the answer so it will count even if it has white spaces, capitalization, etc&amp;hellip;&lt;/li>
+&lt;li>Add an option to shuffle the order of the quiz each time is runned.&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s the official repo for the quiz exercise with detailed instructions and solutions from various students: &lt;a class="link" href="https://github.com/gophercises/quiz" target="_blank" rel="noopener"
+>https://github.com/gophercises/quiz&lt;/a>&lt;/p>
+&lt;p>I suggest that you first try it out on your own before reading my solution, give your best shot! 頑張って！&lt;/p>
+&lt;h2 id="the-solution">The solution&lt;/h2>
+&lt;p>I will explain the code detail by detail, so no worries about it!&lt;/p>
+&lt;h3 id="import-the-required-packages">Import the required packages&lt;/h3>
+&lt;p>We will be using:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/encoding/csv" target="_blank" rel="noopener"
+>&lt;code>encoding/csv&lt;/code>&lt;/a> for reading the csv file.&lt;/li>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/flag@go1.20.2" target="_blank" rel="noopener"
+>&lt;code>flag&lt;/code>&lt;/a> for creating command-line flags to give the user personalization.&lt;/li>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/fmt" target="_blank" rel="noopener"
+>&lt;code>fmt&lt;/code>&lt;/a> for formatting I/O (print &amp;amp; scan).&lt;/li>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/log" target="_blank" rel="noopener"
+>&lt;code>log&lt;/code>&lt;/a> for logging errors that happen.&lt;/li>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/math/rand" target="_blank" rel="noopener"
+>&lt;code>math/rand&lt;/code>&lt;/a> for randomization when shuffling order.&lt;/li>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/os" target="_blank" rel="noopener"
+>&lt;code>os&lt;/code>&lt;/a> for accessing the OS through the library.&lt;/li>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/string" target="_blank" rel="noopener"
+>&lt;code>strings&lt;/code>&lt;/a> for cleaning the answer string.&lt;/li>
+&lt;li>&lt;a class="link" href="https://pkg.go.dev/time" target="_blank" rel="noopener"
+>&lt;code>time&lt;/code>&lt;/a> for the quiz timer.&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/zakaria-chahboun/cute" target="_blank" rel="noopener"
+>&lt;code>cute&lt;/code>&lt;/a> Pretty output library made by &lt;a class="link" href="https://github.com/zakaria-chahboun" target="_blank" rel="noopener"
+>zakaria-chahboun&lt;/a>, thanks!&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;encoding/csv&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;flag&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;log&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;math/rand&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;os&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;strings&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;time&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;github.com/zakaria-chahboun/cute&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="structs-for-handling-flags">Structs for handling flags&lt;/h3>
+&lt;p>We create a struct of the type &lt;code>Exercise&lt;/code> that has a question and an answer, and the struct &lt;code>Flag&lt;/code> that has a Csv, Limit and Shuffle.&lt;/p>
+&lt;p>We create a function to check our errors that we will use later, and to parse the flags we will save each data received in a varible of type &amp;ldquo;Flag&amp;rdquo;, and return it&amp;rsquo;s pointer since we used the dereferenced variable (the memory address)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Struct of the exercise
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">type&lt;/span> &lt;span class="nx">Exercise&lt;/span> &lt;span class="kd">struct&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Question&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">Answer&lt;/span> &lt;span class="kt">string&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Struct of the flags
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">type&lt;/span> &lt;span class="nx">Flags&lt;/span> &lt;span class="kd">struct&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Csv&lt;/span> &lt;span class="kt">string&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Limit&lt;/span> &lt;span class="kt">int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Shuffle&lt;/span> &lt;span class="kt">bool&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Check my errors
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">func&lt;/span> &lt;span class="nf">checkErr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">description&lt;/span> &lt;span class="kt">string&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">err&lt;/span> &lt;span class="kt">error&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="nx">err&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="kc">nil&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">log&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">description&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Save each flag result in an variable type Flag, parse it and return it&amp;#39;s pointer.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">func&lt;/span> &lt;span class="nf">parsing&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="nx">Flags&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">options&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nb">new&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Flags&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">flag&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">CommandLine&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">flag&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">NewFlagSet&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">os&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Args&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nx">flag&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">ExitOnError&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">flag&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">StringVar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;amp;&lt;/span>&lt;span class="nx">options&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Csv&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;csv&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;problems.csv&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Insert the filepath of the csv file.&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">flag&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">IntVar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;amp;&lt;/span>&lt;span class="nx">options&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Limit&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;limit&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">30&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Insert time limit of the quiz&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">flag&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">BoolVar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;amp;&lt;/span>&lt;span class="nx">options&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Shuffle&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;shuffle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Wether the order of the csv file is shuffled or not&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">flag&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Parse&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="nx">options&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="reading-the-csv-and-creating-the-shuffle-feature">Reading the csv and creating the shuffle feature&lt;/h3>
+&lt;p>In the &lt;code>read&lt;/code> function create a varible that will store the csv file from the flag, defer it until we no longer need it, create a new reader and read all the fields at once, after that check if there were any errors, and return the whole reading that is a map of type &lt;code>string&lt;/code>.&lt;/p>
+&lt;p>In the &lt;code>serialize&lt;/code> function read the whole data and &amp;ldquo;serialize&amp;rdquo; it to a type &lt;code>Exercise&lt;/code>, meaning reading the whole data and assign each field if it belongs to the answer or question field.&lt;/p>
+&lt;p>After that create the shuffle function where it receives a slice of data type &lt;code>Exercise&lt;/code>, where it takes the length of the slice, and the indexes of the slice, being &lt;code>i&lt;/code> and &lt;code>j&lt;/code>, changing the index position of each value stored in the slice, if we remember correctly the &lt;code>Exercise&lt;/code> data type stores a question and an answer, so when using the shuffle function, it will change the position of an exercise in the exercises slice, not a question or answer, but the whole exercise.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Read csv all at once
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">func&lt;/span> &lt;span class="nf">read&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">[][]&lt;/span>&lt;span class="kt">string&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">csvFile&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">err&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">os&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">parsing&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">Csv&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">checkErr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Error opening file&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">defer&lt;/span> &lt;span class="nx">csvFile&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Close&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">// Do not close it until finished
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">r&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">csv&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">NewReader&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">csvFile&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// New reader
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">r&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">FieldsPerRecord&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="c1">// Read all fields, do not expect a fixed number
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">reading&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">err&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">r&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">ReadAll&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">// Data read
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">checkErr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Error reading file&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">reading&lt;/span> &lt;span class="c1">// Give the data read as a result
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// From the data read, create a slice that supports values type Exercise
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">func&lt;/span> &lt;span class="nf">serialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">data&lt;/span> &lt;span class="p">[][]&lt;/span>&lt;span class="kt">string&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">[]&lt;/span>&lt;span class="nx">Exercise&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">Exercises&lt;/span> &lt;span class="p">[]&lt;/span>&lt;span class="nx">Exercise&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">exercise&lt;/span> &lt;span class="nx">Exercise&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="nx">_&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">record&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="k">range&lt;/span> &lt;span class="nx">data&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">exercise&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Question&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">record&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">exercise&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Answer&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">record&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Exercises&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Exercises&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">exercise&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">Exercises&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// From an slice of type Exercise, shuffle the order of the exercises
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">func&lt;/span> &lt;span class="nf">shuffleOrder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">exercises&lt;/span> &lt;span class="p">[]&lt;/span>&lt;span class="nx">Exercise&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">rand&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Shuffle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">exercises&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="kd">func&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">j&lt;/span> &lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">exercises&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nx">exercises&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">exercises&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">j&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nx">exercises&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="the-cute-output">The cute output&lt;/h3>
+&lt;p>Using the &lt;a class="link" href="https://github.com/zakaria-chahboun/cute" target="_blank" rel="noopener"
+>cute&lt;/a> library, we can create a list that will print out the quiz results, including:&lt;/p>
+&lt;ul>
+&lt;li>Correct answers&lt;/li>
+&lt;li>Incorrect answers&lt;/li>
+&lt;li>Total Questions&lt;/li>
+&lt;/ul>
+&lt;p>All of this being stored in the &lt;code>quizResults&lt;/code> function.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Creates cute list that prints quiz results
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">func&lt;/span> &lt;span class="nf">quizResults&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">correct&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">questions&lt;/span> &lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">results&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">NewList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BrightBlue&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Quiz Results!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">results&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Addf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BrightGreen&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Correct Answers: %d&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">correct&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">results&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Addf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BrightRed&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Incorrect Answers: %d&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">questions&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">correct&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">results&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Addf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BrightPurple&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Total Questions: %d&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">questions&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">results&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Print&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="the-func-main">The func main&lt;/h3>
+&lt;p>Here it gets complex, so let&amp;rsquo;s break it down step by step:&lt;/p>
+&lt;ol>
+&lt;li>Create timer, serialize the whole csv reading, check if the user wants shuffling.&lt;/li>
+&lt;li>Range the exercises, and print it to the user, receive the answer in a channel, avoiding incorrect time.&lt;/li>
+&lt;li>Use the concurrent select keyword, where if the timer channel runs out, it will print the results and exit.&lt;/li>
+&lt;li>If an answer is received, check if it is correct or not, count it and store it.&lt;/li>
+&lt;li>If the user ended the quiz before the time, print the results and exit the program.&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">reply&lt;/span> &lt;span class="kt">string&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">correct&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">questions&lt;/span> &lt;span class="kt">int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">timer&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">time&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">NewTimer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">time&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Duration&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">parsing&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">Limit&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">time&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Second&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// Timer duration
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">Exercises&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nf">serialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">read&lt;/span>&lt;span class="p">())&lt;/span> &lt;span class="c1">// Slice with exercises
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="nf">parsing&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">Shuffle&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">shuffleOrder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Exercises&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// if true, shuffle order
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="k">range&lt;/span> &lt;span class="nx">Exercises&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// iterate over the exercises slice
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Exercise&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">Exercises&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">Question&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;= &amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">answerCh&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nb">make&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">chan&lt;/span> &lt;span class="kt">string&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// create a channel where it will receive the answer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">go&lt;/span> &lt;span class="kd">func&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// while the timer run, listen to the answer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Scanln&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;amp;&lt;/span>&lt;span class="nx">reply&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">answerCh&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span> &lt;span class="nx">reply&lt;/span> &lt;span class="c1">// store the scanned reply in the channel
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">select&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span>&lt;span class="nx">timer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">C&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1">// when the timer runs out
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// print new line for pretty output
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Time is over!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">quizResults&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">correct&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">questions&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// print cute quiz result
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">os&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// exit with success
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">case&lt;/span> &lt;span class="nx">reply&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span>&lt;span class="nx">answerCh&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1">// store the answer channel in the reply variable
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="nx">strings&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">TrimSpace&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">reply&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">Exercises&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">Answer&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// trim spaces of the reply to avoid incorrect replies
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Correct!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">correct&lt;/span>&lt;span class="o">++&lt;/span> &lt;span class="c1">// count the correct replies
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">cute&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Incorrect!&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;Your reply:&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">strings&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">TrimSpace&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">reply&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="s">&amp;#34;Answer:&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">Exercises&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">Answer&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// if incorrect, show the correct answer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">questions&lt;/span>&lt;span class="o">++&lt;/span> &lt;span class="c1">// count the questions
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">quizResults&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">correct&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">questions&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="gophercise-1-solved">Gophercise #1 Solved!&lt;/h2>
+&lt;p>There you have it homeboi!! Hope you enjoyed my solution of the gophercise, I will leave my github repo where I stored the solution if you want to check the whole code out, give a star or fork it, I&amp;rsquo;m so glad to write blog posts again so I will be here soon, expect tons of blog posts coming!&lt;/p>
+&lt;p>Github repo: &lt;a class="link" href="https://github.com/crazyc4t/quiz" target="_blank" rel="noopener"
+>https://github.com/crazyc4t/quiz&lt;/a>&lt;/p></description></item><item><title>Programming with go!</title><link>https://blog.crazyc4t.xyz/blog/gostart/</link><pubDate>Sun, 28 Aug 2022 13:25:00 -0500</pubDate><guid>https://blog.crazyc4t.xyz/blog/gostart/</guid><description>&lt;img src="https://blog.crazyc4t.xyz/images/gopherjumping.gif" alt="Featured image of post Programming with go!" />&lt;h1 id="how-to-start-programming-with-go">How to start programming with Go&lt;/h1>
 &lt;p>Hello guys it&amp;rsquo;s crazyc4t once again, sorry for being a bit distant on my blog but prepare yourselves because there&amp;rsquo;s more content in the oven!&lt;/p>
 &lt;p>I disappeared but with a purpose, I was laser-locked focused learning go! And it is really fun, but first&amp;hellip;&lt;/p>
 &lt;h2 id="what-is-go">What is go?&lt;/h2>
